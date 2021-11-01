@@ -141,12 +141,61 @@
   height: 69px;
   background-color: #ffffff;
   border: 1px solid #f8f8fa;
-  display: flex;
-  justify-content: space-between;
 }
 .navbarLeft {
   display: flex;
   height: 100%;
   align-items: center;
+}
+.navbarLeft img {
+  width: 34px;
+}
+.searchImg {
+  margin-left: -33px;
+}
+.navBar input {
+  height: 34px;
+  width: 266px;
+  border: 1px solid rgba(67, 79, 99, 0.2);
+  background-color: #f8f8fa;
+  border-radius: 17.5px;
+  margin-left: 37px;
+  color: rgba(0, 0, 0, 0.5) 50%;
+  padding: 11px 15px;
+}
+.navbarWrapper {
+  display: flex;
+  margin: 0 32px;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.navbarRight {
+  display: flex;
+}
+.navbarRightBtns {
+  display: flex;
+  align-items: center;
+}
+.navbarRightBtns img {
+  margin: 0 15px;
+  width: 24px;
+}
+.navbarRightProfile {
+  margin-left: 60px;
+  display: flex;
+  color: rgba(21, 21, 21, 0.5);
+  font-size: 14px;
+}
+.navbarProfileTitle {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+.navbarRightProfile div {
+  margin-left: 13px;
+}
+.navbarRightProfile img {
+  width: 30px;
+  height: 30px;
 }
 /* ---------------NAVBAR--------------- */
