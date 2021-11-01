@@ -37,6 +37,8 @@
 .sideBar{
     min-width: 320px;
     background-color: white;
+    box-shadow: 1px 0px 10px grey;
+    z-index: 0;
 }
 .sideBar .logoContainer img{
     width: 154px;
