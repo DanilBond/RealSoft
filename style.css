@@ -25,22 +25,16 @@
   box-sizing: border-box;
   font-family: HNCroman;
 }
-html,
-body {
-  height: 100%;
-}
 /* ---------------MAIN--------------- */
 .main {
   display: flex;
   flex-direction: row;
-  height: 100%;
   background-color: red;
 }
 /* ---------------MAIN--------------- */
 
 /* ---------------SIDEBAR--------------- */
 .sideBar {
-  height: 100%;
   min-width: 320px;
   background-color: white;
 }
@@ -74,11 +68,68 @@ body {
   text-transform: uppercase;
   height: 50px;
 }
+.menuContainer {
+  width: 258.5px;
+  margin-left: 21.5px;
+  margin-top: 33px;
+}
+.menuContainer span {
+  margin-left: 13px;
+
+  font-family: HNCroman;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: #097cb4;
+}
+
+.menuContainer .container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.menuContainer .container .item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 40px;
+  width: 258px;
+  transition: all 0.3s;
+}
+.menuContainer .container .item .itemArrow img {
+  height: 10px;
+  width: 6px;
+}
+.menuContainer .container .item:hover {
+  background-color: #6fd5f5;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+  transition: all 0.3s;
+}
+.menuContainer .container .item div img {
+  width: 24px;
+  height: 24px;
+}
+.menuContainer .container .item div {
+  padding-left: 6px;
+}
+.menuContainer .container .item span {
+  color: black;
+  font-family: HNCthin;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 14px;
+  margin-left: 18px;
+  width: 166px;
+}
 /* ---------------SIDEBAR--------------- */
 
 /* ---------------CONTENT--------------- */
 .content {
-  height: 100%;
   width: 100%;
   background-color: chartreuse;
 }
