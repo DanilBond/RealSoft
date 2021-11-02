@@ -29,7 +29,7 @@
 .main{
     display: flex;
     flex-direction: row;
-    background-color: red;
+    background-color: #F8F8FA;
 }
 /* ---------------MAIN--------------- */
 
@@ -135,7 +135,8 @@
 /* ---------------CONTENT--------------- */
 .content{
     width: 100%;
-    background-color: chartreuse;
+    height: 100%;
+    background-color:#F8F8FA;
 }
 /* ---------------CONTENT--------------- */
 
@@ -146,3 +147,17 @@
     background-color: chocolate;
 }
 /* ---------------NAVBAR--------------- */
+
+/* window */
+
+.window{
+    width: 95%;
+    background-color: #fff;
+    height: 880px;
+    margin: 21px auto auto;
+    border-radius: 8px;
+    border: 0.5px gray;
+    resize: vertical;
+    resize: horizontal;
+    overflow: auto;
+}
