@@ -24,6 +24,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: HNCroman;
+    
+}
+body{
+    overflow: hidden;
 }
 /* ---------------MAIN--------------- */
 .main{
@@ -35,46 +39,51 @@
 
 /* ---------------SIDEBAR--------------- */
 .sideBar{
-    min-width: 320px;
+    height: 5000px;
+    
+    min-width: 239px;
     background-color: white;
     box-shadow: 1px 0px 10px grey;
     z-index: 0;
 }
-.sideBar .logoContainer img{
-    width: 154px;
-    height: 75px;
-    margin-left: 27px;
+.sideBar .logoContainer .logoFull{
+    width: 112px;
+    height: 55px;
+    margin-left: 20px;
     margin-top: 7px;
 }
+.sideBar .logoContainer .logoSmall{
+    display: none;
+}
 .sideBar .timeAndThemesContainer{
-    width: 248px;
-    margin-left: 36px;
-    margin-top: 35px;
+    width: 185px;
+    margin-left: 28px;
+    margin-top: 18px;
     display: flex;
     align-items: center;
     border-bottom:  1px solid #8B949F;
     
 }
 .sideBar .timeAndThemesContainer div img {
-    width: 18px;
-    height: 18px;
+    width: 14px;
+    height: 14px;
 }
 .sideBar .timeAndThemesContainer div {
-    margin-right: 22px;
-    height: 50px;
+    margin-right: 14px;
+    height: 36px;
 }
 .sideBar .timeAndThemesContainer span{
-    margin-right: 84px;
+    margin-right: 62px;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 17px;
     line-height: 22px;
     text-transform: uppercase;
-    height: 50px;
+    height: 36px;
 }
 .menuContainer{
-    width: 258.5px;
-    margin-left: 21.5px;
-    margin-top: 33px;
+    width: 210px;
+    margin-left: 15px;
+    margin-top: 25px;
 }
 .menuContainer span{
     margin-left: 13px;
@@ -82,7 +91,7 @@
     font-family: HNCroman;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 16px;
     color: #097CB4;
 }
@@ -90,20 +99,21 @@
 .menuContainer .container{
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
-    
+    margin-top: 10px;
+    margin-left: 2px;
 }
 .menuContainer .container .item{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 40px;
-    width: 258px;
+    height: 30px;
+    width: 220px;
     transition: all .3s;
 }
 .menuContainer .container .item .itemArrow img{
-    height: 10px;
-    width: 6px;
+    height: 7px;
+    width: 4px;
+    margin-right: 35px;
 }
 .menuContainer .container .item:hover{
     background-color: #6FD5F5;
@@ -115,8 +125,8 @@
     transition: all .3s;
 }
 .menuContainer .container .item div img{
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
 }
 .menuContainer .container .item div{
     padding-left: 6px;
@@ -125,9 +135,9 @@
     color: black;
     font-family: HNCthin;
     font-weight: 800;
-    font-size: 14px;
+    font-size: 11px;
     line-height: 14px;
-    margin-left: 18px;
+    margin-left: 16px;
     width: 166px;
 }
 /* ---------------SIDEBAR--------------- */
@@ -148,16 +158,62 @@
 }
 /* ---------------NAVBAR--------------- */
 
-/* window */
 
-.window{
-    width: 95%;
-    background-color: #fff;
-    height: 880px;
-    margin: 21px auto auto;
-    border-radius: 8px;
-    border: 0.5px gray;
-    resize: vertical;
-    resize: horizontal;
-    overflow: auto;
+/* ---------------MEDIA---------------- */
+@media only screen and (max-width: 800px) {
+    .sideBar{
+        min-width: 76px;
+        max-width: 76px;
+    }
+    #logoF{
+        display: none;
+    }
+    #logoS{
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin-left: 14px;
+        margin-top:17px;
+    }
+    #timer{
+        display: none;
+    }
+    .sideBar .timeAndThemesContainer div {
+        display: none;
+    }
+    .sideBar .timeAndThemesContainer {
+        width: 20px;
+        margin-left: 22.5px;
+        margin-top: 40px;
+    }
+    .menuContainer{
+        width: 60px;
+        margin-left: 16px;
+    }
+    .menuContainer .menuContainerTitle{
+        display: block;
+        font-size: 0;
+        width: 8px;
+        height: 8px;
+        background: #097CB4;
+        display: block;
+        border-radius: 50%;
+    }
+    .menuContainer .container .item span{
+        font-size: 0;
+    }
+    .menuContainer .container .item{
+        width: 36px;
+        height: 32px;
+    }
+    .menuContainer .container .item div{
+        margin-right: -5px;
+    }
+    .menuContainer .container .item:hover{
+        background-color: #6FD5F5;
+        border-radius: 50%;
+    
+        transition: all .3s;
+    }
 }
+/* ---------------MEDIA---------------- */
