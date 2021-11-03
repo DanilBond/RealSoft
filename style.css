@@ -28,6 +28,9 @@
 body {
   overflow: hidden;
 }
+p {
+  margin: 0 !important;
+}
 /* ---------------MAIN--------------- */
 .main {
   display: flex;
@@ -366,6 +369,11 @@ body {
   right: 0px;
   height: 40px;
   cursor: pointer;
+}
+
+.dropdown-toggle::after {
+  content: "";
+  display: none;
 }
 
 .status {
