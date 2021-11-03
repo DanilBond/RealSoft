@@ -254,6 +254,7 @@ body {
   align-items: center;
   padding: 10px;
   margin-left: 20px;
+  flex-wrap: wrap;
 }
 
 .window__left {
@@ -339,6 +340,86 @@ body {
   border-radius: 25px;
   display: flex;
   justify-content: space-between;
+  padding: 13px 18px 11px 18px;
+}
+
+.window__search {
+  position: relative;
+  margin-left: 20px;
+}
+
+.window__search input {
+  background: #f8f8fa;
+  border: 1px solid rgba(67, 79, 99, 0.2);
+  box-sizing: border-box;
+  border-radius: 25px;
+  width: 266px;
+  height: 40px;
+  padding-left: 15px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.window__search img {
+  position: absolute;
+  right: 0px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.status {
+  display: flex;
+  background: #f8f8fa;
+  border-top: 1px solid rgba(67, 79, 99, 0.2);
+  border-bottom: 1px solid rgba(67, 79, 99, 0.2);
+  height: 42px;
+  margin-right: 20px;
+  margin-left: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.status__checkbox {
+  margin-left: 20px;
+}
+
+.status__checkbox input {
+  border: 1.5px solid rgba(67, 79, 99, 0.2);
+  border-radius: 3px;
+  width: 20px;
+  height: 20px;
+}
+
+.status__status {
+}
+
+.status__no {
+}
+.status__per {
+}
+.status__ish {
+}
+.status__post {
+}
+.status__corr {
+}
+.status__short {
+  margin-right: 50px;
+}
+
+.status__komu {
+  margin-right: 100px;
+}
+
+.accordion {
+  margin: 0 20px;
+}
+
+.accordion-item {
+  border: none;
+  border-top: 1px solid rgba(67, 79, 99, 0.2);
+  border-bottom: 1px solid rgba(67, 79, 99, 0.2);
 }
 
 /* ---------------WINDOW--------------- */
