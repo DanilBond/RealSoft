@@ -239,22 +239,39 @@
                         <div class="window__registration">
                             <div class="window__left">
                                 <p class="disabled">Не выбрано</p>
-                                <div class="window__action-btn">
+                                <div class="window__action-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     <p class="window__action-text disabled">
                                         ДЕЙСТВИЕ
                                     </p>
                                     <img src="./images/dropdown.svg" alt="" />
                                 </div>
-                                <div class="window__sort-btn">
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
+
+
+                                <div class="window__sort-btn dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                                     <p class="blue">ПО НОМЕРУ РЕГИСТРАЦИИ</p>
                                     <img src="./images/dropdown.svg" alt="" />
                                 </div>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
                             </div>
                             <div class="window__right">
-                                <div class="window__registration-btn">
+                                <div class="window__registration-btn dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
                                     <img src="./images/plus.svg" alt="plus" />
                                     <p class="blue">РЕГИСТРАЦИЯ</p>
                                 </div>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
                                 <div class="window__search">
                                     <input
                                         type="text"
