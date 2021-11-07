@@ -493,21 +493,18 @@ p {
 }
 
 .accordianIn {
-  background-color: #f8f8fa !important;
   border-radius: 0 !important;
   padding-left: 25px !important;
   border-top: 1px solid rgba(67, 79, 99, 0.2) !important;
   border-bottom: 1px solid rgba(67, 79, 99, 0.2) !important;
 }
 .accordianIn2 {
-  background-color: #fff !important;
   border-radius: 0 !important;
   padding-left: 50px !important;
   border-top: 1px solid rgba(67, 79, 99, 0.2) !important;
   border-bottom: 1px solid rgba(67, 79, 99, 0.2) !important;
 }
 .accordianIn3 {
-  background-color: #f8f8fa !important;
   border-radius: 0 !important;
   height: 60px;
   margin: 0 20px;
