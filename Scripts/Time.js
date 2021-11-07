@@ -11,4 +11,10 @@
         }, 10000);
     }
 
+    $("div.accordian").accordion({
+        autoHeight: false,
+        collapsible: true,
+        active: false,
     
+    
+    });
