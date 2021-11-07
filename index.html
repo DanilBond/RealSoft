@@ -24,7 +24,18 @@
                 <div><img src="./images/planet.png" alt="planet" /></div>
                 <div><img src="./images/size.png" alt="size" /></div>
             </div>
-
+            <div class="mainContainer">
+                <div class="parcerContainer pcClosed">
+                    <span class="pcTitle">Делопроизводство</span>
+                    <div class="pcItem">Входящие документы</div>
+                    <div class="pcItem">Исходящие документы</div>
+                    <div class="pcItem">Прошлогодние базы</div>
+                    <div class="pcItem">Отчет по входящим</div>
+                    <div class="pcItem">Отчет по исходящим</div>
+                    <div class="pcItem">Отчет по исходящим</div>
+                    <div class="pcItem">Конфликтные</div>
+                    <div class="pcItem">Корзина</div>
+                </div>
             <div class="menuContainer">
                 <span class="menuContainerTitle">МЕНЮ</span>
                 <div class="container">
@@ -45,7 +56,7 @@
                         </div>
                     </div>
 
-                    <div class="item">
+                    <div class="item" onclick="SetSideBarSmall()">
                         <div class="imgContainer">
                             <img src="./images/DOCX.png" alt="" />
                         </div>
@@ -168,6 +179,10 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        
+
         </div>
         <div class="content">
             <div class="navBar">
@@ -358,6 +373,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script src="./Scripts/Time.js"></script>
+    <script src="./Scripts/SideBarController.js"></script>
 </body>
 
 </html>

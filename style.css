@@ -42,11 +42,7 @@ p {
 .main {
     display: flex;
     flex-direction: row;
-<<<<<<< HEAD
     background-color: #F8F8FA;
-=======
-    background-color: red;
->>>>>>> amantai
 }
 
 /* ---------------MAIN--------------- */
@@ -122,6 +118,7 @@ p {
     flex-direction: column;
     margin-top: 10px;
     margin-left: 2px;
+    padding: 0;
 }
 
 .menuContainer .container .item {
@@ -506,7 +503,52 @@ button:not(.collapsed)::before {
 
 /* ---------------WINDOW--------------- */
 
-
+.parcerContainer{
+    background-color:white;
+    z-index: 1;
+    width: 239px;
+    height: 100%;
+    position: fixed;
+    /* padding-left: 30px; */
+}
+.pcItem{
+    color: black;
+    font-family: HNCthin;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 14px;
+    height: 30px;
+    width: 166px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+.pcItem:hover{
+    background-color: #6fd5f5;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.pcOpen{
+    left: 0%;
+    transition: all .3s;
+}
+.pcClosed{
+    left: -100%;
+    transition: all .3s;
+}
+.pcTitle{
+    font-family: HNCroman;
+    color: #097CB4;
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 14px;
+    display: block;
+    margin-left: 30px;
+}
 /* ---------------MEDIA---------------- */
 @media only screen and (max-width: 800px) {
     .sideBar {
