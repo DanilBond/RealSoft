@@ -41,3 +41,9 @@ $('.accordianIn3').click(
         $('.window-absolute ').toggleClass('active');
     }
   );
+
+  $('.window__images').click(
+    function() {
+        $('.window-absolute ').toggleClass('active');
+    }
+  );
