@@ -441,7 +441,8 @@ p {
 }
 
 .scroll_image {
-  width: 955px;
+  width: 1002px;
+  background: #f8f8fa;
   height: 722px;
 }
 .scroll_img {
@@ -449,8 +450,7 @@ p {
   height: 722px;
 }
 .scroll_flex {
-  display: flex;
-  justify-content: space-around;
+  display: block;
 }
 .scroll_image {
   display: none;
@@ -460,7 +460,7 @@ p {
 }
 .status {
   max-width: 100%;
-  /* min-width: 1484px; */
+  min-width: 1484px;
   display: flex;
   background: #f8f8fa;
   border-top: 1px solid rgba(67, 79, 99, 0.2);
@@ -802,10 +802,10 @@ p {
 .scroll.active {
   overflow: auto;
   max-width: 417px;
-  height: 522px;
+  height: 722px;
 }
 #faqs-container {
-  /* min-width: 1484px; */
+  min-width: 1484px;
   max-width: 100%;
 }
 /* ---------------MEDIA---------------- */
@@ -847,7 +847,7 @@ p {
 }
 .accordianIn3 {
   max-width: 100%;
-  /* min-width: 1484px; */
+  min-width: 1484px;
   border-radius: 0 !important;
   height: 60px;
   margin: 0 20px;
@@ -947,12 +947,17 @@ p {
   margin-right: 10px;
   transform: rotateY(180deg);
 }
+.scroll_flex.active {
+  display: flex;
+  justify-content: space-around;
+}
 /* ---------------MEDIA---------------- */
 @media only screen and (max-width: 1412px) {
   .window__right {
     margin-top: 15px;
   }
 }
+
 @media only screen and (max-width: 800px) {
   .sideBar {
     min-width: 76px;
