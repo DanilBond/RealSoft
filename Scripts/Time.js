@@ -29,3 +29,9 @@ $('.accordianIn3').click(
         $('.scroll_image').toggleClass('active');
     }
   );
+
+  $('.accordianIn3').click(
+    function() {
+        $('.scroll_flex').toggleClass('active');
+    }
+  );

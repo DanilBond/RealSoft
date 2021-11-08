@@ -423,7 +423,8 @@ p {
 }
 
 .scroll_image{
-  width: 955px;
+  width: 1002px;
+  background: #F8F8FA;
   height: 722px;
 }
 .scroll_img{
@@ -431,8 +432,7 @@ p {
   height: 722px;
 }
 .scroll_flex{
-  display: flex;
-  justify-content: space-around;
+  display: block;
 }
 .scroll_image{
   display: none;
@@ -929,12 +929,17 @@ p {
   margin-right: 10px;
   transform: rotateY(180deg);
 }
+.scroll_flex.active{
+  display: flex;
+  justify-content: space-around;
+}
 /* ---------------MEDIA---------------- */
 @media only screen and (max-width: 1412px) {
   .window__right {
     margin-top: 15px;
   }
 }
+
 @media only screen and (max-width: 800px) {
   .sideBar {
     min-width: 76px;
