@@ -2,1075 +2,1529 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
 </head>
 
 <body>
-    <div class="main">
-        <div class="sideBar">
-            <div class="logoContainer">
-                <img src="./images/LogoFull.png" alt="logo" class="logoFull" id="logoF" />
-                <img src="./images/LogoSmall.png" alt="logo" class="logoSmall" id="logoS" />
-            </div>
-            <div class="timeAndThemesContainer">
-                <span id="timer">12:23</span>
-                <div><img src="./images/sun.png" alt="sun" /></div>
-                <div><img src="./images/planet.png" alt="planet" /></div>
-                <div><img src="./images/size.png" alt="size" /></div>
-            </div>
-            <div class="mainContainer">
-                <div class="parcerContainer pcClosed">
-                    <span onclick="SetSideBarSmall()" class="pcTitle"><div><img src="./images/Arrow.png" alt=""></div>Делопроизводство</span>
-                    <div class="pcItem">Входящие документы</div>
-                    <div class="pcItem">Исходящие документы</div>
-                    <div class="pcItem">Прошлогодние базы</div>
-                    <div class="pcItem">Отчет по входящим</div>
-                    <div class="pcItem">Отчет по исходящим</div>
-                    <div class="pcItem">Отчет по исходящим</div>
-                    <div class="pcItem">Конфликтные</div>
-                    <div class="pcItem">Корзина</div>
-                </div>
-            <div class="menuContainer">
-                <span class="menuContainerTitle">МЕНЮ</span>
-                <div class="container">
-                    <div class="item">
-                        <div class="imgContainer">
-                            <img src="./images/Desktop.png" alt="" />
-                        </div>
-                        <span>Рабочий стол</span>
-                    </div>
-
-                    <div class="item">
-                        <div class="imgContainer">
-                            <img src="./images/ID.png" alt="" />
-                        </div>
-                        <span>Структура АО КТК</span>
-                        <div class="itemArrow">
-                            <img src="./images/Arrow.png" alt="" />
-                        </div>
-                    </div>
-
-                    <div class="item" onclick="SetSideBarSmall()">
-                        <div class="imgContainer">
-                            <img src="./images/DOCX.png" alt="" />
-                        </div>
-                        
-                        <span>Делопроизводство</span>
-                        <div class="itemArrow">
-                            <img src="./images/Arrow.png" alt="" />
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="imgContainer">
-                            <img src="./images/Calculator.png" alt="" />
-                        </div>
-                        <span>Фин-ОЦО</span>
-                        <div class="itemArrow">
-                            <img src="./images/Arrow.png" alt="" />
-                        </div>
-                    </div>
-                </div>
+  <div class="main">
+    <div class="sideBar">
+      <div class="logoContainer">
+        <img src="./images/LogoFull.png" alt="logo" class="logoFull" id="logoF" />
+        <img src="./images/LogoSmall.png" alt="logo" class="logoSmall" id="logoS" />
+      </div>
+      <div class="timeAndThemesContainer">
+        <span id="timer">12:23</span>
+        <div><img src="./images/sun.png" alt="sun" /></div>
+        <div><img src="./images/planet.png" alt="planet" /></div>
+        <div><img src="./images/size.png" alt="size" /></div>
+      </div>
+      <div class="mainContainer">
+        <div class="parcerContainer pcClosed">
+          <span onclick="SetSideBarSmall()" class="pcTitle">
+            <div><img src="./images/Arrow.png" alt=""></div>Делопроизводство
+          </span>
+          <div class="pcItem">Входящие документы</div>
+          <div class="pcItem">Исходящие документы</div>
+          <div class="pcItem">Прошлогодние базы</div>
+          <div class="pcItem">Отчет по входящим</div>
+          <div class="pcItem">Отчет по исходящим</div>
+          <div class="pcItem">Отчет по исходящим</div>
+          <div class="pcItem">Конфликтные</div>
+          <div class="pcItem">Корзина</div>
+        </div>
+        <div class="menuContainer">
+          <span class="menuContainerTitle">МЕНЮ</span>
+          <div class="container">
+            <div class="item">
+              <div class="imgContainer">
+                <img src="./images/Desktop.png" alt="" />
+              </div>
+              <span>Рабочий стол</span>
             </div>
 
-            <div class="menuContainer">
-                <span class="menuContainerTitle">ЛИЧНЫЙ КАБИНЕТ</span>
-                <div class="container">
-                    <div class="item">
-                        <div class="imgContainer">
-                            <img src="./images/Profile.png" alt="" />
-                        </div>
-                        <span>Профиль</span>
-                    </div>
-
-                    <div class="item">
-                        <div class="imgContainer">
-                            <img src="./images/Mail.png" alt="" />
-                        </div>
-                        <span>Почта</span>
-                        <div class="itemArrow">
-                            <img src="./images/Arrow.png" alt="" />
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="imgContainer">
-                            <img src="./images/Calendar.png" alt="" />
-                        </div>
-                        <span>Календарь</span>
-                        <div class="itemArrow">
-                            <img src="./images/Arrow.png" alt="" />
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="imgContainer">
-                            <img src="./images/Calculator.png" alt="" />
-                        </div>
-                        <span>Счёт</span>
-                    </div>
-                </div>
+            <div class="item">
+              <div class="imgContainer">
+                <img src="./images/ID.png" alt="" />
+              </div>
+              <span>Структура АО КТК</span>
+              <div class="itemArrow">
+                <img src="./images/Arrow.png" alt="" />
+              </div>
             </div>
 
-            <div class="menuContainer">
-                <span class="menuContainerTitle">СПРАВОЧНИКИ</span>
-                <div class="container">
-                    <div class="item">
-                        <div class="imgContainer">
-                            <img src="./images/KeyAndS.png" alt="images" />
-                        </div>
-                        <span>Инструменты СЭД</span>
-                        <div class="itemArrow">
-                            <img src="./images/Arrow.png" alt="images" />
-                        </div>
-                    </div>
+            <div class="item" onclick="SetSideBarSmall()">
+              <div class="imgContainer">
+                <img src="./images/DOCX.png" alt="" />
+              </div>
 
-                    <div class="item">
-                        <div class="imgContainer">
-                            <img src="./images/Repair.png" alt="images" />
-                        </div>
-                        <span>Специальные плагины</span>
-                        <div class="itemArrow">
-                            <img src="./images/Arrow.png" alt="images" />
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="imgContainer">
-                            <img src="./images/Graphy.png" alt="images" />
-                        </div>
-                        <span>Графики</span>
-                    </div>
-
-                    <div class="item">
-                        <div class="imgContainer">
-                            <img src="./images/Curve.png" alt="images" />
-                        </div>
-                        <span>Таблицы</span>
-                    </div>
-
-                    <div class="item">
-                        <div class="imgContainer">
-                            <img src="./images/UI.png" alt="images" />
-                        </div>
-                        <span>UI элементы</span>
-                        <div class="itemArrow">
-                            <img src="./images/Arrow.png" alt="images" />
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="imgContainer">
-                            <img src="./images/Pen.png" alt="images" />
-                        </div>
-                        <span>Формы</span>
-                    </div>
-
-                    <div class="item">
-                        <div class="imgContainer">
-                            <img src="./images/Arrowa.png" alt="images" />
-                        </div>
-                        <span>Параметры сетки</span>
-                    </div>
-                </div>
+              <span>Делопроизводство</span>
+              <div class="itemArrow">
+                <img src="./images/Arrow.png" alt="" />
+              </div>
             </div>
+
+            <div class="item">
+              <div class="imgContainer">
+                <img src="./images/Calculator.png" alt="" />
+              </div>
+              <span>Фин-ОЦО</span>
+              <div class="itemArrow">
+                <img src="./images/Arrow.png" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
 
-        
-
-        </div>
-        <div class="content">
-            <div class="navBar">
-                <div class="navbarWrapper">
-                    <div class="navbarLeft">
-                        <div>
-                            <img src="./images/navBurgerBtn.png" alt="burger" />
-                        </div>
-
-                        <input type="search" placeholder="Общий поиск" />
-                        <img class="searchImg" src="./images/navSearchBtn.png" alt="images" />
-                    </div>
-                    <div class="navbarRight">
-                        <div class="navbarRightBtns">
-                            <img src="./images/navbarMail.png" alt="mail" />
-                            <img src="./images/navbarNotif.png" alt="notifications" />
-                            <img src="./images/navbarDone.png" alt="done" />
-                        </div>
-                        <div class="navbarRightProfile">
-                            <img src="./images/navbarProfile.png" alt="images" />
-                            <div>
-                                <p class="navbarProfileTitle">Генеральный директор</p>
-                                <p class="navbarProfileText">Фамилия И. О.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="menuContainer">
+          <span class="menuContainerTitle">ЛИЧНЫЙ КАБИНЕТ</span>
+          <div class="container">
+            <div class="item">
+              <div class="imgContainer">
+                <img src="./images/Profile.png" alt="" />
+              </div>
+              <span>Профиль</span>
             </div>
-            <div class="content">
 
-                <div class="content__wrapper">
-                    <div class="window">
-                        <nav class="window__nav">
-                            <div class="window__routes">
-                                Делопроизводство / Входящие документы
-                                <span>/ Общая корреспонденция</span>
-                            </div>
-                            <div class="window__icons">
-                                <img src="./images/edit.svg" alt="edit" class="window__images" />
-                                <img src="./images/line.svg" alt="line" class="window__images" />
-                                <img src="./images/square.svg" alt="square" class="window__images" />
-                            </div>
-                        </nav>
-                        <hr class="window__hr" />
-                        <div class="window__registration">
-                            <div class="window__left">
-                                <p class="disabled">Не выбрано</p>
-                                <div class="window__action-btn dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <p class="window__action-text disabled">
-                                        ДЕЙСТВИЕ
-                                    </p>
-                                    <img src="./images/dropdown.svg" alt="" />
-                                </div>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-
-
-                                <div class="window__sort-btn dropdown-toggle" type="button" id="dropdownMenuButton2"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <p class="blue">ПО НОМЕРУ РЕГИСТРАЦИИ</p>
-                                    <img src="./images/dropdown.svg" alt="" />
-                                </div>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                            <div class="window__right">
-                                <div class="window__registration-btn dropdown-toggle" type="button"
-                                    id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="./images/plus.svg" alt="plus" />
-                                    <p class="blue">РЕГИСТРАЦИЯ</p>
-                                </div>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                                <div class="window__search">
-                                    <input type="text" placeholder="Найти документ" />
-                                    <img src="./images/search.svg" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="status">
-                            <div class="status__checkbox">
-                                <input type="checkbox" name="" id="" />
-                            </div>
-                            <div class="status__status">Статус</div>
-                            <div class="status__no">Исх. №</div>
-                            <div class="status__per">Per. №</div>
-                            <div class="status__ish">
-                                Иходная <br />
-                                дата
-                            </div>
-                            <div class="status__post">
-                                Дата <br />
-                                поуступления
-                            </div>
-                            <div class="status__corr">Корреспондент</div>
-                            <div class="status__short">Краткое содержание</div>
-                            <div class="status__komu">Кому</div>
-                        </div>
-
-
-                        <div id="faqs-container" class="accordian">
-                            <h3 class="ok"><a href="#">2020</a></h3>
-
-                            <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
-                                <h3 class="ok accordianIn"><a class=""href="#">Апрель</a></h3>
-                                <div class="accordian1vl">
-                                  <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
-                                    <h3 class="ok accordianIn2"><a class=""href="#">14.06.2021</a></h3>
-                                    <div class="accordian1vl">
-                                      <div class="accordianIn3">
-                                        <div class="accordian_checkbox">
-                                          <input type="checkbox" name="" id="" />
-                                        </div>
-                                        <img src="./images/accordian__status.png">
-                                        <p>0064</p>
-                                        <p>А-15-Б</p>
-                                        <p>16.02.2021</p>
-                                        <p>15.06.2021</p>
-                                        <img src="./images/accordian__p.png">
-                                        <div>
-                                          <p class="in3title">"ABS"</p>
-                                          <p class="in3bottomText">example@email.com</p>
-                                        </div>
-                                        <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                        <p>Генеральный директор</p>
-                                      </div>
-                                      <div class="accordianIn3">
-                                        <div class="accordian_checkbox">
-                                          <input type="checkbox" name="" id="" />
-                                        </div>
-                                        <img src="./images/accordian__status.png">
-                                        <p>0064</p>
-                                        <p>А-15-Б</p>
-                                        <p>16.02.2021</p>
-                                        <p>15.06.2021</p>
-                                        <img src="./images/accordian__p.png">
-                                        <div>
-                                          <p class="in3title">"ABS"</p>
-                                          <p class="in3bottomText">example@email.com</p>
-                                        </div>
-                                        <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                        <p>Генеральный директор</p>
-                                      </div>
-                                    </div>
-                                    
-                                  </div>
-                                  <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
-                                    <h3 class="ok accordianIn2"><a class=""href="#">15.06.2021</a></h3>
-                                    <div class="accordian1vl">
-                                      <div class="accordianIn3">
-                                        <div class="accordian_checkbox">
-                                          <input type="checkbox" name="" id="" />
-                                        </div>
-                                        <img src="./images/accordian__status.png">
-                                        <p>0064</p>
-                                        <p>А-15-Б</p>
-                                        <p>16.02.2021</p>
-                                        <p>15.06.2021</p>
-                                        <img src="./images/accordian__p.png">
-                                        <div>
-                                          <p class="in3title">"ABS"</p>
-                                          <p class="in3bottomText">example@email.com</p>
-                                        </div>
-                                        <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                        <p>Генеральный директор</p>
-                                      </div>
-                                      <div class="accordianIn3">
-                                        <div class="accordian_checkbox">
-                                          <input type="checkbox" name="" id="" />
-                                        </div>
-                                        <img src="./images/accordian__status.png">
-                                        <p>0064</p>
-                                        <p>А-15-Б</p>
-                                        <p>16.02.2021</p>
-                                        <p>15.06.2021</p>
-                                        <img src="./images/accordian__p.png">
-                                        <div>
-                                          <p class="in3title">"ABS"</p>
-                                          <p class="in3bottomText">example@email.com</p>
-                                        </div>
-                                        <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                        <p>Генеральный директор</p>
-                                      </div>
-                                    </div>
-                                    
-                                  </div>
-                                  <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
-                                    <h3 class="ok accordianIn2"><a class=""href="#">16.06.2021</a></h3>
-                                    <div class="accordian1vl">
-                                      <div class="accordianIn3">
-                                        <div class="accordian_checkbox">
-                                          <input type="checkbox" name="" id="" />
-                                        </div>
-                                        <img src="./images/accordian__status.png">
-                                        <p>0064</p>
-                                        <p>А-15-Б</p>
-                                        <p>16.02.2021</p>
-                                        <p>15.06.2021</p>
-                                        <img src="./images/accordian__p.png">
-                                        <div>
-                                          <p class="in3title">"ABS"</p>
-                                          <p class="in3bottomText">example@email.com</p>
-                                        </div>
-                                        <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                        <p>Генеральный директор</p>
-                                      </div>
-                                      <div class="accordianIn3">
-                                        <div class="accordian_checkbox">
-                                          <input type="checkbox" name="" id="" />
-                                        </div>
-                                        <img src="./images/accordian__status.png">
-                                        <p>0064</p>
-                                        <p>А-15-Б</p>
-                                        <p>16.02.2021</p>
-                                        <p>15.06.2021</p>
-                                        <img src="./images/accordian__p.png">
-                                        <div>
-                                          <p class="in3title">"ABS"</p>
-                                          <p class="in3bottomText">example@email.com</p>
-                                        </div>
-                                        <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                        <p>Генеральный директор</p>
-                                      </div>
-                                    </div>
-                                    
-                                  </div>
-                                </div>
-                                <h3 class="ok accordianIn"><a href="#">Май</a></h3>
-                                <div class="accordian1vl">
-                                  <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
-                                    <h3 class="ok accordianIn2"><a class=""href="#">14.06.2021</a></h3>
-                                    <div class="accordian1vl">
-                                      <div class="accordianIn3">
-                                        <div class="accordian_checkbox">
-                                          <input type="checkbox" name="" id="" />
-                                        </div>
-                                        <img src="./images/accordian__status.png">
-                                        <p>0064</p>
-                                        <p>А-15-Б</p>
-                                        <p>16.02.2021</p>
-                                        <p>15.06.2021</p>
-                                        <img src="./images/accordian__p.png">
-                                        <div>
-                                          <p class="in3title">"ABS"</p>
-                                          <p class="in3bottomText">example@email.com</p>
-                                        </div>
-                                        <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                        <p>Генеральный директор</p>
-                                      </div>
-                                      <div class="accordianIn3">
-                                        <div class="accordian_checkbox">
-                                          <input type="checkbox" name="" id="" />
-                                        </div>
-                                        <img src="./images/accordian__status.png">
-                                        <p>0064</p>
-                                        <p>А-15-Б</p>
-                                        <p>16.02.2021</p>
-                                        <p>15.06.2021</p>
-                                        <img src="./images/accordian__p.png">
-                                        <div>
-                                          <p class="in3title">"ABS"</p>
-                                          <p class="in3bottomText">example@email.com</p>
-                                        </div>
-                                        <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                        <p>Генеральный директор</p>
-                                      </div>
-                                    </div>
-                                    
-                                  </div>
-                                  <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
-                                    <h3 class="ok accordianIn2"><a class=""href="#">15.06.2021</a></h3>
-                                    <div class="accordian1vl">
-                                      <div class="accordianIn3">
-                                        <div class="accordian_checkbox">
-                                          <input type="checkbox" name="" id="" />
-                                        </div>
-                                        <img src="./images/accordian__status.png">
-                                        <p>0064</p>
-                                        <p>А-15-Б</p>
-                                        <p>16.02.2021</p>
-                                        <p>15.06.2021</p>
-                                        <img src="./images/accordian__p.png">
-                                        <div>
-                                          <p class="in3title">"ABS"</p>
-                                          <p class="in3bottomText">example@email.com</p>
-                                        </div>
-                                        <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                        <p>Генеральный директор</p>
-                                      </div>
-                                      <div class="accordianIn3">
-                                        <div class="accordian_checkbox">
-                                          <input type="checkbox" name="" id="" />
-                                        </div>
-                                        <img src="./images/accordian__status.png">
-                                        <p>0064</p>
-                                        <p>А-15-Б</p>
-                                        <p>16.02.2021</p>
-                                        <p>15.06.2021</p>
-                                        <img src="./images/accordian__p.png">
-                                        <div>
-                                          <p class="in3title">"ABS"</p>
-                                          <p class="in3bottomText">example@email.com</p>
-                                        </div>
-                                        <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                        <p>Генеральный директор</p>
-                                      </div>
-                                    </div>
-                                    
-                                  </div>
-                                  <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
-                                    <h3 class="ok accordianIn2"><a class=""href="#">16.06.2021</a></h3>
-                                    <div class="accordian1vl">
-                                      <div class="accordianIn3">
-                                        <div class="accordian_checkbox">
-                                          <input type="checkbox" name="" id="" />
-                                        </div>
-                                        <img src="./images/accordian__status.png">
-                                        <p>0064</p>
-                                        <p>А-15-Б</p>
-                                        <p>16.02.2021</p>
-                                        <p>15.06.2021</p>
-                                        <img src="./images/accordian__p.png">
-                                        <div>
-                                          <p class="in3title">"ABS"</p>
-                                          <p class="in3bottomText">example@email.com</p>
-                                        </div>
-                                        <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                        <p>Генеральный директор</p>
-                                      </div>
-                                      <div class="accordianIn3">
-                                        <div class="accordian_checkbox">
-                                          <input type="checkbox" name="" id="" />
-                                        </div>
-                                        <img src="./images/accordian__status.png">
-                                        <p>0064</p>
-                                        <p>А-15-Б</p>
-                                        <p>16.02.2021</p>
-                                        <p>15.06.2021</p>
-                                        <img src="./images/accordian__p.png">
-                                        <div>
-                                          <p class="in3title">"ABS"</p>
-                                          <p class="in3bottomText">example@email.com</p>
-                                        </div>
-                                        <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                        <p>Генеральный директор</p>
-                                      </div>
-                                    </div>
-                                    
-                                  </div>
-                                </div>
-                                <h3 class="ok accordianIn"><a class=""href="#">Июнь</a></h3>
-                                <div class="accordian1vl">
-                                  <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
-                                    <h3 class="ok accordianIn2"><a class=""href="#">14.06.2021</a></h3>
-                                    <div class="accordian1vl">
-                                      <div class="accordianIn3">
-                                        <div class="accordian_checkbox">
-                                          <input type="checkbox" name="" id="" />
-                                        </div>
-                                        <img src="./images/accordian__status.png">
-                                        <p>0064</p>
-                                        <p>А-15-Б</p>
-                                        <p>16.02.2021</p>
-                                        <p>15.06.2021</p>
-                                        <img src="./images/accordian__p.png">
-                                        <div>
-                                          <p class="in3title">"ABS"</p>
-                                          <p class="in3bottomText">example@email.com</p>
-                                        </div>
-                                        <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                        <p>Генеральный директор</p>
-                                      </div>
-                                      <div class="accordianIn3">
-                                        <div class="accordian_checkbox">
-                                          <input type="checkbox" name="" id="" />
-                                        </div>
-                                        <img src="./images/accordian__status.png">
-                                        <p>0064</p>
-                                        <p>А-15-Б</p>
-                                        <p>16.02.2021</p>
-                                        <p>15.06.2021</p>
-                                        <img src="./images/accordian__p.png">
-                                        <div>
-                                          <p class="in3title">"ABS"</p>
-                                          <p class="in3bottomText">example@email.com</p>
-                                        </div>
-                                        <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                        <p>Генеральный директор</p>
-                                      </div>
-                                    </div>
-                                    
-                                  </div>
-                                  <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
-                                    <h3 class="ok accordianIn2"><a class=""href="#">15.06.2021</a></h3>
-                                    <div class="accordian1vl">
-                                      <div class="accordianIn3">
-                                        <div class="accordian_checkbox">
-                                          <input type="checkbox" name="" id="" />
-                                        </div>
-                                        <img src="./images/accordian__status.png">
-                                        <p>0064</p>
-                                        <p>А-15-Б</p>
-                                        <p>16.02.2021</p>
-                                        <p>15.06.2021</p>
-                                        <img src="./images/accordian__p.png">
-                                        <div>
-                                          <p class="in3title">"ABS"</p>
-                                          <p class="in3bottomText">example@email.com</p>
-                                        </div>
-                                        <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                        <p>Генеральный директор</p>
-                                      </div>
-                                      <div class="accordianIn3">
-                                        <div class="accordian_checkbox">
-                                          <input type="checkbox" name="" id="" />
-                                        </div>
-                                        <img src="./images/accordian__status.png">
-                                        <p>0064</p>
-                                        <p>А-15-Б</p>
-                                        <p>16.02.2021</p>
-                                        <p>15.06.2021</p>
-                                        <img src="./images/accordian__p.png">
-                                        <div>
-                                          <p class="in3title">"ABS"</p>
-                                          <p class="in3bottomText">example@email.com</p>
-                                        </div>
-                                        <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                        <p>Генеральный директор</p>
-                                      </div>
-                                    </div>
-                                    
-                                  </div>
-                                  <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
-                                    <h3 class="ok accordianIn2"><a class=""href="#">16.06.2021</a></h3>
-                                    <div class="accordian1vl">
-                                      <div class="accordianIn3">
-                                        <div class="accordian_checkbox">
-                                          <input type="checkbox" name="" id="" />
-                                        </div>
-                                        <img src="./images/accordian__status.png">
-                                        <p>0064</p>
-                                        <p>А-15-Б</p>
-                                        <p>16.02.2021</p>
-                                        <p>15.06.2021</p>
-                                        <img src="./images/accordian__p.png">
-                                        <div>
-                                          <p class="in3title">"ABS"</p>
-                                          <p class="in3bottomText">example@email.com</p>
-                                        </div>
-                                        <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                        <p>Генеральный директор</p>
-                                      </div>
-                                      <div class="accordianIn3">
-                                        <div class="accordian_checkbox">
-                                          <input type="checkbox" name="" id="" />
-                                        </div>
-                                        <img src="./images/accordian__status.png">
-                                        <p>0064</p>
-                                        <p>А-15-Б</p>
-                                        <p>16.02.2021</p>
-                                        <p>15.06.2021</p>
-                                        <img src="./images/accordian__p.png">
-                                        <div>
-                                          <p class="in3title">"ABS"</p>
-                                          <p class="in3bottomText">example@email.com</p>
-                                        </div>
-                                        <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                        <p>Генеральный директор</p>
-                                      </div>
-                                    </div>
-                                    
-                                  </div>
-                                </div>
-                                
-                            </div>
-                            <h3 class="ok"><a href="#">2021</a></h3>
-
-                            <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
-                              <h3 class="ok accordianIn"><a class=""href="#">Апрель</a></h3>
-                              <div class="accordian1vl">
-                                <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
-                                  <h3 class="ok accordianIn2"><a class=""href="#">14.06.2021</a></h3>
-                                  <div class="accordian1vl">
-                                    <div class="accordianIn3">
-                                      <div class="accordian_checkbox">
-                                        <input type="checkbox" name="" id="" />
-                                      </div>
-                                      <img src="./images/accordian__status.png">
-                                      <p>0064</p>
-                                      <p>А-15-Б</p>
-                                      <p>16.02.2021</p>
-                                      <p>15.06.2021</p>
-                                      <img src="./images/accordian__p.png">
-                                      <div>
-                                        <p class="in3title">"ABS"</p>
-                                        <p class="in3bottomText">example@email.com</p>
-                                      </div>
-                                      <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                      <p>Генеральный директор</p>
-                                    </div>
-                                    <div class="accordianIn3">
-                                      <div class="accordian_checkbox">
-                                        <input type="checkbox" name="" id="" />
-                                      </div>
-                                      <img src="./images/accordian__status.png">
-                                      <p>0064</p>
-                                      <p>А-15-Б</p>
-                                      <p>16.02.2021</p>
-                                      <p>15.06.2021</p>
-                                      <img src="./images/accordian__p.png">
-                                      <div>
-                                        <p class="in3title">"ABS"</p>
-                                        <p class="in3bottomText">example@email.com</p>
-                                      </div>
-                                      <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                      <p>Генеральный директор</p>
-                                    </div>
-                                  </div>
-                                  
-                                </div>
-                                <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
-                                  <h3 class="ok accordianIn2"><a class=""href="#">15.06.2021</a></h3>
-                                  <div class="accordian1vl">
-                                    <div class="accordianIn3">
-                                      <div class="accordian_checkbox">
-                                        <input type="checkbox" name="" id="" />
-                                      </div>
-                                      <img src="./images/accordian__status.png">
-                                      <p>0064</p>
-                                      <p>А-15-Б</p>
-                                      <p>16.02.2021</p>
-                                      <p>15.06.2021</p>
-                                      <img src="./images/accordian__p.png">
-                                      <div>
-                                        <p class="in3title">"ABS"</p>
-                                        <p class="in3bottomText">example@email.com</p>
-                                      </div>
-                                      <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                      <p>Генеральный директор</p>
-                                    </div>
-                                    <div class="accordianIn3">
-                                      <div class="accordian_checkbox">
-                                        <input type="checkbox" name="" id="" />
-                                      </div>
-                                      <img src="./images/accordian__status.png">
-                                      <p>0064</p>
-                                      <p>А-15-Б</p>
-                                      <p>16.02.2021</p>
-                                      <p>15.06.2021</p>
-                                      <img src="./images/accordian__p.png">
-                                      <div>
-                                        <p class="in3title">"ABS"</p>
-                                        <p class="in3bottomText">example@email.com</p>
-                                      </div>
-                                      <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                      <p>Генеральный директор</p>
-                                    </div>
-                                  </div>
-                                  
-                                </div>
-                                <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
-                                  <h3 class="ok accordianIn2"><a class=""href="#">16.06.2021</a></h3>
-                                  <div class="accordian1vl">
-                                    <div class="accordianIn3">
-                                      <div class="accordian_checkbox">
-                                        <input type="checkbox" name="" id="" />
-                                      </div>
-                                      <img src="./images/accordian__status.png">
-                                      <p>0064</p>
-                                      <p>А-15-Б</p>
-                                      <p>16.02.2021</p>
-                                      <p>15.06.2021</p>
-                                      <img src="./images/accordian__p.png">
-                                      <div>
-                                        <p class="in3title">"ABS"</p>
-                                        <p class="in3bottomText">example@email.com</p>
-                                      </div>
-                                      <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                      <p>Генеральный директор</p>
-                                    </div>
-                                    <div class="accordianIn3">
-                                      <div class="accordian_checkbox">
-                                        <input type="checkbox" name="" id="" />
-                                      </div>
-                                      <img src="./images/accordian__status.png">
-                                      <p>0064</p>
-                                      <p>А-15-Б</p>
-                                      <p>16.02.2021</p>
-                                      <p>15.06.2021</p>
-                                      <img src="./images/accordian__p.png">
-                                      <div>
-                                        <p class="in3title">"ABS"</p>
-                                        <p class="in3bottomText">example@email.com</p>
-                                      </div>
-                                      <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                      <p>Генеральный директор</p>
-                                    </div>
-                                  </div>
-                                  
-                                </div>
-                              </div>
-                                <h3 class="ok accordianIn"><a href="#">Май</a></h3>
-                                <div class="accordian1vl">
-                                  <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
-                                    <h3 class="ok accordianIn2"><a class=""href="#">14.06.2021</a></h3>
-                                    <div class="accordian1vl">
-                                      <div class="accordianIn3">
-                                        <div class="accordian_checkbox">
-                                          <input type="checkbox" name="" id="" />
-                                        </div>
-                                        <img src="./images/accordian__status.png">
-                                        <p>0064</p>
-                                        <p>А-15-Б</p>
-                                        <p>16.02.2021</p>
-                                        <p>15.06.2021</p>
-                                        <img src="./images/accordian__p.png">
-                                        <div>
-                                          <p class="in3title">"ABS"</p>
-                                          <p class="in3bottomText">example@email.com</p>
-                                        </div>
-                                        <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                        <p>Генеральный директор</p>
-                                      </div>
-                                      <div class="accordianIn3">
-                                        <div class="accordian_checkbox">
-                                          <input type="checkbox" name="" id="" />
-                                        </div>
-                                        <img src="./images/accordian__status.png">
-                                        <p>0064</p>
-                                        <p>А-15-Б</p>
-                                        <p>16.02.2021</p>
-                                        <p>15.06.2021</p>
-                                        <img src="./images/accordian__p.png">
-                                        <div>
-                                          <p class="in3title">"ABS"</p>
-                                          <p class="in3bottomText">example@email.com</p>
-                                        </div>
-                                        <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                        <p>Генеральный директор</p>
-                                      </div>
-                                    </div>
-                                    
-                                  </div>
-                                  <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
-                                    <h3 class="ok accordianIn2"><a class=""href="#">15.06.2021</a></h3>
-                                    <div class="accordian1vl">
-                                      <div class="accordianIn3">
-                                        <div class="accordian_checkbox">
-                                          <input type="checkbox" name="" id="" />
-                                        </div>
-                                        <img src="./images/accordian__status.png">
-                                        <p>0064</p>
-                                        <p>А-15-Б</p>
-                                        <p>16.02.2021</p>
-                                        <p>15.06.2021</p>
-                                        <img src="./images/accordian__p.png">
-                                        <div>
-                                          <p class="in3title">"ABS"</p>
-                                          <p class="in3bottomText">example@email.com</p>
-                                        </div>
-                                        <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                        <p>Генеральный директор</p>
-                                      </div>
-                                      <div class="accordianIn3">
-                                        <div class="accordian_checkbox">
-                                          <input type="checkbox" name="" id="" />
-                                        </div>
-                                        <img src="./images/accordian__status.png">
-                                        <p>0064</p>
-                                        <p>А-15-Б</p>
-                                        <p>16.02.2021</p>
-                                        <p>15.06.2021</p>
-                                        <img src="./images/accordian__p.png">
-                                        <div>
-                                          <p class="in3title">"ABS"</p>
-                                          <p class="in3bottomText">example@email.com</p>
-                                        </div>
-                                        <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                        <p>Генеральный директор</p>
-                                      </div>
-                                    </div>
-                                    
-                                  </div>
-                                  <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
-                                    <h3 class="ok accordianIn2"><a class=""href="#">16.06.2021</a></h3>
-                                    <div class="accordian1vl">
-                                      <div class="accordianIn3">
-                                        <div class="accordian_checkbox">
-                                          <input type="checkbox" name="" id="" />
-                                        </div>
-                                        <img src="./images/accordian__status.png">
-                                        <p>0064</p>
-                                        <p>А-15-Б</p>
-                                        <p>16.02.2021</p>
-                                        <p>15.06.2021</p>
-                                        <img src="./images/accordian__p.png">
-                                        <div>
-                                          <p class="in3title">"ABS"</p>
-                                          <p class="in3bottomText">example@email.com</p>
-                                        </div>
-                                        <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                        <p>Генеральный директор</p>
-                                      </div>
-                                      <div class="accordianIn3">
-                                        <div class="accordian_checkbox">
-                                          <input type="checkbox" name="" id="" />
-                                        </div>
-                                        <img src="./images/accordian__status.png">
-                                        <p>0064</p>
-                                        <p>А-15-Б</p>
-                                        <p>16.02.2021</p>
-                                        <p>15.06.2021</p>
-                                        <img src="./images/accordian__p.png">
-                                        <div>
-                                          <p class="in3title">"ABS"</p>
-                                          <p class="in3bottomText">example@email.com</p>
-                                        </div>
-                                        <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                        <p>Генеральный директор</p>
-                                      </div>
-                                    </div>
-                                    
-                                  </div>
-                                </div>
-                                <h3 class="ok accordianIn"><a class=""href="#">Июнь</a></h3>
-                                <div class="accordian1vl">
-                                  <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
-                                    <h3 class="ok accordianIn2"><a class=""href="#">14.06.2021</a></h3>
-                                    <div class="accordian1vl">
-                                      <div class="accordianIn3">
-                                        <div class="accordian_checkbox">
-                                          <input type="checkbox" name="" id="" />
-                                        </div>
-                                        <img src="./images/accordian__status.png">
-                                        <p>0064</p>
-                                        <p>А-15-Б</p>
-                                        <p>16.02.2021</p>
-                                        <p>15.06.2021</p>
-                                        <img src="./images/accordian__p.png">
-                                        <div>
-                                          <p class="in3title">"ABS"</p>
-                                          <p class="in3bottomText">example@email.com</p>
-                                        </div>
-                                        <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                        <p>Генеральный директор</p>
-                                      </div>
-                                      <div class="accordianIn3">
-                                        <div class="accordian_checkbox">
-                                          <input type="checkbox" name="" id="" />
-                                        </div>
-                                        <img src="./images/accordian__status.png">
-                                        <p>0064</p>
-                                        <p>А-15-Б</p>
-                                        <p>16.02.2021</p>
-                                        <p>15.06.2021</p>
-                                        <img src="./images/accordian__p.png">
-                                        <div>
-                                          <p class="in3title">"ABS"</p>
-                                          <p class="in3bottomText">example@email.com</p>
-                                        </div>
-                                        <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                        <p>Генеральный директор</p>
-                                      </div>
-                                    </div>
-                                    
-                                  </div>
-                                  <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
-                                    <h3 class="ok accordianIn2"><a class=""href="#">15.06.2021</a></h3>
-                                    <div class="accordian1vl">
-                                      <div class="accordianIn3">
-                                        <div class="accordian_checkbox">
-                                          <input type="checkbox" name="" id="" />
-                                        </div>
-                                        <img src="./images/accordian__status.png">
-                                        <p>0064</p>
-                                        <p>А-15-Б</p>
-                                        <p>16.02.2021</p>
-                                        <p>15.06.2021</p>
-                                        <img src="./images/accordian__p.png">
-                                        <div>
-                                          <p class="in3title">"ABS"</p>
-                                          <p class="in3bottomText">example@email.com</p>
-                                        </div>
-                                        <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                        <p>Генеральный директор</p>
-                                      </div>
-                                      <div class="accordianIn3">
-                                        <div class="accordian_checkbox">
-                                          <input type="checkbox" name="" id="" />
-                                        </div>
-                                        <img src="./images/accordian__status.png">
-                                        <p>0064</p>
-                                        <p>А-15-Б</p>
-                                        <p>16.02.2021</p>
-                                        <p>15.06.2021</p>
-                                        <img src="./images/accordian__p.png">
-                                        <div>
-                                          <p class="in3title">"ABS"</p>
-                                          <p class="in3bottomText">example@email.com</p>
-                                        </div>
-                                        <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                        <p>Генеральный директор</p>
-                                      </div>
-                                    </div>
-                                    
-                                  </div>
-                                  <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
-                                    <h3 class="ok accordianIn2"><a class=""href="#">16.06.2021</a></h3>
-                                    <div class="accordian1vl">
-                                      <div class="accordianIn3">
-                                        <div class="accordian_checkbox">
-                                          <input type="checkbox" name="" id="" />
-                                        </div>
-                                        <img src="./images/accordian__status.png">
-                                        <p>0064</p>
-                                        <p>А-15-Б</p>
-                                        <p>16.02.2021</p>
-                                        <p>15.06.2021</p>
-                                        <img src="./images/accordian__p.png">
-                                        <div>
-                                          <p class="in3title">"ABS"</p>
-                                          <p class="in3bottomText">example@email.com</p>
-                                        </div>
-                                        <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                        <p>Генеральный директор</p>
-                                      </div>
-                                      <div class="accordianIn3">
-                                        <div class="accordian_checkbox">
-                                          <input type="checkbox" name="" id="" />
-                                        </div>
-                                        <img src="./images/accordian__status.png">
-                                        <p>0064</p>
-                                        <p>А-15-Б</p>
-                                        <p>16.02.2021</p>
-                                        <p>15.06.2021</p>
-                                        <img src="./images/accordian__p.png">
-                                        <div>
-                                          <p class="in3title">"ABS"</p>
-                                          <p class="in3bottomText">example@email.com</p>
-                                        </div>
-                                        <p>Добрый день! Во вложении разместил документ, которы...</p>
-                                        <p>Генеральный директор</p>
-                                      </div>
-                                    </div>
-                                    
-                                  </div>
-                                </div>
-                              </div>
-                              
-                                
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+            <div class="item">
+              <div class="imgContainer">
+                <img src="./images/Mail.png" alt="" />
+              </div>
+              <span>Почта</span>
+              <div class="itemArrow">
+                <img src="./images/Arrow.png" alt="" />
+              </div>
             </div>
+
+            <div class="item">
+              <div class="imgContainer">
+                <img src="./images/Calendar.png" alt="" />
+              </div>
+              <span>Календарь</span>
+              <div class="itemArrow">
+                <img src="./images/Arrow.png" alt="" />
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="imgContainer">
+                <img src="./images/Calculator.png" alt="" />
+              </div>
+              <span>Счёт</span>
+            </div>
+          </div>
         </div>
 
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-     <!-- 1. Подключим библиотеку jQuery (без нее jQuery UI не будет работать) -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-    <!-- 2. Подключим jQuery UI -->
+        <div class="menuContainer">
+          <span class="menuContainerTitle">СПРАВОЧНИКИ</span>
+          <div class="container">
+            <div class="item">
+              <div class="imgContainer">
+                <img src="./images/KeyAndS.png" alt="images" />
+              </div>
+              <span>Инструменты СЭД</span>
+              <div class="itemArrow">
+                <img src="./images/Arrow.png" alt="images" />
+              </div>
+            </div>
 
-    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet"
-        type="text/css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-    <script src="./Scripts/Time.js"></script>
-    <script src="./Scripts/SideBarController.js"></script>
+            <div class="item">
+              <div class="imgContainer">
+                <img src="./images/Repair.png" alt="images" />
+              </div>
+              <span>Специальные плагины</span>
+              <div class="itemArrow">
+                <img src="./images/Arrow.png" alt="images" />
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="imgContainer">
+                <img src="./images/Graphy.png" alt="images" />
+              </div>
+              <span>Графики</span>
+            </div>
+
+            <div class="item">
+              <div class="imgContainer">
+                <img src="./images/Curve.png" alt="images" />
+              </div>
+              <span>Таблицы</span>
+            </div>
+
+            <div class="item">
+              <div class="imgContainer">
+                <img src="./images/UI.png" alt="images" />
+              </div>
+              <span>UI элементы</span>
+              <div class="itemArrow">
+                <img src="./images/Arrow.png" alt="images" />
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="imgContainer">
+                <img src="./images/Pen.png" alt="images" />
+              </div>
+              <span>Формы</span>
+            </div>
+
+            <div class="item">
+              <div class="imgContainer">
+                <img src="./images/Arrowa.png" alt="images" />
+              </div>
+              <span>Параметры сетки</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+    <div class="content">
+      <div class="navBar">
+        <div class="navbarWrapper">
+          <div class="navbarLeft">
+            <div>
+              <img src="./images/navBurgerBtn.png" alt="burger" />
+            </div>
+
+            <input type="search" placeholder="Общий поиск" />
+            <img class="searchImg" src="./images/navSearchBtn.png" alt="images" />
+          </div>
+          <div class="navbarRight">
+            <div class="navbarRightBtns">
+              <img src="./images/navbarMail.png" alt="mail" />
+              <img src="./images/navbarNotif.png" alt="notifications" />
+              <img src="./images/navbarDone.png" alt="done" />
+            </div>
+            <div class="navbarRightProfile">
+              <img src="./images/navbarProfile.png" alt="images" />
+              <div>
+                <p class="navbarProfileTitle">Генеральный директор</p>
+                <p class="navbarProfileText">Фамилия И. О.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+
+        <div class="content__wrapper">
+          <div class="window">
+            <nav class="window__nav">
+              <div class="window__routes">
+                Делопроизводство / Входящие документы
+                <span>/ Общая корреспонденция</span>
+              </div>
+              <div class="window__icons">
+                <img src="./images/edit.svg" alt="edit" class="window__images" />
+                <img src="./images/line.svg" alt="line" class="window__images" />
+                <img src="./images/square.svg" alt="square" class="window__images" />
+              </div>
+            </nav>
+            <hr class="window__hr" />
+            <div class="window__registration">
+              <div class="window__left">
+                <p class="disabled">Не выбрано</p>
+                <div class="window__action-btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <p class="window__action-text disabled">
+                    ДЕЙСТВИЕ
+                  </p>
+                  <img src="./images/dropdown.svg" alt="" />
+                </div>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+
+
+                <div class="window__sort-btn dropdown-toggle" type="button" id="dropdownMenuButton2"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <p class="blue">ПО НОМЕРУ РЕГИСТРАЦИИ</p>
+                  <img src="./images/dropdown.svg" alt="" />
+                </div>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+              <div class="window__right">
+                <div class="window__registration-btn dropdown-toggle" type="button" id="dropdownMenuButton3"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="./images/plus.svg" alt="plus" />
+                  <p class="blue">РЕГИСТРАЦИЯ</p>
+                </div>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+                <div class="window__search">
+                  <input type="text" placeholder="Найти документ" />
+                  <img src="./images/search.svg" alt="" />
+                </div>
+              </div>
+            </div>
+           <div class="scroll_flex">
+            <div class="scroll">
+              <div class="status">
+                <div class="status__checkbox">
+                  <input type="checkbox" name="" id="" />
+                </div>
+                <div class="status__status">Статус</div>
+                <div class="status__no">Исх. №</div>
+                <div class="status__per">Per. №</div>
+                <div class="status__ish">
+                  Иходная <br />
+                  дата
+                </div>
+                <div class="status__post">
+                  Дата <br />
+                  поуступления
+                </div>
+                <div class="status__corr">Корреспондент</div>
+                <div class="status__short">Краткое содержание</div>
+                <div class="status__komu">Кому</div>
+              </div>
+
+
+              <div id="faqs-container" class="accordian">
+                <h3 class="ok"><a href="#">2020</a></h3>
+
+                <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                  <h3 class="ok accordianIn"><a class="" href="#">Апрель</a></h3>
+                  <div class="accordian1vl">
+                    <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                      <h3 class="ok accordianIn2"><a class="" href="#">14.06.2021</a></h3>
+                      <div class="accordian1vl">
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                      <h3 class="ok accordianIn2"><a class="" href="#">15.06.2021</a></h3>
+                      <div class="accordian1vl">
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                      <h3 class="ok accordianIn2"><a class="" href="#">16.06.2021</a></h3>
+                      <div class="accordian1vl">
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <h3 class="ok accordianIn"><a href="#">Май</a></h3>
+                  <div class="accordian1vl">
+                    <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                      <h3 class="ok accordianIn2"><a class="" href="#">14.06.2021</a></h3>
+                      <div class="accordian1vl">
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                      <h3 class="ok accordianIn2"><a class="" href="#">15.06.2021</a></h3>
+                      <div class="accordian1vl">
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                      <h3 class="ok accordianIn2"><a class="" href="#">16.06.2021</a></h3>
+                      <div class="accordian1vl">
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <h3 class="ok accordianIn"><a class="" href="#">Июнь</a></h3>
+                  <div class="accordian1vl">
+                    <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                      <h3 class="ok accordianIn2"><a class="" href="#">14.06.2021</a></h3>
+                      <div class="accordian1vl">
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                      <h3 class="ok accordianIn2"><a class="" href="#">15.06.2021</a></h3>
+                      <div class="accordian1vl">
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                      <h3 class="ok accordianIn2"><a class="" href="#">16.06.2021</a></h3>
+                      <div class="accordian1vl">
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+                <h3 class="ok"><a href="#">2021</a></h3>
+
+                <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                  <h3 class="ok accordianIn"><a class="" href="#">Апрель</a></h3>
+                  <div class="accordian1vl">
+                    <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                      <h3 class="ok accordianIn2"><a class="" href="#">14.06.2021</a></h3>
+                      <div class="accordian1vl">
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                      <h3 class="ok accordianIn2"><a class="" href="#">15.06.2021</a></h3>
+                      <div class="accordian1vl">
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                      <h3 class="ok accordianIn2"><a class="" href="#">16.06.2021</a></h3>
+                      <div class="accordian1vl">
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <h3 class="ok accordianIn"><a href="#">Май</a></h3>
+                  <div class="accordian1vl">
+                    <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                      <h3 class="ok accordianIn2"><a class="" href="#">14.06.2021</a></h3>
+                      <div class="accordian1vl">
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                      <h3 class="ok accordianIn2"><a class="" href="#">15.06.2021</a></h3>
+                      <div class="accordian1vl">
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                      <h3 class="ok accordianIn2"><a class="" href="#">16.06.2021</a></h3>
+                      <div class="accordian1vl">
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <h3 class="ok accordianIn"><a class="" href="#">Июнь</a></h3>
+                  <div class="accordian1vl">
+                    <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                      <h3 class="ok accordianIn2"><a class="" href="#">14.06.2021</a></h3>
+                      <div class="accordian1vl">
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                      <h3 class="ok accordianIn2"><a class="" href="#">15.06.2021</a></h3>
+                      <div class="accordian1vl">
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                      <h3 class="ok accordianIn2"><a class="" href="#">16.06.2021</a></h3>
+                      <div class="accordian1vl">
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                        <div class="accordianIn3">
+                          <div class="accordian_checkbox">
+                            <input type="checkbox" name="" id="" />
+                          </div>
+                          <img src="./images/accordian__status.png">
+                          <p>0064</p>
+                          <p>А-15-Б</p>
+                          <p>16.02.2021</p>
+                          <p>15.06.2021</p>
+                          <img src="./images/accordian__p.png">
+                          <div>
+                            <p class="in3title">"ABS"</p>
+                            <p class="in3bottomText">example@email.com</p>
+                          </div>
+                          <p>Добрый день! Во вложении разместил документ, которы...</p>
+                          <p>Генеральный директор</p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+              
+            </div>
+            <div class="scroll_image">
+              <img class="scroll_img" src="./images/scroll.png" alt="ошибка при получении данных">
+            </div>
+           </div>
+          </div>
+        </div>
+        <div class="window window-absolute">
+          <nav class="window__nav">
+            <div class="window__routes">
+              2021 / Июль / 15.06.2021
+              <span> / "ABC"</span>
+            </div>
+            <div class="window__icons">
+              <img src="./images/edit.svg" alt="edit" class="window__images" />
+              <img src="./images/line.svg" alt="line" class="window__images" />
+              <img src="./images/square.svg" alt="square" class="window__images" />
+            </div>
+          </nav>
+          <hr class="window__hr" />
+          <div class="window__registration">
+            <div class="window__left">
+              <div class="window__action-btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <p class="window__action-text disabled">
+                  ДЕЙСТВИЯ
+                </p>
+                <img src="./images/dropdown.svg" alt="" />
+              </div>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a class="dropdown-item" href="#">Action</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+
+              <div class="window__open-btn window__btn">
+                <p class="blue">ОТКРЫТЬ</p>
+              </div>
+            </div>
+            <div class="window__right">
+              <img src="./images/printer.svg" alt="printer" class="window__image_left" />
+              <img src="./images/clip.svg" alt="slip" class="window__image_right" />
+            </div>
+          </div>
+          <hr class="document__hr" />
+          <div class="document">
+            <div class="document__left">
+              <div class="document__status">
+                <img src="./images/status.png" alt="status" width="18" height="18" />
+                <p class="green">Исполнено</p>
+              </div>
+              <div class="document__quote">
+                Разнообразный и богатый опыт дальнейшее развитие
+                различных форм деятельности в значительной
+                степени обуславливает создание системы обучения
+                кадров, соответствует насущным потребностям.
+              </div>
+              <div class="document__name">
+                <img src="./images/Word.png" alt="word" />
+                <p>Nazvanie_documenta111 sld_94.docs</p>
+              </div>
+              <div class="document__document">
+                <img src="https://s1.studylib.ru/store/data/004116215_1-0e9797592e6593d8a787eaa4bc118111.png" alt=""
+                  height="1130" />
+              </div>
+              <div class="document__description">
+                <div class="document__header">
+                  <div class="document__arrow">
+                    <i class="arrow-up"></i>
+                  </div>
+                  <p>
+                    Касательно курсов повышения квалификации
+                    “Основные принципы настройки ЦС ПА” в
+                    Новосибирском филиале ФГАОУ ДПО “ПЭИПК”
+                  </p>
+                </div>
+                <div class="document__body">
+                  <div class="document__row">
+                    <div class="document__progress">
+                      <img src="./images/lolipop.png" alt="" />
+                    </div>
+                    <div class="document__time">
+                      <p>30.11.2020 11:58:17</p>
+                      <p>30.11.2020 11:58:17</p>
+                    </div>
+                    <div class="document__stage">
+                      <p class="big">
+                        Этап: Подпись (Да - Шакенов
+                        Д.Т.)
+                      </p>
+                      <p class="small">
+                        <em>
+                          <span class="cyan">Шакенов Д.Т.</span>
+                          отправил(а) на визитирование
+                          <span class="cyan">Дидоренко Е.В.</span><br />
+                          Прошу завизировать
+                        </em>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="document__row">
+                    <div class="document__progress">
+                      <img src="./images/lolipop.png" alt="" />
+                    </div>
+                    <div class="document__time">
+                      <p>30.11.2020 11:58:17</p>
+                      <p>30.11.2020 11:58:17</p>
+                    </div>
+                    <div class="document__stage">
+                      <p class="big">
+                        Этап: Подпись (Да - Дидоренко
+                        Е.В.)
+                      </p>
+                      <p class="small">
+                        <em>
+                          <span class="cyan">Шакенов Д.Т.</span>
+                          передал(а) на подписание
+                          <span class="cyan">Дидоренко Е.В.</span><br />
+                          Прошу подписать документ
+                        </em>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="document__row">
+                    <div class="document__progress">
+                      <img src="./images/lolipop.png" alt="" />
+                    </div>
+                    <div class="document__time">
+                      <p>30.11.2020 11:58:17</p>
+                      <p>30.11.2020 11:58:17</p>
+                    </div>
+                    <div class="document__stage">
+                      <p class="big">
+                        Этап: Подпись (Да - Шинасилов
+                        Е.Т.)
+                      </p>
+                      <p class="small">
+                        <em>
+                          <span class="cyan">Алтаева Д.Т.</span>
+                          передал(а) закладку
+                          <span class="cyan">Администратор БРД ДУЧР
+                            Майлибекова Э.Б</span>
+                        </em>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="document__right">
+              <div class="document__person">
+                <em class="grey">20.02.2021 19:03 - Mukhamedzyanov A. K. /
+                  Мухамедзянов А. К. - LOTUS</em>
+                <p class="document__person_desc">
+                  Регистрационная карточка входящего документа
+                  № А-15-Б (не указана)
+                </p>
+              </div>
+              <div class="document__table">
+                <div class="document__talbe-row">
+                  <div class="document__table-left">
+                    <div class="document__left-elem">
+                      <p>ИСХОДЯЩИЙ НОМЕР:</p>
+                      <p class="
+                                                      document__left-elem_under
+                                                  ">
+                        ДАТА ИСХОДЯЩЕГО:
+                      </p>
+                    </div>
+                  </div>
+                  <div class="document__table-right">
+                    <div class="document__right-elem">
+                      <p>11</p>
+                      <p class="
+                                                      document__right-elem_under
+                                                  ">
+                        15.06.2021
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="document__talbe-row">
+                  <div class="document__table-left">
+                    <div class="document__left-elem">
+                      <p>ЯЗЫК ОБРАЩЕНИЯ:</p>
+                    </div>
+                  </div>
+                  <div class="document__table-right">
+                    <div class="document__right-elem">
+                      <p>Русский</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="document__talbe-row">
+                  <div class="document__table-left">
+                    <div class="document__left-elem">
+                      <p>ВИД ДОСТАВКИ:</p>
+                    </div>
+                  </div>
+                  <div class="document__table-right">
+                    <div class="document__right-elem">
+                      <p>Телеграмма</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="document__talbe-row">
+                  <div class="document__table-left">
+                    <div class="document__left-elem">
+                      <p>РЕГИСТРАЦИОННЫЙ НОМЕР:</p>
+                      <p class="
+                                                      document__left-elem_under
+                                                  ">
+                        ДАТА РЕГИСТРАЦИИ:
+                      </p>
+                    </div>
+                  </div>
+                  <div class="document__table-right">
+                    <div class="document__right-elem">
+                      <p>А-15-Б</p>
+                      <p class="
+                                                      document__right-elem_under
+                                                  ">
+                        15.06.2021 12:38
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="document__talbe-row last-row">
+                  <div class="document__table-left">
+                    <div class="document__left-elem">
+                      <p>РЕГИСТРАТОР:</p>
+                      <p class="
+                                                      document__left-elem_under
+                                                  ">
+                        ПОДРАЗДЕЛЕНИЕ:
+                      </p>
+                      <p class="
+                                                      document__left-elem_under
+                                                  ">
+                        ДОЛЖНОСТЬ:
+                      </p>
+                    </div>
+                  </div>
+                  <div class="document__table-right">
+                    <div class="document__right-elem">
+                      <p>Администратор СЭД</p>
+                      <p class="
+                                                      document__right-elem_under
+                                                  ">
+                        Отдел переводов
+                      </p>
+                      <p class="
+                                                      document__right-elem_under
+                                                  ">
+                        Администратор
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <hr class="document__hr-small" />
+                <div class="document__talbe-row">
+                  <div class="document__table-left">
+                    <div class="document__left-elem">
+                      <p>КОРРЕСПОНДЕНТ:</p>
+                    </div>
+                  </div>
+                  <div class="document__table-right">
+                    <div class="document__right-elem">
+                      <p>"ADS"</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="document__talbe-row">
+                  <div class="document__table-left">
+                    <div class="document__left-elem">
+                      <p>РЕГИСТРАЦИОННЫЙ НОМЕР:</p>
+                    </div>
+                  </div>
+                  <div class="document__table-right">
+                    <div class="document__right-elem"></div>
+                  </div>
+                </div>
+                <div class="document__talbe-row last-row">
+                  <div class="document__table-left">
+                    <div class="document__left-elem">
+                      <p>СПИСОК РАССЫЛОК</p>
+                    </div>
+                  </div>
+                  <div class="document__table-right">
+                    <div class="document__right-elem"></div>
+                  </div>
+                </div>
+
+                <hr class="document__hr-small" />
+
+                <div class="document__talbe-row">
+                  <div class="document__table-left">
+                    <div class="document__left-elem">
+                      <p>ТИП КОНТРОЛЯ:</p>
+                    </div>
+                  </div>
+                  <div class="document__table-right">
+                    <div class="document__right-elem">
+                      <p>Контроль</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="document__talbe-row">
+                  <div class="document__table-left">
+                    <div class="document__left-elem">
+                      <p>ПРИОРИТЕТ:</p>
+                    </div>
+                  </div>
+                  <div class="document__table-right">
+                    <div class="document__right-elem">
+                      <p>Высокий</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="document__talbe-row">
+                  <div class="document__table-left">
+                    <div class="document__left-elem">
+                      <p>СРОК ИСПОЛНЕНИЯ:</p>
+                    </div>
+                  </div>
+                  <div class="document__table-right">
+                    <div class="document__right-elem">
+                      <p>29.06.2021</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="document__talbe-row">
+                  <div class="document__table-left">
+                    <div class="document__left-elem">
+                      <p>КАРТОЧКА ЗАДАНИЯ:</p>
+                    </div>
+                  </div>
+                  <div class="document__table-right">
+                    <div class="document__right-elem">
+                      <p>(открыть)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="document__talbe-row">
+                  <div class="document__table-left">
+                    <div class="document__left-elem">
+                      <p>ХАРАКТЕР ВОПРОСА:</p>
+                    </div>
+                  </div>
+                  <div class="document__table-right">
+                    <div class="document__right-elem">
+                      <p>
+                        Вопросы выборов | Вопросы
+                        выборов
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="document__talbe-row last-row">
+                  <div class="document__table-left">
+                    <div class="document__left-elem">
+                      <p>ОТВЕТ НА ИСХОДЯЩИЙ, ВХОДЯЩИЙ:</p>
+                    </div>
+                  </div>
+                  <div class="document__table-right">
+                    <div class="document__right-elem">
+                      <p>№: 1-02/6 (от) 20.07.2020</p>
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="document__hr-small" />
+
+                <div class="document__talbe-row">
+                  <div class="document__table-left">
+                    <div class="document__left-elem">
+                      <p>КОЛ-ВО ЛИСТОВ:</p>
+                    </div>
+                  </div>
+                  <div class="document__table-right">
+                    <div class="document__right-elem">
+                      <p>1</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="document__talbe-row">
+                  <div class="document__table-left">
+                    <div class="document__left-elem">
+                      <p>КОЛ-ВО ПРИЛОЖЕНИЙ:</p>
+                    </div>
+                  </div>
+                  <div class="document__table-right">
+                    <div class="document__right-elem">
+                      <p>1</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="document__talbe-row">
+                  <div class="document__table-left">
+                    <div class="document__left-elem">
+                      <p>ТИП ДОКУМЕНТА:</p>
+                    </div>
+                  </div>
+                  <div class="document__table-right">
+                    <div class="document__right-elem">
+                      <p>
+                        Акт о выделении к уничтожению |
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="document__talbe-row last-row">
+                  <div class="document__table-left">
+                    <div class="document__left-elem">
+                      <p>НОМЕНКЛАТУРНОЕ ДЕЛО №:</p>
+                    </div>
+                  </div>
+                  <div class="document__table-right">
+                    <div class="document__right-elem">
+                      <p>
+                        01-01: Законодательные акты и
+                        подзаконные нормативные правовые
+                        акты РК, направленные для
+                        руководства и сведения
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="document__hr" />
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+  </div>
+
+
+  </div>
+  </div>
+
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <!-- 1. Подключим библиотеку jQuery (без нее jQuery UI не будет работать) -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <!-- 2. Подключим jQuery UI -->
+
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet"
+    type="text/css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  <script src="./Scripts/Time.js"></script>
+  <script src="./Scripts/SideBarController.js"></script>
 </body>
 
 </html>
