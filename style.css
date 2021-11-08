@@ -440,27 +440,27 @@ p {
   display: none;
 }
 
-.scroll_image{
+.scroll_image {
   width: 955px;
   height: 722px;
 }
-.scroll_img{
+.scroll_img {
   width: 955px;
   height: 722px;
 }
-.scroll_flex{
+.scroll_flex {
   display: flex;
   justify-content: space-around;
 }
-.scroll_image{
+.scroll_image {
   display: none;
 }
-.scroll_image.active{
+.scroll_image.active {
   display: block;
 }
 .status {
   max-width: 100%;
-  min-width: 1484px;
+  /* min-width: 1484px; */
   display: flex;
   background: #f8f8fa;
   border-top: 1px solid rgba(67, 79, 99, 0.2);
@@ -520,8 +520,8 @@ p {
   border-radius: 30px;
   background: #ffffff;
   filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.2))
-      drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.12))
-      drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.14));
+    drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.12))
+    drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.14));
 }
 
 .window-absolute {
@@ -799,23 +799,23 @@ p {
   transform: rotateY(180deg);
 }
 
-.scroll.active{
+.scroll.active {
   overflow: auto;
   max-width: 417px;
   height: 522px;
 }
-#faqs-container{
-  min-width: 1484px;
+#faqs-container {
+  /* min-width: 1484px; */
   max-width: 100%;
 }
 /* ---------------MEDIA---------------- */
 @media only screen and (max-width: 1393px) {
   .window__registration {
-      flex-direction: column;
-      align-items: start;
+    flex-direction: column;
+    align-items: start;
   }
   .window__left {
-      margin-bottom: 20px;
+    margin-bottom: 20px;
   }
 }
 
@@ -847,7 +847,7 @@ p {
 }
 .accordianIn3 {
   max-width: 100%;
-  min-width: 1484px;
+  /* min-width: 1484px; */
   border-radius: 0 !important;
   height: 60px;
   margin: 0 20px;
