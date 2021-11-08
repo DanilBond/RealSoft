@@ -817,6 +817,10 @@ p {
   .window__left {
     margin-bottom: 20px;
   }
+  .window{
+    width: 90%;
+    margin-left: 32px;
+  }
 }
 
 .ok {
