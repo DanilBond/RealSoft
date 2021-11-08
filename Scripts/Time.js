@@ -35,3 +35,9 @@ $('.accordianIn3').click(
         $('.scroll_flex').toggleClass('active');
     }
   );
+
+  $('.scroll_img').click(
+    function() {
+        $('.window-absolute ').toggleClass('active');
+    }
+  );

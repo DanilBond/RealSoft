@@ -30,9 +30,6 @@
   font-family: HNCroman;
 }
 
-body {
-  overflow: hidden;
-}
 
 p {
   margin: 0 !important;
@@ -515,25 +512,28 @@ p {
 }
 
 /* ---------------WINDOW--------------- */
+
 .window__btn {
   display: flex;
   border-radius: 30px;
   background: #ffffff;
   filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.2))
-    drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.12))
-    drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.14));
+      drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.12))
+      drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.14));
 }
 
 .window-absolute {
+  display: none;
   height: 1970px;
   position: absolute;
   right: 40px;
   top: 80px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  width: 1495px;
-  display: none;
+  width: 1495px; 
 }
-
+.window-absolute.active{
+  display: block;
+}
 .window__image_right {
   margin-left: 20px;
   margin-right: 15px;
@@ -798,7 +798,6 @@ p {
   margin-right: 10px;
   transform: rotateY(180deg);
 }
-
 .scroll.active {
   overflow: auto;
   max-width: 417px;
@@ -808,6 +807,7 @@ p {
   min-width: 1484px;
   max-width: 100%;
 }
+
 /* ---------------MEDIA---------------- */
 @media only screen and (max-width: 1393px) {
   .window__registration {
