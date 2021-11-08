@@ -324,9 +324,27 @@ p {
   margin-left: 30px;
   background: #ffffff;
   border-radius: 30px;
-  filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.2))
-    drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.12))
-    drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.14));
+  filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.2))
+    drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.12))
+    drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.14));
+}
+
+.show {
+  border-radius: 20px 20px 0 0 !important;
+}
+.dropdown-menu {
+  width: 180px;
+  border-radius: 0 0 20px 20px !important;
+  filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.2))
+    drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.12))
+    drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.14));
+}
+.dropdown-menu1 {
+  width: 300px !important;
+}
+.dropdown-item {
+  margin: 12px 0;
+  color: rgba(9, 124, 180, 1);
 }
 
 /* .dropdown {
@@ -362,9 +380,9 @@ p {
   justify-content: space-between;
   border-radius: 30px;
   background: #ffffff;
-  filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.2))
-    drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.12))
-    drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.14));
+  filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.2))
+    drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.12))
+    drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.14));
   padding: 13px 18px 11px 18px;
   margin-left: 20px;
 }
