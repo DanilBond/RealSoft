@@ -187,7 +187,7 @@
 
 
     </div>
-    <div class="content">
+    <div class="content" id="content">
       <div class="navBar">
         <div class="navbarWrapper">
           <div class="navbarLeft">
@@ -1094,8 +1094,8 @@
            </div>
           </div>
         </div>
-        <div class="window window-absolute">
-          <nav class="window__nav">
+        <div class="window window-absolute" id="drag">
+          <nav class="window__nav" id="navbar">
             <div class="window__routes">
               2021 / Июль / 15.06.2021
               <span> / "ABC"</span>
@@ -1304,280 +1304,172 @@
                   </div>
                   <div class="document__table">
                       <div class="document__talbe-row">
-                          <div class="document__table-left">
                               <div class="document__left-elem">
                                   <p>ИСХОДЯЩИЙ НОМЕР:</p>
-                                  <p
-                                      class="
-                                          document__left-elem_under
-                                      "
-                                  >
-                                      ДАТА ИСХОДЯЩЕГО:
-                                  </p>
+                                  
                               </div>
-                          </div>
-                          <div class="document__table-right">
                               <div class="document__right-elem">
                                   <p>11</p>
-                                  <p
-                                      class="
-                                          document__right-elem_under
-                                      "
-                                  >
-                                      15.06.2021
-                                  </p>
                               </div>
                           </div>
-                      </div>
+                        <div class="document__talbe-row document__talbe-row_under">
+                            <div class="document__left-elem">
+                                <p>ИСХОДЯЩИЙ НОМЕР:</p>
+                                
+                            </div>
+                            <div class="document__right-elem">
+                                <p>11</p>
+                            </div>
+                        </div>
                       <div class="document__talbe-row">
-                          <div class="document__table-left">
                               <div class="document__left-elem">
                                   <p>ЯЗЫК ОБРАЩЕНИЯ:</p>
                               </div>
-                          </div>
-                          <div class="document__table-right">
                               <div class="document__right-elem">
                                   <p>Русский</p>
-                              </div>
                           </div>
                       </div>
                       <div class="document__talbe-row">
-                          <div class="document__table-left">
                               <div class="document__left-elem">
                                   <p>ВИД ДОСТАВКИ:</p>
                               </div>
-                          </div>
-                          <div class="document__table-right">
                               <div class="document__right-elem">
                                   <p>Телеграмма</p>
                               </div>
-                          </div>
                       </div>
                       <div class="document__talbe-row">
-                          <div class="document__table-left">
                               <div class="document__left-elem">
                                   <p>РЕГИСТРАЦИОННЫЙ НОМЕР:</p>
-                                  <p
-                                      class="
-                                          document__left-elem_under
-                                      "
-                                  >
-                                      ДАТА РЕГИСТРАЦИИ:
-                                  </p>
-                              </div>
                           </div>
-                          <div class="document__table-right">
                               <div class="document__right-elem">
                                   <p>А-15-Б</p>
-                                  <p
-                                      class="
-                                          document__right-elem_under
-                                      "
-                                  >
-                                      15.06.2021 12:38
-                                  </p>
-                              </div>
                           </div>
                       </div>
+                      <div class="document__talbe-row document__talbe-row_under">
+                        <div class="document__left-elem">
+                            <p>ДАТА РЕГИСТРАЦИИ:</p>
+                            
+                        </div>
+                        <div class="document__right-elem">
+                            <p>15.06.2021 12:28</p>
+                        </div>
+                    </div>
                       <div class="document__talbe-row last-row">
-                          <div class="document__table-left">
                               <div class="document__left-elem">
                                   <p>РЕГИСТРАТОР:</p>
-                                  <p
-                                      class="
-                                          document__left-elem_under
-                                      "
-                                  >
-                                      ПОДРАЗДЕЛЕНИЕ:
-                                  </p>
-                                  <p
-                                      class="
-                                          document__left-elem_under
-                                      "
-                                  >
-                                      ДОЛЖНОСТЬ:
-                                  </p>
                               </div>
-                          </div>
-                          <div class="document__table-right">
                               <div class="document__right-elem">
                                   <p>Администратор СЭД</p>
-                                  <p
-                                      class="
-                                          document__right-elem_under
-                                      "
-                                  >
-                                      Отдел переводов
-                                  </p>
-                                  <p
-                                      class="
-                                          document__right-elem_under
-                                      "
-                                  >
-                                      Администратор
-                                  </p>
                               </div>
-                          </div>
                       </div>
                       <hr class="document__hr-small" />
                       <div class="document__talbe-row">
-                          <div class="document__table-left">
                               <div class="document__left-elem">
                                   <p>КОРРЕСПОНДЕНТ:</p>
                               </div>
-                          </div>
-                          <div class="document__table-right">
                               <div class="document__right-elem">
                                   <p>"ADS"</p>
                               </div>
-                          </div>
                       </div>
                       <div class="document__talbe-row">
-                          <div class="document__table-left">
                               <div class="document__left-elem">
                                   <p>РЕГИСТРАЦИОННЫЙ НОМЕР:</p>
                               </div>
-                          </div>
-                          <div class="document__table-right">
                               <div class="document__right-elem"></div>
-                          </div>
                       </div>
                       <div class="document__talbe-row last-row">
-                          <div class="document__table-left">
                               <div class="document__left-elem">
                                   <p>СПИСОК РАССЫЛОК</p>
                               </div>
-                          </div>
-                          <div class="document__table-right">
                               <div class="document__right-elem"></div>
-                          </div>
                       </div>
 
                       <hr class="document__hr-small" />
 
                       <div class="document__talbe-row">
-                          <div class="document__table-left">
                               <div class="document__left-elem">
                                   <p>ТИП КОНТРОЛЯ:</p>
                               </div>
-                          </div>
-                          <div class="document__table-right">
                               <div class="document__right-elem">
                                   <p>Контроль</p>
                               </div>
-                          </div>
                       </div>
                       <div class="document__talbe-row">
-                          <div class="document__table-left">
                               <div class="document__left-elem">
                                   <p>ПРИОРИТЕТ:</p>
                               </div>
-                          </div>
-                          <div class="document__table-right">
                               <div class="document__right-elem">
                                   <p>Высокий</p>
                               </div>
-                          </div>
                       </div>
                       <div class="document__talbe-row">
-                          <div class="document__table-left">
                               <div class="document__left-elem">
                                   <p>СРОК ИСПОЛНЕНИЯ:</p>
                               </div>
-                          </div>
-                          <div class="document__table-right">
                               <div class="document__right-elem">
                                   <p>29.06.2021</p>
                               </div>
-                          </div>
                       </div>
                       <div class="document__talbe-row">
-                          <div class="document__table-left">
                               <div class="document__left-elem">
                                   <p>КАРТОЧКА ЗАДАНИЯ:</p>
                               </div>
-                          </div>
-                          <div class="document__table-right">
                               <div class="document__right-elem">
                                   <p>(открыть)</p>
                               </div>
-                          </div>
                       </div>
                       <div class="document__talbe-row">
-                          <div class="document__table-left">
                               <div class="document__left-elem">
                                   <p>ХАРАКТЕР ВОПРОСА:</p>
                               </div>
-                          </div>
-                          <div class="document__table-right">
                               <div class="document__right-elem">
                                   <p>
                                       Вопросы выборов | Вопросы
                                       выборов
                                   </p>
                               </div>
-                          </div>
                       </div>
                       <div class="document__talbe-row last-row">
-                          <div class="document__table-left">
                               <div class="document__left-elem">
                                   <p>ОТВЕТ НА ИСХОДЯЩИЙ, ВХОДЯЩИЙ:</p>
                               </div>
-                          </div>
-                          <div class="document__table-right">
                               <div class="document__right-elem">
                                   <p>№: 1-02/6 (от) 20.07.2020</p>
                               </div>
-                          </div>
                       </div>
 
                       <hr class="document__hr-small" />
 
                       <div class="document__talbe-row">
-                          <div class="document__table-left">
                               <div class="document__left-elem">
                                   <p>КОЛ-ВО ЛИСТОВ:</p>
                               </div>
-                          </div>
-                          <div class="document__table-right">
                               <div class="document__right-elem">
                                   <p>1</p>
                               </div>
-                          </div>
                       </div>
                       <div class="document__talbe-row">
-                          <div class="document__table-left">
                               <div class="document__left-elem">
                                   <p>КОЛ-ВО ПРИЛОЖЕНИЙ:</p>
                               </div>
-                          </div>
-                          <div class="document__table-right">
                               <div class="document__right-elem">
                                   <p>1</p>
                               </div>
-                          </div>
                       </div>
                       <div class="document__talbe-row">
-                          <div class="document__table-left">
                               <div class="document__left-elem">
                                   <p>ТИП ДОКУМЕНТА:</p>
                               </div>
-                          </div>
-                          <div class="document__table-right">
                               <div class="document__right-elem">
                                   <p>
                                       Акт о выделении к уничтожению |
                                   </p>
                               </div>
-                          </div>
                       </div>
                       <div class="document__talbe-row last-row">
-                          <div class="document__table-left">
                               <div class="document__left-elem">
                                   <p>НОМЕНКЛАТУРНОЕ ДЕЛО №:</p>
                               </div>
-                          </div>
-                          <div class="document__table-right">
                               <div class="document__right-elem">
                                   <p>
                                       01-01: Законодательные акты и
@@ -1586,7 +1478,6 @@
                                       руководства и сведения
                                   </p>
                               </div>  
-                          </div>
                       </div>
                   </div>
               </div>
@@ -1627,6 +1518,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
   <script src="./Scripts/Time.js"></script>
+  <script src="./Scripts/DragAndDrop.js"></script>
   <script src="./Scripts/SideBarController.js"></script>
 </body>
 
