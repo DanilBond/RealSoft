@@ -41,3 +41,16 @@ $(".scroll_img").click(function () {
 $(".window__images").click(function () {
     $(".window-absolute ").toggleClass("active");
 });
+
+$("#window-1").resize((e) => {
+    let w = e.target.offsetWidth;
+    console.log(w);
+    if (w < 1350) {
+        console.log(w);
+        $(".scroll_flex").addClass("d-block");
+        $(".scroll").addClass("mw-100");
+    } else {
+        $(".scroll_flex").removeClass("d-block");
+        $(".scroll").removeClass("mw-100");
+    }
+});

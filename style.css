@@ -54,6 +54,10 @@ p {
   font-size: 12px;
 }
 
+.mw-100 {
+    max-width: 100% !important;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
