@@ -34,6 +34,41 @@ p {
     margin: 0 !important;
 }
 
+.dis-none {
+    display: none !important;
+}
+
+.dis-block {
+    display: block !important;
+}
+
+.bg-grey {
+    opacity: 0.3;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border: 1px solid rgba(67, 79, 99, 0.2);
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #097cb4;
+    border-radius: 10px;
+    width: 2px;
+    height: 10px;
+}
+
 /* ---------------MAIN--------------- */
 .main {
     display: flex;
@@ -485,6 +520,11 @@ p {
     margin-left: 20px;
 }
 
+.status__checkbox label,
+.square-checkbox label {
+    cursor: pointer;
+}
+
 .square-checkbox label input {
     /* border: 1.5px solid rgba(67, 79, 99, 0.2); */
     opacity: 0;
@@ -734,7 +774,7 @@ p {
 
 .accordianIn3Fir {
     max-width: 100%;
-    min-width: 1484px;
+    min-width: 1457px;
     border-radius: 0 !important;
     height: 60px;
     margin: 0 20px;
