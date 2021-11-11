@@ -55,7 +55,7 @@ p {
 }
 
 .mw-100 {
-    max-width: 100% !important;
+  max-width: 100% !important;
 }
 
 /* width */
@@ -790,7 +790,7 @@ p {
 .accordianIn7gray {
   color: rgba(102, 102, 102, 1);
   margin-left: 30px !important;
-  text-align: center;
+  text-align: center !important;
 }
 
 .accordianIn7sec {
@@ -859,6 +859,10 @@ p {
 }
 
 .accordianIn3.ui-state-active {
+  background: rgba(162, 212, 236, 1) !important;
+}
+
+.accordianIn3sec.ui-state-active {
   background: rgba(162, 212, 236, 1) !important;
 }
 
