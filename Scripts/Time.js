@@ -55,6 +55,6 @@ $("#window-1").resize((e) => {
   }
 });
 
-$(".accordianIn7content").click(function () {
-  $(".modal-window").toggleClass("active");
+$(".accrodianIn7content").click(function () {
+  $(".modal-window").toggleClass("dis-block");
 });
