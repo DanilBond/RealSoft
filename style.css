@@ -883,12 +883,16 @@ p {
 }
 
 .modal-window {
-  position: absolute;
+  display: none;
+  position: absolute !important;
   background: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   height: 400px;
-  width: 1063px;
+  max-width: 1063px;
 }
 
 .modal-window__left {
@@ -1182,25 +1186,26 @@ p {
 /* -------------DOCUMENT---------------- */
 
 .parcerContainer {
-  background-color: white;
+  background: rgba(0, 0, 0, 0);
   z-index: 1;
   width: 239px;
   height: 100%;
   position: fixed;
+  margin-top: -10px;
   /* padding-left: 30px; */
 }
 .pcItem {
   color: black;
   font-family: HNCthin;
   font-weight: 800;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 14px;
   height: 30px;
   width: 166px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-left: 20px;
+  margin-left: 55px;
   padding-left: 10px;
 }
 .pcItem:hover {
@@ -1222,17 +1227,18 @@ p {
   font-family: HNCroman;
   color: #097cb4;
   font-weight: bold;
-  font-size: 19px;
-  margin-bottom: 14px;
+  font-size: 14px;
+  margin-bottom: 7px;
   display: block;
   display: flex;
-  margin-left: 30px;
+  margin-left: 45px;
+  text-transform: uppercase;
 }
 .pcTitle div img {
   width: 7px;
   height: 12px;
   margin-left: -15px;
-  margin-right: 10px;
+  margin-right: 20px;
   transform: rotateY(180deg);
 }
 .scroll.active {
@@ -1260,59 +1266,15 @@ p {
   }
 }
 
-.parcerContainer {
-  background-color: white;
-  z-index: 1;
-  width: 239px;
-  height: 100%;
-  position: fixed;
-  /* padding-left: 30px; */
-}
-.pcItem {
-  color: black;
-  font-family: HNCthin;
-  font-weight: 800;
-  font-size: 14px;
-  line-height: 14px;
-  height: 30px;
-  width: 166px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-left: 20px;
-  padding-left: 10px;
-}
-.pcItem:hover {
-  background-color: #6fd5f5;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-}
 .pcOpen {
   left: 0%;
+  opacity: 1;
   transition: all 0.3s;
 }
 .pcClosed {
   left: -100%;
+  opacity: 0;
   transition: all 0.3s;
-}
-.pcTitle {
-  font-family: HNCroman;
-  color: #097cb4;
-  font-weight: bold;
-  font-size: 19px;
-  margin-bottom: 14px;
-  display: block;
-  display: flex;
-  margin-left: 30px;
-}
-.pcTitle div img {
-  width: 7px;
-  height: 12px;
-  margin-left: -15px;
-  margin-right: 10px;
-  transform: rotateY(180deg);
 }
 .scroll_flex.active {
   display: flex;
@@ -1368,7 +1330,6 @@ p {
     width: 8px;
     height: 8px;
     background: #097cb4;
-    display: block;
     border-radius: 50%;
   }
 
