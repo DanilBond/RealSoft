@@ -1413,27 +1413,34 @@ p {
 /* -------------DOCUMENT---------------- */
 
 .parcerContainer {
-    background: rgba(0, 0, 0, 0);
-    z-index: 1;
-    width: 239px;
-    height: 100%;
-    position: fixed;
-    margin-top: -10px;
-    /* padding-left: 30px; */
+  background: rgba(0, 0, 0, 0);
+  z-index: 1;
+  width: 239px;
+  height: 100%;
+  position: absolute;
+  margin-top: -10px;
+  /* padding-left: 30px; */
 }
 .pcItem {
-    color: black;
-    font-family: HNCthin;
-    font-weight: 800;
-    font-size: 12px;
-    line-height: 14px;
-    height: 30px;
-    width: 166px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: 55px;
-    padding-left: 10px;
+  color: black;
+  font-family: HNCthin;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 14px;
+  height: 30px;
+  width: 166px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 55px;
+  padding-left: 10px;
+  justify-content: space-between;
+}
+.pcItem img{
+  width: 8px;
+  height: 8px;
+  justify-self: flex-end;
+  margin-right: 10px;
 }
 .pcItem:hover {
     background-color: #6fd5f5;
