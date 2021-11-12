@@ -938,6 +938,10 @@ p {
   background: rgba(221, 240, 250, 1) !important;
 }
 
+.accordian3__year.ui-state-active {
+  background: rgba(221, 240, 250, 1) !important;
+}
+
 .accordianIn.ui-state-active {
   background: rgba(188, 228, 248, 1) !important;
 }
