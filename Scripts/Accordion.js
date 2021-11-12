@@ -673,3 +673,34 @@ function checkStatus(status) {
             break;
     }
 }
+
+// CODE FOR THIRD ACCORDION
+
+let accrodionJS3 = [
+    {
+        name: "TOO AILIT",
+        icon: "center",
+        data: [],
+    },
+    {
+        name: "TOO REALITY",
+        icon: "center",
+        data: [
+            {
+                name: "Департамент по работе с кадрами - Директор ДРК",
+                icon: "marketing",
+                data: [{}],
+            },
+            {
+                name: "Финансовый департамент - Директор ФД",
+                icon: "marketing",
+                data: [{}],
+            },
+            {
+                name: "Юридический департамент - Директор ЮД",
+                icon: "marketing",
+                data: [{}],
+            },
+        ],
+    },
+];
