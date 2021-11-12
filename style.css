@@ -468,6 +468,12 @@ p {
   align-items: center;
 }
 
+.window__right1 {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
 .window__registration-btn {
   width: 180px;
   background: #ffffff;
@@ -1017,6 +1023,17 @@ p {
   border-radius: 20px;
 }
 
+.modal-window__btnBtn1 {
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  color: rgba(9, 124, 180, 1);
+  border: 0;
+  box-shadow: 0 3px 13px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
 .modal-window__right {
   display: flex;
   flex-direction: column;
@@ -1056,6 +1073,108 @@ p {
   margin-right: 20px;
   margin-left: 20px;
   padding: 30px 23px;
+}
+
+.modal-window1 {
+  /* display: none; */
+  position: absolute !important;
+  background: #ffffff;
+  top: 25%;
+  left: 25%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  height: 589px;
+  width: 1063px;
+}
+
+.modal-status1 {
+  max-width: 100%;
+  height: 370px;
+  display: flex;
+  /* flex-direction: column; */
+  background: #f8f8fa;
+  border-top: 1px solid rgba(67, 79, 99, 0.2);
+  border-bottom: 1px solid rgba(67, 79, 99, 0.2);
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 20px 27px;
+  justify-content: space-between;
+}
+
+.modal-status1 img {
+  width: 188px;
+  height: 238px;
+}
+
+.modal-status__left {
+  display: flex;
+}
+.modal-status__bottom {
+  display: flex;
+}
+
+.modal-status__header {
+  font-size: 30px;
+}
+
+.modal-status__yur {
+  font-size: 14px;
+  color: rgba(138, 138, 138, 1);
+}
+
+.modal-status__bottom-left {
+  margin-top: 26px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70%;
+  height: 200px;
+}
+
+.modal-status__bottom-right {
+  color: rgba(21, 21, 21, 1);
+  margin-top: 26px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  height: 200px;
+}
+
+.modal-status__bottom-left div {
+  display: flex;
+  align-items: center;
+}
+
+.vnutr {
+  font-style: italic;
+  color: rgba(138, 138, 138, 1);
+}
+
+.vnutr1 {
+  margin-bottom: 23px;
+}
+
+.modal-status__bottom-left img {
+  width: 18px;
+  height: 18px;
+  margin-right: 23px;
+}
+
+.modal-status__right {
+  background-color: #fff;
+  width: 300px;
+  height: 320px;
+}
+
+.window__registration1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap;
 }
 
 /* ACCORDIAN */
@@ -1340,6 +1459,10 @@ p {
 #faqs-container {
   min-width: 1484px;
   max-width: 100%;
+}
+
+.window__left {
+  margin: 0;
 }
 
 /* ---------------MEDIA---------------- */
