@@ -749,6 +749,16 @@ p {
   border-bottom: 1px solid rgba(67, 79, 99, 0.2) !important;
 }
 
+.accordian3In2 {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border-radius: 0 !important;
+  padding-left: 80px !important;
+  border-top: 1px solid rgba(67, 79, 99, 0.2) !important;
+  border-bottom: 1px solid rgba(67, 79, 99, 0.2) !important;
+}
+
 .accordianIn3 {
   display: flex;
   align-items: center;
