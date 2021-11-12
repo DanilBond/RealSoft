@@ -25,19 +25,61 @@
         <div><img src="./images/size.svg" alt="size" /></div>
       </div>
       <div class="mainContainer">
+        <!-- Делопроизводство -->
         <div class="parcerContainer pcClosed">
-          <span onclick="SetSideBarSmall()" class="pcTitle">
+          <span onclick="SetSideBarSmall(0)" class="pcTitle">
             <div><img src="./images/Arrow.svg" alt="Arrow"></div>Делопроизводство
           </span>
-          <div class="pcItem">Входящие документы</div>
+          <div class="pcItem" onclick="setActiveWindow(0)">Входящие документы</div>
           <div class="pcItem">Исходящие документы</div>
           <div class="pcItem">Прошлогодние базы</div>
           <div class="pcItem">Отчет по входящим</div>
           <div class="pcItem">Отчет по исходящим</div>
           <div class="pcItem">Отчет по исходящим</div>
-          <div class="pcItem">Конфликтные</div>
+          <div class="pcItem">
+            Конфликтные
+            <img src="./images/Arrow.svg" alt="Arrow" />
+          </div>
           <div class="pcItem">Корзина</div>
         </div>
+        <!-- Делопроизводство -->
+
+        <!-- Фин ОЦО -->
+        <div class="parcerContainer pcClosed">
+          <span onclick="SetSideBarSmall(1)" class="pcTitle">
+            <div><img src="./images/Arrow.svg" alt="Arrow"></div>Фин ОЦО
+          </span>
+          <div class="pcItem">Оглавление</div>
+          <div class="pcItem">По номенклатуре</div>
+          <div class="pcItem">По авторам</div>
+          <div class="pcItem">По дате</div>
+          <div class="pcItem">По месяцам</div>
+          <div class="pcItem">По номерам</div>
+          <div class="pcItem">По филиалам</div>
+          <div class="pcItem">По статусу</div>
+          <div class="pcItem">Приказы</div>
+          <div class="pcItem">Списание ОС через ЦА</div>
+          <div class="pcItem"  onclick="setActiveWindow(1)">Статистика Фин ОЦО</div>
+          <div class="pcItem">Нормативные документы служб Фин ОЦО</div>
+        </div>
+        <!-- Фин ОЦО -->
+
+        <!-- Структура -->
+        <div class="parcerContainer pcClosed">
+          <span onclick="SetSideBarSmall(2)" class="pcTitle">
+            <div><img src="./images/Arrow.svg" alt="Arrow"></div>Структура АО КТК
+          </span>
+          <div class="pcItem">Телефоны</div>
+          <div class="pcItem"  onclick="setActiveWindow(2)">Иерархия</div>
+          <div class="pcItem">Маршруты</div>
+          <div class="pcItem">Избранное</div>
+          <div class="pcItem">Личные карточки</div>
+          <div class="pcItem">Департаменты по коду</div>
+          <div class="pcItem">По номеру</div>
+        </div>
+        <!-- Структура -->
+
+        
         <div class="menuContainer">
           <span class="menuContainerTitle">МЕНЮ</span>
           <div class="container">
@@ -48,7 +90,7 @@
               <span>Рабочий стол</span>
             </div>
 
-            <div class="item">
+            <div class="item" onclick="SetSideBarSmall(2)">
               <div class="imgContainer">
                 <img src="./images/ID.svg" alt="ID" />
               </div>
@@ -58,7 +100,7 @@
               </div>
             </div>
 
-            <div class="item" onclick="SetSideBarSmall()">
+            <div class="item" onclick="SetSideBarSmall(0)">
               <div class="imgContainer">
                 <img src="./images/DOCX.svg" alt="DOCX" />
               </div>
@@ -69,7 +111,7 @@
               </div>
             </div>
 
-            <div class="item">
+            <div class="item" onclick="SetSideBarSmall(1)">
               <div class="imgContainer">
                 <img src="./images/Calculator.svg" alt="Calculator" />
               </div>
@@ -217,7 +259,7 @@
       <div class="content">
 
         <div class="content__wrapper">
-          <div class="window" id="window-1">
+          <div class="window windowModuleFinder" id="window-1">
             <nav class="window__nav">
               <div class="window__routes">
                 Делопроизводство / Входящие документы
@@ -331,7 +373,7 @@
           <!-- SECOND WINDOW -->
           
           
-          <div class="window1">
+          <div class="window1 windowModuleFinder">
             <nav class="window__nav">
               <div class="window__routes">
                Фин ОЦО
@@ -530,7 +572,7 @@
 
 <!-- THIRD WINDOW -->
 
-<div class="window1">
+<div class="window1 windowModuleFinder">
   <nav class="window__nav">
     <div class="window__routes">
       Структура АО КТК
@@ -588,7 +630,7 @@
 
            
             
-    <div class="window window-absolute" id="drag">
+    <div class="window1 window-absolute" id="drag">
           <nav class="window__nav" id="navbar">
             <div class="window__routes">
               2021 / Июль / 15.06.2021
@@ -1174,6 +1216,7 @@
   <script src="./Scripts/DragAndDrop.js"></script>
   <script src="./Scripts/SideBarController.js"></script>
   <script src="./Scripts/Accordion.js"></script>
+  <script src="./Scripts/WindowManager.js"></script>
 </body>
 
 </html>
