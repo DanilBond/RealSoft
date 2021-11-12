@@ -322,6 +322,18 @@ p {
   resize: both;
 }
 
+.window1 {
+  background: #ffffff;
+  border-radius: 8px;
+  margin: 10px 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  min-height: 600px;
+  margin: 21px auto;
+  width: 95%;
+  overflow-x: auto;
+  resize: both;
+}
+
 .window__nav {
   display: flex;
   justify-content: space-between;
@@ -886,9 +898,8 @@ p {
   display: none;
   position: absolute !important;
   background: #ffffff;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 25%;
+  left: 25%;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   height: 400px;

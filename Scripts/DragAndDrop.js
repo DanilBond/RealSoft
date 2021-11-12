@@ -6,7 +6,9 @@ $(function () {
     });
 });
 $(function () {
-  $("#drag1").draggable({ containment: "", handle: "#navbar1" }).resizable({
-    containment: "",
-  });
+  $("#drag1")
+    .draggable({ containment: "#content", handle: "#navbar1" })
+    .resizable({
+      containment: "",
+    });
 });
