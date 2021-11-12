@@ -322,6 +322,18 @@ p {
   resize: both;
 }
 
+.window1 {
+  background: #ffffff;
+  border-radius: 8px;
+  margin: 10px 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  min-height: 600px;
+  margin: 21px auto;
+  width: 95%;
+  overflow-x: auto;
+  resize: both;
+}
+
 .window__nav {
   display: flex;
   justify-content: space-between;
@@ -588,6 +600,18 @@ p {
   align-items: center;
   padding: 30px 0;
 }
+.status3 {
+  max-width: 100%;
+  min-width: 1484px;
+  display: flex;
+  background: #f8f8fa;
+  border-top: 1px solid rgba(67, 79, 99, 0.2);
+  border-bottom: 1px solid rgba(67, 79, 99, 0.2);
+  height: 45px;
+  margin-right: 20px;
+  margin-left: 20px;
+  align-items: center;
+}
 
 .status__year {
   margin-left: 60px;
@@ -709,19 +733,38 @@ p {
 }
 
 .accordianIn {
+  display: flex;
+  align-items: center;
+  height: 40px;
   border-radius: 0 !important;
   padding-left: 25px !important;
   border-top: 1px solid rgba(67, 79, 99, 0.2) !important;
   border-bottom: 1px solid rgba(67, 79, 99, 0.2) !important;
 }
 .accordianIn2 {
+  display: flex;
+  align-items: center;
+  height: 40px;
   border-radius: 0 !important;
   padding-left: 60px !important;
   border-top: 1px solid rgba(67, 79, 99, 0.2) !important;
   border-bottom: 1px solid rgba(67, 79, 99, 0.2) !important;
 }
 
+.accordian3In2 {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border-radius: 0 !important;
+  padding-left: 80px !important;
+  border-top: 1px solid rgba(67, 79, 99, 0.2) !important;
+  border-bottom: 1px solid rgba(67, 79, 99, 0.2) !important;
+}
+
 .accordianIn3 {
+  display: flex;
+  align-items: center;
+  height: 40px;
   border-radius: 0 !important;
   padding-left: 95px !important;
   border-top: 1px solid rgba(67, 79, 99, 0.2) !important;
@@ -743,7 +786,17 @@ p {
   margin-right: -25px;
 }
 
+.accordian3In3img {
+  width: 18px;
+  height: 18px;
+  /* margin-right: 25px; */
+  margin-left: 50px;
+}
+
 .accordianIn4 {
+  display: flex;
+  align-items: center;
+  height: 40px;
   border-radius: 0 !important;
   padding-left: 165px !important;
   border-top: 1px solid rgba(67, 79, 99, 0.2) !important;
@@ -751,6 +804,9 @@ p {
 }
 
 .accordianIn5 {
+  display: flex;
+  align-items: center;
+  height: 40px;
   border-radius: 0 !important;
   padding-left: 200px !important;
   border-top: 1px solid rgba(67, 79, 99, 0.2) !important;
@@ -758,6 +814,9 @@ p {
 }
 
 .accordianIn6 {
+  display: flex;
+  align-items: center;
+  height: 40px;
   border-radius: 0 !important;
   padding-left: 235px !important;
   border-top: 1px solid rgba(67, 79, 99, 0.2) !important;
@@ -765,6 +824,9 @@ p {
 }
 
 .accordianIn7 {
+  display: flex;
+  align-items: center;
+  height: 40px;
   border-radius: 0 !important;
   padding-left: 270px !important;
   border-top: 260 solid rgba(67, 79, 99, 0.2) !important;
@@ -801,6 +863,32 @@ p {
 
 .accordianIn7fir {
   margin-left: 50px !important;
+}
+
+.accordian__year {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.accordian3__year {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.accordian3In3 {
+  display: flex;
+  align-items: center;
+  border-radius: 0 !important;
+  height: 40px;
+  padding-left: 150px !important;
+  border-top: 1px solid rgba(67, 79, 99, 0.2) !important;
+  border-bottom: 1px solid rgba(67, 79, 99, 0.2) !important;
+}
+
+.accordian3In3__text {
+  padding-left: 40px;
 }
 
 .accordianIn3Fir {
@@ -852,6 +940,10 @@ p {
   background: rgba(221, 240, 250, 1) !important;
 }
 
+.accordian3__year.ui-state-active {
+  background: rgba(221, 240, 250, 1) !important;
+}
+
 .accordianIn.ui-state-active {
   background: rgba(188, 228, 248, 1) !important;
 }
@@ -888,9 +980,8 @@ p {
   display: none;
   position: absolute !important;
   background: #ffffff;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 25%;
+  left: 25%;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   height: 400px;
@@ -956,7 +1047,7 @@ p {
   display: flex;
 }
 
-.status3 {
+.modal-status {
   max-width: 100%;
   height: 280px;
   display: flex;
