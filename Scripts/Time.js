@@ -12,16 +12,53 @@ function setTimeOnElement() {
 }
 
 function formatDate(date, format, utc) {
-  var MMMM = ["\x00", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-  var MMM = ["\x01", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-  var dddd = ["\x02", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  var MMMM = [
+    "\x00",
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  var MMM = [
+    "\x01",
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+  var dddd = [
+    "\x02",
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
   var ddd = ["\x03", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
   function ii(i, len) {
-      var s = i + "";
-      len = len || 2;
-      while (s.length < len) s = "0" + s;
-      return s;
+    var s = i + "";
+    len = len || 2;
+    while (s.length < len) s = "0" + s;
+    return s;
   }
 
   var y = utc ? date.getUTCFullYear() : date.getFullYear();
@@ -75,10 +112,10 @@ function formatDate(date, format, utc) {
   var tz = -date.getTimezoneOffset();
   var K = utc || !tz ? "Z" : tz > 0 ? "+" : "-";
   if (!utc) {
-      tz = Math.abs(tz);
-      var tzHrs = Math.floor(tz / 60);
-      var tzMin = tz % 60;
-      K += ii(tzHrs) + ":" + ii(tzMin);
+    tz = Math.abs(tz);
+    var tzHrs = Math.floor(tz / 60);
+    var tzMin = tz % 60;
+    K += ii(tzHrs) + ":" + ii(tzMin);
   }
   format = format.replace(/(^|[^\\])K/g, "$1" + K);
 
@@ -92,7 +129,7 @@ function formatDate(date, format, utc) {
   format = format.replace(/\\(.)/g, "$1");
 
   return format;
-};
+}
 
 $("div.accordian").accordion({
   autoHeight: false,
@@ -107,6 +144,14 @@ $(".accordianIn3Fir").click(function () {
   $(".window__image_left").toggleClass("dis-block");
   $(".window__image_right").toggleClass("dis-block");
   $(".window__image_right").toggleClass("bg-grey");
+});
+
+$(".modal-window__btnBtn1").click(function () {
+  $(".modal-window1").toggleClass("dis-block");
+});
+
+$(".modal-window__btnBtn").click(function () {
+  $(".modal-window").toggleClass("dis-block");
 });
 
 $(".accordianIn3Fir").click(function () {
@@ -136,6 +181,10 @@ $("#window-1").resize((e) => {
     $(".scroll_flex").removeClass("d-block");
     $(".scroll").removeClass("mw-100");
   }
+});
+
+$(".open-modal").click(function () {
+  $(".modal-window1").toggleClass("dis-block");
 });
 
 $(".accrodianIn7content").click(function () {
