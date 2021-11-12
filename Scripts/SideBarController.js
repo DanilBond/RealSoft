@@ -1,15 +1,15 @@
-let parcerContainer = document.querySelector(".parcerContainer");
+let parcerContainer = document.querySelectorAll(".parcerContainer");
+console.log(parcerContainer);
 
 let elementsToModify = [
     document.querySelectorAll(".menuContainerTitle"),
     document.querySelectorAll(".menuContainer span"),
     document.querySelectorAll(".menuContainer .container .item .itemArrow img")];
-console.log(elementsToModify);
 
-function SetSideBarSmall(){
-    let currentClass = parcerContainer.getAttribute("class");
+function SetSideBarSmall(id){
+    let currentClass = parcerContainer[id].getAttribute("class");
     if(currentClass == "parcerContainer pcOpen"){
-        parcerContainer.setAttribute("class", "parcerContainer pcClosed");
+        parcerContainer[id].setAttribute("class", "parcerContainer pcClosed");
 
         for (const i of elementsToModify[0]) {
             i.style.fontSize = "";            
@@ -31,7 +31,7 @@ function SetSideBarSmall(){
         }
     }
     else{
-        parcerContainer.setAttribute("class", "parcerContainer pcOpen");
+        parcerContainer[id].setAttribute("class", "parcerContainer pcOpen");
 
         for (const i of elementsToModify[0]) {
             i.style.fontSize = "0";            

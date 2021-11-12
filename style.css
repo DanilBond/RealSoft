@@ -1190,7 +1190,7 @@ p {
   z-index: 1;
   width: 239px;
   height: 100%;
-  position: fixed;
+  position: absolute;
   margin-top: -10px;
   /* padding-left: 30px; */
 }
@@ -1203,10 +1203,17 @@ p {
   height: 30px;
   width: 166px;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
   margin-left: 55px;
   padding-left: 10px;
+  justify-content: space-between;
+}
+.pcItem img{
+  width: 8px;
+  height: 8px;
+  justify-self: flex-end;
+  margin-right: 10px;
 }
 .pcItem:hover {
   background-color: #6fd5f5;

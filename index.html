@@ -25,19 +25,61 @@
         <div><img src="./images/size.svg" alt="size" /></div>
       </div>
       <div class="mainContainer">
+        <!-- Делопроизводство -->
         <div class="parcerContainer pcClosed">
-          <span onclick="SetSideBarSmall()" class="pcTitle">
+          <span onclick="SetSideBarSmall(0)" class="pcTitle">
             <div><img src="./images/Arrow.svg" alt="Arrow"></div>Делопроизводство
           </span>
-          <div class="pcItem">Входящие документы</div>
+          <div class="pcItem" onclick="setActiveWindow(0)">Входящие документы</div>
           <div class="pcItem">Исходящие документы</div>
           <div class="pcItem">Прошлогодние базы</div>
           <div class="pcItem">Отчет по входящим</div>
           <div class="pcItem">Отчет по исходящим</div>
           <div class="pcItem">Отчет по исходящим</div>
-          <div class="pcItem">Конфликтные</div>
+          <div class="pcItem">
+            Конфликтные
+            <img src="./images/Arrow.svg" alt="Arrow" />
+          </div>
           <div class="pcItem">Корзина</div>
         </div>
+        <!-- Делопроизводство -->
+
+        <!-- Фин ОЦО -->
+        <div class="parcerContainer pcClosed">
+          <span onclick="SetSideBarSmall(1)" class="pcTitle">
+            <div><img src="./images/Arrow.svg" alt="Arrow"></div>Фин ОЦО
+          </span>
+          <div class="pcItem">Оглавление</div>
+          <div class="pcItem">По номенклатуре</div>
+          <div class="pcItem">По авторам</div>
+          <div class="pcItem">По дате</div>
+          <div class="pcItem">По месяцам</div>
+          <div class="pcItem">По номерам</div>
+          <div class="pcItem">По филиалам</div>
+          <div class="pcItem">По статусу</div>
+          <div class="pcItem">Приказы</div>
+          <div class="pcItem">Списание ОС через ЦА</div>
+          <div class="pcItem"  onclick="setActiveWindow(1)">Статистика Фин ОЦО</div>
+          <div class="pcItem">Нормативные документы служб Фин ОЦО</div>
+        </div>
+        <!-- Фин ОЦО -->
+
+        <!-- Структура -->
+        <div class="parcerContainer pcClosed">
+          <span onclick="SetSideBarSmall(2)" class="pcTitle">
+            <div><img src="./images/Arrow.svg" alt="Arrow"></div>Структура АО КТК
+          </span>
+          <div class="pcItem">Телефоны</div>
+          <div class="pcItem"  onclick="setActiveWindow(2)">Иерархия</div>
+          <div class="pcItem">Маршруты</div>
+          <div class="pcItem">Избранное</div>
+          <div class="pcItem">Личные карточки</div>
+          <div class="pcItem">Департаменты по коду</div>
+          <div class="pcItem">По номеру</div>
+        </div>
+        <!-- Структура -->
+
+        
         <div class="menuContainer">
           <span class="menuContainerTitle">МЕНЮ</span>
           <div class="container">
@@ -48,7 +90,7 @@
               <span>Рабочий стол</span>
             </div>
 
-            <div class="item">
+            <div class="item" onclick="SetSideBarSmall(2)">
               <div class="imgContainer">
                 <img src="./images/ID.svg" alt="ID" />
               </div>
@@ -58,7 +100,7 @@
               </div>
             </div>
 
-            <div class="item" onclick="SetSideBarSmall()">
+            <div class="item" onclick="SetSideBarSmall(0)">
               <div class="imgContainer">
                 <img src="./images/DOCX.svg" alt="DOCX" />
               </div>
@@ -69,7 +111,7 @@
               </div>
             </div>
 
-            <div class="item">
+            <div class="item" onclick="SetSideBarSmall(1)">
               <div class="imgContainer">
                 <img src="./images/Calculator.svg" alt="Calculator" />
               </div>
@@ -217,7 +259,7 @@
       <div class="content">
 
         <div class="content__wrapper">
-          <div class="window" id="window-1">
+          <div class="window windowModuleFinder" id="window-1">
             <nav class="window__nav">
               <div class="window__routes">
                 Делопроизводство / Входящие документы
@@ -1330,7 +1372,7 @@
           <!-- SECOND WINDOW -->
           
           
-          <div class="window">
+          <div class="window windowModuleFinder">
             <nav class="window__nav">
               <div class="window__routes">
                Фин ОЦО
@@ -1528,12 +1570,214 @@
 
 <!-- SECOND WINDOW ENDS -->
 
+
             </div>
             <div class="scroll_image">
               <img class="scroll_img" src="./images/scroll.png" alt="ошибка при получении данных">
             </div>
            </div>
           </div>
+
+          <!--THIRD WINDOW BEGIN-->
+
+          <div class="window windowModuleFinder">
+            <nav class="window__nav">
+              <div class="window__routes">
+                Структура АО КТК
+                <span>/ Иерархия</span>
+              </div>
+              <div class="window__icons">
+                <img src="./images/edit.svg" alt="edit" class="window__images" />
+                <img src="./images/line.svg" alt="line" class="window__images" />
+                <img id="lol" src="./images/square.svg" alt="square" class="window__images" />
+              </div>
+            </nav>
+            <hr class="window__hr" />
+            <div class="window__registration">
+              <div class="window__left">
+                
+                <div class="window__action-btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <p class="window__action-text disabled">
+                    ДЕЙСТВИЕ
+                  </p>
+                  <img src="./images/dropdown.svg" alt="" />
+                </div>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+
+
+                
+              </div>
+              <div class="window__right">
+                
+                
+                <div class="window__search">
+                  <input type="text" placeholder="Найти документ" />
+                  <img src="./images/search.svg" alt="" />
+                </div>
+              </div>
+            </div>
+           <div class="scroll_flex">
+            <div class="scroll">
+              <div class="status2">
+                
+                <div class="status__year">Год</div>
+                <div class="status__month">Месяц</div>
+                
+              </div>
+
+
+              <div id="faqs-container" class="accordian">
+                <h3 class="ok accordian__year"><a href="#">2019</a><div class="accordian__folder"></div></h3>
+
+                <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                  <h3 class="ok accordianIn"><a class="" href="#">Апрель</a><div class="accordian__folder"></div></h3>
+                  <div class="accordian1vl">
+                    
+                  </div>
+                </div>
+                <h3 class="ok accordian__year"><a href="#">2020</a><div class="accordian__folder"></div></h3>
+                <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                  <h3 class="ok accordianIn"><a class="" href="#">Март</a><div class="accordian__folder"></div></h3>
+                  <div class="accordian1vl">
+                  </div>
+                  <h3 class="ok accordianIn"><a class="" href="#">Сентябрь</a><div class="accordian__folder"></div></h3>
+                  <div class="accordian1vl">
+                  </div>
+                  <h3 class="ok accordianIn"><a class="" href="#">Октябрь</a><div class="accordian__folder"></div></h3>
+                  <div class="accordian1vl">
+                    <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                      <h3 class="ok accordianIn2"><a class="" href="#">Алиев З.Р.</a><div class="accordian__folder"></div></h3>
+                      <div class="accordian1vl">
+                      </div>
+                      <h3 class="ok accordianIn2"><a class="" href="#">Кулмурзаева Р.А.</a><div class="accordian__folder"></div></h3>
+                      <div class="accordian1vl">
+                        <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                          <h3 class="ok accordianIn3sec"><img src="./images/accordian__status.png" class="accordianIn3img"><a class="" href="#">Исполнен</a><div class="accordian__folder"></div></h3>
+                          <div class="accordian1vl">
+                          </div>
+                          <h3 class="ok accordianIn3sec"><img src="./images/accordian__status-red.svg" class="accordianIn3img"><a class="" href="#">Отклонен</a><div class="accordian__folder"></div></h3>
+                          <div class="accordian1vl">
+                            <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                              <h3 class="ok accordianIn4"><a class="" href="#">Алматытелеком РДТ</a><div class="accordian__folder"></div></h3>
+                              <div class="accordian1vl">
+                                <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                                  <h3 class="ok accordianIn5"><a class="" href="#">Алматы</a><div class="accordian__folder"></div></h3>
+                                  <div class="accordian1vl">
+                                    <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                                      <h3 class="ok accordianIn6"><a class="" href="#">Форма ДА-1. Акт приема-передачи</a><div class="accordian__folder"></div></h3>
+                                      <div class="accordian1vl">
+                                        <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                                          <h3 class="ok accordianIn7"><a class="" href="#">Акт установки долгосрочных активов №6 Приставка STB_HD 40шт</a><div class="accordian__folder"></div></h3>
+                                          <div class="accordian1vl">
+                                            <div class="accrodianIn7content1 ok accrodianIn7content">   
+                                              <div class="accordianIn7__left">
+                                                <p class="accordianIn7fir">ЭТАП:</p>
+                                                <p class="accordianIn7sec">Уведомление исполнителю</p>
+                                              </div>                                       
+                                                <p class="accordianIn7gray">(Кулмурзаева Р. А., Сабалакова Р. Б.)</p>                                   
+                                            </div>
+                                            <div class="accrodianIn7content2 ok accrodianIn7content">     
+                                              <div class='accordianIn7__left'>                                   
+                                                <p class="accordianIn7fir">ЭТАП:</p>
+                                                <p class="accordianIn7sec">МОЛ (сдал)</p>
+                                              </div>                                    
+                                              <p class="accordianIn7gray">(Абдикаримов Е. О.)</p> 
+                                            </div>
+                                            <div class="accrodianIn7content1 ok accrodianIn7content">   
+                                              <div class="accordianIn7__left">
+                                                <p class="accordianIn7fir">ЭТАП:</p>
+                                                <p class="accordianIn7sec">МОЛ (принял)</p>
+                                              </div>                                       
+                                                <p class="accordianIn7gray">(Абдикаримов Е. О.)</p>                                   
+                                            </div>
+                                            <div class="accrodianIn7content2 ok accrodianIn7content">     
+                                              <div class='accordianIn7__left'>                                   
+                                                <p class="accordianIn7fir">ЭТАП:</p>
+                                                <p class="accordianIn7sec">Члены комиссии БЕ (принимающая сторона) - Параллельно</p>
+                                              </div>                                    
+                                              <p class="accordianIn7gray">(Ильясова А. А., Игламов Н. И., Алипбеков А. С., Мелкобродов И.А.)</p> 
+                                            </div>
+                                            <div class="accrodianIn7content1 ok accrodianIn7content">   
+                                              <div class="accordianIn7__left">
+                                                <p class="accordianIn7fir">ЭТАП:</p>
+                                                <p class="accordianIn7sec">Уведомление исполнителю</p>
+                                              </div>                                       
+                                                <p class="accordianIn7gray">(Кулмурзаева Р. А., Сабалакова Р. Б.)</p>                                   
+                                            </div>
+                                            <div class="accrodianIn7content2 ok accrodianIn7content">     
+                                              <div class='accordianIn7__left'>                                   
+                                                <p class="accordianIn7fir">ЭТАП:</p>
+                                                <p class="accordianIn7sec">МОЛ (сдал)</p>
+                                              </div>                                    
+                                              <p class="accordianIn7gray">(Абдикаримов Е. О.)</p> 
+                                            </div>
+                                            <div class="accrodianIn7content1 ok accrodianIn7content">   
+                                              <div class="accordianIn7__left">
+                                                <p class="accordianIn7fir">ЭТАП:</p>
+                                                <p class="accordianIn7sec">МОЛ (принял)</p>
+                                              </div>                                       
+                                                <p class="accordianIn7gray">(Абдикаримов Е. О.)</p>                                   
+                                            </div>
+                                            <div class="accrodianIn7content2 ok accrodianIn7content">     
+                                              <div class='accordianIn7__left'>                                   
+                                                <p class="accordianIn7fir">ЭТАП:</p>
+                                                <p class="accordianIn7sec">Члены комиссии БЕ (принимающая сторона) - Параллельно</p>
+                                              </div>                                    
+                                              <p class="accordianIn7gray">(Ильясова А. А., Игламов Н. И., Алипбеков А. С., Мелкобродов И.А.)</p> 
+                                            </div>
+                                            <div class="accrodianIn7content1 ok accrodianIn7content">
+                                              <div class='accordianIn7__left'>                                   
+                                                <p class="accordianIn7fir">15.12.2020<br>
+                                                  16:30:35</p>
+                                                <p class="accordianIn7gray">Заявка отклонена</p>
+                                              </div>                                    
+                                              <p class="accordianIn7gray">(Сабалакова Р. Б. передал(а) закладку Абдикаримов Е.О.)</p> 
+                                            </div>
+                                            
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <h3 class="ok accordianIn2"><a class="" href="#">Сабалакова Р.Б.</a><div class="accordian__folder"></div></h3>
+                      <div class="accordian1vl">
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="ok accordianIn"><a class="" href="#">Ноябрь</a><div class="accordian__folder"></div></h3>
+                  <div class="accordian1vl">
+                  </div>
+                  <h3 class="ok accordianIn"><a class="" href="#">Декабрь</a><div class="accordian__folder"></div></h3>
+                  <div class="accordian1vl">
+                  </div>
+                 </div>
+
+                </div>
+
+
+
+
+
+            </div>
+            <div class="scroll_image">
+              <img class="scroll_img" src="./images/scroll.png" alt="ошибка при получении данных">
+            </div>
+           </div>
+          </div>
+
+          <!--THIRD WINDOW END-->
+
         </div>
         <div class="window window-absolute" id="drag">
           <nav class="window__nav" id="navbar">
@@ -2023,6 +2267,7 @@
   <script src="./Scripts/DragAndDrop.js"></script>
   <script src="./Scripts/SideBarController.js"></script>
   <script src="./Scripts/Accordion.js"></script>
+  <script src="./Scripts/WindowManager.js"></script>
 </body>
 
 </html>
