@@ -869,6 +869,12 @@ p {
   height: 40px;
 }
 
+.accordian3__year {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
 .accordian3In3 {
   display: flex;
   align-items: center;
