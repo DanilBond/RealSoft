@@ -754,7 +754,7 @@ p {
   align-items: center;
   height: 40px;
   border-radius: 0 !important;
-  padding-left: 80px !important;
+  padding-left: 60px !important;
   border-top: 1px solid rgba(67, 79, 99, 0.2) !important;
   border-bottom: 1px solid rgba(67, 79, 99, 0.2) !important;
 }
@@ -874,7 +874,7 @@ p {
   align-items: center;
   border-radius: 0 !important;
   height: 40px;
-  padding-left: 150px !important;
+  padding-left: 130px !important;
   border-top: 1px solid rgba(67, 79, 99, 0.2) !important;
   border-bottom: 1px solid rgba(67, 79, 99, 0.2) !important;
 }

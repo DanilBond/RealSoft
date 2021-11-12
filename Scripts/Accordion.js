@@ -678,7 +678,7 @@ function renderFirstAccordion(accordionJS1) {
 
 // CODE FOR THIRD ACCORDION
 
-let accrodionJS3 = [
+let accordionJS3 = [
     {
         name: "TOO AILIT",
         icon: "center",
@@ -914,3 +914,118 @@ let accrodionJS3 = [
         ],
     },
 ];
+
+const accordion3 = $(".asd3");
+
+renderThirdAccordion(accordionJS3);
+
+function renderThirdAccordion(accordionJS) {
+    const renderYear = (arrAcc) => {
+        for (let i in arrAcc) {
+            const year = $("<h3>", {
+                class: "ok accordian__year",
+            });
+            const icon = $("<img>", {
+                src: checkIcon(arrAcc[i].icon),
+                class: "accordian3In3img",
+            });
+            const a = $("<a>", { href: "#", class: "bold" });
+            a.text(arrAcc[i].name);
+            year.append(icon);
+            year.append(a);
+            accordion3.append(year);
+            renderMonth(arrAcc[i].data);
+        }
+    };
+
+    renderYear(accordionJS);
+
+    function renderMonth(arrMonth) {
+        const accordionInner = $("<div>", {
+            class: "accordian ok1 accordianInner",
+            style: "padding: 0; background-color:none;",
+        });
+        for (let i = 0; i < arrMonth.length; i++) {
+            let vl = $("<div>", { class: "accordian1vl" });
+            const month = $("<h3>", {
+                class: "ok accordianIn",
+            });
+
+            for (let x of arrMonth[i].data) {
+                smthToAdd = renderDays(x);
+                vl.append(smthToAdd);
+            }
+
+            const icon = $("<img>", {
+                src: checkIcon(arrMonth[i].icon),
+                class: "accordian3In3img",
+            });
+            const a = $("<a>", { href: "#", class: "bold" }).text(
+                arrMonth[i].name
+            );
+            month.append(icon);
+            month.append(a);
+            accordionInner.append(month);
+            accordionInner.append(vl);
+        }
+        accordion3.append(accordionInner);
+    }
+
+    function renderDays({ name, icon, data }) {
+        if (data.length == 0) {
+            const in2 = $("<div>", { class: "ok accordian3In2" });
+            const img = $("<img>", {
+                class: "accordian3In3img",
+                src: checkIcon(icon),
+            });
+            const p = $("<p>", { class: "accordian3In3__text" }).text(name);
+            in2.append(img);
+            in2.append(p);
+            return in2;
+        } else {
+            const accordianInner = $("<div>", {
+                class: "accordian ok1 accordianInner",
+                style: "padding: 0; background-color:none;",
+            });
+            const h3 = $("<h3>", {
+                class: "ok accordianIn2",
+            });
+            const img = $("<img>", {
+                class: "accordian3In3img",
+                src: checkIcon(icon),
+            });
+            const a = $("<a>", { class: "accordian3In3__text" }).text(name);
+            h3.append(img);
+            h3.append(a);
+            accordianInner.append(h3);
+
+            const vl = $("<div>", { class: "accordian1vl" });
+            data.forEach(({ name, icon }) => {
+                const in3 = $("<div>", { class: "ok accordian3In3" });
+                const img = $("<img>", {
+                    class: "accordian3In3img",
+                    src: checkIcon(icon),
+                });
+                const p = $("<p>", { class: "accordian3In3__text" }).text(name);
+                in3.append(img);
+                in3.append(p);
+                vl.append(in3);
+            });
+            accordianInner.append(vl);
+            return accordianInner;
+        }
+    }
+
+    function checkIcon(icon) {
+        switch (icon) {
+            case "center":
+                return "./images/accordian3.svg";
+            case "marketing":
+                return "./images/accordian3-marketing.svg";
+            case "person":
+                return "./images/accordian3-person.svg";
+            default:
+                break;
+        }
+    }
+}
