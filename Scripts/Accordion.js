@@ -1,30 +1,565 @@
 let accordionJS = {
     2020: [
         {
-            Апрель: [{}],
+            month: "Апрель",
+            data: [
+                {
+                    date: "14.06.21",
+                    data: [
+                        {
+                            status: "accepted",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                        {
+                            status: "accepted",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                    ],
+                },
+                {
+                    date: "15.06.21",
+                    data: [
+                        {
+                            status: "accepted",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                        {
+                            status: "wrong",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                    ],
+                },
+                {
+                    date: "16.06.21",
+                    data: [
+                        {
+                            status: "looking",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                        {
+                            status: "wrong",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                    ],
+                },
+            ],
         },
         {
-            Май: [{}],
+            month: "Май",
+            data: [
+                {
+                    date: "14.06.21",
+                    data: [
+                        {
+                            status: "accepted",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                        {
+                            status: "accepted",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                    ],
+                },
+                {
+                    date: "15.06.21",
+                    data: [
+                        {
+                            status: "accepted",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                        {
+                            status: "wrong",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                    ],
+                },
+                {
+                    date: "16.06.21",
+                    data: [
+                        {
+                            status: "looking",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                        {
+                            status: "wrong",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                    ],
+                },
+            ],
         },
         {
-            Июнь: [{}],
+            month: "Июнь",
+            data: [
+                {
+                    date: "14.06.21",
+                    data: [
+                        {
+                            status: "accepted",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                        {
+                            status: "accepted",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                    ],
+                },
+                {
+                    date: "15.06.21",
+                    data: [
+                        {
+                            status: "accepted",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                        {
+                            status: "wrong",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                    ],
+                },
+                {
+                    date: "16.06.21",
+                    data: [
+                        {
+                            status: "looking",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                        {
+                            status: "wrong",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                    ],
+                },
+            ],
         },
     ],
     2021: [
         {
-            Апрель: [{}],
+            month: "Апрель",
+            data: [
+                {
+                    date: "14.06.21",
+                    data: [
+                        {
+                            status: "accepted",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                        {
+                            status: "accepted",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                    ],
+                },
+                {
+                    date: "15.06.21",
+                    data: [
+                        {
+                            status: "accepted",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                        {
+                            status: "wrong",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                    ],
+                },
+                {
+                    date: "16.06.21",
+                    data: [
+                        {
+                            status: "looking",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                        {
+                            status: "wrong",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                    ],
+                },
+            ],
         },
         {
-            Май: [{}],
+            month: "Май",
+            data: [
+                {
+                    date: "14.06.21",
+                    data: [
+                        {
+                            status: "accepted",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                        {
+                            status: "accepted",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                    ],
+                },
+                {
+                    date: "15.06.21",
+                    data: [
+                        {
+                            status: "accepted",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                        {
+                            status: "wrong",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                    ],
+                },
+                {
+                    date: "16.06.21",
+                    data: [
+                        {
+                            status: "looking",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                        {
+                            status: "wrong",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                    ],
+                },
+            ],
         },
         {
-            Июнь: [{}],
+            month: "Июнь",
+            data: [
+                {
+                    date: "14.06.21",
+                    data: [
+                        {
+                            status: "accepted",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                        {
+                            status: "accepted",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                    ],
+                },
+                {
+                    date: "15.06.21",
+                    data: [
+                        {
+                            status: "accepted",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                        {
+                            status: "wrong",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                    ],
+                },
+                {
+                    date: "16.06.21",
+                    data: [
+                        {
+                            status: "looking",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                        {
+                            status: "wrong",
+                            p1: "0101",
+                            p2: "А-15-Б",
+                            p3: "16.02.2021",
+                            p4: "15.06.2021",
+                            textAround: "P",
+                            title: "ABS",
+                            gmail: "example@email.com",
+                            desc: "Добрый день! Во вложении разместил документ, которы...",
+                            person: "Генеральный директор",
+                        },
+                    ],
+                },
+            ],
         },
     ],
 };
 
 let accordion = $(".asd");
 console.log(accordion);
+
 const renderYear = (arrAcc) => {
     for (let i in arrAcc) {
         const year = $("<h3>", {
@@ -37,96 +572,104 @@ const renderYear = (arrAcc) => {
         year.append(folder);
         accordion.append(year);
         renderMonth(arrAcc[i]);
+        console.log(arrAcc[i]);
     }
 };
 
 renderYear(accordionJS);
 
-function renderMonth(arrMotnh) {
-    for (let i = 0; i < arrMotnh.length; i++) {
-        console.log(arrMonth[i]);
+function renderMonth(arrMonth) {
+    const accordionInner = $("<div>", {
+        class: "accordian ok1 accordianInner",
+        style: "padding: 0; background-color:none;",
+    });
+    for (let i = 0; i < arrMonth.length; i++) {
+        const month = $("<h3>", {
+            class: "ok accordianIn",
+        });
+        let text = "";
+        let vl = $("<div>", { class: "accordian1vl" });
+        for (let x of arrMonth[i].data) {
+            text = arrMonth[i].month;
+            let smthToAdd = renderDays(x);
+            vl.append(smthToAdd);
+        }
+        month.append($("<a>", { href: "#" }).text(text));
+        month.append($("<div>", { class: "accordian__folder" }));
+        accordionInner.append(month);
+        accordionInner.append(vl);
+    }
+    accordion.append(accordionInner);
+}
+
+function renderDays({ date, data }) {
+    const accordionInner = $("<div>", {
+        class: "accordian ok1 accordianInner",
+        style: "padding: 0; background-color:none;",
+    });
+    const ok = $("<div>", { class: "ok accordianIn2" });
+    ok.append($("<a>", { href: "#" }).text(date));
+    ok.append($("<div>", { class: "accordian__folder" }));
+
+    let vl = $("<div>", { class: "accordian1vl" });
+
+    data.forEach((a) => {
+        vl.append(renderOne(a));
+    });
+
+    accordionInner.append(ok);
+    accordionInner.append(vl);
+
+    return accordionInner;
+}
+
+function renderOne({
+    status,
+    p1,
+    p2,
+    p3,
+    p4,
+    textAround,
+    title,
+    gmail,
+    desc,
+    person,
+}) {
+    return `
+    <div class="accordianIn3Fir">
+            <div class="accordian_checkbox">
+              <div class="square-checkbox">
+                <label>
+    
+                  <input type="checkbox" name="" id="" />
+                  <span></span>
+                </label>
+              </div>
+            </div>
+            <img src="${checkStatus(status)}">
+            <p>${p1}</p>
+            <p>${p2}</p>
+            <p>${p3}</p>
+            <p>${p4}</p>
+            <p class="text-around">${textAround}</p>
+            <div>
+              <p class="in3title">${title}</p>
+              <p class="in3bottomText">${gmail}</p>
+            </div>
+            <p>${desc}</p>
+            <p>${person}</p>
+      </div>`;
+}
+
+function checkStatus(status) {
+    switch (status) {
+        case "accepted":
+            return "./images/accordian__status.png";
+        case "wrong":
+            return "./images/accordian__status-red.svg";
+        case "looking":
+            return "./images/accordian__status-purple.svg";
+        default:
+            break;
     }
 }
-
-function renderDay() {}
-
-// let arr = accordionJS.map((e) => {
-//     return `
-{
-    /* <h3 class="ok accordian__year"><a href="#">2020</a><div class="accordian__folder"></div></h3>
-
-<div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
-  <h3 class="ok accordianIn"><a class="" href="#">Апрель</a><div class="accordian__folder"></div></h3>
-  <div class="accordian1vl">
-    
-    <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
-      <h3 class="ok accordianIn2"><a class="" href="#">16.06.2021</a><div class="accordian__folder"></div></h3>
-      <div class="accordian1vl">
-        <div class="accordianIn3Fir">
-          <div class="accordian_checkbox">
-            <div class="square-checkbox">
-              <label>
-
-                <input type="checkbox" name="" id="" />
-                <span></span>
-              </label>
-            </div>
-          </div>
-          <img src="./images/accordian__status-purple.svg">
-          <p>0064</p>
-          <p>А-15-Б</p>
-          <p>16.02.2021</p>
-          <p>15.06.2021</p>
-          <!-- <img src="./images/accordian__p.png"> -->
-          <p class="text-around">P</p>
-          <div>
-            <p class="in3title">"ABS"</p>
-            <p class="in3bottomText">example@email.com</p>
-          </div>
-          <p>Добрый день! Во вложении разместил документ, которы...</p>
-          <p>Генеральный директор</p>
-        </div>
-        <div class="accordianIn3Fir">
-          <div class="accordian_checkbox">
-            <div class="square-checkbox">
-              <label>
-
-                <input type="checkbox" name="" id="" />
-                <span></span>
-              </label>
-            </div>
-          </div>
-          <img src="./images/accordian__status-red.svg">
-          <p>0064</p>
-          <p>А-15-Б</p>
-          <p>16.02.2021</p>
-          <p>15.06.2021</p>
-          <!-- <img src="./images/accordian__p.png"> -->
-          <p class="text-around">P</p>
-          <div>
-            <p class="in3title">"ABS"</p>
-            <p class="in3bottomText">example@email.com</p>
-          </div>
-          <p>Добрый день! Во вложении разместил документ, которы...</p>
-          <p>Генеральный директор</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div> */
-}
-//     `;
-// });
-// function findObjectByLabel(obj, label) {
-//     for (let elements in obj) {
-//         if (elements === label) {
-//             console.log(obj[elements]);
-//         }
-//         if (typeof obj[elements] === "object") {
-//             findObjectByLabel(obj[elements], []);
-//         }
-//     }
-// }
-
-// findObjectByLabel(accordionJS, []);
