@@ -929,7 +929,10 @@ function renderThirdAccordion(accordionJS) {
                 src: checkIcon(arrAcc[i].icon),
                 class: "accordian3In3img",
             });
-            const a = $("<a>", { href: "#", class: "bold" });
+            const a = $("<a>", {
+                href: "#",
+                class: "accordian3-big-text bold",
+            });
             a.text(arrAcc[i].name);
             year.append(icon);
             year.append(a);
@@ -960,9 +963,10 @@ function renderThirdAccordion(accordionJS) {
                 src: checkIcon(arrMonth[i].icon),
                 class: "accordian3In3img",
             });
-            const a = $("<a>", { href: "#", class: "bold" }).text(
-                arrMonth[i].name
-            );
+            const a = $("<a>", {
+                href: "#",
+                class: "accordian3-medium-text",
+            }).text(arrMonth[i].name);
             month.append(icon);
             month.append(a);
             accordionInner.append(month);
@@ -978,7 +982,9 @@ function renderThirdAccordion(accordionJS) {
                 class: "accordian3In3img",
                 src: checkIcon(icon),
             });
-            const p = $("<p>", { class: "accordian3In3__text" }).text(name);
+            const p = $("<p>", {
+                class: "accordian3In3__text accordian3-small-text",
+            }).text(name);
             in2.append(img);
             in2.append(p);
             return in2;
@@ -994,7 +1000,9 @@ function renderThirdAccordion(accordionJS) {
                 class: "accordian3In3img",
                 src: checkIcon(icon),
             });
-            const a = $("<a>", { class: "accordian3In3__text" }).text(name);
+            const a = $("<a>", {
+                class: "accordian3In3__text accordian3-medium-text",
+            }).text(name);
             h3.append(img);
             h3.append(a);
             accordianInner.append(h3);
@@ -1006,7 +1014,9 @@ function renderThirdAccordion(accordionJS) {
                     class: "accordian3In3img",
                     src: checkIcon(icon),
                 });
-                const p = $("<p>", { class: "accordian3In3__text" }).text(name);
+                const p = $("<p>", {
+                    class: "accordian3In3__text accordian3-small-text",
+                }).text(name);
                 in3.append(img);
                 in3.append(p);
                 vl.append(in3);
