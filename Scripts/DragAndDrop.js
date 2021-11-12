@@ -12,3 +12,10 @@ $(function () {
       containment: "",
     });
 });
+$(function () {
+  $("#drag2")
+    .draggable({ containment: "#content", handle: "#navbar2" })
+    .resizable({
+      containment: "",
+    });
+});
