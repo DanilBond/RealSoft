@@ -173,20 +173,191 @@ $(".window__images").click(function () {
 $("#window-1").resize((e) => {
   let w = e.target.offsetWidth;
   console.log(w);
+
   if (w < 1350) {
-    console.log(w);
-    $(".scroll_flex").addClass("d-block");
-    $(".scroll").addClass("mw-100");
+    $("#window-1 .scroll_flex").addClass("d-block");
+    $("#window-1 .scroll").addClass("mw-100");
   } else {
-    $(".scroll_flex").removeClass("d-block");
-    $(".scroll").removeClass("mw-100");
+    $("#window-1 .scroll_flex").removeClass("d-block");
+    $("#window-1 .scroll").removeClass("mw-100");
+  }
+
+  if (w < 1104) {
+    $("#window-1 .window__sort-btn")
+      .addClass("mt-10")
+      .addClass("mb-10")
+      .addClass("ml-0");
+  } else {
+    $("#window-1 .window__sort-btn")
+      .removeClass("mt-10")
+      .removeClass("mb-10")
+      .removeClass("ml-0");
+  }
+
+  // if (w < 649) {
+  //     $("#window-1 .window__sort-btn")
+  //         .addClass("mt-10")
+  //         .addClass("mb-10")
+  //         .addClass("ml-0");
+  // } else {
+  //     $("#window-1 .window__sort-btn")
+  //         .removeClass("mt-10")
+  //         .removeClass("mb-10")
+  //         .removeClass("ml-0");
+  // }
+
+  if (w < 511) {
+    $("#window-1 .window__search")
+      .addClass("mt-10")
+      .addClass("mb-10")
+      .addClass("ml-0");
+  } else {
+    $("#window-1 .window__search")
+      .removeClass("mt-10")
+      .removeClass("mb-10")
+      .removeClass("ml-0");
+  }
+
+  if (w < 418) {
+    $("#window-1 .window__routes").addClass("fz-9");
+    $("#window-1 .window__icons").addClass("w-136");
+    $("#window-1 .window__images").addClass("w-14");
+  } else {
+    $("#window-1 .window__routes").removeClass("fz-9");
+    $("#window-1 .window__icons").removeClass("w-136");
+    $("#window-1 .window__images").removeClass("w-14");
+  }
+
+  if (w < 332) {
+    $("#window-1 .window__left p").addClass("fz15");
+    $("#window-1 .window__sort-btn").addClass("w-200");
+
+    $("#window-1 .window__action-btn").addClass("ml-0").addClass("mt-10");
+
+    $("#window-1 .window__registration").addClass("ml-0");
+
+    $("#window-1 .window__search input").addClass("w-180");
+
+    $("#window-1 .window__registration-btn").addClass("fz15");
+
+    $("#window-1 .window__nav").addClass("ml-0");
+  } else {
+    $("#window-1 .window__left p").removeClass("fz15");
+    $("#window-1 .window__sort-btn").removeClass("w-200");
+
+    $("#window-1 .window__action-btn").removeClass("ml-0").removeClass("mt-10");
+
+    $("#window-1 .window__registration").removeClass("ml-0");
+
+    $("#window-1 .window__search input").removeClass("w-180");
+
+    $("#window-1 .window__registration-btn").removeClass("fz15");
+
+    $("#window-1 .window__nav").removeClass("ml-0");
   }
 });
 
-$(".open-modal").click(function () {
-  $(".modal-window1").toggleClass("dis-block");
+$("#window-2").resize((e) => {
+  let w = e.target.offsetWidth;
+
+  if (w < 847) {
+    $("#window-2 .window__search").addClass("mt-10");
+  } else {
+    $("#window-2 .window__search").removeClass("mt-10");
+  }
+
+  if (w < 560) {
+    $("#window-2 .window__action-btn").addClass("mb-10");
+  } else {
+    $("#window-2 .window__action-btn").removeClass("mb-10");
+  }
+
+  if (w < 518) {
+    $("#window-2 .window__sort-btn").addClass("ml-0");
+    $("#window-2 .window__search").addClass("mb-10").addClass("ml-0");
+    $("#window-2 .window__action-btn").addClass("ml-0");
+  } else {
+    $("#window-2 .window__sort-btn").removeClass("ml-0");
+    $("#window-2 .window__search").removeClass("mb-10").removeClass("ml-0");
+    $("#window-2 .window__action-btn").removeClass("ml-0");
+  }
+
+  if (w < 418) {
+    $("#window-2 .window__routes").addClass("fz-9");
+    $("#window-2 .window__images").addClass("w-14");
+  } else {
+    $("#window-2 .window__routes").removeClass("fz-9");
+    $("#window-2 .window__images").removeClass("w-14");
+  }
+
+  if (w < 335) {
+    $("#window-2 .window__left p").addClass("fz15");
+    $("#window-2 .window__sort-btn").addClass("w-200");
+
+    $("#window-2 .window__registration").addClass("ml-0");
+
+    $("#window-2 .window__search input").addClass("w-180");
+
+    $("#window-2 .window__nav").addClass("ml-0");
+  } else {
+    $("#window-2 .window__left p").removeClass("fz15");
+    $("#window-2 .window__sort-btn").removeClass("w-200");
+
+    $("#window-2 .window__registration").removeClass("ml-0");
+
+    $("#window-2 .window__search input").removeClass("w-180");
+
+    $("#window-2 .window__nav").removeClass("ml-0");
+  }
 });
 
-$(".accrodianIn7content").click(function () {
+$("#window-3").resize((e) => {
+  let w = e.target.offsetWidth;
+
+  if (w < 537) {
+    $("#window-3 .window__search").addClass("mt-10");
+    $("#window-3 .window__search").addClass("mb-10").addClass("ml-0");
+    $("#window-3 .window__action-btn").addClass("ml-0");
+  } else {
+    $("#window-3 .window__search").removeClass("mt-10");
+    $("#window-3 .window__search").removeClass("mb-10").removeClass("ml-0");
+    $("#window-3 .window__action-btn").removeClass("ml-0");
+  }
+
+  if (w < 312) {
+    $("#window-3 .window__routes").addClass("fz-9");
+    $("#window-3 .window__images").addClass("w-14");
+  } else {
+    $("#window-3 .window__routes").removeClass("fz-9");
+    $("#window-3 .window__images").removeClass("w-14");
+  }
+
+  if (w < 300) {
+    $("#window-3 .window__left p").addClass("fz15");
+
+    $("#window-3 .window__registration").addClass("ml-0");
+
+    $("#window-3 .window__search input").addClass("w-180");
+
+    $("#window-3 .window__nav").addClass("ml-0");
+  } else {
+    $("#window-3 .window__left p").removeClass("fz15");
+
+    $("#window-3 .window__registration").removeClass("ml-0");
+
+    $("#window-3 .window__search input").removeClass("w-180");
+
+    $("#window-3 .window__nav").removeClass("ml-0");
+  }
+});
+
+$(".open-modal").click(function (e) {
+  let elem = e.target.children.length == 0 ? e.target.parentNode : e.target;
+  $(".modal-window1").toggleClass("dis-block");
+  $(".modal-window1")[0].children[0].children[0].innerHTML =
+    elem.children[elem.children.length - 1].innerText;
+});
+
+$(".accordianIn7content").click(function () {
   $(".modal-window").toggleClass("dis-block");
 });

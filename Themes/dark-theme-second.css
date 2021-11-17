@@ -1,0 +1,274 @@
+.sideBar {
+  background-color: rgba(18, 18, 18, 1);
+  box-shadow: none;
+}
+
+.window__hr {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+#timer {
+  color: rgba(187, 134, 252, 1);
+}
+
+.menuContainerTitle {
+  color: rgba(187, 134, 252, 1) !important;
+}
+
+.item span {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.pcTitle {
+  color: rgba(187, 134, 252, 1);
+}
+
+.pcItem {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 300;
+}
+
+.pcItem:hover {
+  background-color: rgba(187, 134, 252, 1);
+}
+
+.menuContainer .container .item span {
+  font-weight: 300;
+}
+
+.menuContainer .container .item:hover {
+  background-color: rgba(187, 134, 252, 1);
+}
+
+.content {
+  background: rgba(31, 31, 31, 1);
+}
+
+.navBar {
+  background-color: rgba(18, 18, 18, 1);
+  border: 1px solid rgba(18, 18, 18, 1);
+}
+
+.navbarLeft input {
+  background-color: rgba(31, 31, 31, 1);
+}
+
+.navbarRightProfile {
+  color: rgba(255, 255, 255, 1);
+}
+
+.window {
+  background: rgba(18, 18, 18, 1);
+}
+
+.window1 {
+  background: rgba(18, 18, 18, 1);
+}
+
+.window2 {
+  background: rgba(18, 18, 18, 1);
+}
+
+.window__routes {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.window__routes span {
+  color: rgba(255, 255, 255, 1);
+}
+
+.status {
+  background: rgba(31, 31, 31, 1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.status2 {
+  background: rgba(31, 31, 31, 1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.status3 {
+  background: rgba(31, 31, 31, 1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.status__checkbox input {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.status div {
+  color: rgba(255, 255, 255, 1);
+}
+
+.status2 div {
+  color: rgba(255, 255, 255, 1);
+}
+
+.window__action-btn {
+  background: rgba(187, 134, 252, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.window__sort-btn {
+  background: rgba(187, 134, 252, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.window__open-btn {
+  background: rgba(187, 134, 252, 1);
+}
+
+.window__open-btn p {
+  color: rgba(255, 255, 255, 1);
+}
+
+.window__sort-btn p {
+  color: rgba(255, 255, 255, 1);
+}
+
+.window__registration-btn {
+  background: rgba(187, 134, 252, 1);
+}
+
+.window__registration-btn p {
+  color: rgba(255, 255, 255, 1);
+}
+
+.window__search input {
+  background: rgba(31, 31, 31, 1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.accordian a {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.accordian p {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.accordian__year.ui-state-active {
+  background: rgba(14, 8, 19, 1) !important;
+}
+
+.accordian3__year.ui-state-active {
+  background: rgba(14, 8, 19, 1) !important;
+}
+
+.accordianIn.ui-state-active {
+  background: rgba(30, 17, 40, 1) !important;
+}
+
+.accordianIn2.ui-state-active {
+  background: rgba(46, 26, 61, 1) !important;
+}
+
+.accordianIn3.ui-state-active {
+  background: rgba(68, 41, 89, 1) !important;
+}
+
+.accordianIn3sec.ui-state-active {
+  background: rgba(68, 41, 89, 1) !important;
+}
+
+.accordianIn4.ui-state-active {
+  background: rgba(86, 53, 113, 1) !important;
+}
+
+.accordianIn5.ui-state-active {
+  background: rgba(102, 64, 134, 1) !important;
+}
+
+.accordianIn6.ui-state-active {
+  background: rgba(118, 74, 155, 1) !important;
+}
+
+.accordianIn7.ui-state-active {
+  background: rgba(135, 85, 177, 1) !important;
+}
+
+.accordianIn7content2 {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  background: rgba(15, 15, 15, 1) !important;
+}
+
+.modal-window {
+  background: rgba(18, 18, 18, 1);
+}
+
+.modal-window1 {
+  background: rgba(18, 18, 18, 1);
+}
+
+.modal-status {
+  background: rgba(31, 31, 31, 1);
+  color: rgba(255, 255, 255, 1);
+  font-weight: 300;
+}
+
+.ots {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.modal-status1 {
+  background: rgba(31, 31, 31, 1);
+}
+
+.modal-window__btnBtn1 {
+  background: rgba(187, 134, 252, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.modal-window__btnBtn {
+  background: rgba(187, 134, 252, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.modal-window1 {
+  color: rgba(255, 255, 255, 1);
+}
+
+.modal-status__bottom-right {
+  color: rgba(255, 255, 255, 1);
+}
+
+.modal-status__bottom-left {
+  font-weight: 300;
+}
+
+.modal-status__right {
+  background: rgba(18, 18, 18, 1);
+}
+
+.scroll_img {
+  src: url("/images/scroll__img-dark-sec.png") !important;
+}
+
+.document {
+  color: rgba(255, 255, 255, 1);
+}
+
+.document__left {
+  background: rgba(31, 31, 31, 1);
+}
+
+.document__quote {
+  background: rgba(18, 18, 18, 1);
+}
+
+.document__description {
+  background: rgba(18, 18, 18, 1);
+}
+
+.document__person em {
+  color: rgba(132, 132, 132, 1);
+}
+
+.document__person_desc {
+  color: rgba(255, 255, 255, 1);
+}

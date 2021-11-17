@@ -50,13 +50,49 @@ p {
   font-weight: bold;
 }
 
+/* for adaptive accordions */
+
+.fz-9 {
+  font-size: 10px !important;
+}
+
 .fz15 {
-  font-size: 12px;
+  font-size: 11px !important;
 }
 
 .mw-100 {
   max-width: 100% !important;
 }
+
+.w-136 {
+  width: 136px !important;
+}
+
+.w-180 {
+  width: 180px !important ;
+}
+
+.w-200 {
+  width: 200px !important;
+}
+
+.w-14 {
+  width: 14px !important;
+}
+
+.ml-0 {
+  margin-left: 0 !important;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+/* ------------------ */
 
 /* width */
 ::-webkit-scrollbar {
@@ -306,6 +342,12 @@ p {
   height: 30px;
 }
 
+.navbarRightProfile .nav-img {
+  height: 5px;
+  width: 10px;
+  margin-left: 5px;
+}
+
 /* ---------------NAVBAR--------------- */
 
 /* ---------------WINDOW--------------- */
@@ -318,7 +360,8 @@ p {
   height: 600px;
   margin: 21px auto;
   width: 95%;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   resize: both;
 }
 
@@ -330,7 +373,8 @@ p {
   min-height: 600px;
   margin: 21px auto;
   width: 95%;
-  overflow-x: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   resize: both;
 }
 
@@ -355,8 +399,10 @@ p {
   color: #000;
 }
 
-.window__images {
-  margin-right: 8px;
+.window__icons {
+  width: 84px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .window__hr {
@@ -378,6 +424,7 @@ p {
 .window__left {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .window__left p {
@@ -389,7 +436,7 @@ p {
   justify-content: space-between;
   padding: 13px 18px 11px 18px;
   width: 180px;
-  margin-left: 30px;
+  margin-left: 20px;
   background: #ffffff;
   border-radius: 30px;
   filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.2))
@@ -466,6 +513,7 @@ p {
 .window__right {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .window__right1 {
@@ -525,6 +573,7 @@ p {
 }
 .scroll_flex {
   display: block;
+  overflow-x: auto;
 }
 .scroll_image {
   display: none;
@@ -854,13 +903,13 @@ p {
   border-bottom: 1px solid rgba(67, 79, 99, 0.2) !important;
 }
 
-.accrodianIn7content1 {
+.accordianIn7content1 {
   display: flex;
   height: 60px;
   align-items: center;
 }
 
-.accrodianIn7content2 {
+.accordianIn7content2 {
   display: flex;
   height: 60px;
   align-items: center;
@@ -1437,11 +1486,11 @@ p {
   display: flex;
   align-items: center;
   flex-direction: row;
-  
+
   margin-left: 55px;
   padding-left: 10px;
 }
-.pcItem img{
+.pcItem img {
   display: none;
 }
 .pcItem:hover {
@@ -1497,12 +1546,12 @@ p {
     flex-direction: column;
     align-items: start;
   }
-  .window__left {
-    margin-bottom: 20px;
-  }
   .window {
     width: 90%;
-    margin-left: 32px;
+    margin-left: 10px;
+  }
+  .window__left {
+    margin-bottom: 10px;
   }
 }
 
@@ -1521,9 +1570,22 @@ p {
   justify-content: space-around;
 }
 /* ---------------MEDIA---------------- */
-@media only screen and (max-width: 1412px) {
-  .window__right {
-    margin-top: 15px;
+@media only screen and (max-width: 1010px) {
+  .navbarWrapper {
+    margin: 0 16px;
+  }
+  .navBar input {
+    margin-left: 20px;
+    width: 170px;
+  }
+  .navbarRightBtns img {
+    margin: 0 8px;
+  }
+  .navbarRightProfile {
+    margin-left: 20px;
+  }
+  .navbarRightProfile div p {
+    font-size: 12px;
   }
 }
 
@@ -1593,21 +1655,54 @@ p {
     transition: all 0.3s;
   }
 }
+
+@media only screen and (max-width: 678px) {
+  .navbarRightProfile div {
+    display: none;
+  }
+  .navbarRightBtns img {
+    margin: 0 3px;
+  }
+  .navBar input {
+    margin-left: 5px;
+    width: 155px;
+  }
+  .navbarWrapper {
+    margin: 0 8px;
+  }
+  .navbarRightProfile {
+    margin-left: 5px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .navbarRightBtns {
+    display: none;
+  }
+  .navbarLeft > div > img {
+    width: 30px;
+  }
+  .navBar input {
+    padding: 11px 8px;
+    width: 140px;
+    font-size: 14px;
+  }
+}
 @media only screen and (max-width: 420px) {
-  .menuContainer .container .item div{
+  .menuContainer .container .item div {
     padding-left: 0;
   }
-  .sideBar{
+  .sideBar {
     min-width: 60px;
     max-width: 60px;
   }
-  .menuContainer .menuContainerTitle{
+  .menuContainer .menuContainerTitle {
     margin: 8px;
   }
-  #logoS{
+  #logoS {
     margin-left: 10px;
   }
-  .sideBar .timeAndThemesContainer{
+  .sideBar .timeAndThemesContainer {
     margin-left: 19.5px;
   }
 }
