@@ -1422,7 +1422,7 @@ p {
   z-index: 1;
   width: 239px;
   height: 100%;
-  position: fixed;
+  position: absolute;
   margin-top: -10px;
   /* padding-left: 30px; */
 }
@@ -1435,10 +1435,14 @@ p {
   height: 30px;
   width: 166px;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
+  
   margin-left: 55px;
   padding-left: 10px;
+}
+.pcItem img{
+  display: none;
 }
 .pcItem:hover {
   background-color: #6fd5f5;
