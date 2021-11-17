@@ -187,6 +187,6 @@ $(".open-modal").click(function () {
   $(".modal-window1").toggleClass("dis-block");
 });
 
-$(".accrodianIn7content").click(function () {
+$(".accordianIn7content").click(function () {
   $(".modal-window").toggleClass("dis-block");
 });
