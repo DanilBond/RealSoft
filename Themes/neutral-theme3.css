@@ -1,0 +1,39 @@
+.content {
+  background-image: url("./../images/landscape-nature3.png");
+}
+
+.navBar {
+  background: #8e6f68;
+}
+
+.navbarRightProfile {
+  color: #ffffff;
+}
+
+.sideBar {
+  background: #430000;
+  color: #097cb4;
+}
+
+.pcItem {
+  color: white;
+  font-weight: 300;
+}
+
+.pcItem:hover {
+  background: #026a9d;
+}
+
+.pcTitle {
+  color: #097cb4;
+  font-weight: 700;
+}
+
+.menuContainer .container .item span {
+  color: white;
+  font-weight: 300;
+}
+
+.menuContainer .container .item:hover {
+  background: #026a9d;
+}
