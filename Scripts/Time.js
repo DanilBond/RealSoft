@@ -172,9 +172,7 @@ $(".window__images").click(function () {
 
 $("#window-1").resize((e) => {
   let w = e.target.offsetWidth;
-  console.log(w);
   if (w < 1350) {
-    console.log(w);
     $(".scroll_flex").addClass("d-block");
     $(".scroll").addClass("mw-100");
   } else {

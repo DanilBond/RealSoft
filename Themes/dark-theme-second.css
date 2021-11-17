@@ -117,6 +117,14 @@
   color: rgba(255, 255, 255, 1);
 }
 
+.window__open-btn {
+  background: rgba(187, 134, 252, 1);
+}
+
+.window__open-btn p {
+  color: rgba(255, 255, 255, 1);
+}
+
 .window__sort-btn p {
   color: rgba(255, 255, 255, 1);
 }
@@ -235,4 +243,32 @@
 
 .modal-status__right {
   background: rgba(18, 18, 18, 1);
+}
+
+.scroll_img {
+  src: url("/images/scroll__img-dark-sec.png") !important;
+}
+
+.document {
+  color: rgba(255, 255, 255, 1);
+}
+
+.document__left {
+  background: rgba(31, 31, 31, 1);
+}
+
+.document__quote {
+  background: rgba(18, 18, 18, 1);
+}
+
+.document__description {
+  background: rgba(18, 18, 18, 1);
+}
+
+.document__person em {
+  color: rgba(132, 132, 132, 1);
+}
+
+.document__person_desc {
+  color: rgba(255, 255, 255, 1);
 }
