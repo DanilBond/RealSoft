@@ -1593,5 +1593,22 @@ p {
     transition: all 0.3s;
   }
 }
-
+@media only screen and (max-width: 420px) {
+  .menuContainer .container .item div{
+    padding-left: 0;
+  }
+  .sideBar{
+    min-width: 60px;
+    max-width: 60px;
+  }
+  .menuContainer .menuContainerTitle{
+    margin: 8px;
+  }
+  #logoS{
+    margin-left: 10px;
+  }
+  .sideBar .timeAndThemesContainer{
+    margin-left: 19.5px;
+  }
+}
 /* ---------------MEDIA---------------- */
