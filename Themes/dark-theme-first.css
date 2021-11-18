@@ -1,18 +1,34 @@
 .sideBar {
-    background-color: rgba(18, 18, 18, 1);
+    background-color: rgba(0, 0, 0, 1);
     box-shadow: none;
 }
 
+.nav-img {
+    filter: brightness(0) saturate(100%) invert(95%) sepia(95%) saturate(18%)
+        hue-rotate(337deg) brightness(105%) contrast(106%);
+}
+
+.disabled {
+    color: #fff;
+}
+
 .window__hr {
-    color: rgba(255, 255, 255, 0.2);
+    height: 0px !important;
+    border: 0;
+    border-top: 1px solid #e8e8e8;
+}
+
+.window__images {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%)
+        hue-rotate(328deg) brightness(105%) contrast(101%);
 }
 
 #timer {
-    color: rgba(187, 134, 252, 1);
+    color: #097cb4;
 }
 
 .menuContainerTitle {
-    color: rgba(187, 134, 252, 1) !important;
+    color: #097cb4 !important;
 }
 
 .item span {
@@ -20,7 +36,17 @@
 }
 
 .pcTitle {
-    color: rgba(187, 134, 252, 1);
+    color: #097cb4;
+}
+
+.pcTitle > div > img {
+    filter: brightness(0) saturate(100%) invert(31%) sepia(84%) saturate(1398%)
+        hue-rotate(174deg) brightness(94%) contrast(93%);
+}
+
+.itemArrow img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+        hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 
 .pcItem {
@@ -29,7 +55,7 @@
 }
 
 .pcItem:hover {
-    background-color: rgba(187, 134, 252, 1);
+    background-color: #097cb4;
 }
 
 .menuContainer .container .item span {
@@ -37,20 +63,20 @@
 }
 
 .menuContainer .container .item:hover {
-    background-color: rgba(187, 134, 252, 1);
+    background-color: #097cb4;
 }
 
 .content {
-    background: rgba(31, 31, 31, 1);
+    background: #1f1f1f;
 }
 
 .navBar {
-    background-color: rgba(18, 18, 18, 1);
-    border: 1px solid rgba(18, 18, 18, 1);
+    background-color: rgba(0, 0, 0, 1);
+    border: 1px solid rgba(0, 0, 0, 1);
 }
 
 .navbarLeft input {
-    background-color: rgba(31, 31, 31, 1);
+    background-color: #1f1f1f;
 }
 
 .navbarRightProfile {
@@ -58,15 +84,15 @@
 }
 
 .window {
-    background: rgba(18, 18, 18, 1);
+    background: rgba(0, 0, 0, 1);
 }
 
 .window1 {
-    background: rgba(18, 18, 18, 1);
+    background: rgba(0, 0, 0, 1);
 }
 
 .window2 {
-    background: rgba(18, 18, 18, 1);
+    background: rgba(0, 0, 0, 1);
 }
 
 .window__routes {
@@ -78,25 +104,25 @@
 }
 
 .status {
-    background: rgba(31, 31, 31, 1);
+    background: #1f1f1f;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .status2 {
-    background: rgba(31, 31, 31, 1);
+    background: #1f1f1f;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .status3 {
-    background: rgba(31, 31, 31, 1);
+    background: #1f1f1f;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.status__checkbox input {
-    border: 1px solid rgba(255, 255, 255, 0.2);
+.status__checkbox span {
+    border: 1.5px solid rgba(255, 255, 255, 0.2) !important;
 }
 
 .status div {
@@ -108,17 +134,27 @@
 }
 
 .window__action-btn {
-    background: rgba(187, 134, 252, 1);
+    background: #097cb4;
     color: rgba(255, 255, 255, 1);
+}
+
+.window__action-btn img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+        hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 
 .window__sort-btn {
-    background: rgba(187, 134, 252, 1);
+    background: #097cb4;
     color: rgba(255, 255, 255, 1);
 }
 
+.window__sort-btn img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+        hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
 .window__open-btn {
-    background: rgba(187, 134, 252, 1);
+    background: #097cb4;
 }
 
 .window__open-btn p {
@@ -130,15 +166,20 @@
 }
 
 .window__registration-btn {
-    background: rgba(187, 134, 252, 1);
+    background: #097cb4;
 }
 
 .window__registration-btn p {
     color: rgba(255, 255, 255, 1);
 }
 
+.window__registration-btn img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%)
+        hue-rotate(116deg) brightness(120%) contrast(106%);
+}
+
 .window__search input {
-    background: rgba(31, 31, 31, 1);
+    background: #1f1f1f;
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -150,63 +191,68 @@
     color: rgba(255, 255, 255, 1) !important;
 }
 
+.accordian span {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%)
+        hue-rotate(116deg) brightness(120%) contrast(106%);
+}
+
 .accordian__year.ui-state-active {
-    background: rgba(14, 8, 19, 1) !important;
+    background: #00131d !important;
 }
 
 .accordian3__year.ui-state-active {
-    background: rgba(14, 8, 19, 1) !important;
+    background: #00131d !important;
 }
 
 .accordianIn.ui-state-active {
-    background: rgba(30, 17, 40, 1) !important;
+    background: #00273c !important;
 }
 
 .accordianIn2.ui-state-active {
-    background: rgba(46, 26, 61, 1) !important;
+    background: #003c5a !important;
 }
 
 .accordianIn3.ui-state-active {
-    background: rgba(68, 41, 89, 1) !important;
+    background: #005b8a !important;
 }
 
 .accordianIn3sec.ui-state-active {
-    background: rgba(68, 41, 89, 1) !important;
+    background: #005b8a !important;
 }
 
 .accordianIn4.ui-state-active {
-    background: rgba(86, 53, 113, 1) !important;
+    background: #0070a9 !important;
 }
 
 .accordianIn5.ui-state-active {
-    background: rgba(102, 64, 134, 1) !important;
+    background: #0081c2 !important;
 }
 
 .accordianIn6.ui-state-active {
-    background: rgba(118, 74, 155, 1) !important;
+    background: #008fd9 !important;
 }
 
 .accordianIn7.ui-state-active {
-    background: rgba(135, 85, 177, 1) !important;
+    background: #009beb !important;
 }
 
 .accordianIn7content2 {
     display: flex;
     height: 60px;
     align-items: center;
-    background: rgba(15, 15, 15, 1) !important;
+    background: #0f0f0f !important;
 }
 
 .modal-window {
-    background: rgba(18, 18, 18, 1);
+    background: #000000;
 }
 
 .modal-window1 {
-    background: rgba(18, 18, 18, 1);
+    background: #000000;
 }
 
 .modal-status {
-    background: rgba(31, 31, 31, 1);
+    background: #1f1f1f;
     color: rgba(255, 255, 255, 1);
     font-weight: 300;
 }
@@ -216,16 +262,16 @@
 }
 
 .modal-status1 {
-    background: rgba(31, 31, 31, 1);
+    background: #1f1f1f;
 }
 
 .modal-window__btnBtn1 {
-    background: rgba(187, 134, 252, 1);
+    background: #097cb4;
     color: rgba(255, 255, 255, 1);
 }
 
 .modal-window__btnBtn {
-    background: rgba(187, 134, 252, 1);
+    background: #097cb4;
     color: rgba(255, 255, 255, 1);
 }
 
@@ -242,7 +288,7 @@
 }
 
 .modal-status__right {
-    background: rgba(18, 18, 18, 1);
+    background: #000000;
 }
 
 .scroll_img {
@@ -254,15 +300,15 @@
 }
 
 .document__left {
-    background: rgba(31, 31, 31, 1);
+    background: #1f1f1f;
 }
 
 .document__quote {
-    background: rgba(18, 18, 18, 1);
+    background: #000000;
 }
 
 .document__description {
-    background: rgba(18, 18, 18, 1);
+    background: #000000;
 }
 
 .document__person em {
@@ -273,43 +319,14 @@
     color: rgba(255, 255, 255, 1);
 }
 
-.pcTitle > div > img {
-    filter: brightness(0) saturate(100%) invert(31%) sepia(84%) saturate(1398%)
-        hue-rotate(174deg) brightness(94%) contrast(93%);
-}
-
-.itemArrow img {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
-        hue-rotate(288deg) brightness(102%) contrast(102%);
-}
-
-.window__images {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%)
-        hue-rotate(328deg) brightness(105%) contrast(101%);
-}
-.nav-img {
-    filter: brightness(0) saturate(100%) invert(95%) sepia(95%) saturate(18%)
-        hue-rotate(337deg) brightness(105%) contrast(106%);
-}
-
-.window__action-btn img {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
-        hue-rotate(288deg) brightness(102%) contrast(102%);
-}
-
-.window__registration-btn img {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%)
-        hue-rotate(116deg) brightness(120%) contrast(106%);
-}
-
-.accordian span {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%)
-        hue-rotate(116deg) brightness(120%) contrast(106%);
-}
-
 .document__progress {
     filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(684%)
         hue-rotate(318deg) brightness(108%) contrast(76%);
+}
+
+.arrow-up {
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
 }
 
 .document__progress img {
@@ -317,12 +334,8 @@
         hue-rotate(178deg) brightness(92%) contrast(98%);
 }
 
-.window__sort-btn img {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
-        hue-rotate(288deg) brightness(102%) contrast(102%);
-}
-
-.arrow-up {
-    border: solid #fff;
-    border-width: 0 3px 3px 0;
+.document__hr {
+    height: 0px !important;
+    border: 0;
+    border-top: 1px solid #d3d6dc;
 }
