@@ -1,328 +1,350 @@
 .sideBar {
-    background-color: rgba(18, 18, 18, 1);
-    box-shadow: none;
+  background-color: rgba(18, 18, 18, 1);
+  box-shadow: none;
 }
 
 .window__hr {
-    color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.2);
 }
 
 #timer {
-    color: rgba(187, 134, 252, 1);
+  color: rgba(187, 134, 252, 1);
 }
 
 .menuContainerTitle {
-    color: rgba(187, 134, 252, 1) !important;
+  color: rgba(187, 134, 252, 1) !important;
 }
 
 .item span {
-    color: rgba(255, 255, 255, 1) !important;
+  color: rgba(255, 255, 255, 1) !important;
 }
 
 .pcTitle {
-    color: rgba(187, 134, 252, 1);
+  color: rgba(187, 134, 252, 1);
 }
 
 .pcItem {
-    color: rgba(255, 255, 255, 1);
-    font-weight: 300;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 300;
 }
 
 .pcItem:hover {
-    background-color: rgba(187, 134, 252, 1);
+  background-color: rgba(187, 134, 252, 1);
 }
 
 .menuContainer .container .item span {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .menuContainer .container .item:hover {
-    background-color: rgba(187, 134, 252, 1);
+  background-color: rgba(187, 134, 252, 1);
 }
 
 .content {
-    background: rgba(31, 31, 31, 1);
+  background: rgba(31, 31, 31, 1);
 }
 
 .navBar {
-    background-color: rgba(18, 18, 18, 1);
-    border: 1px solid rgba(18, 18, 18, 1);
+  background-color: rgba(18, 18, 18, 1);
+  border: 1px solid rgba(18, 18, 18, 1);
 }
 
 .navbarLeft input {
-    background-color: rgba(31, 31, 31, 1);
+  background-color: rgba(31, 31, 31, 1);
 }
 
 .navbarRightProfile {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .window {
-    background: rgba(18, 18, 18, 1);
+  background: rgba(18, 18, 18, 1);
 }
 
 .window1 {
-    background: rgba(18, 18, 18, 1);
+  background: rgba(18, 18, 18, 1);
 }
 
 .window2 {
-    background: rgba(18, 18, 18, 1);
+  background: rgba(18, 18, 18, 1);
 }
 
 .window__routes {
-    color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .window__routes span {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .status {
-    background: rgba(31, 31, 31, 1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(31, 31, 31, 1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .status2 {
-    background: rgba(31, 31, 31, 1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(31, 31, 31, 1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .status3 {
-    background: rgba(31, 31, 31, 1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(31, 31, 31, 1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .status__checkbox input {
-    border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .status div {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .status2 div {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .window__action-btn {
-    background: rgba(187, 134, 252, 1);
-    color: rgba(255, 255, 255, 1);
+  background: rgba(187, 134, 252, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .window__sort-btn {
-    background: rgba(187, 134, 252, 1);
-    color: rgba(255, 255, 255, 1);
+  background: rgba(187, 134, 252, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .window__open-btn {
-    background: rgba(187, 134, 252, 1);
+  background: rgba(187, 134, 252, 1);
 }
 
 .window__open-btn p {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .window__sort-btn p {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .window__registration-btn {
-    background: rgba(187, 134, 252, 1);
+  background: rgba(187, 134, 252, 1);
 }
 
 .window__registration-btn p {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .window__search input {
-    background: rgba(31, 31, 31, 1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(31, 31, 31, 1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .accordian a {
-    color: rgba(255, 255, 255, 1) !important;
+  color: rgba(255, 255, 255, 1) !important;
 }
 
 .accordian p {
-    color: rgba(255, 255, 255, 1) !important;
+  color: rgba(255, 255, 255, 1) !important;
 }
 
 .accordian__year.ui-state-active {
-    background: rgba(14, 8, 19, 1) !important;
+  background: rgba(14, 8, 19, 1) !important;
 }
 
 .accordian3__year.ui-state-active {
-    background: rgba(14, 8, 19, 1) !important;
+  background: rgba(14, 8, 19, 1) !important;
 }
 
 .accordianIn.ui-state-active {
-    background: rgba(30, 17, 40, 1) !important;
+  background: rgba(30, 17, 40, 1) !important;
 }
 
 .accordianIn2.ui-state-active {
-    background: rgba(46, 26, 61, 1) !important;
+  background: rgba(46, 26, 61, 1) !important;
 }
 
 .accordianIn3.ui-state-active {
-    background: rgba(68, 41, 89, 1) !important;
+  background: rgba(68, 41, 89, 1) !important;
 }
 
 .accordianIn3sec.ui-state-active {
-    background: rgba(68, 41, 89, 1) !important;
+  background: rgba(68, 41, 89, 1) !important;
 }
 
 .accordianIn4.ui-state-active {
-    background: rgba(86, 53, 113, 1) !important;
+  background: rgba(86, 53, 113, 1) !important;
 }
 
 .accordianIn5.ui-state-active {
-    background: rgba(102, 64, 134, 1) !important;
+  background: rgba(102, 64, 134, 1) !important;
 }
 
 .accordianIn6.ui-state-active {
-    background: rgba(118, 74, 155, 1) !important;
+  background: rgba(118, 74, 155, 1) !important;
 }
 
 .accordianIn7.ui-state-active {
-    background: rgba(135, 85, 177, 1) !important;
+  background: rgba(135, 85, 177, 1) !important;
 }
 
 .accordianIn7content2 {
-    display: flex;
-    height: 60px;
-    align-items: center;
-    background: rgba(15, 15, 15, 1) !important;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  background: rgba(15, 15, 15, 1) !important;
 }
 
 .modal-window {
-    background: rgba(18, 18, 18, 1);
+  background: rgba(18, 18, 18, 1);
 }
 
 .modal-window1 {
-    background: rgba(18, 18, 18, 1);
+  background: rgba(18, 18, 18, 1);
 }
 
 .modal-status {
-    background: rgba(31, 31, 31, 1);
-    color: rgba(255, 255, 255, 1);
-    font-weight: 300;
+  background: rgba(31, 31, 31, 1);
+  color: rgba(255, 255, 255, 1);
+  font-weight: 300;
 }
 
 .ots {
-    color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .modal-status1 {
-    background: rgba(31, 31, 31, 1);
+  background: rgba(31, 31, 31, 1);
 }
 
 .modal-window__btnBtn1 {
-    background: rgba(187, 134, 252, 1);
-    color: rgba(255, 255, 255, 1);
+  background: rgba(187, 134, 252, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .modal-window__btnBtn {
-    background: rgba(187, 134, 252, 1);
-    color: rgba(255, 255, 255, 1);
+  background: rgba(187, 134, 252, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .modal-window1 {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .modal-status__bottom-right {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .modal-status__bottom-left {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .modal-status__right {
-    background: rgba(18, 18, 18, 1);
+  background: rgba(18, 18, 18, 1);
 }
 
 .scroll_img {
-    src: url("/images/scroll__img-dark-sec.png") !important;
+  src: url("/images/scroll__img-dark-sec.png") !important;
 }
 
 .document {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .document__left {
-    background: rgba(31, 31, 31, 1);
+  background: rgba(31, 31, 31, 1);
 }
 
 .document__quote {
-    background: rgba(18, 18, 18, 1);
+  background: rgba(18, 18, 18, 1);
 }
 
 .document__description {
-    background: rgba(18, 18, 18, 1);
+  background: rgba(18, 18, 18, 1);
 }
 
 .document__person em {
-    color: rgba(132, 132, 132, 1);
+  color: rgba(132, 132, 132, 1);
 }
 
 .document__person_desc {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .pcTitle > div > img {
-    filter: brightness(0) saturate(100%) invert(31%) sepia(84%) saturate(1398%)
-        hue-rotate(174deg) brightness(94%) contrast(93%);
+  filter: brightness(0) saturate(100%) invert(31%) sepia(84%) saturate(1398%)
+    hue-rotate(174deg) brightness(94%) contrast(93%);
 }
 
 .itemArrow img {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
-        hue-rotate(288deg) brightness(102%) contrast(102%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+    hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 
 .window__images {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%)
-        hue-rotate(328deg) brightness(105%) contrast(101%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%)
+    hue-rotate(328deg) brightness(105%) contrast(101%);
 }
 .nav-img {
-    filter: brightness(0) saturate(100%) invert(95%) sepia(95%) saturate(18%)
-        hue-rotate(337deg) brightness(105%) contrast(106%);
+  filter: brightness(0) saturate(100%) invert(95%) sepia(95%) saturate(18%)
+    hue-rotate(337deg) brightness(105%) contrast(106%);
 }
 
 .window__action-btn img {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
-        hue-rotate(288deg) brightness(102%) contrast(102%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+    hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 
 .window__registration-btn img {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%)
-        hue-rotate(116deg) brightness(120%) contrast(106%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%)
+    hue-rotate(116deg) brightness(120%) contrast(106%);
 }
 
 .accordian span {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%)
-        hue-rotate(116deg) brightness(120%) contrast(106%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%)
+    hue-rotate(116deg) brightness(120%) contrast(106%);
 }
 
 .document__progress {
-    filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(684%)
-        hue-rotate(318deg) brightness(108%) contrast(76%);
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(684%)
+    hue-rotate(318deg) brightness(108%) contrast(76%);
 }
 
 .document__progress img {
-    filter: brightness(0) saturate(100%) invert(24%) sepia(88%) saturate(1754%)
-        hue-rotate(178deg) brightness(92%) contrast(98%);
+  filter: brightness(0) saturate(100%) invert(24%) sepia(88%) saturate(1754%)
+    hue-rotate(178deg) brightness(92%) contrast(98%);
 }
 
 .window__sort-btn img {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
-        hue-rotate(288deg) brightness(102%) contrast(102%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+    hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 
 .arrow-up {
-    border: solid #fff;
-    border-width: 0 3px 3px 0;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+}
+
+.show {
+  border-radius: 20px 20px 0 0 !important;
+  background: rgba(81, 69, 94, 1);
+}
+.dropdown-menu {
+  width: 180px;
+  background: rgba(81, 69, 94, 1);
+
+  border-radius: 0 0 20px 20px !important;
+  filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.2))
+    drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.12))
+    drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.14));
+}
+.dropdown-menu1 {
+  width: 300px !important;
+  background: rgba(81, 69, 94, 1);
+}
+.dropdown-item {
+  margin: 12px 0;
+  color: rgba(255, 255, 255, 1);
 }

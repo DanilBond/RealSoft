@@ -1,341 +1,363 @@
 .sideBar {
-    background-color: rgba(0, 0, 0, 1);
-    box-shadow: none;
+  background-color: rgba(0, 0, 0, 1);
+  box-shadow: none;
 }
 
 .nav-img {
-    filter: brightness(0) saturate(100%) invert(95%) sepia(95%) saturate(18%)
-        hue-rotate(337deg) brightness(105%) contrast(106%);
+  filter: brightness(0) saturate(100%) invert(95%) sepia(95%) saturate(18%)
+    hue-rotate(337deg) brightness(105%) contrast(106%);
 }
 
 .disabled {
-    color: #fff;
+  color: #fff;
 }
 
 .window__hr {
-    height: 0px !important;
-    border: 0;
-    border-top: 1px solid #e8e8e8;
+  height: 0px !important;
+  border: 0;
+  border-top: 1px solid #e8e8e8;
 }
 
 .window__images {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%)
-        hue-rotate(328deg) brightness(105%) contrast(101%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%)
+    hue-rotate(328deg) brightness(105%) contrast(101%);
 }
 
 #timer {
-    color: #097cb4;
+  color: #097cb4;
 }
 
 .menuContainerTitle {
-    color: #097cb4 !important;
+  color: #097cb4 !important;
 }
 
 .item span {
-    color: rgba(255, 255, 255, 1) !important;
+  color: rgba(255, 255, 255, 1) !important;
 }
 
 .pcTitle {
-    color: #097cb4;
+  color: #097cb4;
 }
 
 .pcTitle > div > img {
-    filter: brightness(0) saturate(100%) invert(31%) sepia(84%) saturate(1398%)
-        hue-rotate(174deg) brightness(94%) contrast(93%);
+  filter: brightness(0) saturate(100%) invert(31%) sepia(84%) saturate(1398%)
+    hue-rotate(174deg) brightness(94%) contrast(93%);
 }
 
 .itemArrow img {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
-        hue-rotate(288deg) brightness(102%) contrast(102%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+    hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 
 .pcItem {
-    color: rgba(255, 255, 255, 1);
-    font-weight: 300;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 300;
 }
 
 .pcItem:hover {
-    background-color: #097cb4;
+  background-color: #097cb4;
 }
 
 .menuContainer .container .item span {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .menuContainer .container .item:hover {
-    background-color: #097cb4;
+  background-color: #097cb4;
 }
 
 .content {
-    background: #1f1f1f;
+  background: #1f1f1f;
 }
 
 .navBar {
-    background-color: rgba(0, 0, 0, 1);
-    border: 1px solid rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 1);
+  border: 1px solid rgba(0, 0, 0, 1);
 }
 
 .navbarLeft input {
-    background-color: #1f1f1f;
+  background-color: #1f1f1f;
 }
 
 .navbarRightProfile {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .window {
-    background: rgba(0, 0, 0, 1);
+  background: rgba(0, 0, 0, 1);
 }
 
 .window1 {
-    background: rgba(0, 0, 0, 1);
+  background: rgba(0, 0, 0, 1);
 }
 
 .window2 {
-    background: rgba(0, 0, 0, 1);
+  background: rgba(0, 0, 0, 1);
 }
 
 .window__routes {
-    color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .window__routes span {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .status {
-    background: #1f1f1f;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background: #1f1f1f;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .status2 {
-    background: #1f1f1f;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background: #1f1f1f;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .status3 {
-    background: #1f1f1f;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background: #1f1f1f;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .status__checkbox span {
-    border: 1.5px solid rgba(255, 255, 255, 0.2) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.2) !important;
 }
 
 .status div {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .status2 div {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .window__action-btn {
-    background: #097cb4;
-    color: rgba(255, 255, 255, 1);
+  background: #097cb4;
+  color: rgba(255, 255, 255, 1);
 }
 
 .window__action-btn img {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
-        hue-rotate(288deg) brightness(102%) contrast(102%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+    hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 
 .window__sort-btn {
-    background: #097cb4;
-    color: rgba(255, 255, 255, 1);
+  background: #097cb4;
+  color: rgba(255, 255, 255, 1);
 }
 
 .window__sort-btn img {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
-        hue-rotate(288deg) brightness(102%) contrast(102%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+    hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 
 .window__open-btn {
-    background: #097cb4;
+  background: #097cb4;
 }
 
 .window__open-btn p {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .window__sort-btn p {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .window__registration-btn {
-    background: #097cb4;
+  background: #097cb4;
 }
 
 .window__registration-btn p {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .window__registration-btn img {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%)
-        hue-rotate(116deg) brightness(120%) contrast(106%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%)
+    hue-rotate(116deg) brightness(120%) contrast(106%);
 }
 
 .window__search input {
-    background: #1f1f1f;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+  background: #1f1f1f;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .accordian a {
-    color: rgba(255, 255, 255, 1) !important;
+  color: rgba(255, 255, 255, 1) !important;
 }
 
 .accordian p {
-    color: rgba(255, 255, 255, 1) !important;
+  color: rgba(255, 255, 255, 1) !important;
 }
 
 .accordian span {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%)
-        hue-rotate(116deg) brightness(120%) contrast(106%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%)
+    hue-rotate(116deg) brightness(120%) contrast(106%);
 }
 
 .accordian__year.ui-state-active {
-    background: #00131d !important;
+  background: #00131d !important;
 }
 
 .accordian3__year.ui-state-active {
-    background: #00131d !important;
+  background: #00131d !important;
 }
 
 .accordianIn.ui-state-active {
-    background: #00273c !important;
+  background: #00273c !important;
 }
 
 .accordianIn2.ui-state-active {
-    background: #003c5a !important;
+  background: #003c5a !important;
 }
 
 .accordianIn3.ui-state-active {
-    background: #005b8a !important;
+  background: #005b8a !important;
 }
 
 .accordianIn3sec.ui-state-active {
-    background: #005b8a !important;
+  background: #005b8a !important;
 }
 
 .accordianIn4.ui-state-active {
-    background: #0070a9 !important;
+  background: #0070a9 !important;
 }
 
 .accordianIn5.ui-state-active {
-    background: #0081c2 !important;
+  background: #0081c2 !important;
 }
 
 .accordianIn6.ui-state-active {
-    background: #008fd9 !important;
+  background: #008fd9 !important;
 }
 
 .accordianIn7.ui-state-active {
-    background: #009beb !important;
+  background: #009beb !important;
 }
 
 .accordianIn7content2 {
-    display: flex;
-    height: 60px;
-    align-items: center;
-    background: #0f0f0f !important;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  background: #0f0f0f !important;
 }
 
 .modal-window {
-    background: #000000;
+  background: #000000;
 }
 
 .modal-window1 {
-    background: #000000;
+  background: #000000;
 }
 
 .modal-status {
-    background: #1f1f1f;
-    color: rgba(255, 255, 255, 1);
-    font-weight: 300;
+  background: #1f1f1f;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 300;
 }
 
 .ots {
-    color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .modal-status1 {
-    background: #1f1f1f;
+  background: #1f1f1f;
 }
 
 .modal-window__btnBtn1 {
-    background: #097cb4;
-    color: rgba(255, 255, 255, 1);
+  background: #097cb4;
+  color: rgba(255, 255, 255, 1);
 }
 
 .modal-window__btnBtn {
-    background: #097cb4;
-    color: rgba(255, 255, 255, 1);
+  background: #097cb4;
+  color: rgba(255, 255, 255, 1);
 }
 
 .modal-window1 {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .modal-status__bottom-right {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .modal-status__bottom-left {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .modal-status__right {
-    background: #000000;
+  background: #000000;
 }
 
 .scroll_img {
-    src: url("/images/scroll__img-dark-sec.png") !important;
+  src: url("/images/scroll__img-dark-sec.png") !important;
 }
 
 .document {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .document__left {
-    background: #1f1f1f;
+  background: #1f1f1f;
 }
 
 .document__quote {
-    background: #000000;
+  background: #000000;
 }
 
 .document__description {
-    background: #000000;
+  background: #000000;
 }
 
 .document__person em {
-    color: rgba(132, 132, 132, 1);
+  color: rgba(132, 132, 132, 1);
 }
 
 .document__person_desc {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .document__progress {
-    filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(684%)
-        hue-rotate(318deg) brightness(108%) contrast(76%);
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(684%)
+    hue-rotate(318deg) brightness(108%) contrast(76%);
 }
 
 .arrow-up {
-    border: solid #fff;
-    border-width: 0 3px 3px 0;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
 }
 
 .document__progress img {
-    filter: brightness(0) saturate(100%) invert(24%) sepia(88%) saturate(1754%)
-        hue-rotate(178deg) brightness(92%) contrast(98%);
+  filter: brightness(0) saturate(100%) invert(24%) sepia(88%) saturate(1754%)
+    hue-rotate(178deg) brightness(92%) contrast(98%);
 }
 
 .document__hr {
-    height: 0px !important;
-    border: 0;
-    border-top: 1px solid #d3d6dc;
+  height: 0px !important;
+  border: 0;
+  border-top: 1px solid #d3d6dc;
+}
+
+.show {
+  border-radius: 20px 20px 0 0 !important;
+  background: rgba(81, 69, 94, 1);
+}
+.dropdown-menu {
+  width: 180px;
+  background: rgba(81, 69, 94, 1);
+
+  border-radius: 0 0 20px 20px !important;
+  filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.2))
+    drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.12))
+    drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.14));
+}
+.dropdown-menu1 {
+  width: 300px !important;
+  background: rgba(81, 69, 94, 1);
+}
+.dropdown-item {
+  margin: 12px 0;
+  color: rgba(255, 255, 255, 1);
 }
