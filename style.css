@@ -1594,7 +1594,27 @@ p {
     min-width: 76px;
     max-width: 76px;
   }
+  .parcerContainer{
+    height: 5000px;
+    background-color: white;
+    top: 0;
+    margin-top: 0;
+    width: 200px;
+    margin-left: 76px;
+    box-shadow: 0 -8px 20px 2px #DEDEE3;
 
+    
+  }
+  .pcItem{
+    margin-left: 10px;
+  }
+  .pcTitle{
+    margin-left: 20px;
+    margin-top: 145px;
+  }
+  .pcTitle div img{
+    margin-right: 0;
+  }
   #logoF {
     display: none;
   }
