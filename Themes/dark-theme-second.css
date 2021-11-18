@@ -328,23 +328,14 @@
 }
 
 .show {
-  border-radius: 20px 20px 0 0 !important;
   background: rgba(81, 69, 94, 1);
 }
 .dropdown-menu {
-  width: 180px;
   background: rgba(81, 69, 94, 1);
-
-  border-radius: 0 0 20px 20px !important;
-  filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.2))
-    drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.12))
-    drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.14));
 }
 .dropdown-menu1 {
-  width: 300px !important;
   background: rgba(81, 69, 94, 1);
 }
 .dropdown-item {
-  margin: 12px 0;
   color: rgba(255, 255, 255, 1);
 }
