@@ -1,6 +1,8 @@
 let parcerContainer = document.querySelectorAll(".parcerContainer");
 console.log(parcerContainer);
 
+let sideBar = document.querySelector("#sideBar");
+
 let elementsToModify = [
   document.querySelectorAll(".menuContainerTitle"),
   document.querySelectorAll(".menuContainer span"),
@@ -10,6 +12,7 @@ let elementsToModify = [
 function SetSideBarSmall(id) {
   let currentClass = parcerContainer[id].getAttribute("class");
   if (currentClass == "parcerContainer pcOpen") {
+    sideBar.style.zIndex = "0";
     parcerContainer[id].setAttribute("class", "parcerContainer pcClosed");
 
     for (const i of elementsToModify[0]) {
@@ -32,7 +35,7 @@ function SetSideBarSmall(id) {
     }
   } else {
     parcerContainer[id].setAttribute("class", "parcerContainer pcOpen");
-
+    sideBar.style.zIndex = "1";
     for (const i of elementsToModify[0]) {
       i.style.fontSize = "0";
       i.style.display = "block";
