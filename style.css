@@ -30,8 +30,28 @@
   font-family: HNCroman;
 }
 
+.fdc-reverse {
+  flex-direction: column-reverse;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
 .green {
   color: #4db01f;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.p-0 {
+  padding: 0;
 }
 
 p {
@@ -58,6 +78,14 @@ p {
 
 .fz-9 {
   font-size: 10px !important;
+}
+
+.fz-11 {
+  font-size: 12px !important;
+}
+
+.fz-12 {
+  font-size: 12px !important;
 }
 
 .fz15 {
@@ -94,6 +122,10 @@ p {
 
 .mb-10 {
   margin-bottom: 10px;
+}
+
+.mr-10 {
+  margin-right: 10px;
 }
 
 /* ------------------ */
@@ -1632,25 +1664,23 @@ p {
     min-width: 76px;
     max-width: 76px;
   }
-  .parcerContainer{
+  .parcerContainer {
     height: 5000px;
     background-color: white;
     top: 0;
     margin-top: 0;
     width: 200px;
     margin-left: 76px;
-    box-shadow: 0 -8px 20px 2px #DEDEE3;
-
-    
+    box-shadow: 0 -8px 20px 2px #dedee3;
   }
-  .pcItem{
+  .pcItem {
     margin-left: 10px;
   }
-  .pcTitle{
+  .pcTitle {
     margin-left: 20px;
     margin-top: 145px;
   }
-  .pcTitle div img{
+  .pcTitle div img {
     margin-right: 0;
   }
   #logoF {
