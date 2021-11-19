@@ -354,42 +354,52 @@ $("#window-3").resize((e) => {
 
 $(".window-absolute").resize((e) => {
     let w = e.target.offsetWidth;
-    console.log(w);
-
     if (w < 580) {
-        $(".window__left").addClass("jcc");
-        $(".window__right").addClass("jcc").addClass("w-100");
-        $(".document__description").addClass("p-0");
-        $(".document").addClass("fdc-reverse");
-        $(".document__left").addClass("w-100").addClass("ml-0");
-        $(".document__right").addClass("w-100");
-        $(".window__registration").addClass("ml-0");
-        $(".window__nav").addClass("ml-0");
-        $(".window__action-btn").addClass("ml-0").addClass("mb-10");
-        $(".window__open-btn").addClass("ml-0").addClass("mb-10");
-        $(".document__quote").addClass("p-10");
-        $(".document__arrow").addClass("mr-10");
-        $(".document__left-elem p").addClass("fz-9");
-        $(".document__name p").addClass("fz-9");
-        $(".document__time").addClass("fz-11")
-        $(".big").addClass("fz-12")
+        $(".window-absolute .window__left").addClass("jcc");
+        $(".window-absolute .window__right").addClass("jcc").addClass("w-100");
+        $(".window-absolute .document__description").addClass("p-0");
+        $(".window-absolute .document").addClass("fdc-reverse");
+        $(".window-absolute .document__left")
+            .addClass("w-100")
+            .addClass("ml-0");
+        $(".window-absolute .document__right").addClass("w-100");
+        $(".window-absolute .window__registration").addClass("ml-0");
+        $(".window-absolute .window__nav").addClass("ml-0");
+        $(".window-absolute .window__action-btn")
+            .addClass("ml-0")
+            .addClass("mb-10");
+        $(".window-absolute .window__open-btn")
+            .addClass("ml-0")
+            .addClass("mb-10");
+        $(".window-absolute .document__quote").addClass("p-10");
+        $(".window-absolute .document__arrow").addClass("mr-10");
+        $(".window-absolute .document__left-elem p").addClass("fz-9");
+        $(".window-absolute .document__name p").addClass("fz-9");
+        $(".window-absolute .document__time").addClass("fz-11");
+        $(".window-absolute .big").addClass("fz-12");
     } else {
-        $(".window__left").removeClass("jcc");
-        $(".window__right").removeClass("jcc").removeClass("w-100");
-        $(".document__description").removeClass("p-0");
-        $(".document").removeClass("fdc-reverse");
-        $(".document__left").removeClass("w-100");
-        $(".document__right").removeClass("w-100");
-        $(".window__registration").removeClass("ml-0");
-        $(".window__nav").removeClass("ml-0");
-        $(".window__action-btn").removeClass("ml-0").removeClass("mb-10");
-        $(".window__open-btn").removeClass("ml-0").removeClass("mb-10");
-        $(".document__quote").removeClass("p-10");
-        $(".document__arrow").removeClass("mr-10");
-        $(".document__left-elem p").removeClass("fz-9");
-        $(".document__name p").removeClass("fz-9");
-        $(".document__time").removeClass("fz-11")
-        $(".big").removeClass("fz-12")
+        $(".window-absolute .window__left").removeClass("jcc");
+        $(".window-absolute .window__right")
+            .removeClass("jcc")
+            .removeClass("w-100");
+        $(".window-absolute .document__description").removeClass("p-0");
+        $(".window-absolute .document").removeClass("fdc-reverse");
+        $(".window-absolute .document__left").removeClass("w-100");
+        $(".window-absolute .document__right").removeClass("w-100");
+        $(".window-absolute .window__registration").removeClass("ml-0");
+        $(".window-absolute .window__nav").removeClass("ml-0");
+        $(".window-absolute .window__action-btn")
+            .removeClass("ml-0")
+            .removeClass("mb-10");
+        $(".window-absolute .window__open-btn")
+            .removeClass("ml-0")
+            .removeClass("mb-10");
+        $(".window-absolute .document__quote").removeClass("p-10");
+        $(".window-absolute .document__arrow").removeClass("mr-10");
+        $(".window-absolute .document__left-elem p").removeClass("fz-9");
+        $(".window-absolute .document__name p").removeClass("fz-9");
+        $(".window-absolute .document__time").removeClass("fz-11");
+        $(".window-absolute .big").removeClass("fz-12");
     }
 });
 
