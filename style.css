@@ -232,7 +232,6 @@ p {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
-  margin-left: 2px;
   padding: 0;
 }
 
@@ -1730,7 +1729,25 @@ p {
   .menuContainer .container .item {
     width: 36px;
     height: 32px;
+    justify-content: center;
   }
+  .menuContainer .container .item .imgContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menuContainer .container .item .itemArrow{
+    position: absolute;
+    margin-left: 50px;
+  }
+
+  .menuContainer .container .item span{
+    display: none;
+  }
+  
 
   .menuContainer .container .item div {
     margin-right: -5px;
@@ -1830,6 +1847,13 @@ p {
   }
   .sideBar .timeAndThemesContainer {
     margin-left: 19.5px;
+  }
+  
+  .parcerContainer {
+    margin-left: 60px;
+  }
+  .menuContainer .container{
+    margin-left: -6px;
   }
 }
 /* ---------------MEDIA---------------- */

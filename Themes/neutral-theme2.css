@@ -37,3 +37,9 @@
 .menuContainer .container .item:hover {
   background: #026a9d;
 }
+@media only screen and (max-width: 800px){
+  .parcerContainer{
+    background-color: #001712;
+    box-shadow: 0 -8px 20px 2px #0b2511;
+  }
+}

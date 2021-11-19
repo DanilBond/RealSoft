@@ -10,6 +10,14 @@ let elementsToModify = [
 ];
 
 function SetSideBarSmall(id) {
+  let allSideBars = document.querySelectorAll(".parcerContainer");
+  for (let i = 0; i < allSideBars.length; i++) {
+    if(i != id){
+    allSideBars[i].style.zIndex = "0";
+    allSideBars[i].setAttribute("class", "parcerContainer pcClosed");
+    }
+  }
+
   let currentClass = parcerContainer[id].getAttribute("class");
   if (currentClass == "parcerContainer pcOpen") {
     sideBar.style.zIndex = "0";

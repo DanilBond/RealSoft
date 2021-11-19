@@ -364,3 +364,9 @@
 .dropdown-item {
   color: rgba(255, 255, 255, 1);
 }
+@media only screen and (max-width: 800px){
+  .parcerContainer{
+    background-color: black;
+    box-shadow: none;
+  }
+}
