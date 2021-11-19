@@ -1054,15 +1054,17 @@ p {
 }
 
 .modal-window {
-  /* display: none; */
+  display: none;
   position: absolute !important;
   background: #ffffff;
-  top: 25%;
-  left: 25%;
+  top: 20%;
+  left: 20%;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   height: 400px;
   max-width: 1063px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .modal-window__left {
@@ -1143,7 +1145,7 @@ p {
 
 .modal-status {
   max-width: 100%;
-  height: 280px;
+  min-height: 280px;
   display: flex;
   flex-direction: column;
   background: #f8f8fa;
@@ -1158,18 +1160,19 @@ p {
   display: none;
   position: absolute !important;
   background: #ffffff;
-  top: 25%;
-  left: 25%;
+  top: 20%;
+  left: 20%;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   height: 589px;
-  width: 1063px;
+  max-width: 1063px;
 }
 
 .modal-status1 {
   max-width: 100%;
-  height: 370px;
+  min-height: 370px;
   display: flex;
+  flex-wrap: wrap;
   /* flex-direction: column; */
   background: #f8f8fa;
   border-top: 1px solid rgba(67, 79, 99, 0.2);
@@ -1187,6 +1190,7 @@ p {
 
 .modal-status__left {
   display: flex;
+  margin: 0 30px;
 }
 .modal-status__bottom {
   display: flex;
@@ -1578,6 +1582,23 @@ p {
   justify-content: space-around;
 }
 /* ---------------MEDIA---------------- */
+@media only screen and (max-width: 1336px) {
+  .modal-status1 {
+    justify-content: space-evenly;
+  }
+  .modal-status__left {
+    margin-bottom: 30px;
+  }
+
+  .modal-window__btnBtn1 {
+    margin-bottom: 30px;
+  }
+
+  .modal-window1 {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
 @media only screen and (max-width: 1010px) {
   .navbarWrapper {
     margin: 0 16px;
@@ -1598,6 +1619,15 @@ p {
 }
 
 @media only screen and (max-width: 800px) {
+  .modal-window__btnBtn {
+    margin-bottom: 10px;
+  }
+  .modal-window__left {
+    width: 50%;
+  }
+  .modal-window__right {
+    width: 50%;
+  }
   .sideBar {
     min-width: 76px;
     max-width: 76px;
@@ -1682,7 +1712,45 @@ p {
     margin-left: 5px;
   }
 }
+@media only screen and (max-width: 520px) {
+  .modal-status__bottom-left {
+    font-size: 10px;
+  }
+  .modal-status__bottom-left img {
+    margin-right: 15px;
+  }
+  .modal-status__bottom-right {
+    font-size: 10px;
+  }
 
+  .modal-status__header {
+    font-size: 25px;
+  }
+
+  .modal-window1 {
+    top: 15%;
+    left: 20%;
+    height: 300px;
+    width: 250px;
+  }
+  .window__routes {
+    font-size: 10px;
+  }
+
+  .modal-window {
+    width: 300px;
+    height: 300px;
+  }
+  .modal-window__left {
+    font-size: 8px;
+  }
+  .modal-window__right {
+    font-size: 8px;
+  }
+  .modal-window .window__nav {
+    margin-left: 0;
+  }
+}
 @media only screen and (max-width: 440px) {
   .navbarRightBtns {
     display: none;
