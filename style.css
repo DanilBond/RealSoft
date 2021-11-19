@@ -462,6 +462,7 @@ p {
 }
 .dropdown-menu1 {
   width: 300px !important;
+  background: rgba(81, 69, 94, 1);
 }
 .dropdown-item {
   margin: 12px 0;
@@ -1053,7 +1054,7 @@ p {
 }
 
 .modal-window {
-  display: none;
+  /* display: none; */
   position: absolute !important;
   background: #ffffff;
   top: 25%;
@@ -1133,6 +1134,7 @@ p {
 .modal-window__top {
   display: flex;
   height: 131px;
+  flex-wrap: wrap;
 }
 
 .modal-window__bottom {
