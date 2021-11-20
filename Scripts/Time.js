@@ -170,6 +170,16 @@ $(".window__images").click(function () {
     $(".window-absolute ").toggleClass("active");
 });
 
+$(window).resize((e) => {
+    console.log($("#window-1")[0].offsetWidth);
+    console.log(e.target.innerWidth);
+    if (e.target.innerWidth - 60 <= 420) {
+        $("#window-1")[0].offsetWidth = e.target.innerWidth - 120 - 20;
+        console.log($("#window-1")[0].offsetWidth);
+        $("#window-1")[0];
+    }
+});
+
 $("#window-1").resize((e) => {
     let w = e.target.offsetWidth;
 
