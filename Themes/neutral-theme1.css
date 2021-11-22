@@ -1,45 +1,73 @@
 .content {
-  background-image: url("./../images/landscape-nature1.png");
+    background-image: url("./../images/landscape-nature1.png");
 }
 
 .navBar {
-  background: #68778e;
+    background: #68778e;
 }
 
 .navbarRightProfile {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 .sideBar {
-  background: #05152f;
-  color: #097cb4;
+    background: #05152f;
+    color: #097cb4;
 }
 
 .pcItem {
-  color: white;
-  font-weight: 300;
+    color: white;
+    font-weight: 300;
 }
 
 .pcItem:hover {
-  background: #026a9d;
+    background: #026a9d;
 }
 
 .pcTitle {
-  color: #097cb4;
-  font-weight: 700;
+    color: #097cb4;
+    font-weight: 700;
 }
 
 .menuContainer .container .item span {
-  color: white;
-  font-weight: 300;
+    color: white;
+    font-weight: 300;
 }
 
 .menuContainer .container .item:hover {
-  background: #026a9d;
+    background: #026a9d;
 }
-@media only screen and (max-width: 800px){
-  .parcerContainer{
-    background-color: #05152f;
-    box-shadow: 0 -8px 20px 2px #000000;
-  }
+@media only screen and (max-width: 800px) {
+    .parcerContainer {
+        background-color: #05152f;
+        box-shadow: 0 -8px 20px 2px #000000;
+    }
+}
+
+.pcTitle > div > img {
+    filter: brightness(0) saturate(100%) invert(31%) sepia(84%) saturate(1398%)
+        hue-rotate(174deg) brightness(94%) contrast(93%);
+}
+
+.itemArrow img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+        hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.window__images {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%)
+        hue-rotate(328deg) brightness(105%) contrast(101%);
+}
+.nav-img {
+    filter: brightness(0) saturate(100%) invert(95%) sepia(95%) saturate(18%)
+        hue-rotate(337deg) brightness(105%) contrast(106%);
+}
+.document__progress {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(684%)
+        hue-rotate(318deg) brightness(108%) contrast(76%);
+}
+
+.document__progress img {
+    filter: brightness(0) saturate(100%) invert(24%) sepia(88%) saturate(1754%)
+        hue-rotate(178deg) brightness(92%) contrast(98%);
 }
