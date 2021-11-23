@@ -397,7 +397,6 @@ p {
   width: 95%;
   overflow-y: auto;
   overflow-x: hidden;
-  resize: both;
 }
 
 .window1 {
@@ -410,7 +409,51 @@ p {
   width: 95%;
   overflow-x: hidden;
   overflow-y: auto;
-  resize: both;
+}
+
+.resize-handle-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.resize-handle {
+  margin-bottom: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: n-resize;
+  position: absolute;
+  bottom: 0;
+}
+
+.resize-handle1 {
+  width: 40px;
+  height: 1px;
+  background-color: #c4c4c4;
+  margin-bottom: 2px;
+}
+
+.resize-handle2 {
+  width: 60px;
+  height: 1px;
+  background-color: #c4c4c4;
+}
+
+.horiz-resize {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  right: 0;
+  cursor: e-resize;
+}
+
+#top-panel {
+  background-color: black;
+}
+
+#bottom-panel {
+  background-color: yellow;
 }
 
 .window__nav {
@@ -1731,7 +1774,7 @@ p {
     height: 32px;
     justify-content: center;
   }
-  .menuContainer .container .item .imgContainer{
+  .menuContainer .container .item .imgContainer {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1739,15 +1782,14 @@ p {
     margin: 0;
   }
 
-  .menuContainer .container .item .itemArrow{
+  .menuContainer .container .item .itemArrow {
     position: absolute;
     margin-left: 50px;
   }
 
-  .menuContainer .container .item span{
+  .menuContainer .container .item span {
     display: none;
   }
-  
 
   .menuContainer .container .item div {
     margin-right: -5px;
@@ -1848,11 +1890,11 @@ p {
   .sideBar .timeAndThemesContainer {
     margin-left: 19.5px;
   }
-  
+
   .parcerContainer {
     margin-left: 60px;
   }
-  .menuContainer .container{
+  .menuContainer .container {
     margin-left: -6px;
   }
 }
