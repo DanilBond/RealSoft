@@ -556,12 +556,14 @@ let accordionJS = {
         },
     ],
 };
+let arrForAccordion1 = [];
 
 let accordion = $(".asd");
 
 renderFirstAccordion(accordionJS);
 
 function renderFirstAccordion(accordionJS1) {
+    let countID = 0;
     const renderYear = (arrAcc) => {
         for (let i in arrAcc) {
             const year = $("<h3>", {
@@ -574,6 +576,12 @@ function renderFirstAccordion(accordionJS1) {
             year.append(folder);
             accordion.append(year);
             renderMonth(arrAcc[i]);
+            countID += 1;
+            arrForAccordion1.push({
+                id: countID,
+                str: i.toString(),
+                elem: year,
+            });
         }
     };
 
@@ -599,6 +607,12 @@ function renderFirstAccordion(accordionJS1) {
             month.append($("<div>", { class: "accordian__folder" }));
             accordionInner.append(month);
             accordionInner.append(vl);
+            countID += 1;
+            arrForAccordion1.push({
+                id: countID,
+                str: text.toString(),
+                elem: vl,
+            });
         }
         accordion.append(accordionInner);
     }
@@ -615,7 +629,7 @@ function renderFirstAccordion(accordionJS1) {
         let vl = $("<div>", { class: "accordian1vl" });
 
         data.forEach((a) => {
-            vl.append(renderOne(a));
+            vl.append(renderOne(a, vl));
         });
 
         accordionInner.append(ok);
@@ -624,18 +638,55 @@ function renderFirstAccordion(accordionJS1) {
         return accordionInner;
     }
 
-    function renderOne({
-        status,
-        p1,
-        p2,
-        p3,
-        p4,
-        textAround,
-        title,
-        gmail,
-        desc,
-        person,
-    }) {
+    function renderOne(
+        { status, p1, p2, p3, p4, textAround, title, gmail, desc, person },
+        vl
+    ) {
+        countID += 1;
+        arrForAccordion1.push({
+            id: countID,
+            str: status.toString(),
+            elem: vl,
+        });
+        countID += 1;
+        arrForAccordion1.push({ id: countID, str: p1.toString(), elem: vl });
+        countID += 1;
+        arrForAccordion1.push({ id: countID, str: p2.toString(), elem: vl });
+        countID += 1;
+        arrForAccordion1.push({ id: countID, str: p3.toString(), elem: vl });
+        countID += 1;
+        arrForAccordion1.push({ id: countID, str: p4.toString(), elem: vl });
+        countID += 1;
+        arrForAccordion1.push({
+            id: countID,
+            str: textAround.toString(),
+            elem: vl,
+        });
+        countID += 1;
+        arrForAccordion1.push({
+            id: countID,
+            str: title.toString(),
+            elem: vl,
+        });
+        countID += 1;
+        arrForAccordion1.push({
+            id: countID,
+            str: gmail.toString(),
+            elem: vl,
+        });
+        countID += 1;
+        arrForAccordion1.push({
+            id: countID,
+            str: desc.toString(),
+            elem: vl,
+        });
+        countID += 1;
+        arrForAccordion1.push({
+            id: countID,
+            str: person.toString(),
+            elem: vl,
+        });
+
         return `
         <div class="accordianIn3Fir">
                 <div class="accordian_checkbox">
@@ -675,6 +726,57 @@ function renderFirstAccordion(accordionJS1) {
         }
     }
 }
+
+function getValue(item) {
+    if (Array.isArray(item)) {
+        return item.reduce(iterA, undefined);
+    }
+    if (item && typeof item === "object") {
+        return iterO(item);
+    }
+    if (
+        typeof item !== "object" &&
+        item.toString().toLowerCase().indexOf(search) !== -1
+    ) {
+        return item;
+    }
+}
+
+function iterO(o) {
+    let temp = Object.keys(o).reduce(function (r, k) {
+        let value = getValue(o[k]);
+        if (value) {
+            r = r || {};
+            r[k] = value;
+        }
+        return r;
+    }, undefined);
+
+    if (temp) {
+        Object.keys(o).forEach(function (k) {
+            if (!(k in temp)) {
+                temp[k] = o[k];
+            }
+        });
+    }
+    return temp;
+}
+
+function iterA(r, a) {
+    let value = getValue(a);
+    if (value) {
+        r = r || [];
+        r.push(value);
+    }
+    return r;
+}
+
+let search = "accepted";
+// result = accordionJS.reduce(iterA, undefined);
+
+// console.log(accordionJS[i]);
+
+// console.log(result);
 
 // CODE FOR THIRD ACCORDION
 

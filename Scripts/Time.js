@@ -194,10 +194,7 @@ $("#window-1").resize((e) => {
     let w = e.target.offsetWidth;
 
     if (window.innerWidth - 260 < w) {
-        console.log(window);
         e.target.style.width = window.innerWidth - 1260;
-        console.log(e.target.style.width);
-        console.log(w, window.innerWidth);
     }
 
     if (w < 1350) {
