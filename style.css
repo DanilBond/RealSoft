@@ -404,11 +404,11 @@ p {
   border-radius: 8px;
   margin: 10px 20px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  min-height: 600px;
   margin: 21px auto;
   width: 95%;
   overflow-x: hidden;
   overflow-y: auto;
+  resize: horizontal;
 }
 
 .resize-handle-cont {
@@ -446,6 +446,7 @@ p {
   height: 100%;
   right: 0;
   cursor: e-resize;
+  background-color: black;
 }
 
 #top-panel {

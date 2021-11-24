@@ -23,26 +23,26 @@ for (i of resizeHandle) {
     })
 }
 
-// const content = document.querySelector('.content')
-// const horizResize = document.querySelector('.horiz-resize')
-// let canResizeHor = false
+const content = document.querySelector('.content')
+const horizResize = document.querySelector('.horiz-resize')
+let canResizeHor = false
 
-// const resizeHor = (e) => {
-//     console.log(e);
-//     window1[0].style.width = String(e.layerX) + 'px'
-// //  styles.left = String(e.pageX - 90) + 'px'
-// }
+const resizeHor = (e) => {
+    console.log(e);
+    window1[0].style.width = String(e.layerX) + 'px'
+//  styles.left = String(e.pageX - 90) + 'px'
+}
 
 
-// horizResize.addEventListener('mousedown', e => {
-//    canResizeHor = true
-//    document.addEventListener('mousemove', e => {
-//       canResizeHor ? resizeHor(e) : null
-//    })
-// })
+horizResize.addEventListener('mousedown', e => {
+   canResizeHor = true
+   document.addEventListener('mousemove', e => {
+      canResizeHor ? resizeHor(e) : null
+   })
+})
 
-// document.addEventListener('mouseup', e => {
-//    canResizeHor = false
-// })
+document.addEventListener('mouseup', e => {
+   canResizeHor = false
+})
 
 

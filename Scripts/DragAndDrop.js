@@ -19,3 +19,24 @@ $(function () {
       containment: "",
     });
 });
+$(function () {
+  $(".drag3")
+    .draggable({ containment: "#content", handle: "#navbar3" })
+    .resizable({
+      containment: "",
+    });
+});
+$(function () {
+  $(".drag4")
+    .draggable({ containment: "#content", handle: "#navbar4" })
+    .resizable({
+      containment: "",
+    });
+});
+$(function () {
+  $(".drag5")
+    .draggable({ containment: "#content", handle: "#navbar5" })
+    .resizable({
+      containment: "",
+    });
+});
