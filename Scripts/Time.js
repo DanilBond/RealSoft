@@ -189,7 +189,6 @@ $("#window-1").resize((e) => {
         $("#window-1 .window__sort-btn")
             .addClass("mt-10")
             .addClass("mb-10")
-            .addClass("ml-0");
     } else {
         $("#window-1 .window__sort-btn")
             .removeClass("mt-10")

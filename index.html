@@ -263,11 +263,8 @@
       <div class="content">
 
         <div class="content__wrapper">
-
-          
-
-          <div class="window windowModuleFinder windowDesktop" id="window-1">
-            <nav class="window__nav">
+          <div class="window1 windowModuleFinder drag5" id="window-1">
+            <nav class="window__nav" id='navbar5'>
               <div class="window__routes">
                 Делопроизводство / Входящие документы
                 <span>/ Общая корреспонденция</span>
@@ -294,8 +291,6 @@
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
-
-
                 <div class="window__sort-btn dropdown-toggle" type="button" id="dropdownMenuButton2"
                   data-bs-toggle="dropdown" aria-expanded="false">
                   <p class="blue">ПО НОМЕРУ РЕГИСТРАЦИИ</p>
@@ -374,14 +369,21 @@
               <img class="scroll_img" src="./images/scroll.png" alt="ошибка при получении данных">
             </div>
            </div>
+           <div class="resize-handle-cont">
+            <div class="resize-handle">
+              <div class="resize-handle1"></div>
+              <div class="resize-handle2"></div>
+            </div>
+          </div>
           </div>
 
 
           <!-- SECOND WINDOW -->
           
           
-          <div class="window1 windowModuleFinder windowDesktop" id="window-2">
-            <nav class="window__nav">
+          <div class="window1 windowModuleFinder drag4" id="window-2">
+            <div class="horiz-resize"></div>
+            <nav class="window__nav" id='navbar4'>
               <div class="window__routes">
                Фин ОЦО
                 <span>/ Статистика Фин ОЦО</span>
@@ -547,20 +549,26 @@
                                   <div class="accordian1vl">
                                   </div>
                                 </div>
-
               </div>  
             </div>
-
+            <div class="resize-handle-cont">
+              <div class="resize-handle">
+                <div class="resize-handle1"></div>
+                <div class="resize-handle2"></div>
+              </div>
+            </div>
+          </div>
 </div>
 <div id="smallModalsContainer" style="display: none;">
 </div>
+
 
 <!-- SECOND WINDOW ENDS -->
 
 <!-- THIRD WINDOW -->
 
-<div class="window1 windowModuleFinder windowDesktop" id="window-3">
-  <nav class="window__nav">
+<div class="window1 windowModuleFinder drag3" id="window-3">
+  <nav class="window__nav" id='navbar3' >
     <div class="window__routes">
       Структура АО КТК
       <span>/ Иерархия</span>
@@ -606,11 +614,17 @@
       
     </div>
 
-<div class="scroll_flex">
+      <div class="scroll_flex">
 
-  <div id="faqs-container" class="accordian asd3">
-</div>
+      <div id="faqs-container" class="accordian asd3">
+    </div>
 
+      </div>
+      <div class="resize-handle-cont">
+        <div class="resize-handle">
+          <div class="resize-handle1"></div>
+          <div class="resize-handle2"></div>
+        </div>
       </div>
 </div>    
 
@@ -1252,6 +1266,7 @@
   <script src="./Scripts/WindowManager.js"></script>
   <script src="./Scripts/ThemeSwitcher.js"></script>
   <script src="./Scripts/DesktopGlobalController.js"></script>
+  <script src="./Scripts/resize.js"></script>
 </body>
 
 </html>

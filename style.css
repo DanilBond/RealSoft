@@ -413,7 +413,6 @@ p {
   width: 95%;
   overflow-y: auto;
   overflow-x: hidden;
-  resize: both;
 }
 
 .window1 {
@@ -421,12 +420,57 @@ p {
   border-radius: 8px;
   margin: 10px 20px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  min-height: 600px;
   margin: 21px auto;
   width: 95%;
   overflow-x: hidden;
   overflow-y: auto;
-  resize: both;
+  resize: horizontal;
+}
+
+.resize-handle-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.resize-handle {
+  margin-bottom: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: n-resize;
+  position: absolute;
+  bottom: 0;
+}
+
+.resize-handle1 {
+  width: 40px;
+  height: 1px;
+  background-color: #c4c4c4;
+  margin-bottom: 2px;
+}
+
+.resize-handle2 {
+  width: 60px;
+  height: 1px;
+  background-color: #c4c4c4;
+}
+
+.horiz-resize {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  right: 0;
+  cursor: e-resize;
+  background-color: black;
+}
+
+#top-panel {
+  background-color: black;
+}
+
+#bottom-panel {
+  background-color: yellow;
 }
 
 .window__nav {
