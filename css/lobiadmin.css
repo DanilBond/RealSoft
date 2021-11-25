@@ -8615,11 +8615,7 @@ body.ribbon-fixed #ribbon {
 #ribbon .breadcrumb > li.active {
     color: #aaa;
 }
-#content {
-    position: relative;
-    background-color: transparent;
-    padding: 16px;
-}
+
 .setting-box {
     position: fixed;
     width: 200px;
