@@ -1,8 +1,10 @@
 let windowsDesktop = document.querySelectorAll(".windowDesktop");
 
 let modalContainers = document.querySelector("#smallModalsContainer");
-let modalWindows = document.querySelectorAll(".modal-window1");
+let modalWindows = document.querySelectorAll(".mwww");
 let modalWindowsDisabled = [];
+
+console.log(modalWindows);
 
 function setSize(id){
     if(windowsDesktop[id].style.minHeight == "40px"){
@@ -69,6 +71,7 @@ function resizeModal(id){
     let elem = document.createElement("div");
     elem.innerText = null;
     elem.classList = "modalItemElement id" + id;
+    elem.innerText = "Open";
     elem.onclick = ()=>{openModal(id, id)};
     modalContainers.append(elem);
 

@@ -1202,8 +1202,14 @@ p {
   width: 200px;
   border-radius: 10px;
   height: 40px;
-  background-color: gray;
+  background-color: white;
   margin: 5px;
+
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: black;
 }
 
 .modal-window__left {
