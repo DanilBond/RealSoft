@@ -9,5 +9,8 @@ function setActiveWindow(id){
         if(i == id){
             windows[i].style.display = "";
     }
+    else{
+        windows[i].style.display = "none";
+    }
 }
 }
