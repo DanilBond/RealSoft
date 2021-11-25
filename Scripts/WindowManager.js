@@ -6,11 +6,8 @@ for (const i of windows) {
 
 function setActiveWindow(id){
     for (let i = 0; i < windows.length; i++) {
-        if(i != id){
-            windows[i].style.display = "none";
-        }
-        else{
+        if(i == id){
             windows[i].style.display = "";
-        }
     }
+}
 }

@@ -398,6 +398,7 @@ p {
   overflow-y: auto;
   overflow-x: hidden;
   resize: both;
+
 }
 
 .window1 {
@@ -1096,6 +1097,25 @@ p {
   max-width: 1063px;
   overflow-y: auto;
   overflow-x: hidden;
+}
+#smallModalsContainer{
+  z-index: 2;
+  position: fixed;
+  height: 50px;
+  background-color: #d3d6dc;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+
+  display: flex;
+  
+}
+.modalItemElement{
+  width: 200px;
+  border-radius: 10px;
+  height: 40px;
+  background-color: gray;
+  margin: 5px;
 }
 
 .modal-window__left {

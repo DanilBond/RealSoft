@@ -166,9 +166,9 @@ $(".scroll_img").click(function () {
     $(".window-absolute ").toggleClass("active");
 });
 
-$(".window__images").click(function () {
-    $(".window-absolute ").toggleClass("active");
-});
+// $(".window__images").click(function () {
+//     $(".window-absolute ").toggleClass("active");
+// });
 
 $("#window-1").resize((e) => {
     let w = e.target.offsetWidth;
