@@ -30,6 +30,14 @@
     font-family: HNCroman;
 }
 
+.aifs {
+    align-items: flex-start !important;
+}
+
+.fd-c {
+    flex-direction: column;
+}
+
 .fdc-reverse {
     flex-direction: column-reverse;
 }

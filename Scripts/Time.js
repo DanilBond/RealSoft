@@ -263,8 +263,13 @@ $("#window-1").resize((e) => {
 
     if (w < 332) {
         $("#window-1 .window__left p").addClass("fz15");
+        $("#window-1 .window__left").addClass("aifs");
+        $("#window-1 .window__left").addClass("fd-c");
 
-        $("#window-1 .window__action-btn").addClass("ml-0").addClass("mt-10");
+        $("#window-1 .window__action-btn")
+            .addClass("ml-0")
+            .addClass("mt-10")
+            .addClass("w-200");
 
         $("#window-1 .window__registration").addClass("ml-0");
 
@@ -283,10 +288,13 @@ $("#window-1").resize((e) => {
         // $(".window__search input").addClass("w-136");
     } else {
         $("#window-1 .window__left p").removeClass("fz15");
+        $("#window-1 .window__left").removeClass("aifs");
+        $("#window-1 .window__left").removeClass("fd-c");
 
         $("#window-1 .window__action-btn")
             .removeClass("ml-0")
-            .removeClass("mt-10");
+            .removeClass("mt-10")
+            .removeClass("w-200");
 
         $("#window-1 .window__registration").removeClass("ml-0");
 
