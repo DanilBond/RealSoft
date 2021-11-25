@@ -111,7 +111,7 @@ $(function () {
                 ]),
             };
             var canvas = $("#line-chart");
-            console.log(LobiAdmin.fadeOutColor);
+            console.log(canvas[0]);
             var ctx = canvas[0].getContext("2d");
             var statistictsChart = new Chart(ctx).Line(statisticData, options);
             var legend = $(statistictsChart.generateLegend());
