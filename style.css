@@ -42,6 +42,10 @@
     flex-direction: column-reverse;
 }
 
+.w-100px {
+    width: 100px !important;
+}
+
 .w-100 {
     width: 100%;
 }
@@ -505,7 +509,6 @@ p {
 }
 #dropdown-sort {
     width: 300px;
-    background: #ffffff;
     border-radius: 0 0 20px 20px !important;
     filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.2))
         drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.12))
@@ -1113,6 +1116,24 @@ p {
     overflow-y: auto;
     overflow-x: hidden;
 }
+#smallModalsContainer {
+    z-index: 2;
+    position: fixed;
+    height: 50px;
+    background-color: #d3d6dc;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+}
+.modalItemElement {
+    width: 200px;
+    border-radius: 10px;
+    height: 40px;
+    background-color: gray;
+    margin: 5px;
+}
 
 .modal-window__left {
     display: flex;
@@ -1579,11 +1600,11 @@ p {
     text-transform: uppercase;
 }
 .pcTitle div img {
-    width: 7px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     margin-left: -15px;
     margin-right: 20px;
-    transform: rotateY(180deg);
+    transform: rotateY(180deg) translateY(-2px);
 }
 .scroll.active {
     overflow: auto;

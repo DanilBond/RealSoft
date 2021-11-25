@@ -13,6 +13,8 @@
 </head>
 
 <body>
+  
+
   <div class="main">
     <div class="sideBar" id="sideBar">
       <div class="logoContainer">
@@ -261,7 +263,7 @@
       <div class="content">
 
         <div class="content__wrapper">
-          <div class="window windowModuleFinder" id="window-1">
+          <div class="window windowModuleFinder windowDesktop" id="window-1">
             <nav class="window__nav">
               <div class="window__routes">
                 Делопроизводство / Входящие документы
@@ -269,8 +271,8 @@
               </div>
               <div class="window__icons">
                 <img src="./images/edit.svg" alt="edit" class="window__images" />
-                <img src="./images/line.svg" alt="line" class="window__images" />
-                <img id="lol" src="./images/square.svg" alt="square" class="window__images" />
+                <img src="./images/line.svg" alt="line" class="window__images" onclick="setSize(0)" />
+                <img id="lol" src="./images/square.svg" alt="square" class="window__images" onclick="setFullScreen(0)"/>
               </div>
             </nav>
             <hr class="window__hr" />
@@ -375,7 +377,7 @@
           <!-- SECOND WINDOW -->
           
           
-          <div class="window1 windowModuleFinder" id="window-2">
+          <div class="window1 windowModuleFinder windowDesktop" id="window-2">
             <nav class="window__nav">
               <div class="window__routes">
                Фин ОЦО
@@ -383,8 +385,8 @@
               </div>
               <div class="window__icons">
                 <img src="./images/edit.svg" alt="edit" class="window__images" />
-                <img src="./images/line.svg" alt="line" class="window__images" />
-                <img id="lol" src="./images/square.svg" alt="square" class="window__images" />
+                <img src="./images/line.svg" alt="line" class="window__images" onclick="setSize(1)" />
+                <img id="lol" src="./images/square.svg" alt="square" class="window__images" onclick="setFullScreen(1)"/>
               </div>
             </nav>
             <hr class="window__hr" />
@@ -547,12 +549,14 @@
             </div>
 
 </div>
+<div id="smallModalsContainer" style="display: none;">
+</div>
 
 <!-- SECOND WINDOW ENDS -->
 
 <!-- THIRD WINDOW -->
 
-<div class="window1 windowModuleFinder" id="window-3">
+<div class="window1 windowModuleFinder windowDesktop" id="window-3">
   <nav class="window__nav">
     <div class="window__routes">
       Структура АО КТК
@@ -560,8 +564,8 @@
     </div>
     <div class="window__icons">
       <img src="./images/edit.svg" alt="edit" class="window__images" />
-      <img src="./images/line.svg" alt="line" class="window__images" />
-      <img id="lol" src="./images/square.svg" alt="square" class="window__images" />
+      <img src="./images/line.svg" alt="line" class="window__images"  onclick="setSize(2)"/>
+      <img id="lol" src="./images/square.svg" alt="square" class="window__images" onclick="setFullScreen(2)"/>
     </div>
   </nav>
   <hr class="window__hr" />
@@ -1099,8 +1103,8 @@
     </div>
     <div class="window__icons">
       <img src="./images/edit.svg" alt="edit" class="window__images" />
-      <img src="./images/line.svg" alt="line" class="window__images" />
-      <img id="lol" src="./images/square.svg" alt="square" class="window__images" />
+      <img src="./images/line.svg" alt="line" class="window__images" onclick="resizeModal(0)"/>
+      <img id="lol" src="./images/square.svg" alt="square" class="window__images" onclick="fullScreenModal(0)"/>
     </div>
   </nav>
   <hr class="window__hr" />
@@ -1198,7 +1202,7 @@
   <script src="./Scripts/SideBarController.js"></script>
   <script src="./Scripts/WindowManager.js"></script>
   <script src="./Scripts/ThemeSwitcher.js"></script>
-  <script src="./Scripts/search.js"></script>
+  <script src="./Scripts/DesktopGlobalController.js"></script>
 </body>
 
 </html>
