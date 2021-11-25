@@ -9,6 +9,12 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css"/>
   <link rel="stylesheet" href="style.css" id="globalStyles"/>
+  
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css"/>
+
+  <!--Page specific assets-->
+  <link rel="stylesheet" href="css/lobiadmin.css"/>
   <title>Document</title>
 </head>
 
@@ -632,6 +638,39 @@
   <div class="window__registration">
   </div>
  <div class="scroll_flex">
+  <div id="chartContainer" style="height: 250px; width: 300px"></div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="tile-stat bg-white border-1">
+      <div class="tile-body min-h-200 text-center">
+        <h3 class="margin-top-5 text-info font-weight-700">VISITORS</h3>
+        <div class="sparkline-responsive" data-type="bar" data-max-width="200" data-height="70"
+             data-data="[10,8,5,3,6,4,7,9,10,13,11,16]"></div>
+        <div class="row">
+          <div class="col-xs-4">
+            <h5>TODAY</h5>
+            <h5>57 840 <i class="fa fa-level-up text-info"></i></h5>
+          </div>
+          <div class="col-xs-4">
+            <h5>WEEK</h5>
+            <h5>904 672 <i class="fa fa-level-up text-info"></i></h5>
+          </div>
+          <div class="col-xs-4">
+            <h5>MONTH</h5>
+            <h5>37 876 109 <i class="fa fa-level-down text-danger"></i></h5>
+          </div>
+        </div>
+      </div>
+      <div class="tile-progressbar">
+        <span class="bg-info" style="width: 65.5%;"></span>
+      </div>
+      <div class="tile-footer">
+        <span class="sparkline vertical-align-middle text-left" data-Type="bar" data-BarWidth="5"
+              data-Height="30">1,4,5,3,6,4,7,9,7</span>
+        <h4>65.5% <i class="fa fa-level-up text-info"></i></h4>
+        <h5>Statistics of this year</h5>
+      </div>
+    </div>
+  </div>
  </div>
 </div>
 <div class="window windowModuleFinder windowDesktop d-block" >
@@ -650,6 +689,51 @@
   <div class="window__registration">
   </div>
  <div class="scroll_flex">
+  <div id="dashboard-statisticts-panel" class="panel panel-light">
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-lg-12">
+          <div>
+            <canvas id="line-chart" height="250" width="900"></canvas>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <h3 class="text-center margin-top-5">Sales in this week</h3>
+        <div class="col-xxs-12 col-xs-6 col-sm-3 text-center">
+          <h4>Clothing</h4>
+          <canvas id="dashbboard-clothing-sales" height="100" width="100"></canvas>
+          <h5>
+            Total <span class="badge font-size-lg">2125</span> orders
+          </h5>
+        </div>
+        <div class="col-xxs-12 col-xs-6 col-sm-3 text-center">
+          <h4>Computing</h4>
+          <canvas id="dashbboard-computing-sales" height="100" width="100"></canvas>
+          <h5>
+            Total <span class="badge font-size-lg">1742</span> orders
+          </h5>
+        </div>
+        <div class="col-xxs-12 col-xs-6 col-sm-3 text-center">
+          <h4>Furniture</h4>
+          <canvas id="dashbboard-furniture-sales" height="100" width="100"></canvas>
+          <h5>
+            Total <span class="badge font-size-lg">69</span> orders
+          </h5>
+        </div>
+        <div class="col-xxs-12 col-xs-6 col-sm-3 text-center">
+          <h4>Vessel</h4>
+          <canvas id="dashbboard-vessel-sales" height="100" width="100"></canvas>
+          <h5>
+            Total <span class="badge font-size-lg">145</span> orders
+          </h5>
+        </div>
+      </div>
+  <div id="chartContainer2" style="height: 110px; width: 110px"></div>
+
+    </div>
+  </div>
  </div>
 </div>
            
@@ -1241,6 +1325,36 @@
   <script src="./Scripts/WindowManager.js"></script>
   <script src="./Scripts/ThemeSwitcher.js"></script>
   <script src="./Scripts/DesktopGlobalController.js"></script>
+  <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+
+
+  <script type="text/javascript" src="vendor/jquery.js"></script>
+<script type="text/javascript" src="vendor/jquery-ui.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="vendor/lobibox/js/lobibox.js"></script>
+<script type="text/javascript" src="vendor/lobipanel/js/lobipanel.js"></script>
+<script type="text/javascript" src="vendor/jquery-ui-touch-punch/jquery.ui.touch-punch.js"></script>
+
+<!--Page specific assets-->
+<script src="vendor/sparkline/jquery.sparkline.min.js"></script>
+<script src='vendor/chartjs/Chart.min.js'></script>
+<script src='vendor/lobilist/js/lobilist.js'></script>
+<script src='vendor/moment/moment.min.js'></script>
+<script src='vendor/fullcalendar/fullcalendar.min.js'></script>
+
+<!--Make sure that config.js file is loaded before LobiAdmin.js-->
+<script type="text/javascript" src="js/config.js"></script>
+<script type="text/javascript" src="js/LobiAdmin.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
+<script src="js/dashboard.js"></script>
+
+<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+<script src="./Scripts/Chart.js"></script>
+
 </body>
 
 </html>

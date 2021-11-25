@@ -30,6 +30,29 @@
     font-family: HNCroman;
 }
 
+.canvasjs-chart-tooltip div span {
+    display: none !important;
+}
+
+.canvasjs-chart-tooltip div {
+    background: #192a3e !important;
+    border-radius: 15px !important;
+    color: #ffffff !important;
+    text-shadow: none !important;
+    border: none !important;
+}
+.canvasjs-chart-tooltip {
+    border-radius: 15px !important;
+    font-weight: 550 !important;
+    background: #192a3e !important;
+    color: #ffffff !important;
+    font-size: 10px !important;
+}
+
+.canvasjs-chart-credit {
+    display: none !important;
+}
+
 .aifs {
     align-items: flex-start !important;
 }
