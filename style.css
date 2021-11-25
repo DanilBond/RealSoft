@@ -30,6 +30,29 @@
   font-family: HNCroman;
 }
 
+.canvasjs-chart-tooltip div span {
+  display: none !important;
+}
+
+.canvasjs-chart-tooltip div {
+  background: #192a3e !important;
+  border-radius: 15px !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+  border: none !important;
+}
+.canvasjs-chart-tooltip {
+  border-radius: 15px !important;
+  font-weight: 550 !important;
+  background: #192a3e !important;
+  color: #ffffff !important;
+  font-size: 10px !important;
+}
+
+.canvasjs-chart-credit {
+  display: none !important;
+}
+
 .aifs {
   align-items: flex-start !important;
 }
@@ -142,6 +165,10 @@ p {
 
 .mr-10 {
   margin-right: 10px;
+}
+
+.mb-0 {
+  margin-bottom: 0;
 }
 
 /* ------------------ */
@@ -1714,6 +1741,10 @@ p {
 
 .first-graph__body {
   height: 67%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .first-graph__bottom {
@@ -1769,6 +1800,37 @@ p {
   background-color: rgba(9, 124, 180, 1);
 }
 
+.panel-light {
+  border: 0 !important;
+}
+
+.third-graph__title {
+  font-size: 15px;
+  font-weight: 550;
+}
+
+.third-graph__wrapper {
+  padding-top: 30px;
+  background: rgba(248, 248, 250, 1);
+  margin: 0 !important;
+  padding-bottom: 20px;
+}
+
+.third-graph__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.third-graph__text-top {
+  font-size: 10px;
+  color: rgba(102, 102, 102, 1);
+}
+
+.third-graph__text-bottom {
+  font-size: 16px;
+  color: rgba(9, 124, 180, 1);
+}
+
 /* ---------------- GRAPH ENDS ------------------ */
 
 /* ---------------MEDIA---------------- */
@@ -1805,6 +1867,12 @@ p {
   }
   .navbarRightProfile div p {
     font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  #line-chart {
+    display: none;
   }
 }
 
