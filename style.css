@@ -277,6 +277,7 @@ p {
   flex-direction: column;
   margin-top: 10px;
   padding: 0;
+  width: 200px;
 }
 
 .menuContainer .container .item {
@@ -1318,7 +1319,7 @@ p {
   z-index: 4;
 }
 .windowModuleFinder{
-  z-index: 3;
+  z-index: 0;
   
 }
 .modal-window1 {
@@ -2113,6 +2114,9 @@ p {
 @media only screen and (max-width: 520px) {
   .window1{
     width: 215px;
+  }
+  #dropdownMenuButton2{
+    margin-left: 0;
   }
   .modal-status__bottom-left {
     font-size: 10px;
