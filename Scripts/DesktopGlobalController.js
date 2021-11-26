@@ -12,6 +12,7 @@ function setSize(id){
         windowsDesktop[id].style.maxHeight = "";
         windowsDesktop[id].style.overflowY = "";
         windowsDesktop[id].style.resize = "";
+        windowsDesktop[id].classList.remove("windowIsClosed");
     }
     else{
         
@@ -19,6 +20,7 @@ function setSize(id){
         windowsDesktop[id].style.maxHeight = "40px";
         windowsDesktop[id].style.overflowY = "hidden";
         windowsDesktop[id].style.resize = "none";
+        windowsDesktop[id].classList.add("windowIsClosed");
 
         windowsDesktop[id].style.position = "";
         windowsDesktop[id].style.width = ""
