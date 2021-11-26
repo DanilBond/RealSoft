@@ -1189,7 +1189,7 @@ p {
   display: none;
   position: absolute !important;
   background: #ffffff;
-  top: 20%;
+  top: 6%;
   left: 20%;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
@@ -1200,7 +1200,7 @@ p {
 }
 
 #smallModalsContainer {
-  z-index: 2;
+  z-index: 5;
   position: fixed;
   height: 50px;
   background-color: #d3d6dc;
@@ -1313,12 +1313,18 @@ p {
   margin-left: 20px;
   padding: 30px 23px;
 }
-
+.mwww{
+  z-index: 4;
+}
+.windowModuleFinder{
+  z-index: 3;
+  
+}
 .modal-window1 {
   display: none;
   position: absolute !important;
   background: #ffffff;
-  top: 20%;
+  top: 6%;
   left: 20%;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);

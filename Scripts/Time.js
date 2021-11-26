@@ -163,7 +163,7 @@ $(".accordianIn3Fir").click(function () {
 });
 
 $(".scroll_img").click(function () {
-    $(".window-absolute ").toggleClass("active");
+    $(".window-absolute ").toggleClass("dis-block");
 });
 
 // $(".window__images").click(function () {

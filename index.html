@@ -269,7 +269,7 @@
       <div class="content">
 
         <div class="content__wrapper">
-          <div class="window1 windowModuleFinder windowDesktop" id="window-1">
+          <div class="window1 windowModuleFinder windowDesktop" id="window-1" style="display: none;">
             <nav class="window__nav" id='navbar5'>
               <div class="window__routes">
                 Делопроизводство / Входящие документы
@@ -387,7 +387,7 @@
           <!-- SECOND WINDOW -->
           
           
-          <div class="window1 windowModuleFinder windowDesktop drag4" id="window-2">
+          <div class="window1 windowModuleFinder windowDesktop drag4" id="window-2" style="display: none;">
             <div class="horiz-resize"></div>
             <nav class="window__nav" id='navbar4'>
               <div class="window__routes">
@@ -573,7 +573,7 @@
 
 <!-- THIRD WINDOW -->
 
-<div class="window1 windowModuleFinder windowDesktop drag3" id="window-3">
+<div class="window1 windowModuleFinder windowDesktop drag3" id="window-3"  style="display: none;">
   <nav class="window__nav" id='navbar3' >
     <div class="window__routes">
       Структура АО КТК
@@ -636,7 +636,7 @@
 
 
 <!-- THIRD WINDOW ENDS -->
-<div class="window windowModuleFinder windowDesktop" style="height: 450px;" >
+<div class="window windowModuleFinder windowDesktop" style="height: 450px;" style="display: none;" >
   <nav class="window__nav">
     <div class="window__routes">
 
@@ -690,7 +690,7 @@
  </div>
 </div>
 
-<div class="window windowModuleFinder windowDesktop" >
+<div class="window windowModuleFinder windowDesktop"  style="display: none;">
   <nav class="window__nav">
     <div class="window__routes">
       <span>Сравнительная статистика</span>
@@ -755,7 +755,7 @@
 </div>
            
             
-    <div class="window1 window-absolute" id="drag">
+    <div class="window1 window-absolute mwww" id="drag">
           <nav class="window__nav" id="navbar">
             <div class="window__routes">
               2021 / Июль / 15.06.2021
@@ -763,8 +763,8 @@
             </div>
             <div class="window__icons">
               <img src="./images/edit.svg" alt="edit" class="window__images" />
-              <img src="./images/line.svg" alt="line" class="window__images" />
-              <img src="./images/square.svg" alt="square" class="window__images" />
+              <img src="./images/line.svg" alt="line" class="window__images" onclick="resizeModal(0)"/>
+              <img src="./images/square.svg" alt="square" class="window__images" onclick="fullScreenModal(0)"/>
             </div>
           </nav>
           <hr class="window__hr" />
