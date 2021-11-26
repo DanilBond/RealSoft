@@ -449,13 +449,14 @@ p {
   margin: 10px 20px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   margin: 21px auto;
-  width: 95%;
+  width: 1523px;
   overflow-x: hidden;
   overflow-y: auto;
   resize: horizontal;
+  height: 500px;
 }
 
-.window.windowModuleFinder.windowDesktop.d-block {
+.window.windowModuleFinder.windowDesktop {
   margin: 21px auto;
 }
 
@@ -616,7 +617,9 @@ p {
   transform: rotate(45deg);
   margin-top: -3.5px;
 } */
-
+#dropdownMenuButton2{
+  margin-left: 20px;
+}
 .window__action-text {
   font-size: 14px;
 }
@@ -629,7 +632,6 @@ p {
   background: #ffffff;
   filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.2)) drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.12)) drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.14));
   padding: 13px 18px 11px 18px;
-  margin-left: 20px;
 }
 
 .blue {
@@ -718,14 +720,14 @@ p {
 
 .status {
   max-width: 100%;
-  min-width: 1484px;
+  min-width: 1488px;
   display: flex;
   background: #f8f8fa;
   border-top: 1px solid rgba(67, 79, 99, 0.2);
   border-bottom: 1px solid rgba(67, 79, 99, 0.2);
   height: 42px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   justify-content: space-between;
   align-items: center;
   padding: 30px 0;
@@ -778,14 +780,13 @@ p {
 
 .status2 {
   max-width: 100%;
-  min-width: 1484px;
+  min-width: 1505px;
   display: flex;
   background: #f8f8fa;
   border-top: 1px solid rgba(67, 79, 99, 0.2);
   border-bottom: 1px solid rgba(67, 79, 99, 0.2);
   height: 42px;
   margin-right: 20px;
-  margin-left: 20px;
   align-items: center;
   padding: 30px 0;
 }
@@ -1722,7 +1723,20 @@ p {
 }
 
 /* ---------------MEDIA---------------- */
+@media only screen and (max-width: 1790px) {
+  .window1{
+    width: 1272px;
+  }
+}
+@media only screen and (max-width: 1590px) {
+  .window1{
+    width: 1000px;
+  }
+}
 @media only screen and (max-width: 1393px) {
+  .window1{
+    width: 800px;
+  }
   .window__registration {
     flex-direction: column;
     align-items: start;
@@ -1771,6 +1785,8 @@ p {
   align-items: center;
   padding: 0 24px;
   border-bottom: 1px solid rgba(232, 232, 232, 1);
+  background-color: #fff;
+
 }
 
 .first-graph__body {
@@ -1779,6 +1795,7 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #fff;
 }
 
 .first-graph__bottom {
@@ -1886,8 +1903,16 @@ p {
     overflow-x: hidden;
   }
 }
+@media only screen and (max-width: 1100) {
+  .window1{
+    width: 700px;
+  }
+}
 
 @media only screen and (max-width: 1010px) {
+  .window1{
+    width: 600px;
+  }
   .navbarWrapper {
     margin: 0 16px;
   }
@@ -1911,6 +1936,9 @@ p {
 }
 
 @media only screen and (max-width: 850px) {
+  .window1{
+    width: 500px;
+  }
   #line-chart {
     display: none;
   }
@@ -2040,6 +2068,9 @@ p {
 }
 
 @media only screen and (max-width: 678px) {
+  .window1{
+    width: 350px;
+  }
   .navbarRightProfile div {
     display: none;
   }
@@ -2074,6 +2105,9 @@ p {
 }
 
 @media only screen and (max-width: 520px) {
+  .window1{
+    width: 215px;
+  }
   .modal-status__bottom-left {
     font-size: 10px;
   }
@@ -2136,6 +2170,9 @@ p {
 }
 
 @media only screen and (max-width: 420px) {
+  .window__icons.w-100pxwindow__icons.w-100px{
+    margin-bottom: 13px;
+  }
   .menuContainer .container .item div {
     padding-left: 0;
   }
