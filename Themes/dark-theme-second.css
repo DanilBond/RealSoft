@@ -356,3 +356,8 @@ color: white;
 .disabled {
     color: #fff;
 }
+
+.textWithImg img {
+    filter: brightness(0) saturate(100%) invert(58%) sepia(35%) saturate(3695%)
+        hue-rotate(222deg) brightness(107%) contrast(98%);
+}
