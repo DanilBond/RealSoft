@@ -1240,7 +1240,7 @@ p {
   position: absolute !important;
   background: #ffffff;
   top: 6%;
-  left: 20%;
+  left: 24%;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   height: 400px;
@@ -1280,6 +1280,10 @@ p {
   flex-direction: column;
   justify-content: space-between;
   width: 25%;
+}
+
+.window-without-overflow {
+  overflow-y: hidden;
 }
 
 .textWithImg {
@@ -1373,7 +1377,7 @@ p {
   display: none;
   position: absolute !important;
   background: #ffffff;
-  top: 6%;
+  top: 5%;
   left: 20%;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
@@ -1448,10 +1452,6 @@ p {
 .vnutr {
   font-style: italic;
   color: rgba(138, 138, 138, 1);
-}
-
-.vnutr1 {
-  margin-bottom: 23px;
 }
 
 .modal-status__bottom-left img {
@@ -1936,7 +1936,10 @@ p {
 }
 
 /* ---------------- GRAPH ENDS ------------------ */
-
+.window-main {
+  overflow-y: hidden;
+  height: min-content;
+}
 /* ---------------MEDIA---------------- */
 @media only screen and (max-width: 1336px) {
   .modal-status1 {
@@ -2169,6 +2172,10 @@ p {
   }
 
   .modal-status__bottom-left img {
+    display: none;
+  }
+
+  .modal-status__bottom-left img {
     margin-right: 15px;
   }
 
@@ -2181,10 +2188,15 @@ p {
   }
 
   .modal-window1 {
-    top: 15%;
+    top: 5%;
     left: 20%;
     height: 300px;
-    width: 250px;
+    width: 220px;
+  }
+
+  .modal-status__img {
+    width: 155px !important;
+    height: 200px !important;
   }
 
   .window__routes {
@@ -2192,14 +2204,64 @@ p {
   }
 
   .modal-window {
-    width: 300px;
+    width: 220px;
     height: 300px;
+  }
+  .modal-status__email {
+    font-size: 7px;
   }
 
   .modal-window__left {
     font-size: 8px;
   }
 
+  #dropdownMenuButton1 {
+    margin: 15px;
+  }
+
+  .modal-window1 .window__icons {
+    width: 100px;
+  }
+
+  .modal-window .window__icons {
+    width: 160px;
+  }
+
+  .modal-window__top {
+    width: 150px;
+  }
+  .textWithImg img {
+    display: none;
+  }
+
+  .modal-window .modal-status {
+    padding: 30px 12px;
+  }
+
+  .modal-window__left p {
+    font-size: 7px;
+  }
+
+  .modal-window1 .window__routes {
+    font-size: 8px;
+  }
+
+  .modal-window .window__routes {
+    font-size: 8px;
+  }
+
+  .modal-window1 .window__registration1 {
+    justify-content: center;
+  }
+  .modal-status__bottom-right {
+    width: 35%;
+  }
+  .modal-status__bottom-left {
+    width: 65%;
+  }
+  .modal-status__header {
+    font-size: 20px;
+  }
   .modal-window__right {
     font-size: 8px;
   }

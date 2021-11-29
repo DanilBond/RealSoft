@@ -394,7 +394,7 @@
           <!-- SECOND WINDOW -->
           
           
-          <div class="window1 windowModuleFinder windowDesktop drag4" id="window-2" style="display: none;">
+          <div class="window1 windowModuleFinder windowDesktop drag4 window-without-overflow" id="window-2" style="display: none;">
 
             <nav class="window__nav" id='navbar4'>
               <div class="window__routes">
@@ -580,7 +580,7 @@
 
 <!-- THIRD WINDOW -->
 
-<div class="window1 windowModuleFinder windowDesktop drag3" id="window-3"  style="display: none;">
+<div class="window1 windowModuleFinder windowDesktop drag3 window-without-overflow" id="window-3"  style="display: none;">
   <nav class="window__nav" id='navbar3' >
     <div class="window__routes">
       Структура АО КТК
@@ -697,7 +697,7 @@
  </div>
 </div>
 
-<div class="window windowModuleFinder windowDesktop"  style="display: none;">
+<div class="window window-main windowModuleFinder windowDesktop overflowY-none"  style="display: none;">
   <nav class="window__nav">
     <div class="window__routes">
       <span>Сравнительная статистика</span>
@@ -1248,7 +1248,6 @@
       <span>/ Юрист</span>
     </div>
     <div class="window__icons">
-      <img src="./images/edit.svg" alt="edit" class="window__images" />
       <img src="./images/line.svg" alt="line" class="window__images" onclick="resizeModal(1)"/>
       <img id="lol" src="./images/square.svg" alt="square" class="window__images" onclick="fullScreenModal(1)"/>
     </div>
@@ -1316,7 +1315,7 @@
               <p>8 777 123 45 67</p>
               <p>8 (72831) 5 67 89 <br><span class="vnutr">внутр. 105</span></p>
               <p>8 (72831) 5 67 89</p>
-              <p>n.k.iliyev@mail.ru</p>
+              <p class="modal-status__email">n.k.iliyev@mail.ru</p>
               <p>г. Астана, ул. Толе би, 76</p>
             </div>
           </div>
@@ -1331,6 +1330,13 @@
 
 
 <!-- SECOND MODAL ENDS -->
+
+<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="semantic/dist/semantic.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
