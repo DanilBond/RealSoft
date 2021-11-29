@@ -33,207 +33,8 @@
         <div><img src="./images/planet.svg" alt="planet" /></div>
         <div><img src="./images/size.svg" alt="size" /></div>
       </div>
-      <div class="mainContainer">
-        <!-- Делопроизводство -->
-        <div class="parcerContainer pcClosed">
-          <span onclick="SetSideBarSmall(0)" class="pcTitle">
-            <div><img src="./images/Arrow.svg" alt="Arrow"></div>Делопроизводство
-          </span>
-          <div class="pcItem" onclick="setActiveWindow(0)">Входящие документы</div>
-          <div class="pcItem">Исходящие документы</div>
-          <div class="pcItem">Прошлогодние базы</div>
-          <div class="pcItem">Отчет по входящим</div>
-          <div class="pcItem">Отчет по исходящим</div>
-          <div class="pcItem">Отчет по исходящим</div>
-          <div class="pcItem">
-            Конфликтные
-            <img src="./images/Arrow.svg" alt="Arrow" />
-          </div>
-          <div class="pcItem">Корзина</div>
+      <div class="mainContainer" id="mainContainer">
         </div>
-        <!-- Делопроизводство -->
-
-        <!-- Фин ОЦО -->
-        <div class="parcerContainer pcClosed">
-          <span onclick="SetSideBarSmall(1)" class="pcTitle">
-            <div><img src="./images/Arrow.svg" alt="Arrow"></div>Фин ОЦО
-          </span>
-          <div class="pcItem">Оглавление</div>
-          <div class="pcItem">По номенклатуре</div>
-          <div class="pcItem">По авторам</div>
-          <div class="pcItem">По дате</div>
-          <div class="pcItem">По месяцам</div>
-          <div class="pcItem">По номерам</div>
-          <div class="pcItem">По филиалам</div>
-          <div class="pcItem">По статусу</div>
-          <div class="pcItem">Приказы</div>
-          <div class="pcItem">Списание ОС через ЦА</div>
-          <div class="pcItem"  onclick="setActiveWindow(1)">Статистика Фин ОЦО</div>
-          <div class="pcItem">Нормативные документы служб Фин ОЦО</div>
-        </div>
-        <!-- Фин ОЦО -->
-
-        <!-- Структура -->
-        <div class="parcerContainer pcClosed">
-          <span onclick="SetSideBarSmall(2)" class="pcTitle">
-            <div><img src="./images/Arrow.svg" alt="Arrow"></div>Структура АО КТК
-          </span>
-          <div class="pcItem">Телефоны</div>
-          <div class="pcItem"  onclick="setActiveWindow(2)">Иерархия</div>
-          <div class="pcItem">Маршруты</div>
-          <div class="pcItem">Избранное</div>
-          <div class="pcItem">Личные карточки</div>
-          <div class="pcItem">Департаменты по коду</div>
-          <div class="pcItem">По номеру</div>
-        </div>
-        <!-- Структура -->
-
-        
-        <div class="menuContainer">
-          <span class="menuContainerTitle">МЕНЮ</span>
-          <div class="container">
-            <div class="item">
-              <div class="imgContainer">
-                <img src="./images/Desktop.svg" alt="Desktop" />
-              </div>
-              <span>Рабочий стол</span>
-            </div>
-
-            <div class="item" onclick="SetSideBarSmall(2)">
-              <div class="imgContainer">
-                <img src="./images/ID.svg" alt="ID" />
-              </div>
-              <span>Структура АО КТК</span>
-              <div class="itemArrow">
-                <img src="./images/Arrow.svg" alt="Arrow" />
-              </div>
-            </div>
-
-            <div class="item" onclick="SetSideBarSmall(0)">
-              <div class="imgContainer">
-                <img src="./images/DOCX.svg" alt="DOCX" />
-              </div>
-
-              <span>Делопроизводство</span>
-              <div class="itemArrow">
-                <img src="./images/Arrow.svg" alt="Arrow" />
-              </div>
-            </div>
-
-            <div class="item" onclick="SetSideBarSmall(1)">
-              <div class="imgContainer">
-                <img src="./images/Calculator.svg" alt="Calculator" />
-              </div>
-              <span>Фин-ОЦО</span>
-              <div class="itemArrow">
-                <img src="./images/Arrow.svg" alt="Arrow" />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="menuContainer">
-          <span class="menuContainerTitle">ЛИЧНЫЙ КАБИНЕТ</span>
-          <div class="container">
-            <div class="item">
-              <div class="imgContainer">
-                <img src="./images/Profile.svg" alt="profile" />
-              </div>
-              <span>Профиль</span>
-            </div>
-
-            <div class="item">
-              <div class="imgContainer">
-                <img src="./images/Mail.svg" alt="mail" />
-              </div>
-              <span>Почта</span>
-              <div class="itemArrow">
-                <img src="./images/Arrow.svg" alt="arrow" />
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="imgContainer">
-                <img src="./images/Calendar.svg" alt="calendar" />
-              </div>
-              <span>Календарь</span>
-              <div class="itemArrow">
-                <img src="./images/Arrow.svg" alt="arrow" />
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="imgContainer">
-                <img src="./images/Calculator.svg" alt="calculator" />
-              </div>
-              <span>Счёт</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="menuContainer">
-          <span class="menuContainerTitle">СПРАВОЧНИКИ</span>
-          <div class="container">
-            <div class="item">
-              <div class="imgContainer">
-                <img src="./images/KeyAndS.svg" alt="KeyAndS" />
-              </div>
-              <span>Инструменты СЭД</span>
-              <div class="itemArrow">
-                <img src="./images/Arrow.svg" alt="arrow" />
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="imgContainer">
-                <img src="./images/Repair.svg" alt="Repair" />
-              </div>
-              <span>Специальные плагины</span>
-              <div class="itemArrow">
-                <img src="./images/Arrow.svg" alt="images" />
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="imgContainer">
-                <img src="./images/Graphy.svg" alt="Graphy" />
-              </div>
-              <span>Графики</span>
-            </div>
-
-            <div class="item">
-              <div class="imgContainer">
-                <img src="./images/Curve.svg" alt="Curve" />
-              </div>
-              <span>Таблицы</span>
-            </div>
-
-            <div class="item">
-              <div class="imgContainer">
-                <img src="./images/UI.svg" alt="UI" />
-              </div>
-              <span>UI элементы</span>
-              <div class="itemArrow">
-                <img src="./images/Arrow.svg" alt="Arrow" />
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="imgContainer">
-                <img src="./images/Pen.svg" alt="Pen" />
-              </div>
-              <span>Формы</span>
-            </div>
-
-            <div class="item">
-              <div class="imgContainer">
-                <img src="./images/Arrowa.svg" alt="Arrowa" />
-              </div>
-              <span>Параметры сетки</span>
-            </div>
-          </div>
-        </div>
-      </div>
 
 
 
@@ -285,28 +86,30 @@
             <div class="window__registration">
               <div class="window__left">
                 <p class="disabled">Не выбрано</p>
-                <div class="window__action-btn dropdown-toggle" type="button" id="dropdownMenuButton1"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  <p class="window__action-text disabled">
-                    ДЕЙСТВИЕ
-                  </p>
-                  <img src="./images/dropdown.svg" alt="" />
+                <div class="customDropDown">
+                  <div class="cdDefault cddClosed">
+                    <span class="cdTitle cdTitleDisabled">ДЕЙСТВИЕ</span>
+                    <img src="./images/dropdown.svg" alt="">
+                  </div>
+          
+                  <div class="cdContent cdContentClosed">
+                    <span>Action</span>
+                    <span>Another action</span>
+                    <span>Something else</span>
+                  </div>
                 </div>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="dropdown-action">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-                <div class="window__sort-btn dropdown-toggle" type="button" id="dropdownMenuButton2"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  <p class="blue">ПО НОМЕРУ РЕГИСТРАЦИИ</p>
-                  <img src="./images/dropdown.svg" alt="" />
+                <div class="customDropDown">
+                  <div class="cdDefault cddClosed">
+                    <span class="cdTitle">ПО НОМЕРУ РЕГИСТРАЦИИ</span>
+                    <img src="./images/dropdown.svg" alt="">
+                  </div>
+          
+                  <div class="cdContent cdContentClosed">
+                    <span>Action</span>
+                    <span>Another action</span>
+                    <span>Something else</span>
+                  </div>
                 </div>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2" id="dropdown-sort">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
               </div>
               <div class="window__right">
                 <div class="window__registration-btn dropdown-toggle" type="button" id="dropdownMenuButton3"
@@ -403,31 +206,35 @@
             <hr class="window__hr" />
             <div class="window__registration">
               <div class="window__left">
+
+                <div class="customDropDown">
+                  <div class="cdDefault cddClosed">
+                    <span class="cdTitle cdTitleDisabled">ДЕЙСТВИЕ</span>
+                    <img src="./images/dropdown.svg" alt="">
+                  </div>
+          
+                  <div class="cdContent cdContentClosed">
+                    <span>Action</span>
+                    <span>Another action</span>
+                    <span>Something else</span>
+                  </div>
+                </div>
                 
-                <div class="window__action-btn dropdown-toggle" type="button" id="dropdownMenuButton1"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  <p class="window__action-text disabled">
-                    ДЕЙСТВИЕ
-                  </p>
-                  <img src="./images/dropdown.svg" alt="" />
+                <div class="customDropDown">
+                  <div class="cdDefault cddClosed">
+                    <span class="cdTitle">ПО НОМЕРУ РЕГИСТРАЦИИ</span>
+                    <img src="./images/dropdown.svg" alt="">
+                  </div>
+
+                  <div class="cdContent cdContentClosed">
+                    <span>Action</span>
+                    <span>Another action</span>
+                    <span>Something else</span>
+                  </div>
                 </div>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="dropdown-action">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
 
 
-                <div class="window__sort-btn dropdown-toggle" type="button" id="dropdownMenuButton2"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  <p class="blue">ПО НОМЕРУ РЕГИСТРАЦИИ</p>
-                  <img src="./images/dropdown.svg" alt="" />
-                </div>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2" id="dropdown-sort"> 
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                
               </div>
               <div class="window__right">
                 
@@ -589,18 +396,18 @@
   <div class="window__registration">
     <div class="window__left">
       
-      <div class="window__action-btn dropdown-toggle" type="button" id="dropdownMenuButton1"
-        data-bs-toggle="dropdown" aria-expanded="false">
-        <p class="window__action-text disabled">
-          ДЕЙСТВИЕ
-        </p>
-        <img src="./images/dropdown.svg" alt="" />
+      <div class="customDropDown">
+        <div class="cdDefault cddClosed">
+          <span class="cdTitle cdTitleDisabled">ДЕЙСТВИЕ</span>
+          <img src="./images/dropdown.svg" alt="">
+        </div>
+
+        <div class="cdContent cdContentClosed">
+          <span>Action</span>
+          <span>Another action</span>
+          <span>Something else</span>
+        </div>
       </div>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="dropdown-action">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-      </ul>
 
 
       
@@ -1372,7 +1179,8 @@
 <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
 
 <script src="./Scripts/Chart.js"></script>
-
+<script src="./Scripts/SideBarConstructor.js"></script>
+<script src="./Scripts/DropDowns.js"></script>
 </body>
 
 </html>

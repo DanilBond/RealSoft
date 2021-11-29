@@ -324,6 +324,73 @@ p {
 .menuContainer .container .item div {
   padding-left: 6px;
 }
+.customDropDown{
+  
+  position: relative;
+  margin-left: 20px;
+}
+.customDropDown .cdDefault .cdTitleDisabled{
+  color: lightgray;
+}
+.customDropDown .cdTitle{
+    color: rgb(9, 124, 180);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    min-width: 100px;
+    margin-right: 35px;
+}
+.customDropDown .cdDefault{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+
+  box-shadow: 0px 0px 5px gray;
+  background-color: white;
+  cursor: pointer;
+}
+
+.cddClosed{
+  border-radius: 20px;
+}
+.cddOpened{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+
+
+.cdContent{
+  z-index: 2;
+  box-shadow: 0px 0px 5px gray;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.cdContentClosed{
+  display: none;
+}
+.cdContentOpened{
+  display: flex;
+}
+
+.cdContent span{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-top: 2px;  
+  padding-bottom: 2px;
+
+}
+.cdContent span:hover{
+  background-color: #004484;
+  color: white;
+}
+
 
 .menuContainer .container .item span {
   color: black;
