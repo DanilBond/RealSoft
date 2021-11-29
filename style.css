@@ -1731,6 +1731,7 @@ p {
 }
 
 .first-graph__top {
+  background-color: white;
   display: flex;
   justify-content: space-between;
   height: 15%;
@@ -1741,6 +1742,7 @@ p {
 
 .first-graph__body {
   height: 67%;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
