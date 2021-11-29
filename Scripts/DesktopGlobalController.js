@@ -1,8 +1,10 @@
 let windowsDesktop = document.querySelectorAll(".windowDesktop");
 
 let modalContainers = document.querySelector("#smallModalsContainer");
-let modalWindows = document.querySelectorAll(".modal-window1");
+let modalWindows = document.querySelectorAll(".mwww");
 let modalWindowsDisabled = [];
+
+console.log(modalWindows);
 
 function setSize(id){
     if(windowsDesktop[id].style.minHeight == "40px"){
@@ -10,6 +12,7 @@ function setSize(id){
         windowsDesktop[id].style.maxHeight = "";
         windowsDesktop[id].style.overflowY = "";
         windowsDesktop[id].style.resize = "";
+        windowsDesktop[id].classList.remove("windowIsClosed");
     }
     else{
         
@@ -17,6 +20,7 @@ function setSize(id){
         windowsDesktop[id].style.maxHeight = "40px";
         windowsDesktop[id].style.overflowY = "hidden";
         windowsDesktop[id].style.resize = "none";
+        windowsDesktop[id].classList.add("windowIsClosed");
 
         windowsDesktop[id].style.position = "";
         windowsDesktop[id].style.width = ""
@@ -69,6 +73,7 @@ function resizeModal(id){
     let elem = document.createElement("div");
     elem.innerText = null;
     elem.classList = "modalItemElement id" + id;
+    elem.innerText = "Open";
     elem.onclick = ()=>{openModal(id, id)};
     modalContainers.append(elem);
 

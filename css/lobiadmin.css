@@ -5858,11 +5858,11 @@ fieldset[isabled] .lobiradio:hover i {
 .dropdown-menu.reduced-padding li a {
   padding: 1px 10px;
 }
-.dropdown-menu {
-  background-color: #fff;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-}
+/* .dropdown-menu {
+    background-color: #fff;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+} */
 @media screen and (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
     background-color: #fff;
