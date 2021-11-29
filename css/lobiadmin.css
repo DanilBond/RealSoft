@@ -2070,7 +2070,7 @@ body {
 .max-h-350 {
     max-height: 350px !important;
 }
-.w-16 {
+/* .w-16 {
     width: 16px !important;
 }
 .w-32 {
@@ -2099,7 +2099,7 @@ body {
 }
 .w-350 {
     width: 350px !important;
-}
+} */
 .w-full {
     width: 100% !important;
 }

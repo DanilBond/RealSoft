@@ -30,6 +30,10 @@
     font-family: HNCroman;
 }
 
+.sparkline.text-center {
+    margin-bottom: 15px;
+}
+
 .canvasjs-chart-tooltip div span {
     display: none !important;
 }
@@ -110,10 +114,18 @@ p {
     font-weight: bold;
 }
 
+.o-a-h {
+    overflow: hidden !important;
+}
+
+.min-w-1484 {
+    min-width: 1484px !important;
+}
+
 /* for adaptive accordions */
 
 .fz-9 {
-    font-size: 10px !important;
+    font-size: 8px !important;
 }
 
 .fz-11 {
@@ -528,6 +540,7 @@ p {
 .window__routes {
     font-size: 13px;
     color: rgba(21, 21, 21, 0.5);
+    padding-right: 15px;
 }
 
 .window__routes span {
@@ -1801,9 +1814,9 @@ p {
         margin-left: 10px;
     }
 
-    .window__left {
+    /* .window__left {
         margin-bottom: 10px;
-    }
+    } */
 }
 
 .pcOpen {
@@ -2292,3 +2305,7 @@ p {
 }
 
 /* ---------------MEDIA---------------- */
+
+.m-0 {
+    margin: 0 !important;
+}
