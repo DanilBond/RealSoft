@@ -574,9 +574,7 @@ p {
   margin-left: 20px;
   background: #ffffff;
   border-radius: 30px;
-  filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.2))
-    drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.12))
-    drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.14));
+  filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.2)) drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.12)) drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.14));
 }
 
 .show {
@@ -588,17 +586,13 @@ p {
   background: #ffffff;
 
   border-radius: 0 0 20px 20px !important;
-  filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.2))
-    drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.12))
-    drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.14));
+  filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.2)) drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.12)) drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.14));
 }
 
 #dropdown-sort {
   width: 300px;
   border-radius: 0 0 20px 20px !important;
-  filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.2))
-    drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.12))
-    drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.14));
+  filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.2)) drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.12)) drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.14));
 }
 
 .dropdown-item {
@@ -630,9 +624,7 @@ p {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.2))
-    drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.12))
-    drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.14));
+  filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.2)) drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.12)) drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.14));
 }
 
 .dropdown-menu-navbar div li {
@@ -664,6 +656,7 @@ p {
 #dropdownMenuButton2 {
   margin-left: 20px;
 }
+
 .window__action-text {
   font-size: 14px;
 }
@@ -674,9 +667,7 @@ p {
   justify-content: space-between;
   border-radius: 30px;
   background: #ffffff;
-  filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.2))
-    drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.12))
-    drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.14));
+  filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.2)) drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.12)) drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.14));
   padding: 13px 18px 11px 18px;
 }
 
@@ -811,7 +802,7 @@ p {
   border-radius: 3px;
 }
 
-.square-checkbox label input:checked + span::after {
+.square-checkbox label input:checked+span::after {
   content: "";
   display: block;
   position: absolute;
@@ -877,9 +868,7 @@ p {
   display: flex;
   border-radius: 30px;
   background: #ffffff;
-  filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.2))
-    drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.12))
-    drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.14));
+  filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.2)) drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.12)) drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.14));
 }
 
 .window-absolute {
@@ -1363,12 +1352,15 @@ p {
   margin-left: 20px;
   padding: 30px 23px;
 }
+
 .mwww {
   z-index: 4;
 }
+
 .windowModuleFinder {
   z-index: 0;
 }
+
 .modal-window1 {
   display: none;
   position: absolute !important;
@@ -1782,15 +1774,18 @@ p {
     width: 1272px;
   }
 }
+
 @media only screen and (max-width: 1590px) {
   .window1 {
     width: 1000px;
   }
 }
+
 @media only screen and (max-width: 1393px) {
   .window1 {
     width: 800px;
   }
+
   .window__registration {
     flex-direction: column;
     align-items: start;
@@ -1956,6 +1951,7 @@ p {
     overflow-x: hidden;
   }
 }
+
 @media only screen and (max-width: 1100) {
   .window1 {
     width: 700px;
@@ -1966,6 +1962,7 @@ p {
   .window1 {
     width: 600px;
   }
+
   .navbarWrapper {
     margin: 0 16px;
   }
@@ -1992,9 +1989,11 @@ p {
   .window1 {
     width: 500px;
   }
+
   #line-chart {
     display: none;
   }
+
   .line-legend {
     display: none;
   }
@@ -2124,6 +2123,7 @@ p {
   .window1 {
     width: 350px;
   }
+
   .navbarRightProfile div {
     display: none;
   }
@@ -2158,12 +2158,11 @@ p {
 }
 
 @media only screen and (max-width: 520px) {
-  .window1 {
-    width: 215px;
-  }
+
   #dropdownMenuButton2 {
     margin-left: 0;
   }
+
   .modal-status__bottom-left {
     font-size: 10px;
   }
@@ -2210,6 +2209,14 @@ p {
 }
 
 @media only screen and (max-width: 440px) {
+  .window1 {
+    width: 215px;
+  }
+
+  .w-200 {
+    width: 182px !important;
+  }
+
   .navbarRightBtns {
     display: none;
   }
@@ -2218,7 +2225,7 @@ p {
     display: block !important;
   }
 
-  .navbarLeft > div > img {
+  .navbarLeft>div>img {
     width: 30px;
   }
 
@@ -2233,6 +2240,7 @@ p {
   .window__icons.w-100pxwindow__icons.w-100px {
     margin-bottom: 13px;
   }
+
   .menuContainer .container .item div {
     padding-left: 0;
   }
@@ -2283,9 +2291,11 @@ p {
     justify-content: space-around;
     width: 205px;
   }
+
   .first-graph__bottom {
     padding: 0;
   }
+
   .scroll_flex {
     overflow-x: hidden;
   }
