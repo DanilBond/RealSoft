@@ -291,6 +291,7 @@ p {
   height: 30px;
   width: 195px;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .imgContainer {
@@ -361,8 +362,17 @@ p {
 .cddOpened{
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  box-shadow: 0 -5px 5px -5px #333, 5px 0 5px -5px #333, -5px 0 5px -5px #333;
 }
-
+#cddLine{
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0 16px;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
 
 
 .cdContent{
@@ -381,15 +391,19 @@ p {
 }
 .cdContentOpened{
   display: flex;
+  box-shadow: 0 5px 5px -5px #333, 5px 0 5px -5px #333,  -5px 0 5px -5px #333;
 }
 
 .cdContent span{
-  margin-bottom: 10px;
-  margin-top: 10px;
-  padding-left: 20px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  padding-left: 17px;
   padding-top: 2px;  
   padding-bottom: 2px;
-
+  color: #097CB4;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 550;
 }
 .cdContent span:hover{
   background-color: #004484;
@@ -832,7 +846,6 @@ p {
   border-bottom: 1px solid rgba(67, 79, 99, 0.2);
   height: 42px;
   margin-right: 10px;
-  margin-left: 10px;
   justify-content: space-between;
   align-items: center;
   padding: 30px 0;
@@ -892,7 +905,6 @@ p {
   border-bottom: 1px solid rgba(67, 79, 99, 0.2);
   height: 42px;
   margin-right: 20px;
-  margin-left: 20px;
   align-items: center;
   padding: 30px 0;
 }
@@ -906,7 +918,6 @@ p {
   border-bottom: 1px solid rgba(67, 79, 99, 0.2);
   height: 45px;
   margin-right: 20px;
-  margin-left: 20px;
   align-items: center;
 }
 
@@ -976,7 +987,6 @@ p {
 .ok {
   border-style: none !important;
   background: none !important;
-  margin: 0 20px !important;
   border-top: 1px solid rgba(67, 79, 99, 0.2) !important;
   border-bottom: 1px solid rgba(67, 79, 99, 0.2) !important;
   border-radius: 0 !important;
@@ -995,6 +1005,7 @@ p {
   background-color: #434f63;
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -1774,7 +1785,7 @@ p {
   display: flex;
   align-items: center;
   flex-direction: row;
-
+  cursor: pointer;
   margin-left: 55px;
   padding-left: 10px;
 }
@@ -1811,6 +1822,7 @@ p {
   display: flex;
   margin-left: 45px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .pcTitle div img {
@@ -1847,6 +1859,14 @@ p {
   .window1 {
     width: 1000px;
   }
+}
+@media only screen and (max-width: 1500px){
+  .customDropDown{
+    margin-left: 0;
+  }
+  /* #window-1{
+    width: 1190px;
+  } */
 }
 
 @media only screen and (max-width: 1393px) {
@@ -2162,6 +2182,7 @@ p {
     width: 36px;
     height: 32px;
     justify-content: center;
+    
   }
 
   .menuContainer .container .item .imgContainer {
