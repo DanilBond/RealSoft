@@ -89,7 +89,7 @@ function ConstructSideBar(json){
             let item = document.createElement("div");
             item.className = "item";
 
-            let imgContainer = document.createElement("div");
+            let imgContainer = document.createElement("div"); 
             imgContainer.className = "imgContainer";
 
             let valueText = document.createElement("span");

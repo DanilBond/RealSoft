@@ -1893,9 +1893,8 @@ p {
 /*----------------- GRAPHS STARTS -------------------- */
 
 .first-graph__wrapper {
-  margin: 10px 19px 0 19px;
-  width: 356px;
-  height: 370px;
+  display: flex;
+  flex-direction: column;
   border: 1px solid rgba(232, 232, 232, 1);
 }
 
@@ -1904,18 +1903,19 @@ p {
   justify-content: space-between;
   height: 15%;
   align-items: center;
-  padding: 0 24px;
+  padding: 21px 24px;
   border-bottom: 1px solid rgba(232, 232, 232, 1);
   background-color: #fff;
 }
 
 .first-graph__body {
-  height: 67%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: #fff;
+  padding: 15px 0;
+  flex: 1;
 }
 
 .first-graph__bottom {

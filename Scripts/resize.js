@@ -33,13 +33,15 @@ const resizeHor = (e) => {
 //  styles.left = String(e.pageX - 90) + 'px'
 }
 
-
-horizResize.addEventListener('mousedown', e => {
-   canResizeHor = true
-   document.addEventListener('mousemove', e => {
-      canResizeHor ? resizeHor(e) : null
-   })
-})
+console.error("Refactor me please!!!!")
+if(horizResize){
+  horizResize.addEventListener('mousedown', e => {
+     canResizeHor = true
+     document.addEventListener('mousemove', e => {
+        canResizeHor ? resizeHor(e) : null
+     })
+  })
+}
 
 document.addEventListener('mouseup', e => {
    canResizeHor = false

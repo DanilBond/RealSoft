@@ -120,6 +120,46 @@ $(function () {
       );
     })();
 
+
+    //------------------------------------------------------------------------------
+    //          Initialize Income chart
+    //------------------------------------------------------------------------------
+
+    (function () {
+      var statisticData = {
+        labels: [
+          "1.06",
+          "8.06",
+          "16.06",
+          "30.06",
+        ],
+        datasets: fillChartJsColors("line", [
+          {
+            // label: "Income in USD",
+            strokeColor: LobiAdmin.fadeOutColor("#B0E0E6", 20),
+            data: [40, 100, 80, 170, 100, 60, 120, 160, 150],
+          }
+        ]),
+      };
+      var canvas = $("#income-chart");
+      var ctx = canvas[0].getContext("2d");
+      var statistictsChart = new Chart(ctx).Line(statisticData, options);
+      var legend = $(statistictsChart.generateLegend());
+      canvas.parent().append(legend);
+
+      //Update charts on panel size change
+      $("#main-stats-panel").on(
+        "onFullScreen.lobiPanel onSmallSize.lobiPanel resizeStop.lobiPanel onPin.lobiPanel onUnpin.lobiPanel dragged.lobiPanel",
+        function (ev) {
+          statistictsChart.destroy();
+          statistictsChart = new Chart(statistictsChart.chart.ctx).Line(
+            statisticData,
+            options
+          );
+        }
+      );
+    })();
+
     //------------------------------------------------------------------------------
     //          Initialize pie charts
     //------------------------------------------------------------------------------
@@ -150,105 +190,144 @@ $(function () {
           label: "Shirts",
         },
       ];
-      var ctx = $("#dashbboard-clothing-sales")[0].getContext("2d");
-      new Chart(ctx).Doughnut(data, {});
+      var _a = $('#dashbboard-clothing-sales')[0];
+      if(_a){
+        var ctx = _a.getContext('2d');
+        new Chart(ctx).Pie(data, {});
+      }
     })();
-    //------------------------------------------------------------------------------
     (function () {
       var data = [
+
         {
-          value: 370,
+          value: 250,
           color: COLOR4,
           highlight: LobiAdmin.fadeOutColor(COLOR4, FADEOUT_COLOR_FACTOR),
-          label: "Mouse",
+          label: "Shirts",
         },
         {
-          value: 457,
-          color: COLOR3,
-          highlight: LobiAdmin.fadeOutColor(COLOR3, FADEOUT_COLOR_FACTOR),
-          label: "HDD",
-        },
-        {
-          value: 270,
+          value: 970,
           color: COLOR1,
           highlight: LobiAdmin.fadeOutColor(COLOR1, FADEOUT_COLOR_FACTOR),
-          label: "Laptop",
+          label: "Shoes",
         },
         {
-          value: 89,
-          color: COLOR2,
-          highlight: LobiAdmin.fadeOutColor(COLOR2, FADEOUT_COLOR_FACTOR),
-          label: "Webcam",
-        },
-      ];
-      var ctx = $("#dashbboard-computing-sales")[0].getContext("2d");
-      // For a pie chart
-      new Chart(ctx).Doughnut(data, {});
-    })();
-    //------------------------------------------------------------------------------
-    (function () {
-      var data = [
-        {
-          value: 20,
+          value: 400,
           color: COLOR3,
           highlight: LobiAdmin.fadeOutColor(COLOR3, FADEOUT_COLOR_FACTOR),
-          label: "Table",
+          label: "Jeans",
         },
         {
-          value: 20,
-          color: COLOR1,
-          highlight: LobiAdmin.fadeOutColor(COLOR1, FADEOUT_COLOR_FACTOR),
-          label: "Chair",
-        },
-        {
-          value: 8,
-          color: COLOR4,
-          highlight: LobiAdmin.fadeOutColor(COLOR4, FADEOUT_COLOR_FACTOR),
-          label: "Desk",
-        },
-        {
-          value: 9,
+          value: 505,
           color: COLOR2,
           highlight: LobiAdmin.fadeOutColor(COLOR2, FADEOUT_COLOR_FACTOR),
-          label: "Sofa",
+          label: "Caps",
         },
       ];
-      var ctx = $("#dashbboard-furniture-sales")[0].getContext("2d");
-      // For a pie chart
-      new Chart(ctx).Doughnut(data, {});
+      var _a = $('#dashbboard-clothing-sales2')[0];
+      if(_a){
+        var ctx = _a.getContext('2d');
+        new Chart(ctx).Pie(data, {});
+      }
     })();
-    //------------------------------------------------------------------------------
-    (function () {
-      var data = [
-        {
-          value: 23,
-          color: COLOR4,
-          highlight: LobiAdmin.fadeOutColor(COLOR4, FADEOUT_COLOR_FACTOR),
-          label: "Spoon",
-        },
-        {
-          value: 31,
-          color: COLOR2,
-          highlight: LobiAdmin.fadeOutColor(COLOR2, FADEOUT_COLOR_FACTOR),
-          label: "Cup",
-        },
-        {
-          value: 51,
-          color: COLOR3,
-          highlight: LobiAdmin.fadeOutColor(COLOR3, FADEOUT_COLOR_FACTOR),
-          label: "Plate",
-        },
-        {
-          value: 21,
-          color: COLOR1,
-          highlight: LobiAdmin.fadeOutColor(COLOR1, FADEOUT_COLOR_FACTOR),
-          label: "Knife",
-        },
-      ];
-      var ctx = $("#dashbboard-vessel-sales")[0].getContext("2d");
-      // For a pie chart
-      new Chart(ctx).Doughnut(data, {});
-    })();
+    // //------------------------------------------------------------------------------
+    // (function () {
+    //   var data = [
+    //     {
+    //       value: 370,
+    //       color: COLOR4,
+    //       highlight: LobiAdmin.fadeOutColor(COLOR4, FADEOUT_COLOR_FACTOR),
+    //       label: "Mouse",
+    //     },
+    //     {
+    //       value: 457,
+    //       color: COLOR3,
+    //       highlight: LobiAdmin.fadeOutColor(COLOR3, FADEOUT_COLOR_FACTOR),
+    //       label: "HDD",
+    //     },
+    //     {
+    //       value: 270,
+    //       color: COLOR1,
+    //       highlight: LobiAdmin.fadeOutColor(COLOR1, FADEOUT_COLOR_FACTOR),
+    //       label: "Laptop",
+    //     },
+    //     {
+    //       value: 89,
+    //       color: COLOR2,
+    //       highlight: LobiAdmin.fadeOutColor(COLOR2, FADEOUT_COLOR_FACTOR),
+    //       label: "Webcam",
+    //     },
+    //   ];
+    //   var _a = $('#dashbboard-computing-sales')[0];
+    //   if(_a){
+    //     var ctx = _a.getContext('2d');
+    //     new Chart(ctx).Doughnut(data, {});
+    //   }
+    // })();
+    // //------------------------------------------------------------------------------
+    // (function () {
+    //   var data = [
+    //     {
+    //       value: 20,
+    //       color: COLOR3,
+    //       highlight: LobiAdmin.fadeOutColor(COLOR3, FADEOUT_COLOR_FACTOR),
+    //       label: "Table",
+    //     },
+    //     {
+    //       value: 20,
+    //       color: COLOR1,
+    //       highlight: LobiAdmin.fadeOutColor(COLOR1, FADEOUT_COLOR_FACTOR),
+    //       label: "Chair",
+    //     },
+    //     {
+    //       value: 8,
+    //       color: COLOR4,
+    //       highlight: LobiAdmin.fadeOutColor(COLOR4, FADEOUT_COLOR_FACTOR),
+    //       label: "Desk",
+    //     },
+    //     {
+    //       value: 9,
+    //       color: COLOR2,
+    //       highlight: LobiAdmin.fadeOutColor(COLOR2, FADEOUT_COLOR_FACTOR),
+    //       label: "Sofa",
+    //     },
+    //   ];
+    //   var ctx = $("#dashbboard-furniture-sales")[0].getContext("2d");
+    //   // For a pie chart
+    //   new Chart(ctx).Doughnut(data, {});
+    // })();
+    // //------------------------------------------------------------------------------
+    // (function () {
+    //   var data = [
+    //     {
+    //       value: 23,
+    //       color: COLOR4,
+    //       highlight: LobiAdmin.fadeOutColor(COLOR4, FADEOUT_COLOR_FACTOR),
+    //       label: "Spoon",
+    //     },
+    //     {
+    //       value: 31,
+    //       color: COLOR2,
+    //       highlight: LobiAdmin.fadeOutColor(COLOR2, FADEOUT_COLOR_FACTOR),
+    //       label: "Cup",
+    //     },
+    //     {
+    //       value: 51,
+    //       color: COLOR3,
+    //       highlight: LobiAdmin.fadeOutColor(COLOR3, FADEOUT_COLOR_FACTOR),
+    //       label: "Plate",
+    //     },
+    //     {
+    //       value: 21,
+    //       color: COLOR1,
+    //       highlight: LobiAdmin.fadeOutColor(COLOR1, FADEOUT_COLOR_FACTOR),
+    //       label: "Knife",
+    //     },
+    //   ];
+    //   var ctx = $("#dashbboard-vessel-sales")[0].getContext("2d");
+    //   // For a pie chart
+    //   new Chart(ctx).Doughnut(data, {});
+    // })();
   }
 
   function initPage() {

@@ -1439,7 +1439,11 @@ $(function(){
          * @returns {LobiPanel}
          */
         this.disableTooltips = function(){
-            $heading.find('.dropdown-menu>li>a').tooltip('destroy');
+            try {
+              $heading.find('.dropdown-menu>li>a').tooltip('destroy');
+            } catch (error) {
+              console.error(error)
+            }
             return me;
         };
 //------------------------------------------------------------------------------
