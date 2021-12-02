@@ -1,23 +1,41 @@
-let parcerContainer = document.querySelectorAll(".parcerContainer");
-console.log(parcerContainer);
-
 let sideBar = document.querySelector("#sideBar");
 
-let elementsToModify = [
-  document.querySelectorAll(".menuContainerTitle"),
-  document.querySelectorAll(".menuContainer span"),
-  document.querySelectorAll(".menuContainer .container .item .itemArrow img"),
-];
 
-function SetSideBarSmall(id) {
+
+function SetSideBarSmall(name) {
+
+  let elementsToModify = [
+    document.querySelectorAll(".menuContainerTitle"),
+    document.querySelectorAll(".menuContainer span"),
+    document.querySelectorAll(".menuContainer .container .item .itemArrow img"),
+  ];
+
+  let parcerContainer = document.querySelectorAll(".parcerContainer");
   let allSideBars = document.querySelectorAll(".parcerContainer");
+  let id = -1;
+
+  for (const i in allSideBars) {
+    if (Object.hasOwnProperty.call(allSideBars, i)) {
+      const element = allSideBars[i];
+      let title = element.querySelector(".pcTitle");
+      
+      if(title.querySelector("span").innerHTML.toLowerCase() == name.toLowerCase()){
+        console.log(i);
+        id = i;
+        break;
+      }
+
+    }
+  }
+
+  
   for (let i = 0; i < allSideBars.length; i++) {
     if(i != id){
     allSideBars[i].style.zIndex = "0";
     allSideBars[i].setAttribute("class", "parcerContainer pcClosed");
     }
   }
-
+  console.log(parcerContainer);
   let currentClass = parcerContainer[id].getAttribute("class");
   if (currentClass == "parcerContainer pcOpen") {
     sideBar.style.zIndex = "0";

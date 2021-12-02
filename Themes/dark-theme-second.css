@@ -53,6 +53,13 @@
     background-color: rgba(31, 31, 31, 1);
 }
 
+.customDropDown .cdDefault{
+    background-color: rgba(187, 134, 252, 1);
+}
+.customDropDown .cdTitle{
+color: white;
+}
+
 .navbarRightProfile {
     color: rgba(255, 255, 255, 1);
 }

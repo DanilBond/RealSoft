@@ -15,7 +15,12 @@
 .disabled {
     color: #fff;
 }
-
+.customDropDown .cdDefault{
+  background-color: #097cb4;
+}
+.customDropDown .cdTitle{
+  color: white;
+}
 .window__hr {
     height: 0px !important;
     border: 0;
