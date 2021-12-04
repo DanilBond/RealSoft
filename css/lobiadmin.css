@@ -5858,11 +5858,11 @@ fieldset[isabled] .lobiradio:hover i {
 .dropdown-menu.reduced-padding li a {
   padding: 1px 10px;
 }
-/* .dropdown-menu {
+.dropdown-menu {
     background-color: #fff;
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-} */
+}
 @media screen and (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
     background-color: #fff;
@@ -9003,4 +9003,9 @@ body.ribbon-fixed #ribbon {
   background-image: linear-gradient(to bottom, #f7f7f7 0, #e2e2e2 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff7f7f7', endColorstr='#ffe2e2e2', GradientType=0);
+}
+
+.lobipanel .panel-heading .dropdown .dropdown-menu{
+  width: auto !important;
+  filter: none !important;
 }

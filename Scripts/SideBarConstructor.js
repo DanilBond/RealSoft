@@ -139,7 +139,9 @@ function ConstructSideBar(json){
                             pcItem.className = "pcItem";
                             pcItem.innerText = ic.NameValue;
                             if(ic.Func != "")
-                                pcItem.addEventListener("click", ()=>{setActiveWindow(parseInt(ic.Func))})
+                                pcItem.addEventListener("click", ()=>{
+                                  if(setActiveWindow) setActiveWindow(parseInt(ic.Func))
+                                })
                             parcerCont.appendChild(pcItem);
                         }
                     }

@@ -1439,7 +1439,7 @@ $(function(){
          * @returns {LobiPanel}
          */
         this.disableTooltips = function(){
-            $heading.find('.dropdown-menu>li>a').tooltip('destroy');
+            $heading.find('.dropdown-menu>li>a').tooltip('dispose');
             return me;
         };
 //------------------------------------------------------------------------------
@@ -1514,29 +1514,29 @@ $(function(){
         expandAnimation: 100,
         collapseAnimation: 100,
         unpin: {
-            icon: 'glyphicon glyphicon-move', //You can user glyphicons if you do not want to use font-awesome
+            icon: 'fa fa-arrows', //You can user glyphicons if you do not want to use font-awesome
             tooltip: 'Unpin'               //tooltip text, If you want to disable tooltip, set it to false
         },
         reload: {
-            icon: 'glyphicon glyphicon-refresh', //You can user glyphicons if you do not want to use font-awesome
+            icon: 'fa fa-refresh', //You can user glyphicons if you do not want to use font-awesome
             tooltip: 'Reload'           //tooltip text, If you want to disable tooltip, set it to false
         },
         minimize: {
-            icon: 'glyphicon glyphicon-minus', //icon is shown when panel is not minimized
-            icon2: 'glyphicon glyphicon-plus', //icon2 is shown when panel is minimized
+            icon: 'fa fa-minus', //icon is shown when panel is not minimized
+            icon2: 'fa fa-plus', //icon2 is shown when panel is minimized
             tooltip: 'Minimize'         //tooltip text, If you want to disable tooltip, set it to false
         },
         expand: {
-            icon: 'glyphicon glyphicon-resize-full', //icon is shown when panel is not on full screen
-            icon2: 'glyphicon glyphicon-resize-small', //icon2 is shown when pane is on full screen state
+            icon: 'fa fa-expand', //icon is shown when panel is not on full screen
+            icon2: 'fa fa-compress', //icon2 is shown when pane is on full screen state
             tooltip: 'Fullscreen'       //tooltip text, If you want to disable tooltip, set it to false
         },
         close: {
-            icon: 'glyphicon glyphicon-remove', //You can user glyphicons if you do not want to use font-awesome
+            icon: 'fa fa-close', //You can user glyphicons if you do not want to use font-awesome
             tooltip: 'Close'            //tooltip text, If you want to disable tooltip, set it to false
         },
         editTitle: {
-            icon: 'glyphicon glyphicon-pencil',
+            icon: 'fa fa-pencil',
             icon2: 'glyphicon glyphicon-floppy-disk',
             tooltip: 'Edit title'
         }

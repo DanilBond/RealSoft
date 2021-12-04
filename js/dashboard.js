@@ -1,7 +1,7 @@
 $(function () {
-  initSparklines();
-  initChartjs();
-  initLobiList();
+  // initSparklines();
+  // initChartjs();
+  // initLobiList();
   initPage();
 
   function initLobiList() {

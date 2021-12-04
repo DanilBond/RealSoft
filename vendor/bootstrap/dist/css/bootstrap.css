@@ -3481,14 +3481,14 @@ tbody.collapse.in {
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;
 }
-/* .dropup,
+.dropup,
 .dropdown {
     position: relative;
-} */
-/* .dropdown-toggle:focus {
+}
+.dropdown-toggle:focus {
     outline: 0;
-} */
-/* .dropdown-menu {
+}
+.dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
@@ -3508,18 +3508,18 @@ tbody.collapse.in {
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box;
-} */
-/* .dropdown-menu.pull-right {
+} 
+.dropdown-menu.pull-right {
     right: 0;
     left: auto;
-} */
-/* .dropdown-menu .divider {
+}
+.dropdown-menu .divider {
     height: 1px;
     margin: 8px 0;
     overflow: hidden;
     background-color: #e5e5e5;
-} */
-/* .dropdown-menu > li > a {
+}
+.dropdown-menu > li > a {
     display: block;
     padding: 3px 20px;
     clear: both;
@@ -3527,8 +3527,8 @@ tbody.collapse.in {
     line-height: 1.42857143;
     color: #333333;
     white-space: nowrap;
-} */
-/* .dropdown-menu > li > a:hover,
+} 
+.dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
     text-decoration: none;
     color: #ffffff;
@@ -3600,8 +3600,8 @@ tbody.collapse.in {
     top: auto;
     bottom: 100%;
     margin-bottom: 2px;
-} */
-/* @media (min-width: 768px) {
+}
+@media (min-width: 768px) {
     .navbar-right .dropdown-menu {
         left: auto;
         right: 0;
@@ -3610,7 +3610,7 @@ tbody.collapse.in {
         left: 0;
         right: auto;
     }
-} */
+}
 .btn-group,
 .btn-group-vertical {
     position: relative;
@@ -6663,9 +6663,9 @@ button.close {
 .hide {
     display: none !important;
 }
-/* .show {
+.show {
   display: block !important;
-} */
+}
 .invisible {
     visibility: hidden;
 }

@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" id="globalStyles"/>
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css"/>
+
+  <!--Page specific assets-->
+  <link rel="stylesheet" href="css/lobiadmin.css"/>
+  <title>Document</title>
+</head>
+
+<body>
+  
+
+  <div class="main">
+    <div class="sideBar" id="sideBar">
+      <div class="logoContainer">
+        <img src="./images/LogoFull.png" alt="logo" class="logoFull" id="logoF" />
+        <img src="./images/LogoSmall.png" alt="logo" class="logoSmall" id="logoS" />
+      </div>
+      <div class="timeAndThemesContainer">
+        <span id="timer">12:23</span>
+        <div><img src="./images/sun.svg" alt="sun" onclick="switchThemes()"/></div>
+        <div><img src="./images/planet.svg" alt="planet" /></div>
+        <div><img src="./images/size.svg" alt="size" /></div>
+      </div>
+      <div class="mainContainer" id="mainContainer">
+        </div>
+
+
+
+    </div>
+    <div class="content" id="content">
+      <div class="navBar" id="navBar">
+        <div class="navbarWrapper">
+          <div class="navbarLeft">
+            <div>
+              <img src="./images/navBurgerBtn.svg" alt="burger" />
+            </div>
+
+            <input type="search" placeholder="Общий поиск" />
+            <img class="searchImg" src="./images/search.svg" alt="images" />
+          </div>
+          <div class="navbarRight">
+            <div class="navbarRightBtns">
+              <img src="./images/navbarMail.svg" alt="mail" />
+              <img src="./images/navbarNotif.svg" alt="notifications" />
+              <img src="./images/navbarDone.svg" alt="done" />
+            </div>
+            <div class="navbarRightProfile dropdown-toggle"  type="button"  id="dropdownMenuButton12" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="./images/navbarProfile.png" alt="images" />
+              <div>
+                <p class="navbarProfileTitle">Генеральный директор</p>
+                <p class="navbarProfileText">Фамилия И. О.</p>
+              </div>
+              <img class="nav-img" src="./images/arrow-nav.svg" >
+            </div>
+            <div class="dropdown-menu dropdown-menu-navbar" aria-labelledby="dropdownMenuButton12" id="dropdown-action">
+              <div>
+                <li><img src="./images/navbarMail.svg" alt="mail" /></li>
+                <li><img src="./images/navbarNotif.svg" alt="mail" /></li>
+                <li><img src="./images/navbarDone.svg" alt="mail" /></li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+
+        <div class="content__wrapper">
+          <div class="window1 windowModuleFinder windowDesktop" id="window-1" style="display: none;">
+            <nav class="window__nav" id='navbar5'>
+              <div class="window__routes">
+                Делопроизводство / Входящие документы
+                <span>/ Общая корреспонденция</span>
+              </div>
+              <div class="window__icons">
+                <img src="./images/edit.svg" alt="edit" class="window__images" />
+                <img src="./images/line.svg" alt="line" class="window__images" onclick="setSize(0)" />
+                <img id="lol" src="./images/square.svg" alt="square" class="window__images" onclick="setFullScreen(0)"/>
+              </div>
+            </nav>
+            <hr class="window__hr" />
+            <div class="window__registration">
+              <div class="window__left">
+                <p class="disabled">Не выбрано</p>
+                <div class="customDropDown">
+                  <div class="cdDefault cddClosed">
+                    <span class="cdTitle cdTitleDisabled">ДЕЙСТВИЕ</span>
+                    <img src="./images/dropdown.svg" alt="">
+                  </div>
+          
+                  <div class="cdContent cdContentClosed">
+                    <span id="cddLine"></span>
+                    <span>Action</span>
+                    <span>Another action</span>
+                    <span>Something else</span>
+                  </div>
+                </div>
+                <div class="customDropDown" id="customDropDown">
+                  <div class="cdDefault cddClosed">
+                    <span class="cdTitle">ПО НОМЕРУ РЕГИСТРАЦИИ</span>
+                    <img src="./images/dropdown.svg" alt="">
+                  </div>
+          
+                  <div class="cdContent cdContentClosed">
+                    <span id="cddLine"></span>
+                    <span>Action</span>
+                    <span>Another action</span>
+                    <span>Something else</span>
+                  </div>
+                </div>
+              </div>
+              <div class="window__right">
+                <div class="window__registration-btn dropdown-toggle" type="button" id="dropdownMenuButton3"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="./images/plus.svg" alt="plus" />
+                  <p class="blue">РЕГИСТРАЦИЯ</p>
+                </div>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3" id="dropdown-reg">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+                <div class="window__search">
+                  <input type="text" placeholder="Найти документ" class="input-search-test"/>
+                  <img src="./images/search.svg" alt="search" />
+                </div>
+                <img
+                      src="./images/printer.svg"
+                      alt="printer"
+                      class="window__image_left"
+                      style="display: none;"
+                  />
+                  <img
+                      src="./images/clip.svg"
+                      alt="slip"
+                      class="window__image_right"
+                      style="display: none;"
+                  />
+              </div>
+            </div>
+           <div class="scroll_flex">
+            <div class="scroll">
+              <div class="status">
+                <div class="status__checkbox square-checkbox">
+                  <label>
+
+                    <input type="checkbox" name="" id="" />
+                    <span></span>
+                  </label>
+                </div>
+                <div class="status__status">Статус</div>
+                <div class="status__no">Исх. №</div>
+                <div class="status__per">Per. №</div>
+                <div class="status__ish">
+                  Иходная <br />
+                  дата
+                </div>
+                <div class="status__post">
+                  Дата <br />
+                  поуступления
+                </div>
+                <div class="status__corr">Корреспондент</div>
+                <div class="status__short">Краткое содержание</div>
+                <div class="status__komu">Кому</div>
+              </div>
+
+
+              <div id="faqs-container" class="accordian asd search-test">
+
+
+              </div>
+
+                           
+            </div>
+            <div class="scroll_image">
+              <img class="scroll_img" src="./images/scroll.png" alt="ошибка при получении данных">
+            </div>
+           </div>
+           <div class="resize-handle-cont">
+            <div class="resize-handle">
+              <div class="resize-handle1"></div>
+              <div class="resize-handle2"></div>
+            </div>
+          </div>
+          </div>
+
+
+          <!-- SECOND WINDOW -->
+          
+          
+          <div class="window1 windowModuleFinder windowDesktop drag4" id="window-2" style="display: none;">
+
+            <nav class="window__nav" id='navbar4'>
+              <div class="window__routes">
+               Фин ОЦО
+                <span>/ Статистика Фин ОЦО</span>
+              </div>
+              <div class="window__icons">
+                <img src="./images/edit.svg" alt="edit" class="window__images" />
+                <img src="./images/line.svg" alt="line" class="window__images" onclick="setSize(1)" />
+                <img id="lol" src="./images/square.svg" alt="square" class="window__images" onclick="setFullScreen(1)"/>
+              </div>
+            </nav>
+            <hr class="window__hr" />
+            <div class="window__registration">
+              <div class="window__left">
+
+                <div class="customDropDown">
+                  <div class="cdDefault cddClosed">
+                    <span class="cdTitle cdTitleDisabled">ДЕЙСТВИЕ</span>
+                    <img src="./images/dropdown.svg" alt="">
+                  </div>
+          
+                  <div class="cdContent cdContentClosed">
+                    <span id="cddLine"></span>
+                    <span>Action</span>
+                    <span>Another action</span>
+                    <span>Something else</span>
+                  </div>
+                </div>
+                
+                <div class="customDropDown">
+                  <div class="cdDefault cddClosed">
+                    <span class="cdTitle">ПО НОМЕРУ РЕГИСТРАЦИИ</span>
+                    <img src="./images/dropdown.svg" alt="">
+                  </div>
+
+                  <div class="cdContent cdContentClosed">
+                    <span id="cddLine"></span>
+                    <span>Action</span>
+                    <span>Another action</span>
+                    <span>Something else</span>
+                  </div>
+                </div>
+
+
+                
+              </div>
+              <div class="window__right">
+                
+                
+                <div class="window__search">
+                  <input type="text" placeholder="Найти документ" />
+                  <img src="./images/search.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          
+              <div class="status2">
+                
+                <div class="status__year">Год</div>
+                <div class="status__month">Месяц</div>
+                
+              </div>
+
+            <div class="scroll_flex">   
+
+                <div id="faqs-container" class="accordian">
+                <h3 class="ok accordian__year"><a href="#">2019</a><div class="accordian__folder"></div></h3>
+                
+                                <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                                  <h3 class="ok accordianIn"><a class="" href="#">Апрель</a><div class="accordian__folder"></div></h3>
+                                  <div class="accordian1vl">
+                                    
+                                  </div>
+                                </div>
+                                <h3 class="ok accordian__year"><a href="#">2020</a><div class="accordian__folder"></div></h3>
+                                <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                                  <h3 class="ok accordianIn"><a class="" href="#">Март</a><div class="accordian__folder"></div></h3>
+                                  <div class="accordian1vl">
+                                  </div>
+                                  <h3 class="ok accordianIn"><a class="" href="#">Сентябрь</a><div class="accordian__folder"></div></h3>
+                                  <div class="accordian1vl">
+                                  </div>
+                                  <h3 class="ok accordianIn"><a class="" href="#">Октябрь</a><div class="accordian__folder"></div></h3>
+                                  <div class="accordian1vl">
+                                    <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                                      <h3 class="ok accordianIn2"><a class="" href="#">Алиев З.Р.</a><div class="accordian__folder"></div></h3>
+                                      <div class="accordian1vl">
+                                      </div>
+                                      <h3 class="ok accordianIn2"><a class="" href="#">Кулмурзаева Р.А.</a><div class="accordian__folder"></div></h3>
+                                      <div class="accordian1vl">
+                                        <div class="accordian ok1 accordianInner" style="padding: 0; background-color:none;">
+                                          <h3 class="ok accordianIn3sec"><img src="./images/accordian__status.png" class="accordianIn3img"><a class="" href="#">Исполнен</a><div class="accordian__folder"></div></h3>
+                                          <div class="accordian1vl">
+                                            <div class="accordianIn7content1 ok accordianIn7content">   
+                                              <div class="accordianIn7__left">
+                                                <p class="accordianIn7fir">ЭТАП:</p>
+                                                <p class="accordianIn7sec">Уведомление исполнителю</p>
+                                              </div>                                       
+                                                <p class="accordianIn7gray">(Кулмурзаева Р. А., Сабалакова Р. Б.)</p>                                   
+                                            </div>
+                                            <div class="accordianIn7content2 ok accordianIn7content">     
+                                              <div class='accordianIn7__left'>                                   
+                                                <p class="accordianIn7fir">ЭТАП:</p>
+                                                <p class="accordianIn7sec">МОЛ (сдал)</p>
+                                              </div>                                    
+                                              <p class="accordianIn7gray">(Абдикаримов Е. О.)</p> 
+                                            </div>
+                                            <div class="accordianIn7content1 ok accordianIn7content">   
+                                              <div class="accordianIn7__left">
+                                                <p class="accordianIn7fir">ЭТАП:</p>
+                                                <p class="accordianIn7sec">МОЛ (принял)</p>
+                                              </div>                                       
+                                                <p class="accordianIn7gray">(Абдикаримов Е. О.)</p>                                   
+                                            </div>
+                                            <div class="accordianIn7content2 ok accordianIn7content">     
+                                              <div class='accordianIn7__left'>                                   
+                                                <p class="accordianIn7fir">ЭТАП:</p>
+                                                <p class="accordianIn7sec">Члены комиссии БЕ (принимающая сторона) - Параллельно</p>
+                                              </div>                                    
+                                              <p class="accordianIn7gray">(Ильясова А. А., Игламов Н. И., Алипбеков А. С., Мелкобродов И.А.)</p> 
+                                            </div>
+                                            <div class="accordianIn7content1 ok accordianIn7content">   
+                                              <div class="accordianIn7__left">
+                                                <p class="accordianIn7fir">ЭТАП:</p>
+                                                <p class="accordianIn7sec">Уведомление исполнителю</p>
+                                              </div>                                       
+                                                <p class="accordianIn7gray">(Кулмурзаева Р. А., Сабалакова Р. Б.)</p>                                   
+                                            </div>
+                                            <div class="accordianIn7content2 ok accordianIn7content">     
+                                              <div class='accordianIn7__left'>                                   
+                                                <p class="accordianIn7fir">ЭТАП:</p>
+                                                <p class="accordianIn7sec">МОЛ (сдал)</p>
+                                              </div>                                    
+                                              <p class="accordianIn7gray">(Абдикаримов Е. О.)</p> 
+                                            </div>
+                                            <div class="accordianIn7content1 ok accordianIn7content">   
+                                              <div class="accordianIn7__left">
+                                                <p class="accordianIn7fir">ЭТАП:</p>
+                                                <p class="accordianIn7sec">МОЛ (принял)</p>
+                                              </div>                                       
+                                                <p class="accordianIn7gray">(Абдикаримов Е. О.)</p>                                   
+                                            </div>
+                                            <div class="accordianIn7content2 ok accordianIn7content">     
+                                              <div class='accordianIn7__left'>                                   
+                                                <p class="accordianIn7fir">ЭТАП:</p>
+                                                <p class="accordianIn7sec">Члены комиссии БЕ (принимающая сторона) - Параллельно</p>
+                                              </div>                                    
+                                              <p class="accordianIn7gray">(Ильясова А. А., Игламов Н. И., Алипбеков А. С., Мелкобродов И.А.)</p> 
+                                            </div>
+                                            <div class="accordianIn7content1 ok accordianIn7content">
+                                              <div class='accordianIn7__left'>                                   
+                                                <p class="accordianIn7fir">15.12.2020<br>
+                                                  16:30:35</p>
+                                                <p class="accordianIn7gray">Заявка отклонена</p>
+                                              </div>                                    
+                                              <p class="accordianIn7gray">(Сабалакова Р. Б. передал(а) закладку Абдикаримов Е.О.)</p> 
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <h3 class="ok accordianIn2"><a class="" href="#">Сабалакова Р.Б.</a><div class="accordian__folder"></div></h3>
+                                      <div class="accordian1vl">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <h3 class="ok accordianIn"><a class="" href="#">Ноябрь</a><div class="accordian__folder"></div></h3>
+                                  <div class="accordian1vl">
+                                  </div>
+                                  <h3 class="ok accordianIn"><a class="" href="#">Декабрь</a><div class="accordian__folder"></div></h3>
+                                  <div class="accordian1vl">
+                                  </div>
+                                </div>
+              </div>  
+            </div>
+            <div class="resize-handle-cont">
+              <div class="resize-handle">
+                <div class="resize-handle1"></div>
+                <div class="resize-handle2"></div>
+              </div>
+            </div>
+          </div>
+</div>
+<div id="smallModalsContainer" style="display: none;">
+</div>
+
+
+<!-- SECOND WINDOW ENDS -->
+
+<!-- THIRD WINDOW -->
+
+<div class="window1 windowModuleFinder windowDesktop drag3" id="window-3"  style="display: none;">
+  <nav class="window__nav" id='navbar3' >
+    <div class="window__routes">
+      Структура АО КТК
+      <span>/ Иерархия</span>
+    </div>
+    <div class="window__icons">
+      <img src="./images/edit.svg" alt="edit" class="window__images" />
+      <img src="./images/line.svg" alt="line" class="window__images"  onclick="setSize(2)"/>
+      <img id="lol" src="./images/square.svg" alt="square" class="window__images" onclick="setFullScreen(2)"/>
+    </div>
+  </nav>
+  <hr class="window__hr" />
+  <div class="window__registration">
+    <div class="window__left">
+      
+      <div class="customDropDown">
+        <div class="cdDefault cddClosed">
+          <span class="cdTitle cdTitleDisabled">ДЕЙСТВИЕ</span>
+          <img src="./images/dropdown.svg" alt="">
+        </div>
+
+        <div class="cdContent cdContentClosed">
+          <span id="cddLine"></span>
+          <span>Action</span>
+          <span>Another action</span>
+          <span>Something else</span>
+        </div>
+      </div>
+
+
+      
+      
+    </div>
+    <div class="window__right">
+      
+      
+      <div class="window__search">
+        <input type="text" placeholder="Найти документ" />
+        <img src="./images/search.svg" alt="" />
+      </div>
+    </div>
+  </div>
+
+    <div class="status3">
+      
+    </div>
+
+    
+
+      <div id="faqs-container" class="accordian asd3">
+    </div>
+
+    
+      <div class="resize-handle-cont">
+        <div class="resize-handle">
+          <div class="resize-handle1"></div>
+          <div class="resize-handle2"></div>
+        </div>
+      </div>
+</div>    
+
+
+<!-- THIRD WINDOW ENDS -->
+<div class="window windowModuleFinder windowDesktop" style="height: 450px;" style="display: none;" >
+  <nav class="window__nav">
+    <div class="window__routes">
+
+      <span>Контрольные индикаторы руководителя</span>
+    </div>
+    <div class="window__icons">
+      <img src="./images/edit.svg" alt="edit" class="window__images" />
+      <img src="./images/line.svg" alt="line" class="window__images" onclick="setSize(3)" />
+      <img id="lol" src="./images/square.svg" alt="square" class="window__images" onclick="setFullScreen(3)"/>
+    </div>
+  </nav>
+  <hr class="window__hr" />
+ <div class="scroll_flex" id="chartnew">
+  
+ </div>
+</div>
+
+<div class="window windowModuleFinder windowDesktop"  style="display: none;">
+  <nav class="window__nav">
+    <div class="window__routes">
+      <span>Сравнительная статистика</span>
+    </div>
+    <div class="window__icons">
+      <img src="./images/edit.svg" alt="edit" class="window__images" />
+      <img src="./images/line.svg" alt="line" class="window__images" onclick="setSize(4)" />
+      <img id="lol" src="./images/square.svg" alt="square" class="window__images" onclick="setFullScreen(4)"/>
+    </div>
+  </nav>
+  <hr class="window__hr" />
+ <div class="scroll_flex">
+  <div id="dashboard-statisticts-panel" class="panel panel-light">
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-lg-12">
+          <div>
+            <!-- <canvas id="line-chart" height="250" width="900"></canvas> -->
+            <iframe style="border: none;" height="400" width="100%" src="./apexcharts-bundle/samples/vanilla-js/line/zoomable-timeseries.html">
+            </iframe>
+
+          </div>
+        </div>
+      </div>
+      <hr class="mb-0">
+      <div class="row third-graph__wrapper">
+        <h3 class="text-center third-graph__title margin-top-5">Показатели KPI (Key Performance Indicator) за неделю</h3>
+        <div class="col-xxs-12 col-xs-6 col-sm-3 text-center">
+          <h4>KPI 1</h4>
+          <div id="chartContainer2" style="height: 110px; width: 110px; margin: 0 auto;"></div>
+          <div class="third-graph__text">
+            <p class="third-graph__text-top">Итого:</p>
+            <p class="third-graph__text-bottom">2 125 баллов</p>
+          </div>
+        </div>
+        <div class="col-xxs-12 col-xs-6 col-sm-3 text-center">
+          <h4>KPI 2</h4>
+          <div id="chartContainer3" style="height: 110px; width: 110px; margin: 0 auto;"></div>
+          <div class="third-graph__text">
+            <p class="third-graph__text-top">Итого:</p>
+            <p class="third-graph__text-bottom">1 742 баллов</p>
+          </div>
+        </div>
+        <div class="col-xxs-12 col-xs-6 col-sm-3 text-center">
+          <h4>KPI 3</h4>
+          <div id="chartContainer4" style="height: 110px; width: 110px; margin: 0 auto;"></div>
+          <div class="third-graph__text">
+            <p class="third-graph__text-top">Итого:</p>
+            <p class="third-graph__text-bottom">69 баллов</p>
+          </div>
+        </div>
+        <div class="col-xxs-12 col-xs-6 col-sm-3 text-center">
+          <h4>KPI 4</h4>
+          <div id="chartContainer5" style="height: 110px; width: 110px; margin: 0 auto;"></div>
+          <div class="third-graph__text">
+            <p class="third-graph__text-top">Итого:</p>
+            <p class="third-graph__text-bottom">145 баллов</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+ </div>
+</div>
+           
+            
+    <div class="window1 window-absolute mwww" id="drag">
+          <nav class="window__nav" id="navbar">
+            <div class="window__routes">
+              2021 / Июль / 15.06.2021
+              <span> / "ABC"</span>
+            </div>
+            <div class="window__icons">
+              <img src="./images/edit.svg" alt="edit" class="window__images" />
+              <img src="./images/line.svg" alt="line" class="window__images" onclick="resizeModal(0)"/>
+              <img src="./images/square.svg" alt="square" class="window__images" onclick="fullScreenModal(0)"/>
+            </div>
+          </nav>
+          <hr class="window__hr" />
+          <div class="window__registration">
+              <div class="window__left">
+                <div class="customDropDown">
+                  <div class="cdDefault cddClosed">
+                    <span class="cdTitle cdTitleDisabled">ДЕЙСТВИЕ</span>
+                    <img src="./images/dropdown.svg" alt="">
+                  </div>
+          
+                  <div class="cdContent cdContentClosed">
+                    <span id="cddLine"></span>
+                    <span>Action</span>
+                    <span>Another action</span>
+                    <span>Something else</span>
+                  </div>
+                </div>
+
+                  <div class="window__open-btn window__btn">
+                      <p class="blue">ОТКРЫТЬ</p>
+                  </div>
+              </div>
+              <div class="window__right">
+                  <img
+                      src="./images/printer.svg"
+                      alt="printer"
+                      class="window__image_left"
+                  />
+                  <img
+                      src="./images/clip.svg"
+                      alt="slip"
+                      class="window__image_right"
+                  />
+              </div>
+          </div>
+          <hr class="document__hr" />
+          <div class="document">
+              <div class="document__left">
+                  <div class="document__status">
+                      <img
+                          src="./images/status.svg"
+                          alt="status"
+                          width="18"
+                          height="18"
+                      />
+                      <p class="green">Исполнено</p>
+                  </div>
+                  <div class="document__quote">
+                      Разнообразный и богатый опыт дальнейшее развитие
+                      различных форм деятельности в значительной
+                      степени обуславливает создание системы обучения
+                      кадров, соответствует насущным потребностям.
+                  </div>
+                  <div class="document__name">
+                      <img src="./images/Word.svg" alt="word" />
+                      <p>Nazvanie_documenta111 sld_94.docs</p>
+                  </div>
+                  <div class="document__document">
+                      <img
+                          src="./images/page.png"
+                          alt=""
+                          height="1130"
+                      />
+                  </div>
+                  <div class="document__description">
+                      <div class="document__header">
+                          <div class="document__arrow">
+                              <i class="arrow-up"></i>
+                          </div>
+                          <p>
+                              Касательно курсов повышения квалификации
+                              “Основные принципы настройки ЦС ПА” в
+                              Новосибирском филиале ФГАОУ ДПО “ПЭИПК”
+                          </p>
+                      </div>
+                      <div class="document__body">
+                          <div class="document__row">
+                              <div class="document__progress">
+                                  <img
+                                      src="./images/lolipop.svg"
+                                      alt=""
+                                  />
+                              </div>
+                              <div class="document__time">
+                                  <p>30.11.2020 11:58:17</p>
+                                  <p>30.11.2020 11:58:17</p>
+                              </div>
+                              <div class="document__stage">
+                                  <p class="big">
+                                      Этап: Подпись (Да - Шакенов
+                                      Д.Т.)
+                                  </p>
+                                  <p class="small">
+                                     <p>
+                                      <em>
+                                        <span class="cyan"
+                                            >
+                                            <a href="#">
+                                              Шакенов Д.Т.
+                                            </a>
+                                            </span
+                                        >
+                                        <span class="text_modal">отправил(а) на визитирование</span>
+                                        <span class="cyan"
+                                            >
+                                            <a href="#">
+                                              Дидоренко Е.В.
+                                            </a>
+                                            </span
+                                        ><br />
+                                        <span class="text_modal">Прошу завизировать</span>
+                                    </em>
+                                     </p>
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="document__row">
+                              <div class="document__progress">
+                                  <img
+                                      src="./images/lolipop.svg"
+                                      alt=""
+                                  />
+                              </div>
+                              <div class="document__time">
+                                  <p>30.11.2020 11:58:17</p>
+                                  <p>30.11.2020 11:58:17</p>
+                              </div>
+                              <div class="document__stage">
+                                  <p class="big">
+                                      Этап: Подпись (Да - Дидоренко
+                                      Е.В.)
+                                  </p>
+                                  <p class="small">
+                                      <em>
+                                          <span class="cyan"
+                                              ><a href="#">
+                                                Шакенов Д.Т.
+                                              </a></span
+                                          >
+                                          <span class="text_modal">передал(а) на подписание</span>
+                                          <span class="cyan"
+                                              ><a href="#">
+                                                Дидоренко Е.В.
+                                              </a></span
+                                          ><br />
+                                          <span class="text_modal">text_modal</span>
+                                      </em>
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="document__row">
+                              <div class="document__progress">
+                                  <img
+                                      src="./images/lolipop.svg"
+                                      alt="lolipop"
+                                  />
+                              </div>
+                              <div class="document__time">
+                                  <p>30.11.2020 11:58:17</p>
+                                  <p>30.11.2020 11:58:17</p>
+                              </div>
+                              <div class="document__stage">
+                                  <p class="big">
+                                      Этап: Подпись (Да - Шинасилов
+                                      Е.Т.)
+                                  </p>
+                                  <p class="small">
+                                      <em>
+                                          <span class="cyan"
+                                              ><a href="#">
+                                                Алтаева Д.Т.
+                                              </a></span
+                                          >
+                                          <span class="text_modal">передал(а) закладку</span>
+                                          <span class="cyan"
+                                              >
+                                              <a href="#">
+                                                Администратор БРД ДУЧР
+                                              Майлибекова Э.Б
+                                              </a>
+                                              </span
+                                          >
+                                      </em>
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="document__right">
+                  <div class="document__person">
+                      <em class="grey"
+                          >20.02.2021 19:03 - Mukhamedzyanov A. K. /
+                          Мухамедзянов А. К. - LOTUS</em
+                      >
+                      <p class="document__person_desc">
+                          Регистрационная карточка входящего документа
+                          № А-15-Б (не указана)
+                      </p>
+                  </div>
+                  <div class="document__table">
+                      <div class="document__talbe-row">
+                              <div class="document__left-elem">
+                                  <p>ИСХОДЯЩИЙ НОМЕР:</p>
+                                  
+                              </div>
+                              <div class="document__right-elem">
+                                  <p>11</p>
+                              </div>
+                          </div>
+                        <div class="document__talbe-row document__talbe-row_under">
+                            <div class="document__left-elem">
+                                <p>ИСХОДЯЩИЙ НОМЕР:</p>
+                                
+                            </div>
+                            <div class="document__right-elem">
+                                <p>11</p>
+                            </div>
+                        </div>
+                      <div class="document__talbe-row">
+                              <div class="document__left-elem">
+                                  <p>ЯЗЫК ОБРАЩЕНИЯ:</p>
+                              </div>
+                              <div class="document__right-elem">
+                                  <p>Русский</p>
+                          </div>
+                      </div>
+                      <div class="document__talbe-row">
+                              <div class="document__left-elem">
+                                  <p>ВИД ДОСТАВКИ:</p>
+                              </div>
+                              <div class="document__right-elem">
+                                  <p>Телеграмма</p>
+                              </div>
+                      </div>
+                      <div class="document__talbe-row">
+                              <div class="document__left-elem">
+                                  <p>РЕГИСТРАЦИОННЫЙ НОМЕР:</p>
+                          </div>
+                              <div class="document__right-elem">
+                                  <p>А-15-Б</p>
+                          </div>
+                      </div>
+                      <div class="document__talbe-row document__talbe-row_under">
+                        <div class="document__left-elem">
+                            <p>ДАТА РЕГИСТРАЦИИ:</p>
+                            
+                        </div>
+                        <div class="document__right-elem">
+                            <p>15.06.2021 12:28</p>
+                        </div>
+                    </div>
+                      <div class="document__talbe-row last-row">
+                              <div class="document__left-elem">
+                                  <p>РЕГИСТРАТОР:</p>
+                              </div>
+                              <div class="document__right-elem">
+                                  <p>Администратор СЭД</p>
+                              </div>
+                      </div>
+                      <hr class="document__hr-small" />
+                      <div class="document__talbe-row">
+                              <div class="document__left-elem">
+                                  <p>КОРРЕСПОНДЕНТ:</p>
+                              </div>
+                              <div class="document__right-elem">
+                                  <p>"ADS"</p>
+                              </div>
+                      </div>
+                      <div class="document__talbe-row">
+                              <div class="document__left-elem">
+                                  <p>РЕГИСТРАЦИОННЫЙ НОМЕР:</p>
+                              </div>
+                              <div class="document__right-elem"></div>
+                      </div>
+                      <div class="document__talbe-row last-row">
+                              <div class="document__left-elem">
+                                  <p>СПИСОК РАССЫЛОК</p>
+                              </div>
+                              <div class="document__right-elem"></div>
+                      </div>
+
+                      <hr class="document__hr-small" />
+
+                      <div class="document__talbe-row">
+                              <div class="document__left-elem">
+                                  <p>ТИП КОНТРОЛЯ:</p>
+                              </div>
+                              <div class="document__right-elem">
+                                  <p>Контроль</p>
+                              </div>
+                      </div>
+                      <div class="document__talbe-row">
+                              <div class="document__left-elem">
+                                  <p>ПРИОРИТЕТ:</p>
+                              </div>
+                              <div class="document__right-elem">
+                                  <p>Высокий</p>
+                              </div>
+                      </div>
+                      <div class="document__talbe-row">
+                              <div class="document__left-elem">
+                                  <p>СРОК ИСПОЛНЕНИЯ:</p>
+                              </div>
+                              <div class="document__right-elem">
+                                  <p>29.06.2021</p>
+                              </div>
+                      </div>
+                      <div class="document__talbe-row">
+                              <div class="document__left-elem">
+                                  <p>КАРТОЧКА ЗАДАНИЯ:</p>
+                              </div>
+                              <div class="document__right-elem">
+                                  <p>(открыть)</p>
+                              </div>
+                      </div>
+                      <div class="document__talbe-row">
+                              <div class="document__left-elem">
+                                  <p>ХАРАКТЕР ВОПРОСА:</p>
+                              </div>
+                              <div class="document__right-elem">
+                                  <p>
+                                      Вопросы выборов | Вопросы
+                                      выборов
+                                  </p>
+                              </div>
+                      </div>
+                      <div class="document__talbe-row last-row">
+                              <div class="document__left-elem">
+                                  <p>ОТВЕТ НА ИСХОДЯЩИЙ, ВХОДЯЩИЙ:</p>
+                              </div>
+                              <div class="document__right-elem">
+                                  <p>№: 1-02/6 (от) 20.07.2020</p>
+                              </div>
+                      </div>
+
+                      <hr class="document__hr-small" />
+
+                      <div class="document__talbe-row">
+                              <div class="document__left-elem">
+                                  <p>КОЛ-ВО ЛИСТОВ:</p>
+                              </div>
+                              <div class="document__right-elem">
+                                  <p>1</p>
+                              </div>
+                      </div>
+                      <div class="document__talbe-row">
+                              <div class="document__left-elem">
+                                  <p>КОЛ-ВО ПРИЛОЖЕНИЙ:</p>
+                              </div>
+                              <div class="document__right-elem">
+                                  <p>1</p>
+                              </div>
+                      </div>
+                      <div class="document__talbe-row">
+                              <div class="document__left-elem">
+                                  <p>ТИП ДОКУМЕНТА:</p>
+                              </div>
+                              <div class="document__right-elem">
+                                  <p>
+                                      Акт о выделении к уничтожению |
+                                  </p>
+                              </div>
+                      </div>
+                      <div class="document__talbe-row last-row">
+                              <div class="document__left-elem">
+                                  <p>НОМЕНКЛАТУРНОЕ ДЕЛО №:</p>
+                              </div>
+                              <div class="document__right-elem">
+                                  <p>
+                                      01-01: Законодательные акты и
+                                      подзаконные нормативные правовые
+                                      акты РК, направленные для
+                                      руководства и сведения
+                                  </p>
+                              </div>  
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <hr class="document__hr" />
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+  </div>
+
+
+  </div>
+  </div>
+
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <!-- MODAL WINDOW -->
+
+<div class="modal-window mwww" id="drag1">
+  <nav class="window__nav" id="navbar1">
+    <div class="window__routes">
+     2020
+      <span>/</span>
+      Октябрь
+      <span>/</span>
+      Кулмурзаева Р...
+      <span>/</span>
+      Отклонен
+      <span>/</span>
+      Алматытелеко...
+      <span>/</span>
+      Алматы
+      <span>/</span>
+      Форма ДА-1...
+      <span>/</span>
+      Акт установки д...
+      <span>/ Этап согласования</span>
+    </div>
+    <div class="window__icons">
+      
+      <img src="./images/line.svg" alt="line" class="window__images" onclick="resizeModal(0)"/>
+      <img src="./images/square.svg" alt="square" class="window__images" onclick="(fullScreenModal(0))"/>
+    </div>
+  </nav>
+  <div class="modal-status fz15">
+    <div class="modal-window__top">
+      <div class="modal-window__left bold">
+        <p>ЭТАП:</p>
+        <p>ТИП СОГЛАСОВАНИЯ:</p>
+        <p>СТАТУС:</p>
+        <p>СОПРОВОДИТЕЛЬНЫЙ ТЕКСТ:</p>
+      </div>
+      <div class="modal-window__right">
+        <p>МОЛ (сдал)</p>
+        <div class="textWithImg"><img src="./images/edit.svg"  class="modal-window__img"><p>Параллельное</p></div>
+      
+        <p>Ожидает в очереди</p>
+        <p class="ots">Отсутствует</p>
+      </div>
+    </div>
+    <hr class="modal-window__hr">
+    <div class="modal-window__bottom">
+
+      <div class="modal-window__left bold">
+        <p>СПИСОК СОГЛАСОВАНИЯ:</p>
+      </div>
+      <div class="modal-window__right">
+        <div class="textWithImg"><img src="./images/edit.svg" class="modal-window__img"><p>Абдикаримов Е. А. (Райымбекский - инженер по техническому обслуживанию оборудования сети телекоммуникаций
+          2 категории </p></div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-window__btn"><button class="modal-window__btnBtn">OK</button></div>
+    
+</div>
+
+<!-- MODAL WINDOW ENDS -->
+
+<!-- SECOND MODAL -->
+
+
+<div class="modal-window1 mwww" id="drag2">
+  <nav class="window__nav" id="navbar2">
+    <div class="window__routes">
+      TOO REALITY
+      <span>/</span>
+      Юридический департамент
+      <span>/ Юрист</span>
+    </div>
+    <div class="window__icons">
+      <img src="./images/edit.svg" alt="edit" class="window__images" />
+      <img src="./images/line.svg" alt="line" class="window__images" onclick="resizeModal(2)"/>
+      <img id="lol" src="./images/square.svg" alt="square" class="window__images" onclick="fullScreenModal(2)"/>
+    </div>
+  </nav>
+  <hr class="window__hr" />
+  <div class="window__registration1">
+    <div class="window__left">
+      
+      <div class="customDropDown" style="margin-left: 15px;">
+        <div class="cdDefault cddClosed">
+          <span class="cdTitle cdTitleDisabled">ДЕЙСТВИЕ</span>
+          <img src="./images/dropdown.svg" alt="">
+        </div>
+
+        <div class="cdContent cdContentClosed">
+          <span id="cddLine"></span>
+          <span>Action</span>
+          <span>Another action</span>
+          <span>Something else</span>
+        </div>
+      </div>
+
+
+      
+      
+    </div>
+    <div class="window__right1">
+      
+      
+      <img src="./images/printer.svg">
+    </div>
+  </div>
+
+    <div class="modal-status1">
+      <img src="./images/modal-window-png.png" class="modal-status__img">
+      <div class="modal-status__left">
+        <div class="modal-status__left-inner">
+          <div class="modal-status__title">
+            <p class="modal-status__header bold">Илиев Нурзат Каримович</p>
+            <p class="modal-status__yur">Юрист</p>
+          </div>
+          <div class="modal-status__bottom">
+            <div class="modal-status__bottom-left bold">
+              <div>
+                <img src="./images/modal-window1-img1.svg"><p>МОБИЛЬНЫЙ ТЕЛЕФОН</p>
+              </div>
+              <div class="vnutr1">
+                <img src="./images/modal-window1-img1.svg">
+                <p>РАБОЧИЙ ТЕЛЕФОН </p> <br> 
+                
+              </div>
+              <div>
+                <img src="./images/modal-window1-img3.svg">
+                <p>ДОМАШНИЙ ТЕЛЕФОН</p>
+              </div>
+              <div>
+                <img src="./images/modal-window1-img4.svg">
+                <p>ЭЛЕКТРОННАЯ ПОЧТА</p>
+              </div>
+              <div>
+                <img src="./images/modal-window1-img5.svg">
+                <p>АДРЕС ОФИСА</p>
+              </div>
+            </div>
+            <div class="modal-status__bottom-right">
+              <p>8 777 123 45 67</p>
+              <p>8 (72831) 5 67 89 <br><span class="vnutr">внутр. 105</span></p>
+              <p>8 (72831) 5 67 89</p>
+              <p>n.k.iliyev@mail.ru</p>
+              <p>г. Астана, ул. Толе би, 76</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-status__right"></div>
+    </div>
+
+    <div class="modal-window__btn1"><button class="modal-window__btnBtn1">OK</button></div>
+
+</div>    
+
+
+<!-- SECOND MODAL ENDS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <!-- 1. Подключим библиотеку jQuery (без нее jQuery UI не будет работать) -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <!-- 2. Подключим jQuery UI -->
+  <script src="./Scripts/Accordion.js"></script>
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet"
+    type="text/css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  <script src="./Scripts/detect-element-resize.js"></script>
+  <script src="./Scripts/Time.js"></script>
+  <script src="./Scripts/DragAndDrop.js"></script>
+  <script src="./Scripts/SideBarController.js"></script>
+  <script src="./Scripts/WindowManager.js"></script>
+  <script src="./Scripts/ThemeSwitcher.js"></script>
+  <script src="./Scripts/DesktopGlobalController.js"></script>
+  <script src="./Scripts/resize.js"></script>
+  <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+
+
+  <script type="text/javascript" src="vendor/jquery.js"></script>
+<script type="text/javascript" src="vendor/jquery-ui.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="vendor/lobibox/js/lobibox.js"></script>
+<script type="text/javascript" src="vendor/lobipanel/js/lobipanel.js"></script>
+<script type="text/javascript" src="vendor/jquery-ui-touch-punch/jquery.ui.touch-punch.js"></script>
+
+<!--Page specific assets-->
+<script src="vendor/sparkline/jquery.sparkline.min.js"></script>
+<script src='vendor/chartjs/Chart.min.js'></script>
+<script src='vendor/lobilist/js/lobilist.js'></script>
+<script src='vendor/moment/moment.min.js'></script>
+<script src='vendor/fullcalendar/fullcalendar.min.js'></script>
+
+<!--Make sure that config.js file is loaded before LobiAdmin.js-->
+<script type="text/javascript" src="js/config.js"></script>
+<script type="text/javascript" src="js/LobiAdmin.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
+<script src="js/dashboard.js"></script>
+
+<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+
+<script src="./Scripts/SideBarConstructor.js"></script>
+<script src="./Scripts/DropDowns.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="./Scripts/Chart.js"></script>
+</body>
+
+</html>
