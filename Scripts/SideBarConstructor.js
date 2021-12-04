@@ -129,7 +129,7 @@ function ConstructSideBar(json){
                     pcTitle.appendChild(pcImgContainer);
                     let txt = document.createElement("span");
                     txt.innerText = j.Title;
-                    txt.addEventListener("click", ()=>{SetSideBarSmall(j.Title)});
+                    txt.addEventListener("click", ()=>{SetSideBarSmall(j.Title);  resetSb();});
                     pcTitle.appendChild(txt);
                     parcerCont.appendChild(pcTitle);
 
