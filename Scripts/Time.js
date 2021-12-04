@@ -139,7 +139,6 @@ $("div.accordian").accordion({
 $(".accordianIn3Fir").click(function () {
     $(".scroll").toggleClass("active");
     $(".window__sort-btn").toggleClass("dis-none");
-    $(".window__registration-btn").toggleClass("dis-none");
     $(".window__search").toggleClass("dis-none");
     $(".window__image_left").toggleClass("dis-block");
     $(".window__image_right").toggleClass("dis-block");

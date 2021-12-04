@@ -325,7 +325,9 @@ p {
   width: 18px;
   height: 18px;
 }
-
+.text_modal{
+  color: #848484;
+}
 .menuContainer .container .item div {
   padding-left: 6px;
 }
@@ -539,7 +541,6 @@ p {
   width: 1523px;
   overflow-x: hidden;
   overflow-y: auto;
-  resize: horizontal;
   height: 500px;
 }
 
@@ -1448,7 +1449,6 @@ p {
   left: 20%;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-  height: 589px;
   max-width: 1063px;
 }
 
@@ -1843,7 +1843,16 @@ p {
   min-width: 1484px;
   max-width: 100%;
 }
-
+#chartnew{
+  border: none;
+  max-width: 600px;
+  
+}
+#chartContainer2, #chartContainer3, #chartContainer4, #chartContainer5{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .window__left {
   margin: 0;
 }
@@ -1867,6 +1876,12 @@ p {
   /* #window-1{
     width: 1190px;
   } */
+}
+
+@media only screen and (max-width: 1480px) {
+  .cdDefault.cddClosed {
+    margin-left: 10px;
+  }
 }
 
 @media only screen and (max-width: 1393px) {
@@ -2037,6 +2052,18 @@ p {
   .modal-window1 {
     overflow-y: auto;
     overflow-x: hidden;
+  }
+  .window__search{
+    margin-left: 0;
+  }
+  .cdDefault.cddClosed:first-child{
+    margin-left: 0;
+  }
+  .customDropDown{
+    margin-left: 10px;
+  }
+  .customDropDown:first-child{
+    margin-left: 0;
   }
 }
 
