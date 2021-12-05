@@ -1,7 +1,8 @@
 let dropDowns = document.querySelectorAll(".customDropDown");
-for (const i in dropDowns) {
-    if (Object.hasOwnProperty.call(dropDowns, i)) {
-        const element = dropDowns[i];
+let clickEvnts = document.querySelectorAll(".cdDefault");
+for (const i in clickEvnts) {
+    if (Object.hasOwnProperty.call(clickEvnts, i)) {
+        const element = clickEvnts[i];
         element.addEventListener("click", ()=>{SwitchDropDownVisibility(i)})
     }
 }

@@ -341,6 +341,14 @@ p {
 }
 .customDropDown{
   position: relative;
+  z-index: 1;
+  filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.2)) drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.12)) drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.14));
+}
+.customDropDown:hover{
+  filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.2)) drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.12)) drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.14));
+}
+.cdact:hover .cddClosed span{
+  color: #09415C;
 }
 
 .customDropDown .cdDefault .cdTitleDisabled{
@@ -359,7 +367,6 @@ p {
   justify-content: space-between;
   padding: 10px 15px;
 
-  box-shadow: 0px 0px 5px gray;
   background-color: white;
   cursor: pointer;
 }
@@ -370,7 +377,6 @@ p {
 .cddOpened{
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  box-shadow: 0 -5px 5px -5px #333, 5px 0 5px -5px #333, -5px 0 5px -5px #333;
 }
 #cddLine{
     height: 1px;
@@ -380,12 +386,15 @@ p {
     position: absolute;
     left: 0;
     right: 0;
+    
 }
 
+.cdContent :nth-child(2){
+  margin-top: 14.5px;
+}
 
 .cdContent{
   z-index: 2;
-  box-shadow: 0px 0px 5px gray;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -399,15 +408,12 @@ p {
 }
 .cdContentOpened{
   display: flex;
-  box-shadow: 0 5px 5px -5px #333, 5px 0 5px -5px #333,  -5px 0 5px -5px #333;
 }
 
 .cdContent span{
-  margin-bottom: 8px;
-  margin-top: 8px;
   padding-left: 17px;
-  padding-top: 2px;  
-  padding-bottom: 2px;
+  padding-top: 8px;  
+  padding-bottom: 8px;
   color: #097CB4;
   text-transform: uppercase;
   font-size: 14px;
@@ -415,8 +421,16 @@ p {
 }
 .cdContent span:hover{
   cursor: pointer;
+  background-color: #F8F8FA;
+  color: #09415C;
 }
-
+.cdContent span:last-child{
+  margin-bottom: 15px;
+}
+.cdContent span:active{
+  color: #D3D6DC;
+  background-color: white;
+}
 
 .menuContainer .container .item span {
   color: black;
@@ -435,7 +449,6 @@ p {
   width: 100%;
   background: #f8f8fa;
   height: auto;
-  margin-left: 239px;
 }
 
 /* ---------------CONTENT--------------- */
