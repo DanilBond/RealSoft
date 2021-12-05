@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
   <!-- <link rel="stylesheet" href="style.css" /> -->
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="" id="globalStyles" />
   <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css" />
@@ -84,243 +84,241 @@
     </div>
     <div class="content" id="content">
       <div class="content__wrapper p-3">
-
         <div>
           <div class="panel panel-light">
             <div class="panel-heading">
               <div class="panel-title">
-                Title
+                Контрольные индикаторы руководителя
               </div>
             </div>
             <div class="panel-body pipi_resizable">
               <div class="pipi_resizable-wrapper">
-                CONTENT
-                <h1>Hello world</h1>
-                <h1>Hello world</h1>
-                <h1>Hello world</h1>
-                <h1>Hello world</h1>
-                <h1>Hello world</h1>
-                <h1>Hello world</h1>
-                <h1>Hello world</h1>
-                <h1>Hello world</h1>
-                <h1>Hello world</h1>
-                <h1>Hello world</h1>
+                <div class="row">
+                  <div class="col-4">
+                    <div>
+                      <div style="height: 300px">
+                        <iframe src="./pipi/charts/line-chart.html" frameborder="0"
+                          style="width: 100%; height: 100%;"></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
+          </div>
+        </div>
 
+      </div>
+    </div>
+    <!-- MODAL WINDOW -->
+
+    <div class="modal-window mwww" id="drag1">
+      <nav class="window__nav" id="navbar1">
+        <div class="window__routes">
+          2020
+          <span>/</span>
+          Октябрь
+          <span>/</span>
+          Кулмурзаева Р...
+          <span>/</span>
+          Отклонен
+          <span>/</span>
+          Алматытелеко...
+          <span>/</span>
+          Алматы
+          <span>/</span>
+          Форма ДА-1...
+          <span>/</span>
+          Акт установки д...
+          <span>/ Этап согласования</span>
+        </div>
+        <div class="window__icons">
+
+          <img src="./images/line.svg" alt="line" class="window__images" onclick="resizeModal(0)" />
+          <img src="./images/square.svg" alt="square" class="window__images" onclick="(fullScreenModal(0))" />
+        </div>
+      </nav>
+      <div class="modal-status fz15">
+        <div class="modal-window__top">
+          <div class="modal-window__left bold">
+            <p>ЭТАП:</p>
+            <p>ТИП СОГЛАСОВАНИЯ:</p>
+            <p>СТАТУС:</p>
+            <p>СОПРОВОДИТЕЛЬНЫЙ ТЕКСТ:</p>
+          </div>
+          <div class="modal-window__right">
+            <p>МОЛ (сдал)</p>
+            <div class="textWithImg"><img src="./images/edit.svg" class="modal-window__img">
+              <p>Параллельное</p>
+            </div>
+
+            <p>Ожидает в очереди</p>
+            <p class="ots">Отсутствует</p>
+          </div>
+        </div>
+        <hr class="modal-window__hr">
+        <div class="modal-window__bottom">
+
+          <div class="modal-window__left bold">
+            <p>СПИСОК СОГЛАСОВАНИЯ:</p>
+          </div>
+          <div class="modal-window__right">
+            <div class="textWithImg"><img src="./images/edit.svg" class="modal-window__img">
+              <p>Абдикаримов Е. А. (Райымбекский - инженер по техническому обслуживанию оборудования сети
+                телекоммуникаций
+                2 категории </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <!-- MODAL WINDOW -->
+      <div class="modal-window__btn"><button class="modal-window__btnBtn">OK</button></div>
 
-  <div class="modal-window mwww" id="drag1">
-    <nav class="window__nav" id="navbar1">
-      <div class="window__routes">
-        2020
-        <span>/</span>
-        Октябрь
-        <span>/</span>
-        Кулмурзаева Р...
-        <span>/</span>
-        Отклонен
-        <span>/</span>
-        Алматытелеко...
-        <span>/</span>
-        Алматы
-        <span>/</span>
-        Форма ДА-1...
-        <span>/</span>
-        Акт установки д...
-        <span>/ Этап согласования</span>
-      </div>
-      <div class="window__icons">
-
-        <img src="./images/line.svg" alt="line" class="window__images" onclick="resizeModal(0)" />
-        <img src="./images/square.svg" alt="square" class="window__images" onclick="(fullScreenModal(0))" />
-      </div>
-    </nav>
-    <div class="modal-status fz15">
-      <div class="modal-window__top">
-        <div class="modal-window__left bold">
-          <p>ЭТАП:</p>
-          <p>ТИП СОГЛАСОВАНИЯ:</p>
-          <p>СТАТУС:</p>
-          <p>СОПРОВОДИТЕЛЬНЫЙ ТЕКСТ:</p>
-        </div>
-        <div class="modal-window__right">
-          <p>МОЛ (сдал)</p>
-          <div class="textWithImg"><img src="./images/edit.svg" class="modal-window__img">
-            <p>Параллельное</p>
-          </div>
-
-          <p>Ожидает в очереди</p>
-          <p class="ots">Отсутствует</p>
-        </div>
-      </div>
-      <hr class="modal-window__hr">
-      <div class="modal-window__bottom">
-
-        <div class="modal-window__left bold">
-          <p>СПИСОК СОГЛАСОВАНИЯ:</p>
-        </div>
-        <div class="modal-window__right">
-          <div class="textWithImg"><img src="./images/edit.svg" class="modal-window__img">
-            <p>Абдикаримов Е. А. (Райымбекский - инженер по техническому обслуживанию оборудования сети телекоммуникаций
-              2 категории </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal-window__btn"><button class="modal-window__btnBtn">OK</button></div>
-
-  </div>
-
-  <!-- MODAL WINDOW ENDS -->
-
-  <!-- SECOND MODAL -->
-
-
-  <div class="modal-window1 mwww" id="drag2">
-    <nav class="window__nav" id="navbar2">
-      <div class="window__routes">
-        TOO REALITY
-        <span>/</span>
-        Юридический департамент
-        <span>/ Юрист</span>
-      </div>
-      <div class="window__icons">
-        <img src="./images/edit.svg" alt="edit" class="window__images" />
-        <img src="./images/line.svg" alt="line" class="window__images" onclick="resizeModal(2)" />
-        <img id="lol" src="./images/square.svg" alt="square" class="window__images" onclick="fullScreenModal(2)" />
-      </div>
-    </nav>
-    <hr class="window__hr" />
-    <div class="window__registration1">
-      <div class="window__left">
-
-        <div class="customDropDown" style="margin-left: 15px;">
-          <div class="cdDefault cddClosed">
-            <span class="cdTitle cdTitleDisabled">ДЕЙСТВИЕ</span>
-            <img src="./images/dropdown.svg" alt="">
-          </div>
-
-          <div class="cdContent cdContentClosed">
-            <span id="cddLine"></span>
-            <span>Action</span>
-            <span>Another action</span>
-            <span>Something else</span>
-          </div>
-        </div>
-      </div>
-      <div class="window__right1">
-        <img src="./images/printer.svg">
-      </div>
     </div>
 
-    <div class="modal-status1">
-      <img src="./images/modal-window-png.png" class="modal-status__img">
-      <div class="modal-status__left">
-        <div class="modal-status__left-inner">
-          <div class="modal-status__title">
-            <p class="modal-status__header bold">Илиев Нурзат Каримович</p>
-            <p class="modal-status__yur">Юрист</p>
-          </div>
-          <div class="modal-status__bottom">
-            <div class="modal-status__bottom-left bold">
-              <div>
-                <img src="./images/modal-window1-img1.svg">
-                <p>МОБИЛЬНЫЙ ТЕЛЕФОН</p>
-              </div>
-              <div class="vnutr1">
-                <img src="./images/modal-window1-img1.svg">
-                <p>РАБОЧИЙ ТЕЛЕФОН </p> <br>
-              </div>
-              <div>
-                <img src="./images/modal-window1-img3.svg">
-                <p>ДОМАШНИЙ ТЕЛЕФОН</p>
-              </div>
-              <div>
-                <img src="./images/modal-window1-img4.svg">
-                <p>ЭЛЕКТРОННАЯ ПОЧТА</p>
-              </div>
-              <div>
-                <img src="./images/modal-window1-img5.svg">
-                <p>АДРЕС ОФИСА</p>
-              </div>
+    <!-- MODAL WINDOW ENDS -->
+
+    <!-- SECOND MODAL -->
+
+
+    <div class="modal-window1 mwww" id="drag2">
+      <nav class="window__nav" id="navbar2">
+        <div class="window__routes">
+          TOO REALITY
+          <span>/</span>
+          Юридический департамент
+          <span>/ Юрист</span>
+        </div>
+        <div class="window__icons">
+          <img src="./images/edit.svg" alt="edit" class="window__images" />
+          <img src="./images/line.svg" alt="line" class="window__images" onclick="resizeModal(2)" />
+          <img id="lol" src="./images/square.svg" alt="square" class="window__images" onclick="fullScreenModal(2)" />
+        </div>
+      </nav>
+      <hr class="window__hr" />
+      <div class="window__registration1">
+        <div class="window__left">
+
+          <div class="customDropDown" style="margin-left: 15px;">
+            <div class="cdDefault cddClosed">
+              <span class="cdTitle cdTitleDisabled">ДЕЙСТВИЕ</span>
+              <img src="./images/dropdown.svg" alt="">
             </div>
-            <div class="modal-status__bottom-right">
-              <p>8 777 123 45 67</p>
-              <p>8 (72831) 5 67 89 <br><span class="vnutr">внутр. 105</span></p>
-              <p>8 (72831) 5 67 89</p>
-              <p>n.k.iliyev@mail.ru</p>
-              <p>г. Астана, ул. Толе би, 76</p>
+
+            <div class="cdContent cdContentClosed">
+              <span id="cddLine"></span>
+              <span>Action</span>
+              <span>Another action</span>
+              <span>Something else</span>
             </div>
           </div>
         </div>
+        <div class="window__right1">
+          <img src="./images/printer.svg">
+        </div>
       </div>
-      <div class="modal-status__right"></div>
+
+      <div class="modal-status1">
+        <img src="./images/modal-window-png.png" class="modal-status__img">
+        <div class="modal-status__left">
+          <div class="modal-status__left-inner">
+            <div class="modal-status__title">
+              <p class="modal-status__header bold">Илиев Нурзат Каримович</p>
+              <p class="modal-status__yur">Юрист</p>
+            </div>
+            <div class="modal-status__bottom">
+              <div class="modal-status__bottom-left bold">
+                <div>
+                  <img src="./images/modal-window1-img1.svg">
+                  <p>МОБИЛЬНЫЙ ТЕЛЕФОН</p>
+                </div>
+                <div class="vnutr1">
+                  <img src="./images/modal-window1-img1.svg">
+                  <p>РАБОЧИЙ ТЕЛЕФОН </p> <br>
+                </div>
+                <div>
+                  <img src="./images/modal-window1-img3.svg">
+                  <p>ДОМАШНИЙ ТЕЛЕФОН</p>
+                </div>
+                <div>
+                  <img src="./images/modal-window1-img4.svg">
+                  <p>ЭЛЕКТРОННАЯ ПОЧТА</p>
+                </div>
+                <div>
+                  <img src="./images/modal-window1-img5.svg">
+                  <p>АДРЕС ОФИСА</p>
+                </div>
+              </div>
+              <div class="modal-status__bottom-right">
+                <p>8 777 123 45 67</p>
+                <p>8 (72831) 5 67 89 <br><span class="vnutr">внутр. 105</span></p>
+                <p>8 (72831) 5 67 89</p>
+                <p>n.k.iliyev@mail.ru</p>
+                <p>г. Астана, ул. Толе би, 76</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-status__right"></div>
+      </div>
+      <div class="modal-window__btn1">
+        <button class="modal-window__btnBtn1">OK</button>
+      </div>
     </div>
-    <div class="modal-window__btn1">
-      <button class="modal-window__btnBtn1">OK</button>
-    </div>
-  </div>
 
 
-  <!-- SECOND MODAL ENDS -->
+    <!-- SECOND MODAL ENDS -->
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <!-- 1. Подключим библиотеку jQuery (без нее jQuery UI не будет работать) -->
-  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script> -->
-  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+    <!-- 1. Подключим библиотеку jQuery (без нее jQuery UI не будет работать) -->
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script> -->
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> -->
 
 
-  <script type="text/javascript" src="vendor/jquery.js"></script>
-  <script type="text/javascript" src="vendor/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="vendor/bootstrap/dist/js/bootstrap.js"></script>
-  <script type="text/javascript" src="vendor/lobibox/js/lobibox.js"></script>
-  <script type="text/javascript" src="vendor/lobipanel/js/lobipanel.js"></script>
-  <script type="text/javascript" src="vendor/jquery-ui-touch-punch/jquery.ui.touch-punch.js"></script>
-  <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <script type="text/javascript" src="vendor/jquery.js"></script>
+    <script type="text/javascript" src="vendor/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="vendor/lobibox/js/lobibox.js"></script>
+    <script type="text/javascript" src="vendor/lobipanel/js/lobipanel.js"></script>
+    <script type="text/javascript" src="vendor/jquery-ui-touch-punch/jquery.ui.touch-punch.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
 
-  <!--Page specific assets-->
-  <script src="vendor/sparkline/jquery.sparkline.min.js"></script>
-  <script src='vendor/chartjs/Chart.min.js'></script>
-  <script src='vendor/lobilist/js/lobilist.js'></script>
-  <script src='vendor/moment/moment.min.js'></script>
-  <script src='vendor/fullcalendar/fullcalendar.min.js'></script>
+    <!--Page specific assets-->
+    <script src="vendor/sparkline/jquery.sparkline.min.js"></script>
+    <script src='vendor/chartjs/Chart.min.js'></script>
+    <script src='vendor/lobilist/js/lobilist.js'></script>
+    <script src='vendor/moment/moment.min.js'></script>
+    <script src='vendor/fullcalendar/fullcalendar.min.js'></script>
 
-  <!--? AM Charts -->
-  <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-  <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
-  <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <!--? AM Charts -->
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
 
-  <!--? Make sure that config.js file is loaded before LobiAdmin.js-->
-  <script type="text/javascript" src="js/config.js"></script>
-  <script type="text/javascript" src="js/LobiAdmin.js"></script>
-  <script type="text/javascript" src="js/app.js"></script>
+    <!--? Make sure that config.js file is loaded before LobiAdmin.js-->
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/LobiAdmin.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 
-  <script src="js/dashboard.js"></script>
+    <script src="js/dashboard.js"></script>
 
-  <!-- <script src="js/dashboard.js"></script> -->
+    <!-- <script src="js/dashboard.js"></script> -->
 
-  <script src="./Scripts/detect-element-resize.js"></script>
-  <script src="./Scripts/Accordion.js"></script>
-  <script src="./Scripts/Time.js"></script>
-  <script src="./Scripts/DragAndDrop.js"></script>
-  <script src="./Scripts/SideBarController.js"></script>
-  <!-- <script src="./Scripts/WindowManager.js"></script> -->
-  <script src="./Scripts/ThemeSwitcher.js"></script>
-  <script src="./Scripts/DesktopGlobalController.js"></script>
-  <!-- <script src="./Scripts/resize.js"></script> -->
-  <script src="./Scripts/SideBarConstructor.js"></script>
-  <script src="./Scripts/DropDowns.js"></script>
-  <script src="pipi/resizable.js"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
-  <!-- <script src="./Scripts/Chart.js"></script> -->
+    <script src="./Scripts/detect-element-resize.js"></script>
+    <script src="./Scripts/Accordion.js"></script>
+    <script src="./Scripts/Time.js"></script>
+    <script src="./Scripts/DragAndDrop.js"></script>
+    <script src="./Scripts/SideBarController.js"></script>
+    <!-- <script src="./Scripts/WindowManager.js"></script> -->
+    <script src="./Scripts/ThemeSwitcher.js"></script>
+    <script src="./Scripts/DesktopGlobalController.js"></script>
+    <!-- <script src="./Scripts/resize.js"></script> -->
+    <script src="./Scripts/SideBarConstructor.js"></script>
+    <script src="./Scripts/DropDowns.js"></script>
+    <script src="pipi/resizable.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
+    <!-- <script src="./Scripts/Chart.js"></script> -->
 </body>
 
 </html>
