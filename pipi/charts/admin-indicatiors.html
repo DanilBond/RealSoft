@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="row admin-indicators">
+    <div class="col-6 col-md-3">
+      <div class="card bordered">
+        <div class="card-header">
+          Доход
+          <div class="d-flex float-end">
+            показать:
+            <select class="chart-filter" aria-label="Default select example">
+              <option selected>Месяц</option>
+              <option value="1">Неделя</option>
+              <option value="2">День</option>
+              <option value="3">Год</option>
+            </select>
+          </div>
+        </div>
+        <div class="card-body">
+          <div style="height: 140px">
+            <iframe src="./line-chart.html" frameborder="0" style="width: 100%; height: 100%;"></iframe>
+          </div>
+        </div>
+        <div class="progress" style="height: 1px;">
+          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="card-footer">
+          <div class="d-flex flex-wrap justify-content-between align-items-center">
+            <a data-bs-original-title="57%" title data-bs-toggle="tooltip">
+              <svg style="cursor: pointer;" width="35" height="35" viewBox="5 5 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="27" cy="27.001" r="20" fill="#109CF1"/>
+                <path d="M21.8251 7.68268C25.7626 6.62763 29.9285 6.80096 33.7648 8.17946C37.6011 9.55796 40.9245 12.0758 43.2899 15.3957L27.0015 27.0012L21.8251 7.68268Z" fill="#54BCFB"/>
+                <path d="M43.2963 15.407C45.7084 18.7973 47.0031 22.8555 47 27.0163L27 27.0014L43.2963 15.407Z" fill="#8ED4FF"/>
+              </svg>
+            </a>
+  
+            <div class="text-end d-flex flex-column justify-content-center">
+              <h6 class="m-0">15%</h6>
+              <p class="m-0" style="font-size: 10px;">Условные единицы</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card bordered">
+        <div class="card-header">
+          Подключения
+          <div class="d-flex float-end">
+            показать:
+            <select class="chart-filter" aria-label="Default select example">
+              <option selected>Месяц</option>
+              <option value="1">Неделя</option>
+              <option value="2">День</option>
+              <option value="3">Год</option>
+            </select>
+          </div>
+        </div>
+        <div class="card-body">
+          <div style="height: 140px">
+            <iframe src="./bar-chart.html" frameborder="0" style="width: 100%; height: 100%;"></iframe>
+          </div>
+        </div>
+        <div class="progress" style="height: 1px;">
+          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="card-footer">
+          <div class="d-flex flex-wrap justify-content-between align-items-center">
+            <a data-bs-original-title="57%" title data-bs-toggle="tooltip">
+              <svg style="cursor: pointer;" width="50" height="35" viewBox="0 0 50 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="16.1787" width="3.42804" height="18.2765" fill="#109CF1"/>
+                <rect x="4.14453" y="21.8721" width="3.42804" height="12.5838" fill="#109CF1"/>
+                <rect x="8.28516" y="30.5605" width="3.42804" height="3.89498" fill="#109CF1"/>
+                <rect x="12.4297" y="33.8564" width="3.42804" height="0.599228" fill="#109CF1"/>
+                <rect x="16.5703" y="27.2656" width="3.42804" height="7.19074" fill="#109CF1"/>
+                <rect x="20.7148" y="32.0586" width="3.42804" height="2.39691" fill="#109CF1"/>
+                <rect x="24.8555" y="24.8682" width="3.42804" height="9.58765" fill="#109CF1"/>
+                <rect x="29" y="20.6729" width="3.42804" height="13.7822" fill="#109CF1"/>
+                <rect x="33.1445" y="17.9766" width="3.42804" height="16.4788" fill="#109CF1"/>
+                <rect x="37.2852" y="10.1865" width="3.42804" height="24.2687" fill="#109CF1"/>
+                <rect x="41.4297" y="14.6807" width="3.42804" height="19.7745" fill="#109CF1"/>
+                <rect x="45.5742" width="3.42804" height="34.4556" fill="#109CF1"/>
+              </svg>
+            </a>
+  
+            <div class="text-end d-flex flex-column justify-content-center">
+              <h6 class="m-0">15%</h6>
+              <p class="m-0" style="font-size: 10px;">Условные единицы</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card bordered">
+        <div class="card-header">
+          Пользователи
+          <img src="./assets/images/earth-icon.svg" width="30" height="30" class="float-end"/>
+        </div>
+        <div class="card-body">
+          <div style="height: 140px">
+            <iframe src="./pie-chart.html" frameborder="0" style="width: 100%; height: 100%;"></iframe>
+          </div>
+        </div>
+        <div class="progress" style="height: 1px;">
+          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="card-footer">
+          <div class="d-flex flex-wrap justify-content-between align-items-center">
+            <a data-bs-original-title="57%" title data-bs-toggle="tooltip">
+              <svg style="cursor: pointer;" width="50" height="35" viewBox="0 0 50 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="16.1787" width="3.42804" height="18.2765" fill="#109CF1"/>
+                <rect x="4.14453" y="21.8721" width="3.42804" height="12.5838" fill="#109CF1"/>
+                <rect x="8.28516" y="30.5605" width="3.42804" height="3.89498" fill="#109CF1"/>
+                <rect x="12.4297" y="33.8564" width="3.42804" height="0.599228" fill="#109CF1"/>
+                <rect x="16.5703" y="27.2656" width="3.42804" height="7.19074" fill="#109CF1"/>
+                <rect x="20.7148" y="32.0586" width="3.42804" height="2.39691" fill="#109CF1"/>
+                <rect x="24.8555" y="24.8682" width="3.42804" height="9.58765" fill="#109CF1"/>
+                <rect x="29" y="20.6729" width="3.42804" height="13.7822" fill="#109CF1"/>
+                <rect x="33.1445" y="17.9766" width="3.42804" height="16.4788" fill="#109CF1"/>
+                <rect x="37.2852" y="10.1865" width="3.42804" height="24.2687" fill="#109CF1"/>
+                <rect x="41.4297" y="14.6807" width="3.42804" height="19.7745" fill="#109CF1"/>
+                <rect x="45.5742" width="3.42804" height="34.4556" fill="#109CF1"/>
+              </svg>
+            </a>
+  
+            <div class="text-end d-flex flex-column justify-content-center">
+              <h6 class="m-0">15%</h6>
+              <p class="m-0" style="font-size: 10px;">Условные единицы</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card bordered">
+        <div class="card-header">
+          Абоненты
+          <img src="./assets/images/chat-icon.svg" width="30" height="30" class="float-end"/>
+        </div>
+        <div class="card-body">
+          <div style="height: 140px">
+            <iframe src="./pie-chart.html" frameborder="0" style="width: 100%; height: 100%;"></iframe>
+          </div>
+        </div>
+        <div class="progress" style="height: 1px;">
+          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="card-footer">
+          <div class="d-flex flex-wrap justify-content-between align-items-center">
+            <a data-bs-original-title="57%" title data-bs-toggle="tooltip">
+              <svg style="cursor: pointer;" width="50" height="35" viewBox="0 0 50 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="16.1787" width="3.42804" height="18.2765" fill="#109CF1"/>
+                <rect x="4.14453" y="21.8721" width="3.42804" height="12.5838" fill="#109CF1"/>
+                <rect x="8.28516" y="30.5605" width="3.42804" height="3.89498" fill="#109CF1"/>
+                <rect x="12.4297" y="33.8564" width="3.42804" height="0.599228" fill="#109CF1"/>
+                <rect x="16.5703" y="27.2656" width="3.42804" height="7.19074" fill="#109CF1"/>
+                <rect x="20.7148" y="32.0586" width="3.42804" height="2.39691" fill="#109CF1"/>
+                <rect x="24.8555" y="24.8682" width="3.42804" height="9.58765" fill="#109CF1"/>
+                <rect x="29" y="20.6729" width="3.42804" height="13.7822" fill="#109CF1"/>
+                <rect x="33.1445" y="17.9766" width="3.42804" height="16.4788" fill="#109CF1"/>
+                <rect x="37.2852" y="10.1865" width="3.42804" height="24.2687" fill="#109CF1"/>
+                <rect x="41.4297" y="14.6807" width="3.42804" height="19.7745" fill="#109CF1"/>
+                <rect x="45.5742" width="3.42804" height="34.4556" fill="#109CF1"/>
+              </svg>
+            </a>
+  
+            <div class="text-end d-flex flex-column justify-content-center">
+              <h6 class="m-0">15%</h6>
+              <p class="m-0" style="font-size: 10px;">Условные единицы</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    .chart-filter {
+      background: transparent;
+      border: none;
+      color: rgba(16, 156, 241, 1);
+    }
+    .admin-indicators .card-header {
+      font-size: 14px;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+</body>
+
+</html>

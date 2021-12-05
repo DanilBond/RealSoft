@@ -34,6 +34,7 @@
   background: currentColor;
 }
 
-.panel.panel-unpin > .pipi_resizable > .pipi_resizer{
+.panel.panel-unpin > .pipi_resizable > .pipi_resizer,
+.panel.panel-expanded > .pipi_resizable > .pipi_resizer{
   display: none;
 }

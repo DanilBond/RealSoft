@@ -34,8 +34,8 @@ class Resizable{
     this.startWidth = parseInt(this.element.offsetWidth, 10);
     this.startHeight = parseInt(this.element.offsetHeight, 10);
     this.resizer.classList.add('active');
-    document.documentElement.addEventListener('mousemove', this.doDrag, false);
-    document.documentElement.addEventListener('mouseup', this.stopDrag, false);
+    window.addEventListener('mousemove', this.doDrag, false);
+    window.addEventListener('mouseup', this.stopDrag, false);
   }
 
   doDrag(e) {
@@ -47,8 +47,8 @@ class Resizable{
   }
 
   stopDrag(e) {
-    document.documentElement.removeEventListener('mousemove', this.doDrag, false);
-    document.documentElement.removeEventListener('mouseup', this.stopDrag, false);
+    window.removeEventListener('mousemove', this.doDrag, false);
+    window.removeEventListener('mouseup', this.stopDrag, false);
   }
 
 }

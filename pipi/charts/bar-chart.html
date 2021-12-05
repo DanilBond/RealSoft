@@ -35,17 +35,9 @@
     data = data.map(item => 30 - item)
 
     option = {
-      legend: {
-        data: ['Line 1']
-      },
-      tooltip: {
-        trigger: 'axis',
-        axisPointer: {
-          type: 'cross',
-          label: {
-            backgroundColor: '#6a7985'
-          }
-        }
+      xAxis: {
+        type: 'category',
+        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
       },
       grid: {
         left: '3%',
@@ -54,36 +46,13 @@
         top: '4%',
         containLabel: true
       },
-      xAxis: [{
-        type: 'category',
-        boundaryGap: false,
-        data: Array(31).fill(null).map((_, i) => `${i + 1}.06`),
-      }],
       yAxis: {
         type: 'value'
       },
-      color: ['rgba(16, 156, 241, 1)'],
       series: [
         {
-          data: data,
-          type: 'line',
-          smooth: true,
-          lineStyle: {
-            color: 'rgba(16, 156, 241, 1)',
-          },
-          areaStyle: {
-            opacity: 0.4,
-            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-              {
-                offset: 0,
-                color: 'rgba(16, 156, 241, 0.8)'
-              },
-              {
-                offset: 1,
-                color: 'rgba(16, 156, 241, 0)'
-              }
-            ])
-          },
+          data: [120, 200, 150, 80, 70, 110, 130],
+          type: 'bar'
         }
       ]
     };
@@ -91,4 +60,5 @@
     window.addEventListener('resize', myChart.resize)
   </script>
 </body>
+
 </html>
