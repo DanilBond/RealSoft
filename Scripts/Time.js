@@ -176,14 +176,6 @@ $("#window-1").resize((e) => {
         e.target.style.width = window.innerWidth - 1260;
     }
 
-    if (w < 1350) {
-        $("#window-1 .scroll_flex").addClass("d-block");
-        $("#window-1 .scroll").addClass("mw-100");
-    } else {
-        $("#window-1 .scroll_flex").removeClass("d-block");
-        $("#window-1 .scroll").removeClass("mw-100");
-    }
-
     if (w < 1104) {
         $("#window-1 .window__sort-btn")
             .addClass("mt-10")

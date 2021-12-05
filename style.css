@@ -227,7 +227,9 @@ p {
   position: fixed;
   height: 1400px;
 }
-
+.cdDefault{
+margin-left: 0px;
+}
 .sideBar .logoContainer .logoFull {
   width: 112px;
   height: 55px;
@@ -343,6 +345,12 @@ p {
   position: relative;
 }
 
+.cdDefault{
+  width: 100%;
+}
+.dropdownDef{
+  margin-left: 15px;
+}
 .customDropDown .cdDefault .cdTitleDisabled{
   color: lightgray;
 }
@@ -434,8 +442,9 @@ p {
 .content {
   width: 100%;
   background: #f8f8fa;
-  height: auto;
+  height: 1400px;
   margin-left: 239px;
+
 }
 
 /* ---------------CONTENT--------------- */
@@ -546,7 +555,7 @@ p {
   margin: 10px 20px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   margin: 21px auto;
-  width: 1523px;
+  width: 95%;
   overflow-x: hidden;
   overflow-y: auto;
   height: 500px;
@@ -1008,7 +1017,13 @@ p {
 }
 .ui-accordion .ui-accordion-header{
   margin-top: 0px !important;
+  border-bottom: none !important;
 }
+
+.ui-accordion.ui-accordion-header:last-child(){
+  border-bottom: 1px solid rgba(67, 79, 99, 0.2) !important;
+}
+
 
 .text-around {
   border-radius: 50%;
@@ -1237,7 +1252,6 @@ p {
   height: 60px;
   margin: 0 20px;
   border-top: 1px solid rgba(67, 79, 99, 0.2) !important;
-  border-bottom: 1px solid rgba(67, 79, 99, 0.2) !important;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -1870,11 +1884,11 @@ p {
 }
 
 /* ---------------MEDIA---------------- */
-@media only screen and (max-width: 1790px) {
+/* @media only screen and (max-width: 1790px) {
   .window1 {
     width: 1272px;
   }
-}
+} */
 
 @media only screen and (max-width: 1590px) {
   .window1 {
@@ -1890,11 +1904,11 @@ p {
   } */
 }
 
-@media only screen and (max-width: 1480px) {
+/* @media only screen and (max-width: 1480px) {
   .cdDefault.cddClosed {
     margin-left: 10px;
   }
-}
+} */
 
 @media only screen and (max-width: 1393px) {
   .window1 {
@@ -2148,10 +2162,13 @@ p {
   .sideBar {
     min-width: 76px;
     max-width: 76px;
+    position: relative;
+    height: 1500px;
   }
-
+  .content{
+    margin-left: 0;
+  }
   .parcerContainer {
-    height: 5000px;
     background-color: white;
     top: 0;
     margin-top: 0;
