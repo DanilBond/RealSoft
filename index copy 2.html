@@ -83,119 +83,95 @@
       </div>
     </div>
     <div class="content" id="content">
-      <!-- Pisat cod nado tut -->
       <div class="content__wrapper p-3">
+
         <div>
           <div class="panel panel-light">
             <div class="panel-heading">
               <div class="panel-title">
-                Делопроизводство / Входящие документы
-                <span>/ Общая корреспонденция</span>
+                Контрольные индикаторы руководителя
               </div>
             </div>
-            <div class="panel-body pipi_resizable">
-              <div class="pipi_resizable-wrapper">
-
-                <div class="window__registration">
-                  <div class="window__left">
-                    <p class="disabled">Не выбрано</p>
-                    <div class="dropdownDef">
-                      <div class="customDropDown">
-
-                        <div class="cdDefault cddClosed">
-                          <span class="cdTitle cdTitleDisabled">ДЕЙСТВИЕ</span>
-                          <img src="./images/dropdown.svg" alt="error">
-                        </div>
-
-                        <div class="cdContent cdContentClosed">
-                          <span id="cddLine"></span>
-                          <span>Action</span>
-                          <span>Another action</span>
-                          <span>Something else</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="dropdownDef">
-                      <div class="customDropDown" id="customDropDown">
-                        <div class="cdDefault cddClosed" id="dropdownDef">
-                          <span class="cdTitle">ПО НОМЕРУ РЕГИСТРАЦИИ</span>
-                          <img src="./images/dropdown.svg" alt="">
-                        </div>
-
-                        <div class="cdContent cdContentClosed">
-                          <span id="cddLine"></span>
-                          <span>Action</span>
-                          <span>Another action</span>
-                          <span>Something else</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="window__right">
-                    <div class="window__registration-btn" aria-expanded="false">
-                      <img src="./images/plus.svg" alt="plus" />
-                      <p class="blue">РЕГИСТРАЦИЯ</p>
-                    </div>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3" id="dropdown-reg">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                    <div class="window__search">
-                      <input type="text" placeholder="Найти документ" class="input-search-test" />
-                      <img src="./images/search.svg" alt="search" />
-                    </div>
-                    <img src="./images/printer.svg" alt="printer" class="window__image_left" style="display: none;" />
-                    <img src="./images/clip.svg" alt="slip" class="window__image_right" style="display: none;" />
-                  </div>
-                </div>
-                <div class="scroll_flex">
-                  <div class="scroll">
-                    <div class="status">
-                      <div class="status__checkbox square-checkbox">
-                        <label>
-
-                          <input type="checkbox" name="" id="" />
-                          <span></span>
-                        </label>
-                      </div>
-                      <div class="status__status">Статус</div>
-                      <div class="status__no">Исх. №</div>
-                      <div class="status__per">Per. №</div>
-                      <div class="status__ish">
-                        Иходная <br />
-                        дата
-                      </div>
-                      <div class="status__post">
-                        Дата <br />
-                        поуступления
-                      </div>
-                      <div class="status__corr">Корреспондент</div>
-                      <div class="status__short">Краткое содержание</div>
-                      <div class="status__komu">Кому</div>
-                    </div>
-
-
-                    <div id="faqs-container" class="accordian asd search-test">
-
-
-                    </div>
-
-
-                  </div>
-                  <div class="scroll_image">
-                    <img class="scroll_img" src="./images/scroll.png" alt="ошибка при получении данных">
-
-                    <div>
-                      <img class="documentDelo" src="./images/documentDelo.svg" alt="iks" id="iks" />
-                    </div>
-                  </div>
-                </div>
-
-              </div>
+            <div class="panel-body" style="min-height: 300px;">
+              <iframe src="./pipi/charts/admin-indicatiors.html" style="width: 100%; height: 100%; min-height: inherit;"></iframe>
             </div>
           </div>
         </div>
+
+
+        <div class="row">
+          <div class="col-12">
+            <!-- ? Window -->
+            <div>
+              <div class="panel panel-light">
+                <div class="panel-heading">
+                  <div class="panel-title">
+                    Сравнительная статистика
+                  </div>
+                </div>
+                <div class="panel-body pipi_resizable">
+                  <div class="pipi_resizable-wrapper">
+                    <!-- ? CONTENT -->
+                    <div>
+                      <div style="height: 300px">
+                        <iframe src="./pipi/charts/line-chart-double.html" frameborder="0"
+                          style="width: 100%; height: 100%;"></iframe>
+                      </div>
+                    </div>
+                    <!-- ? END CONTENT -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ? Window -->
+          </div>
+        </div>
+
+
+
+        <!-- ? How to use Panel -->
+        <!-- 
+          Variant #1
+          <div>
+            <div class="panel panel-light">
+              <div class="panel-heading">
+                <div class="panel-title">
+                  Сравнительная статистика
+                </div>
+              </div>
+              <div class="panel-body pipi_resizable">
+                <div class="pipi_resizable-wrapper">
+                  CONTENT
+                </div>
+              </div>
+            </div>
+          </div>
+
+          Variant #2
+          <div>
+            <div class="panel panel-light">
+              <div class="panel-heading">
+                <div class="panel-title">
+                  Сравнительная статистика
+                </div>
+              </div>
+              <div class="panel-body">
+                <div>
+                  CONTENT
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+         -->
+
+
+
+
+
       </div>
     </div>
     <!-- MODAL WINDOW -->
