@@ -343,11 +343,14 @@ margin-left: 0px;
   padding-left: 6px;
 }
 .customDropDown{
+  will-change: filter;
+
   position: relative;
-  z-index: 1;
   filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.2)) drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.12)) drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.14));
 }
 .customDropDown:hover{
+  will-change: filter;
+
   filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.2)) drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.12)) drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.14));
 }
 .cdact:hover .cddClosed span{
@@ -359,6 +362,10 @@ margin-left: 0px;
 }
 .dropdownDef{
   margin-left: 15px;
+  z-index: 1;
+}
+#deistvie{
+  z-index: 1;
 }
 .customDropDown .cdDefault .cdTitleDisabled{
   color: lightgray;
@@ -386,6 +393,7 @@ margin-left: 0px;
 .cddOpened{
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  z-index: 1;
 }
 #cddLine{
     height: 1px;
@@ -457,7 +465,7 @@ margin-left: 0px;
 .content {
   width: 100%;
   background: #f8f8fa;
-  height: auto;
+  height: 1400px;
 }
 
 /* ---------------CONTENT--------------- */
@@ -855,7 +863,7 @@ margin-left: 0px;
 .documentDelo{
   position: absolute;
   top: 30px;
-  right: 30px;
+  right: 65px;
   width: 50px;
   height: 50px;
 }
