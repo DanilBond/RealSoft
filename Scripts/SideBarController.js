@@ -1,6 +1,7 @@
 let sideBar = document.querySelector("#sideBar");
 let sideBarIsClosed = false;
 
+
 function SwitchSizeOfSideBar(){
   if(sideBar.style.minWidth != "76px"){
     setSBSmall();
@@ -44,6 +45,7 @@ function setSBLarge(){
       i.style.top = "";
       i.style.marginTop = "";
       i.style.marginLeft = "";
+      i.style.zIndex = "0";
       i.style.width = "";
       i.style.boxShadow = "";
     }
@@ -119,6 +121,9 @@ function setSBLarge(){
       i.style.position = "";
       i.style.marginLeft = ""
     }
+
+    document.querySelector("#content").classList.remove("contentSBSetSmaller");
+    document.querySelector("#content").classList.add("contentSBSetLarger");
 }
 
 function setSBSmall(){
@@ -145,6 +150,7 @@ function setSBSmall(){
     i.style.marginTop = "0";
     i.style.marginLeft = "76px";
     i.style.width = "200px";
+    i.style.zIndex = "-1";
     i.style.boxShadow = "0 -8px 20px 2px #dedee3";
   }
   for (const i of elementsToModify[8]) {
@@ -219,6 +225,8 @@ function setSBSmall(){
     i.style.position = "absolute";
     i.style.marginLeft = "50px"
   }
+  document.querySelector("#content").classList.add("contentSBSetSmaller");
+  document.querySelector("#content").classList.remove("contentSBSetLarger");
 }
 
 function SetSideBarSmall(name) {
@@ -247,6 +255,7 @@ function SetSideBarSmall(name) {
     }
   }
 
+  allSideBars[id].style.zIndex = "1";
   
   for (let i = 0; i < allSideBars.length; i++) {
     if(i != id){
@@ -307,3 +316,5 @@ function SetSideBarSmall(name) {
   }
   
 }
+
+

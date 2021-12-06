@@ -18,8 +18,26 @@
 .customDropDown .cdDefault{
   background-color: #097cb4;
 }
+.customDropDown .cdContentOpened span:hover{
+    color: #09415C;
+}
+.customDropDown .cdContentOpened span{
+    color: white;
+}
+.customDropDown .cdContentOpened{
+    background-color: #097cb4;
+}
 .customDropDown .cdTitle{
   color: white;
+}
+.CddActive .cdDefault{
+    background-color: #09415C;
+}
+.CddActive .cdContent{
+    background-color: #09415C;
+}
+#cddLine{
+    background-color: rgba(255, 255, 255, 0.2);
 }
 .window__hr {
     height: 0px !important;

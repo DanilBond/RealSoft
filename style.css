@@ -386,6 +386,26 @@ margin-left: 0px;
   background-color: white;
   cursor: pointer;
 }
+.node_Tree{
+  margin-top: 10px;
+   margin-left: 16px;
+}
+
+#node_first > i{
+  display: none;
+}
+#node_first :first-child{
+  margin-right: 20px;
+}
+
+.modal-status__right span{
+  display: flex;
+  justify-content: start;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 18px;
+}
 
 .cddClosed{
   border-radius: 20px;
@@ -482,6 +502,7 @@ margin-left: 0px;
   display: flex;
   height: 100%;
   align-items: center;
+  z-index: 0;
 }
 
 .navbarLeft img {
@@ -795,7 +816,12 @@ margin-left: 0px;
 .blue {
   color: #097cb4;
 }
-
+.contentSBSetSmaller{
+  margin-left: 76px;
+}
+.contentSBSetLarger{
+  margin-left: 239px;
+}
 .disabled {
   color: #d3d6dc;
 }
@@ -1035,12 +1061,14 @@ margin-left: 0px;
 
 .ok {
   border-style: none !important;
-  background: none !important;
+  background: white !important;
   border-top: 1px solid rgba(67, 79, 99, 0.2) !important;
   border-bottom: 1px solid rgba(67, 79, 99, 0.2) !important;
   border-radius: 0 !important;
 }
-
+.ok:nth-child(2n){
+  background-color: #F8F8FA !important;
+}
 .ok1 {
   border-style: none !important;
   background: none !important;
@@ -1049,7 +1077,6 @@ margin-left: 0px;
   margin-top: 0px !important;
   border-bottom: none !important;
 }
-
 .ui-accordion.ui-accordion-header:last-child(){
   border-bottom: 1px solid rgba(67, 79, 99, 0.2) !important;
 }
@@ -1099,8 +1126,9 @@ margin-left: 0px;
 }
 
 .accordian3-big-text {
-  font-size: 18px !important;
+  font-size: 17px !important;
   color: #000 !important;
+  padding-left: 25px !important;
 }
 
 .accordian3-medium-text {
@@ -1326,6 +1354,9 @@ margin-left: 0px;
 
 .accordian3__year.ui-state-active {
   background: rgba(221, 240, 250, 1) !important;
+}
+html body .accordian .ui-state-active a{
+  font-weight: 700 !important;
 }
 
 .accordianIn.ui-state-active {
@@ -1880,7 +1911,12 @@ margin-left: 0px;
   text-transform: uppercase;
   cursor: pointer;
 }
-
+body .scroll_flex .scroll .accordian__year a {
+  padding-left: 40px;
+  font-weight: 700;
+  font-size: 17px;
+  color: #000000;
+}
 .pcTitle div img {
   width: 10px;
   height: 10px;
@@ -1924,6 +1960,9 @@ margin-left: 0px;
   .window1 {
     width: 1000px;
   }
+  .window__right{
+    margin-top: 10px;
+  }
 }
 @media only screen and (max-width: 1500px){
   .customDropDown{
@@ -1958,6 +1997,7 @@ margin-left: 0px;
   .window__left {
     margin-bottom: 10px;
   }
+  
 }
 
 .pcOpen {
@@ -2180,7 +2220,9 @@ margin-left: 0px;
   .modal-window__btnBtn {
     margin-bottom: 10px;
   }
-
+.navbarLeft{
+  z-index: 0;
+}
   .modal-window__left {
     width: 50%;
   }
@@ -2192,11 +2234,7 @@ margin-left: 0px;
   .sideBar {
     min-width: 76px;
     max-width: 76px;
-    position: relative;
-    height: 1500px;
-  }
-  .content{
-    margin-left: 0;
+    position: fixed;
   }
   .parcerContainer {
     background-color: white;
@@ -2251,6 +2289,10 @@ margin-left: 0px;
     margin-left: 16px;
   }
 
+  .main .content{
+    margin-left: 76px;
+  }
+
   .menuContainer .menuContainerTitle {
     display: block;
     font-size: 0;
@@ -2268,8 +2310,9 @@ margin-left: 0px;
     width: 36px;
     height: 32px;
     justify-content: center;
-    
+    z-index: 1;
   }
+  
 
   .menuContainer .container .item .imgContainer {
     width: 100%;

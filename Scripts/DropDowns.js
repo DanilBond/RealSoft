@@ -17,6 +17,7 @@ function SwitchDropDownVisibility(id){
         dropDowns[id].querySelector(".cdContent").classList.remove("cdContentClosed");
 
         dropDowns[id].querySelector(".cdContent").classList.add("cdContentOpened");
+        dropDowns[id].classList.add("CddActive");
     }
     else{
         dropDowns[id].querySelector(".cdDefault").classList.remove("cddOpened");
@@ -26,5 +27,6 @@ function SwitchDropDownVisibility(id){
         dropDowns[id].querySelector(".cdContent").classList.remove("cdContentOpened");
 
         dropDowns[id].querySelector(".cdContent").classList.add("cdContentClosed");
+        dropDowns[id].classList.remove("CddActive");
     }
 }
