@@ -29,7 +29,16 @@
   box-sizing: border-box;
   font-family: HNCroman;
 }
-
+body{
+  background: #f8f8fa;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  background-repeat: repeat;
+  background: #f8f8fa;
+  text-rendering: optimizeLegibility;
+}
 .canvasjs-chart-tooltip div span {
   display: none !important;
 }
@@ -229,14 +238,18 @@ p {
 
 /* ---------------SIDEBAR--------------- */
 .sideBar {
-  height: 5000px;
+  /* height: 5000px; */
   grid-area: sidebar;
   /* min-width: 239px; */
   background-color: white;
   box-shadow: 1px 0px 10px grey;
   z-index: 0;
+  position: fixed;
+  height: 1400px;
 }
-
+.cdDefault{
+margin-left: 0px;
+}
 .sideBar .logoContainer .logoFull {
   width: 112px;
   height: 55px;
@@ -349,17 +362,29 @@ p {
   padding-left: 6px;
 }
 .customDropDown{
-  
   position: relative;
-  margin-left: 20px;
+  z-index: 1;
+  filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.2)) drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.12)) drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.14));
+}
+.customDropDown:hover{
+  filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.2)) drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.12)) drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.14));
+}
+.cdact:hover .cddClosed span{
+  color: #09415C;
 }
 
+.cdDefault{
+  width: 100%;
+}
+.dropdownDef{
+  margin-left: 15px;
+}
 .customDropDown .cdDefault .cdTitleDisabled{
   color: lightgray;
 }
 .customDropDown .cdTitle{
     color: rgb(9, 124, 180);
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 20px;
     min-width: 100px;
@@ -370,9 +395,28 @@ p {
   justify-content: space-between;
   padding: 10px 15px;
 
-  box-shadow: 0px 0px 5px gray;
   background-color: white;
   cursor: pointer;
+}
+.node_Tree{
+  margin-top: 10px;
+   margin-left: 16px;
+}
+
+#node_first > i{
+  display: none;
+}
+#node_first :first-child{
+  margin-right: 20px;
+}
+
+.modal-status__right span{
+  display: flex;
+  justify-content: start;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .cddClosed{
@@ -381,7 +425,6 @@ p {
 .cddOpened{
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  box-shadow: 0 -5px 5px -5px #333, 5px 0 5px -5px #333, -5px 0 5px -5px #333;
 }
 #cddLine{
     height: 1px;
@@ -391,12 +434,15 @@ p {
     position: absolute;
     left: 0;
     right: 0;
+    
 }
 
+.cdContent :nth-child(2){
+  margin-top: 14.5px;
+}
 
 .cdContent{
   z-index: 2;
-  box-shadow: 0px 0px 5px gray;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -410,25 +456,29 @@ p {
 }
 .cdContentOpened{
   display: flex;
-  box-shadow: 0 5px 5px -5px #333, 5px 0 5px -5px #333,  -5px 0 5px -5px #333;
 }
 
 .cdContent span{
-  margin-bottom: 8px;
-  margin-top: 8px;
   padding-left: 17px;
-  padding-top: 2px;  
-  padding-bottom: 2px;
+  padding-top: 8px;  
+  padding-bottom: 8px;
   color: #097CB4;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 550;
 }
 .cdContent span:hover{
-  background-color: #004484;
-  color: white;
+  cursor: pointer;
+  background-color: #F8F8FA;
+  color: #09415C;
 }
-
+.cdContent span:last-child{
+  margin-bottom: 15px;
+}
+.cdContent span:active{
+  color: #D3D6DC;
+  background-color: white;
+}
 
 .menuContainer .container .item span {
   color: black;
@@ -447,6 +497,7 @@ p {
   grid-area: content;
   width: 100%;
   background: #f8f8fa;
+  height: auto;
 }
 
 /* ---------------CONTENT--------------- */
@@ -483,6 +534,7 @@ p {
   margin-left: 37px;
   color: rgba(0, 0, 0, 0.5) 50%;
   padding: 5px 15px;
+  font-size: 12px;
 }
 
 .navbarWrapper {
@@ -557,7 +609,7 @@ p {
   margin: 10px 20px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   margin: 21px auto;
-  width: 1523px;
+  width: 95%;
   overflow-x: hidden;
   overflow-y: auto;
   height: 500px;
@@ -802,6 +854,8 @@ p {
   display: flex;
   justify-content: space-between;
   padding: 13px 18px 11px 18px;
+  cursor: pointer;
+  margin-right: 10px;
 }
 
 .window__search {
@@ -837,6 +891,14 @@ p {
   width: 1002px;
   background: #f8f8fa;
   height: 722px;
+  position: relative;
+}
+.documentDelo{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
 }
 
 .scroll_img {
@@ -1006,16 +1068,26 @@ p {
 
 .ok {
   border-style: none !important;
-  background: none !important;
+  background: white !important;
   border-top: 1px solid rgba(67, 79, 99, 0.2) !important;
   border-bottom: 1px solid rgba(67, 79, 99, 0.2) !important;
   border-radius: 0 !important;
 }
-
+.ok:nth-child(2n){
+  background-color: #F8F8FA !important;
+}
 .ok1 {
   border-style: none !important;
   background: none !important;
 }
+.ui-accordion .ui-accordion-header{
+  margin-top: 0px !important;
+  border-bottom: none !important;
+}
+.ui-accordion.ui-accordion-header:last-child(){
+  border-bottom: 1px solid rgba(67, 79, 99, 0.2) !important;
+}
+
 
 .text-around {
   border-radius: 50%;
@@ -1061,8 +1133,9 @@ p {
 }
 
 .accordian3-big-text {
-  font-size: 18px !important;
+  font-size: 17px !important;
   color: #000 !important;
+  padding-left: 25px !important;
 }
 
 .accordian3-medium-text {
@@ -1244,7 +1317,6 @@ p {
   height: 60px;
   margin: 0 20px;
   border-top: 1px solid rgba(67, 79, 99, 0.2) !important;
-  border-bottom: 1px solid rgba(67, 79, 99, 0.2) !important;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -1289,6 +1361,9 @@ p {
 
 .accordian3__year.ui-state-active {
   background: rgba(221, 240, 250, 1) !important;
+}
+html body .accordian .ui-state-active a{
+  font-weight: 700 !important;
 }
 
 .accordianIn.ui-state-active {
@@ -1843,7 +1918,12 @@ p {
   text-transform: uppercase;
   cursor: pointer;
 }
-
+body .scroll_flex .scroll .accordian__year a {
+  padding-left: 40px;
+  font-weight: 700;
+  font-size: 17px;
+  color: #000000;
+}
 .pcTitle div img {
   width: 10px;
   height: 10px;
@@ -1877,15 +1957,18 @@ p {
 }
 
 /* ---------------MEDIA---------------- */
-@media only screen and (max-width: 1790px) {
+/* @media only screen and (max-width: 1790px) {
   .window1 {
     width: 1272px;
   }
-}
+} */
 
 @media only screen and (max-width: 1590px) {
   .window1 {
     width: 1000px;
+  }
+  .window__right{
+    margin-top: 10px;
   }
 }
 @media only screen and (max-width: 1500px){
@@ -1897,11 +1980,11 @@ p {
   } */
 }
 
-@media only screen and (max-width: 1480px) {
+/* @media only screen and (max-width: 1480px) {
   .cdDefault.cddClosed {
     margin-left: 10px;
   }
-}
+} */
 
 @media only screen and (max-width: 1393px) {
   .window1 {
@@ -1921,6 +2004,7 @@ p {
   .window__left {
     margin-bottom: 10px;
   }
+  
 }
 
 .pcOpen {
@@ -2126,7 +2210,7 @@ p {
 
   #customDropDown{
   margin-left: 0;
-  width: 278px;
+  width: 278px !important;
   margin-top: 10px;
   }
 
@@ -2152,8 +2236,19 @@ p {
     width: 50%;
   }
 
+<<<<<<< HEAD
+=======
+  .sideBar {
+    min-width: 76px;
+    max-width: 76px;
+    position: relative;
+    height: 1500px;
+  }
+  .content{
+    margin-left: 0;
+  }
+>>>>>>> main
   .parcerContainer {
-    height: 5000px;
     background-color: white;
     top: 0;
     margin-top: 0;

@@ -2,12 +2,12 @@ let sideBarJSON = {
     0: {
         Name:"МЕНЮ",
         Value:[
-            {Title:"Рабочий стол", Img:"./images/Desktop.svg", Arrow:"none", Data:null},
+            {Title:"Рабочий стол", Img:"./images/Desktop.svg", Arrow:"none", Data:null, link:'./index.html'},
             {Title:"Структура АО КТК", Img:"./images/ID.svg", Arrow:"has", 
                 Data:{
                     Items:[
                         {NameValue:"Телефоны",Func: ""},
-                        {NameValue:"Иерархия",Func: "2"},
+                        {NameValue:"Иерархия", link: "./hierarchy.html"},
                         {NameValue:"Маршруты",Func: ""},
                         {NameValue:"Избранное",Func: ""},
                         {NameValue:"Замещение",Func: ""},
@@ -19,7 +19,7 @@ let sideBarJSON = {
             {Title:"Делопроизводство", Img:"./images/DOCX.svg", Arrow:"has",
             Data:{
                 Items:[
-                    {NameValue:"Входящие документы",Func: "0"},
+                    {NameValue:"Входящие документы",Func: "", link: "./incoming-docs.html"},
                     {NameValue:"Исходящие документы",Func: ""},
                     {NameValue:"Прошлогодние базы",Func: ""},
                     {NameValue:"Отчет по входящим",Func: ""},
@@ -41,7 +41,7 @@ let sideBarJSON = {
                     {NameValue:"По статусу",Func: ""},
                     {NameValue:"Приказы",Func: ""},
                     {NameValue:"Списание ОС через ЦА",Func: ""},
-                    {NameValue:"Статистика Фин ОЦО",Func: "1"},
+                    {NameValue:"Статистика Фин ОЦО",Func: '', link: "./fin-oco.html"},
                     {NameValue:"Нормативные документы служб Фин ОЦО",Func: ""},
                 ]
             }},
@@ -98,7 +98,13 @@ function ConstructSideBar(json){
             let img = document.createElement("img");
             img.src = j.Img;
 
-            item.addEventListener("click", ()=>{SetSideBarSmall(j.Title)});
+            if(j.link){
+              item.addEventListener("click", ()=>{
+                window.location.href = j.link;
+              });
+            }else{
+              item.addEventListener("click", ()=>{SetSideBarSmall(j.Title)});
+            }
 
             imgContainer.appendChild(img);
             item.appendChild(imgContainer);
@@ -129,7 +135,7 @@ function ConstructSideBar(json){
                     pcTitle.appendChild(pcImgContainer);
                     let txt = document.createElement("span");
                     txt.innerText = j.Title;
-                    txt.addEventListener("click", ()=>{SetSideBarSmall(j.Title)});
+                    txt.addEventListener("click", ()=>{SetSideBarSmall(j.Title);  resetSb();});
                     pcTitle.appendChild(txt);
                     parcerCont.appendChild(pcTitle);
 
@@ -138,6 +144,9 @@ function ConstructSideBar(json){
                             let pcItem = document.createElement("div");
                             pcItem.className = "pcItem";
                             pcItem.innerText = ic.NameValue;
+                            if(ic.link){
+                                pcItem.addEventListener("click", ()=>{window.location.href = ic.link});
+                            }
                             if(ic.Func != "")
                                 pcItem.addEventListener("click", ()=>{
                                   if(setActiveWindow) setActiveWindow(parseInt(ic.Func))

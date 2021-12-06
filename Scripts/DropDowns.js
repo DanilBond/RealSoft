@@ -1,7 +1,8 @@
 let dropDowns = document.querySelectorAll(".customDropDown");
-for (const i in dropDowns) {
-    if (Object.hasOwnProperty.call(dropDowns, i)) {
-        const element = dropDowns[i];
+let clickEvnts = document.querySelectorAll(".cdDefault");
+for (const i in clickEvnts) {
+    if (Object.hasOwnProperty.call(clickEvnts, i)) {
+        const element = clickEvnts[i];
         element.addEventListener("click", ()=>{SwitchDropDownVisibility(i)})
     }
 }
@@ -16,6 +17,7 @@ function SwitchDropDownVisibility(id){
         dropDowns[id].querySelector(".cdContent").classList.remove("cdContentClosed");
 
         dropDowns[id].querySelector(".cdContent").classList.add("cdContentOpened");
+        dropDowns[id].classList.add("CddActive");
     }
     else{
         dropDowns[id].querySelector(".cdDefault").classList.remove("cddOpened");
@@ -25,5 +27,6 @@ function SwitchDropDownVisibility(id){
         dropDowns[id].querySelector(".cdContent").classList.remove("cdContentOpened");
 
         dropDowns[id].querySelector(".cdContent").classList.add("cdContentClosed");
+        dropDowns[id].classList.remove("CddActive");
     }
 }
