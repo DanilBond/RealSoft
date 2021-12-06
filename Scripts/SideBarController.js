@@ -120,6 +120,7 @@ function setSBLarge(){
     for (const i of elementsToModify[7]) {
       i.style.position = "";
       i.style.marginLeft = ""
+      i.style.display = "";
     }
 
     document.querySelector("#content").classList.remove("contentSBSetSmaller");
@@ -224,6 +225,7 @@ function setSBSmall(){
   for (const i of elementsToModify[7]) {
     i.style.position = "absolute";
     i.style.marginLeft = "50px"
+    i.style.display = "none";
   }
   document.querySelector("#content").classList.add("contentSBSetSmaller");
   document.querySelector("#content").classList.remove("contentSBSetLarger");
