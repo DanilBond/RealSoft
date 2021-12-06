@@ -2317,6 +2317,7 @@ body .scroll_flex .scroll .accordian__year a {
   .menuContainer .container .item .itemArrow {
     position: absolute;
     margin-left: 50px;
+    display: none;
   }
 
   .menuContainer .container .item span {
@@ -2423,7 +2424,10 @@ body .scroll_flex .scroll .accordian__year a {
     margin-left: 0;
   }
 }
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
 
+}}
 @media only screen and (max-width: 440px) {
   .window1 {
     width: 215px;
