@@ -494,6 +494,7 @@ margin-left: 0px;
   display: flex;
   height: 100%;
   align-items: center;
+  z-index: 0;
 }
 
 .navbarLeft img {
@@ -807,7 +808,12 @@ margin-left: 0px;
 .blue {
   color: #097cb4;
 }
-
+.contentSBSetSmaller{
+  margin-left: 76px;
+}
+.contentSBSetLarger{
+  margin-left: 239px;
+}
 .disabled {
   color: #d3d6dc;
 }
@@ -2206,7 +2212,9 @@ body .scroll_flex .scroll .accordian__year a {
   .modal-window__btnBtn {
     margin-bottom: 10px;
   }
-
+.navbarLeft{
+  z-index: 0;
+}
   .modal-window__left {
     width: 50%;
   }
@@ -2218,11 +2226,7 @@ body .scroll_flex .scroll .accordian__year a {
   .sideBar {
     min-width: 76px;
     max-width: 76px;
-    position: relative;
-    height: 1500px;
-  }
-  .content{
-    margin-left: 0;
+    position: fixed;
   }
   .parcerContainer {
     background-color: white;
@@ -2277,6 +2281,10 @@ body .scroll_flex .scroll .accordian__year a {
     margin-left: 16px;
   }
 
+  .main .content{
+    margin-left: 76px;
+  }
+
   .menuContainer .menuContainerTitle {
     display: block;
     font-size: 0;
@@ -2294,8 +2302,9 @@ body .scroll_flex .scroll .accordian__year a {
     width: 36px;
     height: 32px;
     justify-content: center;
-    
+    z-index: 1;
   }
+  
 
   .menuContainer .container .item .imgContainer {
     width: 100%;
